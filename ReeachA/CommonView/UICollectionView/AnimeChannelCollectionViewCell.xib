@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AnimeChannelCollectionViewCell" customModule="ReeachA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="214"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="214"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRQ-nd-RL0">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="214"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wbS-nh-1Bx">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="214"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkx-7F-rFV">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="169"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yakusokuno" translatesAutoresizingMaskIntoConstraints="NO" id="3F1-8X-jxR">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="169"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="3F1-8X-jxR" secondAttribute="bottom" id="OLX-mk-qSc"/>
+                                            <constraint firstItem="3F1-8X-jxR" firstAttribute="leading" secondItem="Gkx-7F-rFV" secondAttribute="leading" id="evj-G6-fK6"/>
+                                            <constraint firstAttribute="trailing" secondItem="3F1-8X-jxR" secondAttribute="trailing" id="fi1-RC-l5c"/>
+                                            <constraint firstItem="3F1-8X-jxR" firstAttribute="top" secondItem="Gkx-7F-rFV" secondAttribute="top" id="nx9-ie-2qs"/>
+                                            <constraint firstAttribute="width" secondItem="Gkx-7F-rFV" secondAttribute="height" multiplier="852:1199" id="nxF-3S-mkt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-5J-vYl">
+                                        <rect key="frame" x="0.0" y="169" width="120" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="約束のネバーランド" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Th4-uF-GIl">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="45"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Th4-uF-GIl" secondAttribute="bottom" id="774-Gm-tBK"/>
+                                            <constraint firstAttribute="trailing" secondItem="Th4-uF-GIl" secondAttribute="trailing" id="Eeq-uh-d8u"/>
+                                            <constraint firstItem="Th4-uF-GIl" firstAttribute="top" secondItem="bVF-5J-vYl" secondAttribute="top" id="QXa-NX-0S0"/>
+                                            <constraint firstItem="Th4-uF-GIl" firstAttribute="leading" secondItem="bVF-5J-vYl" secondAttribute="leading" id="tMZ-AD-3rM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wbS-nh-1Bx" secondAttribute="bottom" id="IhH-LN-3Cx"/>
+                            <constraint firstItem="wbS-nh-1Bx" firstAttribute="leading" secondItem="tRQ-nd-RL0" secondAttribute="leading" id="P97-b2-cBz"/>
+                            <constraint firstAttribute="trailing" secondItem="wbS-nh-1Bx" secondAttribute="trailing" id="PsE-n2-Mks"/>
+                            <constraint firstItem="wbS-nh-1Bx" firstAttribute="top" secondItem="tRQ-nd-RL0" secondAttribute="top" id="vv3-mi-voE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tRQ-nd-RL0" secondAttribute="trailing" id="KYs-vK-mi6"/>
+                <constraint firstItem="tRQ-nd-RL0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nlk-39-MiZ"/>
+                <constraint firstItem="tRQ-nd-RL0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VJS-kX-pVu"/>
+                <constraint firstAttribute="bottom" secondItem="tRQ-nd-RL0" secondAttribute="bottom" id="ggj-dv-elD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="485" height="214"/>
+            <point key="canvasLocation" x="537.60000000000002" y="-333.7331334332834"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="yakusokuno" width="852" height="1199"/>
+    </resources>
+</document>

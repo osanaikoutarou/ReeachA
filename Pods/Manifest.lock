@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.8.0)
+  - Kingfisher (4.10.1)
+  - SlideMenuControllerSwift (4.0.0)
+  - SnapKit (4.0.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - SlideMenuControllerSwift (from `https://github.com/grizzly/SlideMenuControllerSwift.git`)
+  - SnapKit (~> 4.0.0)
+  - SVProgressHUD
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - SnapKit
+    - SVProgressHUD
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SlideMenuControllerSwift:
+    :git: https://github.com/grizzly/SlideMenuControllerSwift.git
+
+CHECKOUT OPTIONS:
+  SlideMenuControllerSwift:
+    :commit: 671f6ad6e41a42b6160ccf98632f0c9aef6d498e
+    :git: https://github.com/grizzly/SlideMenuControllerSwift.git
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  SlideMenuControllerSwift: f9ec1ad1a95d211324d25b15dcdbc94881596716
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 802b0304c79a8b470b46c5aff54c5f93a2d1e4f6
+
+COCOAPODS: 1.5.3
