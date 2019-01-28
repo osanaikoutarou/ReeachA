@@ -12,6 +12,7 @@
     <customFonts key="customFonts">
         <array key="HiraginoKakuGothic.ttc">
             <string>HiraginoSans-W3</string>
+            <string>HiraginoSans-W6</string>
         </array>
     </customFonts>
     <scenes>
@@ -28,14 +29,14 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="JeN-Yh-eFk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1900"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-3T-j1I">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1900"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-9q-PTQ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="約束のネバーランド" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIw-UZ-rDm">
                                                             <rect key="frame" x="10" y="30" width="355" height="20"/>
@@ -70,7 +71,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OA0-2z-9ht">
-                                                    <rect key="frame" x="0.0" y="450" width="375" height="450"/>
+                                                    <rect key="frame" x="0.0" y="950" width="375" height="950"/>
                                                     <color key="backgroundColor" red="0.92122286558151245" green="0.9883379340171814" blue="0.024338085204362869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
                                             </subviews>
