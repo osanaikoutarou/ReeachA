@@ -35,18 +35,75 @@ class ChannelDetailTopViewController: UIViewController {
         self.tabBarController?.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    func addHogeButton() {
-        let button = UIButton.init(type: .system)
-        button.setTitle("hoge", for: .normal)
-        button.addAction(for: .touchUpInside) {
-//            let vc = UIStoryboard(name: "OrderParent", bundle: nil).instantiateInitialViewController()
-//            self .show(vc!, sender: nil)
-        }
-        let barButtonItem = UIBarButtonItem.init(customView: button)
-        self.navigationItem.leftBarButtonItem = barButtonItem
+//    func addHogeButton() {
+//        let button = UIButton.init(type: .system)
+//        button.setTitle("hoge", for: .normal)
+//        button.addAction(for: .touchUpInside) {
+////            let vc = UIStoryboard(name: "OrderParent", bundle: nil).instantiateInitialViewController()
+////            self .show(vc!, sender: nil)
+//        }
+//        let barButtonItem = UIBarButtonItem.init(customView: button)
+//        self.navigationItem.leftBarButtonItem = barButtonItem
+//    }
+    
+    @IBAction func tappedStates(_ sender: Any) {
+        dispActionSheet(title: nil, message: "今の状態を選択してください", actions: [
+            UIAlertAction(title: "未視聴", style: .default, handler: { (action) in
+                
+            }).alignLeft(),
+            UIAlertAction(title: "未視聴：見たいけど見れない", style: .default, handler: { (action) in
+                
+            }).alignLeft(),
+            UIAlertAction(title: "未視聴：見るつもり", style: .default, handler: { (action) in
+                
+            }).alignLeft(),
+            UIAlertAction(title: "視聴中：やめた・保留", style: .default, handler: { (action) in
+                
+            }).alignLeft(),
+            UIAlertAction(title: "視聴中：継続", style: .default, handler: { (action) in
+                
+            }).alignLeft(),
+            UIAlertAction(title: "視聴済：見終わった", style: .default, handler: { (action) in
+                
+            }).alignLeft(),
+            UIAlertAction(title: "その他", style: .default, handler: { (action) in
+                
+            }).alignLeft(),
+            UIAlertAction(title: "キャンセル", style: .cancel, handler: { (action) in
+                
+            }).alignLeft(),
+
+            ])
     }
+    
+    
+    
 }
 
+/*
+ MyAnimeList
+ 
+ 最新の放送
+ TYPE　TV
+ Episode　12話
+ PREMIRED　Winter2019
+ STUDIO　動画工房
+ Genre　Comedy,Slice of Life
+ Score
+ Rank
+ Popularety
+ 
+ 放送 2019年1月から (2019-Winter)
+ 全12話
+ 
+ 原作 漫画
+   原作・原案　白井カイウ、出水ぽすか　作画 宮崎周平
+ アニメーション制作　CloverWorks
+ 監督　押戸守
+ 
+ 
+ 
+ */
 
 
 

@@ -20,6 +20,10 @@ class MyChannelViewController: UIViewController {
         collectionView.register(cellType: AnimeChannelCollectionViewCell.self)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
 }
 
 extension MyChannelViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
