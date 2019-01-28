@@ -21,5 +21,8 @@ class WebLink: NSObject {
     var isWikipedia: Bool {
         return urlStr.contains("wikipedia.org")
     }
+    var isInstagram: Bool {
+        return urlStr.contains("instagram.com")
+    }
     
 }

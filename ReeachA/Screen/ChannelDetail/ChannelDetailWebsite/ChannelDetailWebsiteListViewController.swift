@@ -35,6 +35,12 @@ class ChannelDetailWebsiteListViewController: UIViewController {
         webLink3.title = "Twitter 約束のネバーランド"
         webLink3.icon = UIImage(named: "Twitter_Logo_Blue")
         webLinks.append(webLink3)
+        
+        let webLink4 = WebLink()
+        webLink4.urlStr = "https://www.instagram.com/neverland_anime/"
+        webLink4.title = "Instagram 約束のネバーランド"
+        webLink4.icon = UIImage(named: "icon_instagram")
+        webLinks.append(webLink4)
 
         
         
@@ -68,6 +74,13 @@ extension ChannelDetailWebsiteListViewController: UITableViewDelegate,UITableVie
         }
         else if webLink.isWikipedia {
             UIApplication.shared.open("wikipedia://ja.wikipedia.org/wiki/%E7%B4%84%E6%9D%9F%E3%81%AE%E3%83%8D%E3%83%90%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89".url! , options: [:]) { (success) in
+                if !success {
+                    self.performSegue(withIdentifier: "ChannelDetailWebsite", sender: webLink)
+                }
+            }
+        }
+        else if webLink.isInstagram {
+            UIApplication.shared.open("instagram://user?username=neverland_anime", options: [:]) { (success) in
                 if !success {
                     self.performSegue(withIdentifier: "ChannelDetailWebsite", sender: webLink)
                 }
