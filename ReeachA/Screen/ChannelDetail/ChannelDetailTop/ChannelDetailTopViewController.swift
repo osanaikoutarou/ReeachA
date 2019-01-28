@@ -14,8 +14,6 @@ class ChannelDetailTopViewController: UIViewController {
     
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.contentInsetAdjustmentBehavior = .never

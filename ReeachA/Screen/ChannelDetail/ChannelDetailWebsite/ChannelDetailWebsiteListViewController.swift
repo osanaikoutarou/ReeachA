@@ -60,15 +60,21 @@ extension ChannelDetailWebsiteListViewController: UITableViewDelegate,UITableVie
         
         let webLink = webLinks[indexPath.row]
         if webLink.isTwitter {
-            UIApplication.shared.open("twitter://user?screen_name=yakuneba_staff".url! , options: [:], completionHandler: { (finished) in
+            UIApplication.shared.open("twitter://user?screen_name=yakuneba_staff".url! , options: [:], completionHandler: { (success) in
+                if !success {
+                    self.performSegue(withIdentifier: "ChannelDetailWebsite", sender: webLink)
+                }
             })
         }
         else if webLink.isWikipedia {
-            UIApplication.shared.open("wikipedia://ja.wikipedia.org/wiki/%E7%B4%84%E6%9D%9F%E3%81%AE%E3%83%8D%E3%83%90%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89".url! , options: [:]) { (finished) in
+            UIApplication.shared.open("wikipedia://ja.wikipedia.org/wiki/%E7%B4%84%E6%9D%9F%E3%81%AE%E3%83%8D%E3%83%90%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89".url! , options: [:]) { (success) in
+                if !success {
+                    self.performSegue(withIdentifier: "ChannelDetailWebsite", sender: webLink)
+                }
             }
         }
         else {
-            self.performSegue(withIdentifier: "ChannelDetailWebsite", sender: webLinks[indexPath.row])
+            self.performSegue(withIdentifier: "ChannelDetailWebsite", sender: webLink)
         }
     }
     
