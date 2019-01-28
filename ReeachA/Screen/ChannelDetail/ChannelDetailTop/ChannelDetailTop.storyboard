@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pex-UK-YXI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W3</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Channel Detail Top View Controller-->
+        <scene sceneID="kht-jS-uCG">
+            <objects>
+                <viewController storyboardIdentifier="ChannelDetailTopViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hvj-Q9-oMq" customClass="ChannelDetailTopViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5WV-qL-9La">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7sd-uE-t47">
+                                <rect key="frame" x="0.0" y="80" width="375" height="871"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="JeN-Yh-eFk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-3T-j1I">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-9q-PTQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="約束のネバーランド" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIw-UZ-rDm">
+                                                            <rect key="frame" x="10" y="30" width="355" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yakusokuno" translatesAutoresizingMaskIntoConstraints="NO" id="dVh-Vd-UuV">
+                                                            <rect key="frame" x="10" y="70" width="120" height="169"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="SCG-zP-Cvy"/>
+                                                                <constraint firstAttribute="width" secondItem="dVh-Vd-UuV" secondAttribute="height" multiplier="852:1199" id="das-Jz-Dl6"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jDs-jZ-Wvd">
+                                                            <rect key="frame" x="140" y="70" width="225" height="181"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <string key="text">突然終わりを告げた、グレイス＝フィールドハウスの幸せな日常。ハウスは農園。子どもたちは、鬼に飼われる食用人間。大好きだったママは子どもたちの監視役。「これ以上、家族が死ぬのは嫌だ…！」そう願ったエマ達は、日常に潜んでいたあらゆる意図を解き明かしていく。鬼vs子ども、命をかけた脱獄計画が始まる--（C）白井カイウ・出水ぽすか／集英社・約束のネバーランド製作委員会</string>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="dVh-Vd-UuV" firstAttribute="top" secondItem="PIw-UZ-rDm" secondAttribute="bottom" constant="20" id="7Wf-GX-Rwk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jDs-jZ-Wvd" secondAttribute="trailing" constant="10" id="92R-rc-AdA"/>
+                                                        <constraint firstItem="PIw-UZ-rDm" firstAttribute="top" secondItem="tp2-9q-PTQ" secondAttribute="top" constant="30" id="ABD-X4-VXE"/>
+                                                        <constraint firstItem="PIw-UZ-rDm" firstAttribute="leading" secondItem="tp2-9q-PTQ" secondAttribute="leading" multiplier="0.9" constant="10" id="CSM-2q-2KS"/>
+                                                        <constraint firstItem="jDs-jZ-Wvd" firstAttribute="leading" secondItem="dVh-Vd-UuV" secondAttribute="trailing" constant="10" id="DeW-ri-kS5"/>
+                                                        <constraint firstItem="dVh-Vd-UuV" firstAttribute="leading" secondItem="tp2-9q-PTQ" secondAttribute="leading" constant="10" id="N24-li-gOC"/>
+                                                        <constraint firstItem="jDs-jZ-Wvd" firstAttribute="top" secondItem="PIw-UZ-rDm" secondAttribute="bottom" constant="20" id="dRa-DT-vOj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="PIw-UZ-rDm" secondAttribute="trailing" constant="10" id="luD-RS-jiz"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OA0-2z-9ht">
+                                                    <rect key="frame" x="0.0" y="450" width="375" height="450"/>
+                                                    <color key="backgroundColor" red="0.92122286558151245" green="0.9883379340171814" blue="0.024338085204362869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="8ZO-3T-j1I" secondAttribute="trailing" id="JFc-Hv-3H0"/>
+                                        <constraint firstItem="8ZO-3T-j1I" firstAttribute="leading" secondItem="JeN-Yh-eFk" secondAttribute="leading" id="K1g-7D-5aL"/>
+                                        <constraint firstAttribute="bottom" secondItem="8ZO-3T-j1I" secondAttribute="bottom" id="KGD-Tf-LLC"/>
+                                        <constraint firstItem="8ZO-3T-j1I" firstAttribute="top" secondItem="JeN-Yh-eFk" secondAttribute="top" id="xxr-oi-PGc"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7sd-uE-t47" firstAttribute="leading" secondItem="5WV-qL-9La" secondAttribute="leading" id="RPF-7P-ZwX"/>
+                            <constraint firstItem="7sd-uE-t47" firstAttribute="top" secondItem="5WV-qL-9La" secondAttribute="top" constant="80" id="Rlv-jB-bCI"/>
+                            <constraint firstItem="zGO-rm-WCD" firstAttribute="trailing" secondItem="7sd-uE-t47" secondAttribute="trailing" id="oCB-iT-Avz"/>
+                            <constraint firstItem="zGO-rm-WCD" firstAttribute="bottom" secondItem="7sd-uE-t47" secondAttribute="bottom" id="y72-uo-q0E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zGO-rm-WCD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LDC-J0-L3T"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="jDs-jZ-Wvd" id="sr6-KS-HAZ"/>
+                        <outlet property="tableView" destination="7sd-uE-t47" id="mXj-iV-qnW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZd-Ie-ebF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="79.160419790104953"/>
+        </scene>
+        <!--Top-->
+        <scene sceneID="6aV-OT-cMB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pex-UK-YXI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Top" id="gjD-JH-mvj"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6aZ-Bq-M6G">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hvj-Q9-oMq" kind="relationship" relationship="rootViewController" id="uvm-iM-KJ6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9oN-CN-qrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yakusokuno" width="852" height="1199"/>
+    </resources>
+</document>

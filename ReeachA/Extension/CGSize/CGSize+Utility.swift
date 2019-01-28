@@ -13,4 +13,8 @@ extension CGSize {
     static func pxSize() -> CGSize {
         return CGSize(width: 1, height: 1)
     }
+    
+    func scale(_ scale:CGFloat) -> CGSize {
+        return CGSize(width: width * scale, height: height * scale)
+    }
 }
