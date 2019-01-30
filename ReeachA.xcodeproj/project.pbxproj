@@ -67,6 +67,8 @@
 		1EB1514721FA1C17001B6110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1514521FA1C17001B6110 /* Main.storyboard */; };
 		1EB1514921FA1C18001B6110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1514821FA1C18001B6110 /* Assets.xcassets */; };
 		1EB1514C21FA1C18001B6110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1514A21FA1C18001B6110 /* LaunchScreen.storyboard */; };
+		1EC50DD42200CA040026DEF0 /* ChannelDetailGoods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC50DD32200CA040026DEF0 /* ChannelDetailGoods.storyboard */; };
+		1EC50DD62200CA290026DEF0 /* ChannelDetailGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC50DD52200CA290026DEF0 /* ChannelDetailGoodsViewController.swift */; };
 		1EFE8FEF21FC3FA9006E8473 /* CGFloat+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE8FEE21FC3FA9006E8473 /* CGFloat+Utility.swift */; };
 		1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */; };
 		1EFE8FF521FC44C7006E8473 /* ChannelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */; };
@@ -155,6 +157,8 @@
 		1EB1514821FA1C18001B6110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EB1514B21FA1C18001B6110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EB1514D21FA1C18001B6110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC50DD32200CA040026DEF0 /* ChannelDetailGoods.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailGoods.storyboard; sourceTree = "<group>"; };
+		1EC50DD52200CA290026DEF0 /* ChannelDetailGoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailGoodsViewController.swift; sourceTree = "<group>"; };
 		1EFE8FEE21FC3FA9006E8473 /* CGFloat+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Utility.swift"; sourceTree = "<group>"; };
 		1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetail.storyboard; sourceTree = "<group>"; };
 		1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailViewController.swift; sourceTree = "<group>"; };
@@ -533,6 +537,15 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		1EC50DD22200C9010026DEF0 /* ChannelDetailGoods */ = {
+			isa = PBXGroup;
+			children = (
+				1EC50DD32200CA040026DEF0 /* ChannelDetailGoods.storyboard */,
+				1EC50DD52200CA290026DEF0 /* ChannelDetailGoodsViewController.swift */,
+			);
+			path = ChannelDetailGoods;
+			sourceTree = "<group>";
+		};
 		1EFE8FED21FC3F9B006E8473 /* CGFloat */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +566,7 @@
 		1EFE8FF121FC4478006E8473 /* ChannelDetail */ = {
 			isa = PBXGroup;
 			children = (
+				1EC50DD22200C9010026DEF0 /* ChannelDetailGoods */,
 				1EFE900021FCA4AE006E8473 /* ChannelDetailWebsite */,
 				1EFE8FF621FC6D9B006E8473 /* ChannelDetailTop */,
 				1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */,
@@ -683,6 +697,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EB1514C21FA1C18001B6110 /* LaunchScreen.storyboard in Resources */,
+				1EC50DD42200CA040026DEF0 /* ChannelDetailGoods.storyboard in Resources */,
 				1E57E03721FB7BF7003AD898 /* AnimeChannelCollectionViewCell.xib in Resources */,
 				1E57E0C621FC0920003AD898 /* MyChannel.storyboard in Resources */,
 				1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */,
@@ -720,7 +735,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReeachA/Pods-ReeachA-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReeachA/Pods-ReeachA-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -739,7 +754,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReeachA/Pods-ReeachA-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReeachA/Pods-ReeachA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -775,6 +790,7 @@
 				1E57E08721FB84DD003AD898 /* UIColor+Utility.swift in Sources */,
 				1E57E0A721FB84DE003AD898 /* Date+Utility.swift in Sources */,
 				1E57E08B21FB84DD003AD898 /* UIView+.swift in Sources */,
+				1EC50DD62200CA290026DEF0 /* ChannelDetailGoodsViewController.swift in Sources */,
 				1E57E0B321FB84DE003AD898 /* UITableView+Utility.swift in Sources */,
 				1EFE900821FCCEB4006E8473 /* ChannelDetailWebsiteListTableViewCell.swift in Sources */,
 				1E57E09A21FB84DE003AD898 /* UIView+Autolayout.swift in Sources */,

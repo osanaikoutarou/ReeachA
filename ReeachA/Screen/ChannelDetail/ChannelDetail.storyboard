@@ -17,7 +17,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ied-cL-OPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1361" y="-636"/>
+            <point key="canvasLocation" x="-1942" y="53"/>
         </scene>
         <!--ChannelDetailWebsite-->
         <scene sceneID="29D-hc-j7w">
@@ -27,7 +27,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64m-8I-jRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1311" y="-36"/>
+            <point key="canvasLocation" x="-1920" y="155"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="RGg-1d-log">
+            <objects>
+                <viewControllerPlaceholder id="iOW-qM-pAJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9DF-fE-TKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1921" y="241"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hLB-1B-H69">
