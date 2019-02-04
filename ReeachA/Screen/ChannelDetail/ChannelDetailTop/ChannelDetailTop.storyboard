@@ -28,12 +28,12 @@
                                 <rect key="frame" x="0.0" y="80" width="375" height="1000"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="JeN-Yh-eFk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1900"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="JeN-Yh-eFk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-3T-j1I">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1110"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-3T-j1I">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-9q-PTQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
@@ -249,7 +249,7 @@
                                                     <rect key="frame" x="0.0" y="270" width="375" height="140"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jDs-jZ-Wvd" customClass="NoPaddingTextView" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="10" width="355" height="115"/>
+                                                            <rect key="frame" x="10" y="10" width="355" height="99"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <string key="text">突然終わりを告げた、グレイス＝フィールドハウスの幸せな日常。ハウスは農園。子どもたちは、鬼に飼われる食用人間。大好きだったママは子どもたちの監視役。「これ以上、家族が死ぬのは嫌だ…！」そう願ったエマ達は、日常に潜んでいたあらゆる意図を解き明かしていく。鬼vs子ども、命をかけた脱獄計画が始まる--（C）白井カイウ・出水ぽすか／集英社・約束のネバーランド製作委員会</string>
                                                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
@@ -268,9 +268,9 @@
                                                     <rect key="frame" x="0.0" y="410" width="375" height="200"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qh2-TI-30K" customClass="NoPaddingTextView" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="10" width="355" height="164.5"/>
+                                                            <rect key="frame" x="10" y="10" width="355" height="148.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <mutableString key="text"> ●放送＆配信情報
+                                                            <string key="text"> ●放送＆配信情報
  AbemaTV：2018年10月4日（木）より毎週木曜日 23:30～
  AT-X：2018年10月4日（木）より毎週木曜日 23:30～
  TOKYO MX：2018年10月4日（木）より毎週木曜日 24:00～
@@ -278,7 +278,7 @@
  BS11：2018年10月4日（木）より毎週木曜日 24:30～
  サガテレビ：2018年10月5日（金）より毎週金曜日 25:25～
  TVQ九州放送：2018年10月5日（金）より毎週金曜日 26:58～
-</mutableString>
+</string>
                                                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
@@ -291,12 +291,12 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTW-6U-aoA">
-                                                    <rect key="frame" x="0.0" y="610" width="375" height="500"/>
+                                                    <rect key="frame" x="0.0" y="610" width="375" height="590"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-Cj-rbV" customClass="NoPaddingTextView" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="10" width="355" height="461.5"/>
+                                                            <rect key="frame" x="10" y="10" width="355" height="445.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <mutableString key="text"> 〇スタッフ
+                                                            <string key="text"> 〇スタッフ
  原作：広報広聴課ゾンビ係
  監督：境 宗久
  シリーズ構成： 村越 繁
@@ -322,7 +322,7 @@
  山田 たえ：三石 琴乃
  警察官Ａ：吉野 裕行
  ロメロ：高戸 靖広
-</mutableString>
+</string>
                                                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
@@ -340,11 +340,22 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="8ZO-3T-j1I" secondAttribute="bottom" id="IUm-iA-Wu9"/>
                                         <constraint firstAttribute="trailing" secondItem="8ZO-3T-j1I" secondAttribute="trailing" id="JFc-Hv-3H0"/>
                                         <constraint firstItem="8ZO-3T-j1I" firstAttribute="leading" secondItem="JeN-Yh-eFk" secondAttribute="leading" id="K1g-7D-5aL"/>
                                         <constraint firstItem="8ZO-3T-j1I" firstAttribute="top" secondItem="JeN-Yh-eFk" secondAttribute="top" id="xxr-oi-PGc"/>
                                     </constraints>
                                 </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="czO-N0-7fa">
+                                        <rect key="frame" x="0.0" y="1228" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="czO-N0-7fa" id="QVo-JX-qrQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -2,14 +2,14 @@
 //  ChannelDetailWebsiteListTableViewCell.swift
 //  ReeachA
 //
-//  Created by 長内幸太郎 on 2019/01/27.
+//  Created by 長内幸太郎 on 2019/02/02.
 //  Copyright © 2019年 長内幸太郎. All rights reserved.
 //
 
 import UIKit
 
 class ChannelDetailWebsiteListTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -21,5 +21,5 @@ class ChannelDetailWebsiteListTableViewCell: UITableViewCell {
         titleLabel.text = webLink.title
         iconImageView.image = webLink.icon
     }
-
+    
 }

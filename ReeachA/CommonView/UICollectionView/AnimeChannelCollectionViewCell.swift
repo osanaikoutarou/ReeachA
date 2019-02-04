@@ -21,7 +21,7 @@ class AnimeChannelCollectionViewCell: UICollectionViewCell {
     
     static func cellSize(collectionViewWidth:CGFloat, column:CGFloat, margin:CGFloat, horizontalInset:CGFloat) -> CGSize {
         let horizontalArea = collectionViewWidth - margin * column.minus(1) - horizontalInset * 2.f
-        let width = horizontalArea / column
+        let width = horizontalArea / column - 1.f
         let imgSize:CGSize = CGSize(width: width, height: 1199.f/852.f * width)
         let labelHeight = 45.f
         return CGSize(width: width, height: imgSize.height + labelHeight)
