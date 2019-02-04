@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="-1935" y="306"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Channel Detail Tab Bar Controller-->
         <scene sceneID="hLB-1B-H69">
             <objects>
-                <tabBarController id="t1A-Af-Dm1" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ChannelDetailTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t1A-Af-Dm1" customClass="ChannelDetailTabBarController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r06-EL-DRd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

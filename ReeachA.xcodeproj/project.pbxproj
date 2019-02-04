@@ -96,6 +96,10 @@
 		1EFF4BD42205D4BE006BFDC9 /* ChannelDetailWebsiteListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EFF4BD22205D4BE006BFDC9 /* ChannelDetailWebsiteListTableViewCell.xib */; };
 		1EFF4BDA2205D645006BFDC9 /* PixcelHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF4BD92205D645006BFDC9 /* PixcelHorizontalView.swift */; };
 		230CD8FCC5D42F274DDFB366 /* Pods_ReeachA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */; };
+		DA09533F220805BA00CD9329 /* InfoPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09533E220805BA00CD9329 /* InfoPair.swift */; };
+		DA0953412208138F00CD9329 /* InfoAtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0953402208138F00CD9329 /* InfoAtom.swift */; };
+		DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095342220829E100CD9329 /* ChannelCategory.swift */; };
+		DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */; };
 		DA8AEB2B21FEC3A4000A717E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */; };
 		DA8AEB2C21FEC3A4000A717E /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB2721FEC3A4000A717E /* ShadowView.swift */; };
 		DA8AEB2D21FEC3A4000A717E /* CornerRaoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB2821FEC3A4000A717E /* CornerRaoundView.swift */; };
@@ -200,6 +204,10 @@
 		1EFF4BD92205D645006BFDC9 /* PixcelHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixcelHorizontalView.swift; sourceTree = "<group>"; };
 		88B59514424F66B560248F03 /* Pods-ReeachA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReeachA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReeachA/Pods-ReeachA.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF42C61CB3355EA7AC15B1C /* Pods-ReeachA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReeachA.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReeachA/Pods-ReeachA.release.xcconfig"; sourceTree = "<group>"; };
+		DA09533E220805BA00CD9329 /* InfoPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPair.swift; sourceTree = "<group>"; };
+		DA0953402208138F00CD9329 /* InfoAtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtom.swift; sourceTree = "<group>"; };
+		DA095342220829E100CD9329 /* ChannelCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCategory.swift; sourceTree = "<group>"; };
+		DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTabBarController.swift; sourceTree = "<group>"; };
 		DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		DA8AEB2721FEC3A4000A717E /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		DA8AEB2821FEC3A4000A717E /* CornerRaoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRaoundView.swift; sourceTree = "<group>"; };
@@ -223,13 +231,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E1E5F0A2206A209005627F9 /* Info */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Info;
-			sourceTree = "<group>";
-		};
 		1E4A54312206121A00E4EEEF /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,7 +503,7 @@
 		1E57E0BF21FC02AB003AD898 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1E1E5F0A2206A209005627F9 /* Info */,
+				DA09533D2208058500CD9329 /* Info */,
 				1EFE900921FCD022006E8473 /* WebLink */,
 				1E57E0C221FC0382003AD898 /* Channel */,
 			);
@@ -516,6 +517,7 @@
 				1E57E0C321FC0456003AD898 /* Anime.swift */,
 				1E1E5F0822069F5B005627F9 /* Human.swift */,
 				1E1E5F0B2206A7E4005627F9 /* Organization.swift */,
+				DA095342220829E100CD9329 /* ChannelCategory.swift */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -636,6 +638,7 @@
 				1EFE8FF621FC6D9B006E8473 /* ChannelDetailTop */,
 				1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */,
 				1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */,
+				DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */,
 			);
 			path = ChannelDetail;
 			sourceTree = "<group>";
@@ -721,6 +724,15 @@
 				CFF42C61CB3355EA7AC15B1C /* Pods-ReeachA.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA09533D2208058500CD9329 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				DA09533E220805BA00CD9329 /* InfoPair.swift */,
+				DA0953402208138F00CD9329 /* InfoAtom.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -867,11 +879,13 @@
 				1EFE900E21FCD869006E8473 /* NavTabScrollController.swift in Sources */,
 				1E57E08621FB84DD003AD898 /* UIScreen+Utility.swift in Sources */,
 				1E57E09821FB84DE003AD898 /* Operator+.swift in Sources */,
+				DA0953412208138F00CD9329 /* InfoAtom.swift in Sources */,
 				1E57E08821FB84DD003AD898 /* ScopeMethod.swift in Sources */,
 				DA8AEB2D21FEC3A4000A717E /* CornerRaoundView.swift in Sources */,
 				1E57E0AB21FB84DE003AD898 /* Int+Utility.swift in Sources */,
 				DA8AEB3321FECDA8000A717E /* UIViewController+ActionSheet.swift in Sources */,
 				1E57E0C121FC034F003AD898 /* Channel.swift in Sources */,
+				DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */,
 				DA8AEB3521FEEA06000A717E /* NoPaddingTextView.swift in Sources */,
 				1E57E08521FB84DD003AD898 /* UIScrollView+Utility.swift in Sources */,
 				1E57E09D21FB84DE003AD898 /* UIView+Border.swift in Sources */,
@@ -893,7 +907,9 @@
 				1E57E0C421FC0456003AD898 /* Anime.swift in Sources */,
 				1E57E08A21FB84DD003AD898 /* Array+.swift in Sources */,
 				1EFE8FEF21FC3FA9006E8473 /* CGFloat+Utility.swift in Sources */,
+				DA09533F220805BA00CD9329 /* InfoPair.swift in Sources */,
 				1E57E09F21FB84DE003AD898 /* UIView+Gesture.swift in Sources */,
+				DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */,
 				1E57E0A821FB84DE003AD898 /* UICollectionView+Highlight.swift in Sources */,
 				1EFE8FFA21FC6DCA006E8473 /* ChannelDetailTopViewController.swift in Sources */,
 				1E57E09B21FB84DE003AD898 /* UIVIew+Frame.swift in Sources */,

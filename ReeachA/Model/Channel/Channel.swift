@@ -8,23 +8,6 @@
 
 import UIKit
 
-enum ChannelType {
-    case none
-    // content
-    case anime
-    case comic
-    case webComic
-    case music
-    case video
-    case event
-    case caractor
-    case otherContent   //まだまだある
-    case human
-    // man
-    // organization
-    // information
-}
-
 enum Original {
     case unknown
     case original
@@ -42,14 +25,11 @@ enum Original {
     }
 }
 
-// 通常の情報も扱う
-class Channel: NSObject {
+class Channel: InfoAtom {
     var channelable:Bool = false
     
-    var id:String = ""
-    var name:String = ""                // 表示名
     var positionName:String = ""        // ポジション、役名など
-    var type:ChannelType = .none
+    var category:ChannelCategory = ChannelCategory()
     var officialUrl:String = ""         // 公式サイトのURL
     var wikipedia:String = ""           // wikipediaのURL
     var twitterScreenName:String = ""   // Twitter

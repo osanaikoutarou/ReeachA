@@ -14,10 +14,4 @@ enum HumanType {
 
 class Human: Channel {
     var humanType:HumanType = .normal
-
-    func setup(positionName:String, name:String) {
-        self.name = name
-        self.positionName = positionName
-    }
-    
 }

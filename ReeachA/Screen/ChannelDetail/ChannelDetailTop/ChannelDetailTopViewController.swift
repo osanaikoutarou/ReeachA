@@ -11,8 +11,11 @@ import UIKit
 class ChannelDetailTopViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var descriptionTextView: UITextView!
+    
+    var channel:Channel {
+        return (self.tabBarController as! ChannelDetailTabBarController).channel
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

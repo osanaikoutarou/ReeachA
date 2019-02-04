@@ -15,10 +15,3 @@ enum OrganizationType {
 class Organization: Channel {
     var organizationType:OrganizationType?    
 }
-
-extension Organization {
-    func setup(name:String, positionName:String) {
-        self.name = name
-        self.positionName = positionName
-    }
-}
