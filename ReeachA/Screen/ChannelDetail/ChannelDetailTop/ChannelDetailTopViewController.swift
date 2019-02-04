@@ -22,6 +22,20 @@ class ChannelDetailTopViewController: UIViewController {
         
 //        self.navigationController?.isNavigationBarHidden = true
 //        addHogeButton()
+        
+//        self.tabBarController?.addAnyButtonToRight(title: nil, image: UIImage(named: "icon_menu"), action: {
+//
+//        })
+        
+        setupTableView()
+    }
+    
+    func setupTableView() {
+        tableView.register(cellType: SectionHeaderBasicalTableCell.self)
+        tableView.register(cellType: ChannelDetailWebsiteListTableViewCell.self)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,7 +87,27 @@ class ChannelDetailTopViewController: UIViewController {
 
             ])
     }
+}
+
+extension ChannelDetailTopViewController: UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderBasicalTableCell") as! SectionHeaderBasicalTableCell
+        header.titleLabel.text = "公式リンク"
+        return header
+    }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return SectionHeaderBasicalTableCell.height
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(with: ChannelDetailWebsiteListTableViewCell.self, for: indexPath)
+        return cell
+    }
     
     
 }

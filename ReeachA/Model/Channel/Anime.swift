@@ -14,5 +14,8 @@ class Anime: Channel {
         super.init()
         self.type = .anime
     }
-
+    
+    var topInfos:[Channel] = []
+    var staffs:[Channel] = []
+    var casts:[Channel] = []
 }

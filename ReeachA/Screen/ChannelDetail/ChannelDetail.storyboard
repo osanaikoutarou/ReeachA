@@ -19,23 +19,35 @@
             </objects>
             <point key="canvasLocation" x="-1942" y="53"/>
         </scene>
-        <!--ChannelDetailWebsite-->
+        <!--ChannelDetailEpisode-->
+        <scene sceneID="KRp-lk-rez">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChannelDetailEpisode" id="ryW-ch-VpM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="laG-Z5-YIB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7G-Kh-mcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1922" y="137"/>
+        </scene>
+        <!--ChannelDetailNotification-->
         <scene sceneID="29D-hc-j7w">
             <objects>
-                <viewControllerPlaceholder storyboardName="ChannelDetailWebsite" id="9Yh-Wd-bhN" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ChannelDetailNotification" id="9Yh-Wd-bhN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="3R7-DZ-HfQ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64m-8I-jRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1920" y="155"/>
+            <point key="canvasLocation" x="-1923" y="378"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ChannelDetailItems-->
         <scene sceneID="RGg-1d-log">
             <objects>
-                <viewControllerPlaceholder id="iOW-qM-pAJ" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ChannelDetailItems" id="iOW-qM-pAJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gEZ-jc-9gG"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9DF-fE-TKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1921" y="241"/>
+            <point key="canvasLocation" x="-1935" y="306"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hLB-1B-H69">
@@ -48,12 +60,25 @@
                     </tabBar>
                     <connections>
                         <segue destination="l0M-rk-66w" kind="relationship" relationship="viewControllers" id="9kI-4g-MhT"/>
-                        <segue destination="9Yh-Wd-bhN" kind="relationship" relationship="viewControllers" id="w2z-zj-8SY"/>
+                        <segue destination="ryW-ch-VpM" kind="relationship" relationship="viewControllers" id="ucw-Qi-XTL"/>
+                        <segue destination="ZpT-61-cDC" kind="relationship" relationship="viewControllers" id="Yi5-mJ-Mhq"/>
+                        <segue destination="iOW-qM-pAJ" kind="relationship" relationship="viewControllers" id="ytd-uD-9pR"/>
+                        <segue destination="9Yh-Wd-bhN" kind="relationship" relationship="viewControllers" id="d41-Tb-Sr5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cbp-yc-B0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2618" y="341"/>
+        </scene>
+        <!--ChannelDetailPost-->
+        <scene sceneID="JGp-6u-fCz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChannelDetailPost" id="ZpT-61-cDC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gBV-SW-2ux"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lF4-Z5-wWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1939" y="212"/>
         </scene>
     </scenes>
 </document>

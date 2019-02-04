@@ -17,6 +17,7 @@ class ChannelDetailWebsiteListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.register(cellType: ChannelDetailWebsiteListTableViewCell.self)
         
         
         let webLink1 = WebLink()

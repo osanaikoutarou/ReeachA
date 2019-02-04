@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bi4-T5-QIN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Channel Detail Goods View Controller-->
+        <scene sceneID="NhG-Xu-oGh">
+            <objects>
+                <viewController storyboardIdentifier="ChannelDetailGoodsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gm0-yZ-noO" customClass="ChannelDetailGoodsViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CnD-Jr-Cqm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v6J-vC-jY3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ByS-vP-Bhu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1x-dP-wmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935.20000000000005" y="-6.746626686656672"/>
+        </scene>
+        <!--商品-->
+        <scene sceneID="YMK-yY-hxY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bi4-T5-QIN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="商品" id="Kj8-Hz-ReY"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="upu-Tg-s8L">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gm0-yZ-noO" kind="relationship" relationship="rootViewController" id="v3v-Se-Htj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bN-MR-Ltd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-6.746626686656672"/>
+        </scene>
+    </scenes>
+</document>
