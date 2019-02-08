@@ -51,7 +51,7 @@ extension MyChannelViewController: UICollectionViewDelegateFlowLayout, UICollect
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        let scale = (self.view.width - margin().horizontal * (columnNum() - 1.f)) / columnNum() / AnimeChannelCollectionViewCell.sizeDefault.width
 //        return AnimeChannelCollectionViewCell.sizeDefault.scale(scale)
-        return AnimeChannelCollectionViewCell.cellSize(collectionViewWidth: self.view.width, column: 3.f, margin: 10.f, horizontalInset: 10.f)
+        return AnimeChannelCollectionViewCell.cellSize(collectionViewWidth: self.view.frame.width, column: 3.f, margin: 10.f, horizontalInset: 10.f)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

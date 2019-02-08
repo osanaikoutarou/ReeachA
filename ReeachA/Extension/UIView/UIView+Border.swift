@@ -14,7 +14,7 @@ extension UIView {
     func ellipse(borderColor:UIColor, borderWidth:CGFloat) {
         self.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = borderWidth
-        self.layer.cornerRadius = (self.width > self.height) ? self.height/2.0 : self.width/2.0
+        self.layer.cornerRadius = (self.frame.width > self.frame.height) ? self.frame.height/2.0 : self.frame.width/2.0
         self.clipsToBounds = true
     }
     

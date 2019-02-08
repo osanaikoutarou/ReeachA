@@ -15,11 +15,10 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PairLabelView" customModule="ReeachA" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PairLabelDynamicStackViewCell" customModule="ReeachA" customModuleProvider="target">
             <connections>
                 <outlet property="baseView" destination="j1P-Aj-Xzp" id="1tY-gR-bR3"/>
                 <outlet property="baseViewHeight" destination="T3S-Sc-AQf" id="wdT-UV-j9F"/>
-                <outlet property="contentView" destination="jBa-Jo-oAH" id="TLU-bl-ysx"/>
                 <outlet property="separatorLabel" destination="6IS-hs-S1D" id="9vB-Pt-VDG"/>
                 <outlet property="titleLabel" destination="o3c-uJ-2PX" id="NBr-dz-aPJ"/>
                 <outlet property="titleView" destination="lKp-o5-9aQ" id="ZMy-b4-P3y"/>
@@ -32,7 +31,7 @@
             <rect key="frame" x="0.0" y="0.0" width="159" height="25"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBa-Jo-oAH" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBa-Jo-oAH">
                     <rect key="frame" x="0.0" y="0.0" width="159" height="25"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-Aj-Xzp" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">

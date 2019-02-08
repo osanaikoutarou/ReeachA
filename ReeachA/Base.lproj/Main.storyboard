@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="koO-rr-u9q" customClass="StackLabelView" customModule="ReeachA" customModuleProvider="target">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="koO-rr-u9q" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
                                 <rect key="frame" x="100" y="120" width="175" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="1" constant="200" id="o3Q-Im-UyH"/>

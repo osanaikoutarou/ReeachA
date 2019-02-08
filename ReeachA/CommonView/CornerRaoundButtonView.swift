@@ -40,7 +40,7 @@ class CornerRaoundButtonView: ButtonView {
 
     func update() {
         self.clipsToBounds = true
-        layer.cornerRadius = rounded ? min(height, width) / 2 : 0
+        layer.cornerRadius = rounded ? min(frame.height, frame.width) / 2 : 0
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
     }

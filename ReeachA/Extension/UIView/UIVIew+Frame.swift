@@ -8,18 +8,18 @@
 
 import Foundation
 import UIKit
-
-extension UIView {
-    var height:CGFloat {
-        return self.frame.size.height
-    }
-    var width:CGFloat {
-        return self.frame.size.width
-    }
-    var x:CGFloat {
-        return self.frame.origin.x
-    }
-    var y:CGFloat {
-        return self.frame.origin.y
-    }
-}
+//
+//extension UIView {
+//    var height:CGFloat {
+//        return self.frame.size.height
+//    }
+//    var width:CGFloat {
+//        return self.frame.size.width
+//    }
+//    var x:CGFloat {
+//        return self.frame.origin.x
+//    }
+//    var y:CGFloat {
+//        return self.frame.origin.y
+//    }
+//}

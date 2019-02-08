@@ -10,20 +10,19 @@ import UIKit
 
 class DebugViewController: UIViewController {
 
-    @IBOutlet weak var stackLabelView: StackLabelView!
+    @IBOutlet weak var stackLabelView: DynamicStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let pair = Pair()
-        pair.id = "1"
-        pair.title = "たいとる"
-        pair.value = "ばりゅーー"
+        let pair = LabelPair(id: "1", title: "たいとる", value: "ばりゅーー")
         
-        stackLabelView.addPairLabelView(pair: pair)
-        stackLabelView.addPairLabelView(pair: pair)
-        stackLabelView.addPairLabelView(pair: pair)
-        stackLabelView.addPairLabelView(pair: pair)
+        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
+        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
+        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
+        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
+        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
+
     }
     
 

@@ -21,6 +21,6 @@ import UIKit
     }
     
     func updateCornerRadius() {
-        layer.cornerRadius = rounded ? min(height, width) / 2 : 0
+        layer.cornerRadius = rounded ? min(frame.height, frame.width) / 2 : 0
     }
 }

@@ -15,8 +15,8 @@ extension UIScrollView {
     }
     
     func isNeedScroll() -> Bool {
-        return (contentSize.width > self.width) ||
-               (contentSize.height > self.height)
+        return (contentSize.width > self.frame.width) ||
+               (contentSize.height > self.frame.height)
     }
     
     func scrollToBottom(animation:Bool) {

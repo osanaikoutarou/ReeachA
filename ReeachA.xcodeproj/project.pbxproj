@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		1E1E5F0922069F5B005627F9 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E5F0822069F5B005627F9 /* Human.swift */; };
 		1E1E5F0C2206A7E4005627F9 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E5F0B2206A7E4005627F9 /* Organization.swift */; };
-		1E29BAF72209521100D219D4 /* PairLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BAF62209521100D219D4 /* PairLabelView.swift */; };
-		1E29BAF92209521B00D219D4 /* PairLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E29BAF82209521B00D219D4 /* PairLabelView.xib */; };
-		1E29BAFB2209582C00D219D4 /* StackLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BAFA2209582C00D219D4 /* StackLabelView.swift */; };
+		1E29BAF72209521100D219D4 /* PairLabelDynamicStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BAF62209521100D219D4 /* PairLabelDynamicStackViewCell.swift */; };
+		1E29BAF92209521B00D219D4 /* PairLabelDynamicStackViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E29BAF82209521B00D219D4 /* PairLabelDynamicStackViewCell.xib */; };
 		1E29BAFE2209598D00D219D4 /* CGRect+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BAFD2209598D00D219D4 /* CGRect+Utility.swift */; };
 		1E29BB0122095A6000D219D4 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BB0022095A6000D219D4 /* DebugViewController.swift */; };
 		1E4A542F22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A542D22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift */; };
@@ -113,14 +112,15 @@
 		DA8AEB3121FEC4A2000A717E /* CornerRaoundButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB3021FEC4A2000A717E /* CornerRaoundButtonView.swift */; };
 		DA8AEB3321FECDA8000A717E /* UIViewController+ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB3221FECDA8000A717E /* UIViewController+ActionSheet.swift */; };
 		DA8AEB3521FEEA06000A717E /* NoPaddingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB3421FEEA05000A717E /* NoPaddingTextView.swift */; };
+		DAB14106220D10F100E0C144 /* DynamicStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB14104220D10F100E0C144 /* DynamicStackViewCell.swift */; };
+		DAB14107220D10F100E0C144 /* DynamicStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB14105220D10F100E0C144 /* DynamicStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E1E5F0822069F5B005627F9 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		1E1E5F0B2206A7E4005627F9 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
-		1E29BAF62209521100D219D4 /* PairLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairLabelView.swift; sourceTree = "<group>"; };
-		1E29BAF82209521B00D219D4 /* PairLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairLabelView.xib; sourceTree = "<group>"; };
-		1E29BAFA2209582C00D219D4 /* StackLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLabelView.swift; sourceTree = "<group>"; };
+		1E29BAF62209521100D219D4 /* PairLabelDynamicStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairLabelDynamicStackViewCell.swift; sourceTree = "<group>"; };
+		1E29BAF82209521B00D219D4 /* PairLabelDynamicStackViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairLabelDynamicStackViewCell.xib; sourceTree = "<group>"; };
 		1E29BAFD2209598D00D219D4 /* CGRect+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Utility.swift"; sourceTree = "<group>"; };
 		1E29BB0022095A6000D219D4 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		1E4A542D22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderBasicalTableCell.swift; sourceTree = "<group>"; };
@@ -226,6 +226,8 @@
 		DA8AEB3021FEC4A2000A717E /* CornerRaoundButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRaoundButtonView.swift; sourceTree = "<group>"; };
 		DA8AEB3221FECDA8000A717E /* UIViewController+ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActionSheet.swift"; sourceTree = "<group>"; };
 		DA8AEB3421FEEA05000A717E /* NoPaddingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPaddingTextView.swift; sourceTree = "<group>"; };
+		DAB14104220D10F100E0C144 /* DynamicStackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackViewCell.swift; sourceTree = "<group>"; };
+		DAB14105220D10F100E0C144 /* DynamicStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackView.swift; sourceTree = "<group>"; };
 		F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReeachA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -241,26 +243,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E1E5F0A2206A209005627F9 /* Info */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Info;
-			sourceTree = "<group>";
-		};
-		1E29BAF4220951C900D219D4 /* UIStackView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIStackView;
-			sourceTree = "<group>";
-		};
 		1E29BAF5220951E800D219D4 /* CommonCustomView */ = {
 			isa = PBXGroup;
 			children = (
-				1E29BAF62209521100D219D4 /* PairLabelView.swift */,
-				1E29BAF82209521B00D219D4 /* PairLabelView.xib */,
-				1E29BAFA2209582C00D219D4 /* StackLabelView.swift */,
+				DAB1410B220D209900E0C144 /* DynamicStackViewCell */,
 			);
 			path = CommonCustomView;
 			sourceTree = "<group>";
@@ -292,12 +278,10 @@
 			isa = PBXGroup;
 			children = (
 				1E29BAFC2209597F00D219D4 /* CGRect */,
-				1E29BAF4220951C900D219D4 /* UIStackView */,
 				1EFE8FFD21FCA36A006E8473 /* UITextView */,
 				1EFE8FED21FC3F9B006E8473 /* CGFloat */,
 				1E57E03921FB84DD003AD898 /* UIScrollView */,
 				1E57E03B21FB84DD003AD898 /* UIScreen */,
-				1E57E03D21FB84DD003AD898 /* UITableViewCell */,
 				1E57E03E21FB84DD003AD898 /* UIColor */,
 				1E57E04021FB84DD003AD898 /* UsefulExtensions */,
 				1E57E05421FB84DD003AD898 /* UIView */,
@@ -307,7 +291,6 @@
 				1E57E06421FB84DD003AD898 /* CGSize */,
 				1E57E06621FB84DD003AD898 /* Date */,
 				1E57E06821FB84DD003AD898 /* UICollectionView */,
-				1E57E06A21FB84DD003AD898 /* UIImageView */,
 				1E57E06C21FB84DD003AD898 /* Optional */,
 				1E57E06E21FB84DD003AD898 /* Int */,
 				1E57E07021FB84DD003AD898 /* UIViewController */,
@@ -336,13 +319,6 @@
 				1E57E03C21FB84DD003AD898 /* UIScreen+Utility.swift */,
 			);
 			path = UIScreen;
-			sourceTree = "<group>";
-		};
-		1E57E03D21FB84DD003AD898 /* UITableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 		1E57E03E21FB84DD003AD898 /* UIColor */ = {
@@ -440,13 +416,6 @@
 				1E57E06921FB84DD003AD898 /* UICollectionView+Highlight.swift */,
 			);
 			path = UICollectionView;
-			sourceTree = "<group>";
-		};
-		1E57E06A21FB84DD003AD898 /* UIImageView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIImageView;
 			sourceTree = "<group>";
 		};
 		1E57E06C21FB84DD003AD898 /* Optional */ = {
@@ -557,6 +526,7 @@
 		1E57E0BF21FC02AB003AD898 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DAB14108220D1DA500E0C144 /* Common */,
 				DA09533D2208058500CD9329 /* Info */,
 				1EFE900921FCD022006E8473 /* WebLink */,
 				1E57E0C221FC0382003AD898 /* Channel */,
@@ -616,6 +586,7 @@
 		1EB1515321FB6E7E001B6110 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				DAB14103220D10F100E0C144 /* DynamicStackView */,
 				DA8AEB2A21FEC3A4000A717E /* ButtonView.swift */,
 				DA8AEB2821FEC3A4000A717E /* CornerRaoundView.swift */,
 				DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */,
@@ -789,6 +760,31 @@
 			path = Info;
 			sourceTree = "<group>";
 		};
+		DAB14103220D10F100E0C144 /* DynamicStackView */ = {
+			isa = PBXGroup;
+			children = (
+				DAB14104220D10F100E0C144 /* DynamicStackViewCell.swift */,
+				DAB14105220D10F100E0C144 /* DynamicStackView.swift */,
+			);
+			path = DynamicStackView;
+			sourceTree = "<group>";
+		};
+		DAB14108220D1DA500E0C144 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DAB1410B220D209900E0C144 /* DynamicStackViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1E29BAF62209521100D219D4 /* PairLabelDynamicStackViewCell.swift */,
+				1E29BAF82209521B00D219D4 /* PairLabelDynamicStackViewCell.xib */,
+			);
+			path = DynamicStackViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -854,7 +850,7 @@
 				1EFF4BCD2205BE7D006BFDC9 /* ChannelDetailNotification.storyboard in Resources */,
 				1E4A54352206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.xib in Resources */,
 				1E57E03721FB7BF7003AD898 /* AnimeChannelCollectionViewCell.xib in Resources */,
-				1E29BAF92209521B00D219D4 /* PairLabelView.xib in Resources */,
+				1E29BAF92209521B00D219D4 /* PairLabelDynamicStackViewCell.xib in Resources */,
 				1E57E0C621FC0920003AD898 /* MyChannel.storyboard in Resources */,
 				1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */,
 				1EFE8FF821FC6DB3006E8473 /* ChannelDetailTop.storyboard in Resources */,
@@ -942,7 +938,7 @@
 				1E29BB0122095A6000D219D4 /* DebugViewController.swift in Sources */,
 				1E57E0C121FC034F003AD898 /* Channel.swift in Sources */,
 				DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */,
-				1E29BAF72209521100D219D4 /* PairLabelView.swift in Sources */,
+				1E29BAF72209521100D219D4 /* PairLabelDynamicStackViewCell.swift in Sources */,
 				DA8AEB3521FEEA06000A717E /* NoPaddingTextView.swift in Sources */,
 				1E57E08521FB84DD003AD898 /* UIScrollView+Utility.swift in Sources */,
 				1E57E09D21FB84DE003AD898 /* UIView+Border.swift in Sources */,
@@ -965,7 +961,6 @@
 				1E57E08A21FB84DD003AD898 /* Array+.swift in Sources */,
 				1EFE8FEF21FC3FA9006E8473 /* CGFloat+Utility.swift in Sources */,
 				DA09533F220805BA00CD9329 /* InfoPair.swift in Sources */,
-				1E29BAFB2209582C00D219D4 /* StackLabelView.swift in Sources */,
 				1E57E09F21FB84DE003AD898 /* UIView+Gesture.swift in Sources */,
 				DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */,
 				1E57E0A821FB84DE003AD898 /* UICollectionView+Highlight.swift in Sources */,
@@ -981,6 +976,7 @@
 				1E1E5F0922069F5B005627F9 /* Human.swift in Sources */,
 				1EB1514421FA1C17001B6110 /* ViewController.swift in Sources */,
 				1E57E0A021FB84DE003AD898 /* UIView+Form.swift in Sources */,
+				DAB14106220D10F100E0C144 /* DynamicStackViewCell.swift in Sources */,
 				1E57E0A421FB84DE003AD898 /* UIStoryboard+Utility.swift in Sources */,
 				1E57E08C21FB84DD003AD898 /* String+.swift in Sources */,
 				1E1E5F0C2206A7E4005627F9 /* Organization.swift in Sources */,
@@ -1005,6 +1001,7 @@
 				1E57E08E21FB84DD003AD898 /* TargetedExtension.swift in Sources */,
 				1E57E0B021FB84DE003AD898 /* UIViewController+Utility.swift in Sources */,
 				1E57E09021FB84DD003AD898 /* Dictionary+.swift in Sources */,
+				DAB14107220D10F100E0C144 /* DynamicStackView.swift in Sources */,
 				DA8AEB2F21FEC3A4000A717E /* ButtonView.swift in Sources */,
 				1E57E08D21FB84DD003AD898 /* StoryboardInstantiatable.swift in Sources */,
 				1E57E0A221FB84DE003AD898 /* Array+Utility.swift in Sources */,

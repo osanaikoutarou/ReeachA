@@ -11,7 +11,7 @@ import UIKit
 
 extension UIView {
     func circle() {
-        self.layer.cornerRadius = min(self.width,self.height)/2.0
+        self.layer.cornerRadius = min(self.frame.width,self.frame.height)/2.0
         self.clipsToBounds = true
     }
 }
