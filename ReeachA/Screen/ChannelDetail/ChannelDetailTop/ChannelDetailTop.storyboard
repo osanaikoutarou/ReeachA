@@ -98,7 +98,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDH-tO-u7u">
                                                             <rect key="frame" x="140" y="20" width="225" height="100"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-JW-cmK" customClass="StackLabelView" customModule="ReeachA" customModuleProvider="target">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-JW-cmK" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="225" height="100"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" priority="1" constant="100" id="71j-H0-BE0"/>
@@ -157,7 +157,7 @@
                                                             <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yakusokuno" translatesAutoresizingMaskIntoConstraints="NO" id="dVh-Vd-UuV">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dVh-Vd-UuV">
                                                             <rect key="frame" x="10" y="70" width="120" height="169"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="120" id="SCG-zP-Cvy"/>
@@ -363,7 +363,7 @@
                                                     <rect key="frame" x="0.0" y="270" width="375" height="140"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jDs-jZ-Wvd" customClass="NoPaddingTextView" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="10" width="355" height="115"/>
+                                                            <rect key="frame" x="10" y="10" width="355" height="99"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <string key="text">突然終わりを告げた、グレイス＝フィールドハウスの幸せな日常。ハウスは農園。子どもたちは、鬼に飼われる食用人間。大好きだったママは子どもたちの監視役。「これ以上、家族が死ぬのは嫌だ…！」そう願ったエマ達は、日常に潜んでいたあらゆる意図を解き明かしていく。鬼vs子ども、命をかけた脱獄計画が始まる--（C）白井カイウ・出水ぽすか／集英社・約束のネバーランド製作委員会</string>
                                                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="11"/>
@@ -382,7 +382,7 @@
                                                     <rect key="frame" x="0.0" y="410" width="375" height="200"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qh2-TI-30K" customClass="NoPaddingTextView" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="10" width="355" height="164.5"/>
+                                                            <rect key="frame" x="10" y="10" width="355" height="148.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <string key="text"> ●放送＆配信情報
  AbemaTV：2018年10月4日（木）より毎週木曜日 23:30～
@@ -408,7 +408,7 @@
                                                     <rect key="frame" x="0.0" y="610" width="375" height="590"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-Cj-rbV" customClass="NoPaddingTextView" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="10" y="10" width="355" height="461.5"/>
+                                                            <rect key="frame" x="10" y="10" width="355" height="445.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <string key="text"> 〇スタッフ
  原作：広報広聴課ゾンビ係
@@ -517,7 +517,4 @@
             <point key="canvasLocation" x="21.600000000000001" y="79.610194902548727"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="yakusokuno" width="852" height="1199"/>
-    </resources>
 </document>
