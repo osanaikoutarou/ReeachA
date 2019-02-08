@@ -93,23 +93,30 @@ class ChannelDetailTopViewController: UIViewController {
 }
 
 extension ChannelDetailTopViewController: UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderBasicalTableCell") as! SectionHeaderBasicalTableCell
-        header.titleLabel.text = "公式リンク"
-        return header
-    }
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let header = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderBasicalTableCell") as! SectionHeaderBasicalTableCell
+//        header.titleLabel.text = "公式リンク"
+//        return header
+//    }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return SectionHeaderBasicalTableCell.height
-    }
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return SectionHeaderBasicalTableCell.height
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(with: ChannelDetailWebsiteListTableViewCell.self, for: indexPath)
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(with: ChannelDetailTopTitleTableViewCell.self, for: indexPath)
+            cell.titleLabel.text = "約束のネバーランド"
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(with: ChannelDetailTopSummaryTableViewCell.self, for: indexPath)
+            return cell
+        }
     }
     
     

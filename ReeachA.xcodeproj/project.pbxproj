@@ -114,6 +114,8 @@
 		DA8AEB3521FEEA06000A717E /* NoPaddingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB3421FEEA05000A717E /* NoPaddingTextView.swift */; };
 		DAB14106220D10F100E0C144 /* DynamicStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB14104220D10F100E0C144 /* DynamicStackViewCell.swift */; };
 		DAB14107220D10F100E0C144 /* DynamicStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB14105220D10F100E0C144 /* DynamicStackView.swift */; };
+		DAB1412B220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */; };
+		DAB1412D220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,6 +230,8 @@
 		DA8AEB3421FEEA05000A717E /* NoPaddingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPaddingTextView.swift; sourceTree = "<group>"; };
 		DAB14104220D10F100E0C144 /* DynamicStackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackViewCell.swift; sourceTree = "<group>"; };
 		DAB14105220D10F100E0C144 /* DynamicStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackView.swift; sourceTree = "<group>"; };
+		DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopTitleTableViewCell.swift; sourceTree = "<group>"; };
 		F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReeachA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -265,13 +269,6 @@
 				1E29BB0022095A6000D219D4 /* DebugViewController.swift */,
 			);
 			path = Debug;
-			sourceTree = "<group>";
-		};
-		1E4A54312206121A00E4EEEF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		1E57E03821FB84DD003AD898 /* Extension */ = {
@@ -671,9 +668,10 @@
 		1EFE8FF621FC6D9B006E8473 /* ChannelDetailTop */ = {
 			isa = PBXGroup;
 			children = (
-				1E4A54312206121A00E4EEEF /* View */,
 				1EFE8FF721FC6DB3006E8473 /* ChannelDetailTop.storyboard */,
 				1EFE8FF921FC6DCA006E8473 /* ChannelDetailTopViewController.swift */,
+				DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */,
+				DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */,
 			);
 			path = ChannelDetailTop;
 			sourceTree = "<group>";
@@ -937,6 +935,7 @@
 				DA8AEB3321FECDA8000A717E /* UIViewController+ActionSheet.swift in Sources */,
 				1E29BB0122095A6000D219D4 /* DebugViewController.swift in Sources */,
 				1E57E0C121FC034F003AD898 /* Channel.swift in Sources */,
+				DAB1412B220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift in Sources */,
 				DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */,
 				1E29BAF72209521100D219D4 /* PairLabelDynamicStackViewCell.swift in Sources */,
 				DA8AEB3521FEEA06000A717E /* NoPaddingTextView.swift in Sources */,
@@ -982,6 +981,7 @@
 				1E1E5F0C2206A7E4005627F9 /* Organization.swift in Sources */,
 				DA8AEB3121FEC4A2000A717E /* CornerRaoundButtonView.swift in Sources */,
 				1EFF4BCF2205BE87006BFDC9 /* ChannelDetailNotificationViewController.swift in Sources */,
+				DAB1412D220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift in Sources */,
 				1E57E0B521FB84DE003AD898 /* Dictionary+Utility.swift in Sources */,
 				1E29BAFE2209598D00D219D4 /* CGRect+Utility.swift in Sources */,
 				1E57E09221FB84DD003AD898 /* UICollectionView+.swift in Sources */,
