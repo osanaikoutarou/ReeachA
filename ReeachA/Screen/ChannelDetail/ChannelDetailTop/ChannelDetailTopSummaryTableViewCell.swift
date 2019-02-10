@@ -13,20 +13,24 @@ class ChannelDetailTopSummaryTableViewCell: UITableViewCell {
     @IBOutlet weak var captioinImageView: UIImageView!
     @IBOutlet weak var infoDynamicStackView: DynamicStackView!
     
-    var channel:Anime = Anime()
+    var needRefresh: Bool = true
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        channel.createSample()
-        
-        channel.topInfos.forEach { (infoPair) in
-            let title = infoPair.title.name
-            let value = infoPair.contents.reduce("", { $0 + $1.name + " "})
-            let labelPair = LabelPair(id: nil, title: title, value: value)
-            
-            infoDynamicStackView.addCell(cell: PairLabelDynamicStackViewCell(pair: labelPair))
+    func setup(infoPairs:[InfoPair]) {
+        if !needRefresh {
+            return
         }
-    }
 
+        infoPairs.forEach { (infoPair) in
+            let labelPair = LabelPair(id: nil, infoPair: infoPair)
+            let cell = PairLabelDynamicStackViewCell(pair: labelPair)
+            
+            cell.automaticDimension = true
+            cell.setFontSize(size: 12.f)
+            cell.setTitleWidth(width: 70.f)
+            infoDynamicStackView.addCell(cell: cell)
+        }
+
+        needRefresh = false
+    }
 
 }

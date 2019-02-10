@@ -26,8 +26,8 @@ enum Original {
 }
 
 class Channel: InfoAtom {
-    var channelable:Bool = false
     
+    var title:String = ""
     var positionName:String = ""        // ポジション、役名など
     var category:ChannelCategory = ChannelCategory()
     var officialUrl:String = ""         // 公式サイトのURL

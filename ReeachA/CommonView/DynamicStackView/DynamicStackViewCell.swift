@@ -18,13 +18,13 @@ class DynamicHorizontalStackViewFooter: DynamicHorizontalStackViewCell {
 }
 
 class DynamicVerticalStackViewCell: DynamicStackViewCell {
-    var heightConstraint:NSLayoutConstraint?
+    fileprivate var heightConstraint:NSLayoutConstraint?
     var height: CGFloat = 1.0 {
         didSet {
             if let heightConstraint = heightConstraint {
-                contentView.removeConstraint(heightConstraint)
+                self.removeConstraint(heightConstraint)
             }
-            heightConstraint = contentView.heightAnchor.constraint(equalToConstant: height)
+            heightConstraint = self.heightAnchor.constraint(equalToConstant: height)
             heightConstraint?.isActive = true
         }
     }
@@ -36,13 +36,13 @@ class DynamicVerticalStackViewCell: DynamicStackViewCell {
 }
 
 class DynamicHorizontalStackViewCell: DynamicStackViewCell {
-    var widthConstraint:NSLayoutConstraint?
+    fileprivate var widthConstraint:NSLayoutConstraint?
     var width: CGFloat = 1.0 {
         didSet {
             if let widthConstraint = widthConstraint {
-                contentView.removeConstraint(widthConstraint)
+                self.removeConstraint(widthConstraint)
             }
-            widthConstraint = contentView.widthAnchor.constraint(equalToConstant: width)
+            widthConstraint = self.widthAnchor.constraint(equalToConstant: width)
             widthConstraint?.isActive = true
         }
     }
@@ -89,18 +89,7 @@ class DynamicStackViewCell: UIView {
         addSubview(contentView)
         contentView.frame = self.frame
         
-        self.addConstraints(
-            NSLayoutConstraint.constraints(
-                withVisualFormat: "H:|-0-[contentView]-0-|",
-                options: .directionLeadingToTrailing,
-                metrics: nil,
-                views: ["contentView": contentView]))
-        self.addConstraints(
-            NSLayoutConstraint.constraints(
-                withVisualFormat: "V:|-0-[contentView]-0-|",
-                options: .directionLeadingToTrailing,
-                metrics: nil,
-                views: ["contentView": contentView]))
+        contentView.bindFrameToSuperviewBounds()
         
         automaticDimension = true
     }

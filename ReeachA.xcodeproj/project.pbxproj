@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1DE00022102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DDFFF22102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift */; };
+		1E1DE00222106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DE00122106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift */; };
 		1E1E5F0922069F5B005627F9 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E5F0822069F5B005627F9 /* Human.swift */; };
 		1E1E5F0C2206A7E4005627F9 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E5F0B2206A7E4005627F9 /* Organization.swift */; };
 		1E29BAF72209521100D219D4 /* PairLabelDynamicStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BAF62209521100D219D4 /* PairLabelDynamicStackViewCell.swift */; };
@@ -119,6 +121,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E1DDFFF22102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopInfoTableViewCell.swift; sourceTree = "<group>"; };
+		1E1DE00122106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopCopyrightTableViewCell.swift; sourceTree = "<group>"; };
 		1E1E5F0822069F5B005627F9 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		1E1E5F0B2206A7E4005627F9 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		1E29BAF62209521100D219D4 /* PairLabelDynamicStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairLabelDynamicStackViewCell.swift; sourceTree = "<group>"; };
@@ -672,6 +676,7 @@
 				1EFE8FF921FC6DCA006E8473 /* ChannelDetailTopViewController.swift */,
 				DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */,
 				DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */,
+				1E1DDFFF22102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift */,
 			);
 			path = ChannelDetailTop;
 			sourceTree = "<group>";
@@ -728,6 +733,7 @@
 				1E4A542E22060FF000E4EEEF /* SectionHeaderBasicalTableCell.xib */,
 				1E4A54322206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift */,
 				1E4A54332206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.xib */,
+				1E1DE00122106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift */,
 			);
 			path = CommonCell;
 			sourceTree = "<group>";
@@ -996,6 +1002,7 @@
 				DA8AEB2B21FEC3A4000A717E /* PaddingLabel.swift in Sources */,
 				1E4A54342206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift in Sources */,
 				1E57E0B421FB84DE003AD898 /* UIControl+Action.swift in Sources */,
+				1E1DE00222106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift in Sources */,
 				1E57E09921FB84DE003AD898 /* UIColor+.swift in Sources */,
 				1EE4CD7D22056B6300E85537 /* ChannelDetailEpisodeViewController.swift in Sources */,
 				1E57E08E21FB84DD003AD898 /* TargetedExtension.swift in Sources */,
@@ -1010,6 +1017,7 @@
 				DA8AEB2E21FEC3A4000A717E /* ViewCreator.swift in Sources */,
 				1E57E0AA21FB84DE003AD898 /* Optional+Utility.swift in Sources */,
 				1E57E09421FB84DD003AD898 /* UIImage+.swift in Sources */,
+				1E1DE00022102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

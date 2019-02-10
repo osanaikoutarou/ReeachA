@@ -9,19 +9,28 @@
 import UIKit
 
 class DebugViewController: UIViewController {
-
-    @IBOutlet weak var stackLabelView: DynamicStackView!
+    
+    @IBOutlet weak var hoge1: UIView!
+    @IBOutlet weak var hogeS: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let pair = LabelPair(id: "1", title: "たいとる", value: "ばりゅーー")
+        hogeS.addSubview(hoge1)
+
+        hoge1.bindFrameToSuperviewBounds()
         
-        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
-        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
-        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
-        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
-        stackLabelView.addCell(cell: PairLabelDynamicStackViewCell(pair: pair))
+//        hogeS.leadingAnchor.constraint(equalTo: hoge1.leadingAnchor).isActive = true
+//        hogeS.trailingAnchor.constraint(equalTo: hoge1.trailingAnchor).isActive = true
+//        hogeS.topAnchor.constraint(equalTo: hoge1.topAnchor).isActive = true
+//        hogeS.bottomAnchor.constraint(equalTo: hoge1.bottomAnchor).isActive = true
+        
+//        hogeS.leftAnchor.constraint(equalTo: hoge1.leftAnchor, constant: 0).isActive = true
+//        hogeS.rightAnchor.constraint(equalTo: hoge1.rightAnchor, constant: 0).isActive = true
+//        hogeS.topAnchor.constraint(equalTo: hoge1.topAnchor, constant: 0).isActive = true
+//        hogeS.bottomAnchor.constraint(equalTo: hoge1.bottomAnchor, constant: 0).isActive = true
+        
 
     }
     
