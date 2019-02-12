@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1E1DE00022102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DDFFF22102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift */; };
 		1E1DE00222106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DE00122106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift */; };
+		1E1DE00422116D6C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DE00322116D6C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.swift */; };
+		1E1DE0062211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E1DE0052211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib */; };
+		1E1DE008221173C100A00FA1 /* LabelPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DE007221173C100A00FA1 /* LabelPair.swift */; };
+		1E1DE00A22117C1200A00FA1 /* ChannelDetailTopBasicInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DE00922117C1200A00FA1 /* ChannelDetailTopBasicInfoTableViewCell.swift */; };
 		1E1E5F0922069F5B005627F9 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E5F0822069F5B005627F9 /* Human.swift */; };
 		1E1E5F0C2206A7E4005627F9 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E5F0B2206A7E4005627F9 /* Organization.swift */; };
 		1E29BAF72209521100D219D4 /* PairLabelDynamicStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BAF62209521100D219D4 /* PairLabelDynamicStackViewCell.swift */; };
@@ -74,6 +78,9 @@
 		1E57E0C121FC034F003AD898 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E0C021FC034F003AD898 /* Channel.swift */; };
 		1E57E0C421FC0456003AD898 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E0C321FC0456003AD898 /* Anime.swift */; };
 		1E57E0C621FC0920003AD898 /* MyChannel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E57E0C521FC0920003AD898 /* MyChannel.storyboard */; };
+		1E6D77402211E6CA002038ED /* ChannelDetailTopLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D773F2211E6CA002038ED /* ChannelDetailTopLinkTableViewCell.swift */; };
+		1E6D77432211E726002038ED /* LinkVerticalDynamicStackViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E6D77412211E725002038ED /* LinkVerticalDynamicStackViewCell.xib */; };
+		1E6D77442211E726002038ED /* LinkVerticalDynamicStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D77422211E725002038ED /* LinkVerticalDynamicStackViewCell.swift */; };
 		1EB1514221FA1C17001B6110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1514121FA1C17001B6110 /* AppDelegate.swift */; };
 		1EB1514421FA1C17001B6110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1514321FA1C17001B6110 /* ViewController.swift */; };
 		1EB1514721FA1C17001B6110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1514521FA1C17001B6110 /* Main.storyboard */; };
@@ -123,6 +130,10 @@
 /* Begin PBXFileReference section */
 		1E1DDFFF22102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopInfoTableViewCell.swift; sourceTree = "<group>"; };
 		1E1DE00122106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopCopyrightTableViewCell.swift; sourceTree = "<group>"; };
+		1E1DE00322116D6C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairLabelForHorizontalDynamicStackViewCell.swift; sourceTree = "<group>"; };
+		1E1DE0052211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairLabelForHorizontalDynamicStackViewCell.xib; sourceTree = "<group>"; };
+		1E1DE007221173C100A00FA1 /* LabelPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPair.swift; sourceTree = "<group>"; };
+		1E1DE00922117C1200A00FA1 /* ChannelDetailTopBasicInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopBasicInfoTableViewCell.swift; sourceTree = "<group>"; };
 		1E1E5F0822069F5B005627F9 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		1E1E5F0B2206A7E4005627F9 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		1E29BAF62209521100D219D4 /* PairLabelDynamicStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairLabelDynamicStackViewCell.swift; sourceTree = "<group>"; };
@@ -189,6 +200,9 @@
 		1E57E0C021FC034F003AD898 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		1E57E0C321FC0456003AD898 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		1E57E0C521FC0920003AD898 /* MyChannel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyChannel.storyboard; sourceTree = "<group>"; };
+		1E6D773F2211E6CA002038ED /* ChannelDetailTopLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopLinkTableViewCell.swift; sourceTree = "<group>"; };
+		1E6D77412211E725002038ED /* LinkVerticalDynamicStackViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkVerticalDynamicStackViewCell.xib; sourceTree = "<group>"; };
+		1E6D77422211E725002038ED /* LinkVerticalDynamicStackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkVerticalDynamicStackViewCell.swift; sourceTree = "<group>"; };
 		1EB1513E21FA1C16001B6110 /* ReeachA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReeachA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB1514121FA1C17001B6110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EB1514321FA1C17001B6110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -677,6 +691,8 @@
 				DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */,
 				DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */,
 				1E1DDFFF22102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift */,
+				1E1DE00922117C1200A00FA1 /* ChannelDetailTopBasicInfoTableViewCell.swift */,
+				1E6D773F2211E6CA002038ED /* ChannelDetailTopLinkTableViewCell.swift */,
 			);
 			path = ChannelDetailTop;
 			sourceTree = "<group>";
@@ -785,6 +801,11 @@
 			children = (
 				1E29BAF62209521100D219D4 /* PairLabelDynamicStackViewCell.swift */,
 				1E29BAF82209521B00D219D4 /* PairLabelDynamicStackViewCell.xib */,
+				1E1DE00322116D6C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.swift */,
+				1E1DE0052211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib */,
+				1E1DE007221173C100A00FA1 /* LabelPair.swift */,
+				1E6D77422211E725002038ED /* LinkVerticalDynamicStackViewCell.swift */,
+				1E6D77412211E725002038ED /* LinkVerticalDynamicStackViewCell.xib */,
 			);
 			path = DynamicStackViewCell;
 			sourceTree = "<group>";
@@ -858,7 +879,9 @@
 				1E57E0C621FC0920003AD898 /* MyChannel.storyboard in Resources */,
 				1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */,
 				1EFE8FF821FC6DB3006E8473 /* ChannelDetailTop.storyboard in Resources */,
+				1E1DE0062211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib in Resources */,
 				1EFE900221FCA4D8006E8473 /* ChannelDetailWebsite.storyboard in Resources */,
+				1E6D77432211E726002038ED /* LinkVerticalDynamicStackViewCell.xib in Resources */,
 				1E4A543022060FF000E4EEEF /* SectionHeaderBasicalTableCell.xib in Resources */,
 				1EE4CD7B22056B4D00E85537 /* ChannelDetailEpisode.storyboard in Resources */,
 				1EB1514921FA1C18001B6110 /* Assets.xcassets in Resources */,
@@ -989,6 +1012,7 @@
 				1EFF4BCF2205BE87006BFDC9 /* ChannelDetailNotificationViewController.swift in Sources */,
 				DAB1412D220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift in Sources */,
 				1E57E0B521FB84DE003AD898 /* Dictionary+Utility.swift in Sources */,
+				1E1DE00422116D6C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.swift in Sources */,
 				1E29BAFE2209598D00D219D4 /* CGRect+Utility.swift in Sources */,
 				1E57E09221FB84DD003AD898 /* UICollectionView+.swift in Sources */,
 				1E57E09321FB84DD003AD898 /* Safe.swift in Sources */,
@@ -1009,12 +1033,16 @@
 				1E57E0B021FB84DE003AD898 /* UIViewController+Utility.swift in Sources */,
 				1E57E09021FB84DD003AD898 /* Dictionary+.swift in Sources */,
 				DAB14107220D10F100E0C144 /* DynamicStackView.swift in Sources */,
+				1E1DE008221173C100A00FA1 /* LabelPair.swift in Sources */,
 				DA8AEB2F21FEC3A4000A717E /* ButtonView.swift in Sources */,
 				1E57E08D21FB84DD003AD898 /* StoryboardInstantiatable.swift in Sources */,
 				1E57E0A221FB84DE003AD898 /* Array+Utility.swift in Sources */,
+				1E6D77442211E726002038ED /* LinkVerticalDynamicStackViewCell.swift in Sources */,
+				1E1DE00A22117C1200A00FA1 /* ChannelDetailTopBasicInfoTableViewCell.swift in Sources */,
 				1EB1514221FA1C17001B6110 /* AppDelegate.swift in Sources */,
 				1E57E03621FB7BF7003AD898 /* AnimeChannelCollectionViewCell.swift in Sources */,
 				DA8AEB2E21FEC3A4000A717E /* ViewCreator.swift in Sources */,
+				1E6D77402211E6CA002038ED /* ChannelDetailTopLinkTableViewCell.swift in Sources */,
 				1E57E0AA21FB84DE003AD898 /* Optional+Utility.swift in Sources */,
 				1E57E09421FB84DD003AD898 /* UIImage+.swift in Sources */,
 				1E1DE00022102D7C00A00FA1 /* ChannelDetailTopInfoTableViewCell.swift in Sources */,

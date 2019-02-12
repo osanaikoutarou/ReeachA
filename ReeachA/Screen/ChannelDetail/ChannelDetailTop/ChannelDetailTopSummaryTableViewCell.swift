@@ -13,20 +13,25 @@ class ChannelDetailTopSummaryTableViewCell: UITableViewCell {
     @IBOutlet weak var captioinImageView: UIImageView!
     @IBOutlet weak var infoDynamicStackView: DynamicStackView!
     
+    @IBOutlet weak var copyright: UILabel!
+    
     var needRefresh: Bool = true
     
-    func setup(infoPairs:[InfoPair]) {
+    func setup(anime:Anime) {
+        copyright.text = anime.copyright
+        
         if !needRefresh {
             return
         }
 
-        infoPairs.forEach { (infoPair) in
+        
+        anime.topInfos.forEach { (infoPair) in
             let labelPair = LabelPair(id: nil, infoPair: infoPair)
             let cell = PairLabelDynamicStackViewCell(pair: labelPair)
-            
+
             cell.automaticDimension = true
             cell.setFontSize(size: 12.f)
-            cell.setTitleWidth(width: 70.f)
+            cell.setTitleWidth(width: 120.f)
             infoDynamicStackView.addCell(cell: cell)
         }
 

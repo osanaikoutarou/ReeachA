@@ -8,25 +8,6 @@
 
 import UIKit
 
-class LabelPair: NSObject {
-    var id:String?
-    var title:InfoAtom?
-    var values:[InfoAtom] = []
-
-    convenience init(id:String?, title:InfoAtom?, values:[InfoAtom]) {
-        self.init()
-        self.id = id
-        self.title = title
-        self.values = values
-    }
-    convenience init(id:String?, infoPair:InfoPair) {
-        self.init()
-        self.id = id
-        self.title = infoPair.title
-        self.values = infoPair.contents
-    }
-}
-
 class PairLabelDynamicStackViewCell: DynamicVerticalStackViewCell {
     
     @IBOutlet weak var baseView: ButtonView!

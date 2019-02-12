@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W3</string>
+            <string>HiraginoSans-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PairLabelForHorizontalDynamicStackViewCell" customModule="ReeachA" customModuleProvider="target">
+            <connections>
+                <outlet property="separatorView" destination="0GM-KR-AhT" id="ouM-UX-i6E"/>
+                <outlet property="separatorWidth" destination="Iki-d9-IOd" id="On9-hH-Yzy"/>
+                <outlet property="titleLabel" destination="GEd-EN-dVu" id="zce-pf-0os"/>
+                <outlet property="valueLabel" destination="XRt-5a-gYp" id="n4i-sm-yOE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="123" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GM-KR-AhT">
+                    <rect key="frame" x="122" y="5" width="1" height="60"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="Iki-d9-IOd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoC-gl-4Pm" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="123" height="17"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEd-EN-dVu">
+                            <rect key="frame" x="5" y="5" width="113" height="10"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="GEd-EN-dVu" firstAttribute="top" secondItem="SoC-gl-4Pm" secondAttribute="top" constant="5" id="6oU-Yv-nDj"/>
+                        <constraint firstAttribute="bottom" secondItem="GEd-EN-dVu" secondAttribute="bottom" constant="2" id="YAt-VU-zvU"/>
+                        <constraint firstItem="GEd-EN-dVu" firstAttribute="leading" secondItem="SoC-gl-4Pm" secondAttribute="leading" constant="5" id="mj5-Qc-xZt"/>
+                        <constraint firstAttribute="trailing" secondItem="GEd-EN-dVu" secondAttribute="trailing" constant="5" id="tjQ-Ph-l6X"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JW2-ki-4WC" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="22" width="123" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLab" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="XRt-5a-gYp">
+                            <rect key="frame" x="5" y="5" width="113" height="13"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="XRt-5a-gYp" firstAttribute="top" secondItem="JW2-ki-4WC" secondAttribute="top" constant="5" id="8MI-6P-Xui"/>
+                        <constraint firstAttribute="trailing" secondItem="XRt-5a-gYp" secondAttribute="trailing" constant="5" id="Qz4-Xz-XpM"/>
+                        <constraint firstItem="XRt-5a-gYp" firstAttribute="leading" secondItem="JW2-ki-4WC" secondAttribute="leading" constant="5" id="cHm-Jy-nND"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XRt-5a-gYp" secondAttribute="bottom" id="sG2-Wm-M16"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SoC-gl-4Pm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3da-tA-CHo"/>
+                <constraint firstItem="SoC-gl-4Pm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AUh-Fa-Haj"/>
+                <constraint firstItem="JW2-ki-4WC" firstAttribute="top" secondItem="SoC-gl-4Pm" secondAttribute="bottom" constant="5" id="FfE-oc-LfQ"/>
+                <constraint firstAttribute="bottom" secondItem="JW2-ki-4WC" secondAttribute="bottom" id="M6d-nU-GIc"/>
+                <constraint firstItem="0GM-KR-AhT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Mym-Kw-sgC"/>
+                <constraint firstAttribute="trailing" secondItem="0GM-KR-AhT" secondAttribute="trailing" id="S89-Bp-kDf"/>
+                <constraint firstAttribute="trailing" secondItem="SoC-gl-4Pm" secondAttribute="trailing" id="ifS-nQ-Syx"/>
+                <constraint firstAttribute="bottom" secondItem="0GM-KR-AhT" secondAttribute="bottom" constant="5" id="kk5-PR-UtR"/>
+                <constraint firstAttribute="trailing" secondItem="JW2-ki-4WC" secondAttribute="trailing" id="kmn-t5-a6D"/>
+                <constraint firstItem="JW2-ki-4WC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wRT-hq-NCb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-146.40000000000001" y="364.31784107946032"/>
+        </view>
+    </objects>
+</document>

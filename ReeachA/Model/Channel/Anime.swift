@@ -16,8 +16,11 @@ class Anime: Channel {
     }
     
     var topInfos:[InfoPair] = []
+    var baseInfos:[InfoPair] = []
     var staffs:[InfoPair] = []
     var casts:[InfoPair] = []
+    var officialWebLinks:[WebLink] = []
+    var webLinks:[WebLink] = []
 }
 
 
@@ -28,15 +31,6 @@ extension Anime {
     func createSample() {
         title = "約束のネバーランド"
         copyright = "©白井カイウ・出水ぽすか／集英社・約束のネバーランド製作委員会"
-        
-        topInfos.append(
-            InfoPair(title: InfoAtom(name: "公開"),
-                     contents: [InfoAtom(name: "2019年1月から"), InfoAtom(name: "全12話")]
-        ))
-        topInfos.append(
-            InfoPair(title: InfoAtom(name: "原作"),
-                     contents: [ChannelCategory(name: "漫画")]
-        ))
         
         topInfos.append(
             InfoPair(title: InfoAtom(name: "原作・原案"),
@@ -54,6 +48,24 @@ extension Anime {
             InfoPair(title: InfoAtom(name: "監督"),
                      contents: [Human(name: "押戸守")]
         ))
+
+        baseInfos.append(
+            InfoPair(title: InfoAtom(name: "原作"),
+                     contents: [ChannelCategory(name: "漫画")]
+        ))
+
+        baseInfos.append(
+            InfoPair(title: InfoAtom(name: "公開"),
+                     contents: [InfoAtom(name: "2019年 1Q")/*, InfoAtom(name: "全12話")*/]
+        ))
+
+        baseInfos.append(
+            InfoPair(title: InfoAtom(name: "話数"),
+                     contents: [InfoAtom(name: "1クール12話")]
+        ))
+
+
+
         
         staffs.append(
             InfoPair(title: InfoAtom(name: "原作"),
@@ -118,8 +130,43 @@ extension Anime {
                      contents: [Human(name: "森優子")]
         ))
         
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/", title: "TOP", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "NEWS", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "STORY", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "STAFF & CAST", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "CHARACTER", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "ON AIR", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "MUSIC", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "MOVIES", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "RADIO", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "Blu-ray & DVD", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "COMIC", icon: nil))
+        officialWebLinks.append(WebLink(urlStr: "https://neverland-anime.com/news", title: "SPECIAL", icon: nil))
 
         
+        let webLink1 = WebLink()
+        webLink1.urlStr = "https://neverland-anime.com/"
+        webLink1.title = "アニメ公式サイト"
+        webLinks.append(webLink1)
+        
+        let webLink3 = WebLink()
+        webLink3.urlStr = "https://twitter.com/yakuneba_staff?lang=ja"
+        webLink3.title = "Twitter"
+        webLink3.icon = UIImage(named: "Twitter_Logo_Blue")
+        webLinks.append(webLink3)
+        
+        let webLink4 = WebLink()
+        webLink4.urlStr = "https://www.instagram.com/neverland_anime/"
+        webLink4.title = "Instagram"
+        webLink4.icon = UIImage(named: "icon_instagram")
+        webLinks.append(webLink4)
+        
+        let webLink2 = WebLink()
+        webLink2.urlStr = "https://ja.wikipedia.org/wiki/%E7%B4%84%E6%9D%9F%E3%81%AE%E3%83%8D%E3%83%90%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89"
+        webLink2.title = "wikipedia"
+        webLink2.icon = UIImage(named: "icon_wikipedia")
+        webLinks.append(webLink2)
+
         
     }
 }

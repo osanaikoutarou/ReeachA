@@ -108,13 +108,15 @@ extension ChannelDetailTopViewController {
     enum Section {
         case title
         case summary
+        case basic
         case copyright
+        case links
         case staff
         case cast
     }
     
     func sections() -> [Section] {
-        return [.title, .summary, .copyright, .staff, .cast]
+        return [/*.title,*/ .summary, /*.copyright,*/.basic, .links, .staff, .cast]
     }
 }
 
@@ -137,11 +139,19 @@ extension ChannelDetailTopViewController: UITableViewDelegate,UITableViewDataSou
             return cell
         case .summary:
             let cell = tableView.dequeueReusableCell(with: ChannelDetailTopSummaryTableViewCell.self, for: indexPath)
-            cell.setup(infoPairs: anime.topInfos)
+            cell.setup(anime: anime)
+            return cell
+        case .basic:
+            let cell = tableView.dequeueReusableCell(with: ChannelDetailTopBasicInfoTableViewCell.self, for: indexPath)
+            cell.setup(anime: anime)
             return cell
         case .copyright:
             let cell = tableView.dequeueReusableCell(with: ChannelDetailTopCopyrightTableViewCell.self, for: indexPath)
             cell.setup(channel: anime)
+            return cell
+        case .links:
+            let cell = tableView.dequeueReusableCell(with: ChannelDetailTopLinkTableViewCell.self, for: indexPath)
+            cell.setup(anime: anime)
             return cell
         case .staff:
             let cell = tableView.dequeueReusableCell(with: ChannelDetailTopInfoTableViewCell.self, for: indexPath)

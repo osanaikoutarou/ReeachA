@@ -22,18 +22,12 @@ class ChannelDetailWebsiteListViewController: UIViewController {
         
         let webLink1 = WebLink()
         webLink1.urlStr = "https://neverland-anime.com/"
-        webLink1.title = "アニメ 約束のネバーランド　公式サイト"
+        webLink1.title = "アニメ公式サイト"
         webLinks.append(webLink1)
-        
-        let webLink2 = WebLink()
-        webLink2.urlStr = "https://ja.wikipedia.org/wiki/%E7%B4%84%E6%9D%9F%E3%81%AE%E3%83%8D%E3%83%90%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89"
-        webLink2.title = "wikipedia 約束のネバーランド"
-        webLink2.icon = UIImage(named: "icon_wikipedia")
-        webLinks.append(webLink2)
         
         let webLink3 = WebLink()
         webLink3.urlStr = "https://twitter.com/yakuneba_staff?lang=ja"
-        webLink3.title = "Twitter 約束のネバーランド"
+        webLink3.title = "Twitter 公式"
         webLink3.icon = UIImage(named: "Twitter_Logo_Blue")
         webLinks.append(webLink3)
         
@@ -42,6 +36,12 @@ class ChannelDetailWebsiteListViewController: UIViewController {
         webLink4.title = "Instagram 約束のネバーランド"
         webLink4.icon = UIImage(named: "icon_instagram")
         webLinks.append(webLink4)
+
+        let webLink2 = WebLink()
+        webLink2.urlStr = "https://ja.wikipedia.org/wiki/%E7%B4%84%E6%9D%9F%E3%81%AE%E3%83%8D%E3%83%90%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89"
+        webLink2.title = "wikipedia 約束のネバーランド"
+        webLink2.icon = UIImage(named: "icon_wikipedia")
+        webLinks.append(webLink2)
 
         
         

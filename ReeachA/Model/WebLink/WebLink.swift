@@ -15,6 +15,13 @@ class WebLink: NSObject {
     var title:String = ""
     var icon:UIImage?
     
+    convenience init(urlStr:String, title:String, icon:UIImage?) {
+        self.init()
+        self.urlStr = urlStr
+        self.title = title
+        self.icon = icon
+    }
+    
     var isTwitter: Bool {
         return urlStr.contains("twitter.com")
     }
