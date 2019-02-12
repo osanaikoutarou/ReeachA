@@ -117,6 +117,25 @@ class DynamicStackView: UIStackView {
             footer = nil
         }
     }
+    // hide/show
+    func hideCellsTo(num:Int, animationDuration:CGFloat) {
+        if self.cells.count < num {
+            return
+        }
+        
+        UIView.animate(withDuration: TimeInterval(animationDuration)) {
+            for i in num..<self.cells.count {
+                self.cells[i].isHidden = true
+            }
+        }
+    }
+    func showAllCell(animationDuration:CGFloat) {
+        UIView.animate(withDuration: TimeInterval(animationDuration)) {
+            self.cells.forEach { $0.isHidden = false }
+            self.layoutIfNeeded()
+        }
+    }
+
     
 }
 
