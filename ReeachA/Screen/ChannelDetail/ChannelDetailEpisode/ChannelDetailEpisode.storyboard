@@ -72,14 +72,50 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A21-A1-aoy">
-                                                            <rect key="frame" x="0.0" y="100" width="375" height="100"/>
+                                                            <rect key="frame" x="0.0" y="100" width="375" height="40"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-GB-epp" customClass="CornerRaoundButtonView" customModule="ReeachA" customModuleProvider="target">
+                                                                    <rect key="frame" x="309" y="10" width="56" height="22"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未視聴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRz-Qz-1yw">
+                                                                            <rect key="frame" x="10" y="5" width="36" height="12"/>
+                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="dRz-Qz-1yw" secondAttribute="trailing" constant="10" id="2Xr-WZ-CGu"/>
+                                                                        <constraint firstItem="dRz-Qz-1yw" firstAttribute="centerY" secondItem="SLW-GB-epp" secondAttribute="centerY" id="30J-Hz-7l1"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="dRz-Qz-1yw" secondAttribute="bottom" constant="5" id="Krg-Ga-fkO"/>
+                                                                        <constraint firstItem="dRz-Qz-1yw" firstAttribute="leading" secondItem="SLW-GB-epp" secondAttribute="leading" constant="10" id="Otl-Jk-pK1"/>
+                                                                        <constraint firstItem="dRz-Qz-1yw" firstAttribute="top" secondItem="SLW-GB-epp" secondAttribute="top" constant="5" id="oT4-fq-kr2"/>
+                                                                        <constraint firstItem="dRz-Qz-1yw" firstAttribute="centerX" secondItem="SLW-GB-epp" secondAttribute="centerX" id="yjk-cF-MaM"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="100" id="CKP-dL-AuF"/>
+                                                                <constraint firstAttribute="trailing" secondItem="SLW-GB-epp" secondAttribute="trailing" constant="10" id="8v1-Wh-C16"/>
+                                                                <constraint firstAttribute="height" constant="40" id="CKP-dL-AuF"/>
+                                                                <constraint firstItem="SLW-GB-epp" firstAttribute="top" secondItem="A21-A1-aoy" secondAttribute="top" constant="10" id="gLO-jr-aLI"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUp-Wj-RAG">
-                                                            <rect key="frame" x="0.0" y="200" width="375" height="99.5"/>
+                                                            <rect key="frame" x="0.0" y="140" width="375" height="100"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="uiP-nC-sSr"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwv-Ac-ueU">
+                                                            <rect key="frame" x="0.0" y="240" width="375" height="59.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
                                                     </subviews>
