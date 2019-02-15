@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="300" id="80V-Hw-CGc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelDetailEpisodeTableViewCell" rowHeight="300" id="80V-Hw-CGc" customClass="ChannelDetailEpisodeTableViewCell" customModule="ReeachA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="80V-Hw-CGc" id="sGq-SI-wbD">
@@ -37,7 +37,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zsw-DP-Gal" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdN-7w-ctE">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdN-7w-ctE" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1u-CS-bu4">
@@ -71,7 +71,7 @@
                                                                 <constraint firstAttribute="trailing" secondItem="eJ7-mh-Xdv" secondAttribute="trailing" constant="10" id="y5e-jz-CJp"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A21-A1-aoy">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A21-A1-aoy" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="100" width="375" height="40"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-GB-epp" customClass="CornerRaoundButtonView" customModule="ReeachA" customModuleProvider="target">
@@ -107,59 +107,27 @@
                                                                 <constraint firstItem="SLW-GB-epp" firstAttribute="top" secondItem="A21-A1-aoy" secondAttribute="top" constant="10" id="gLO-jr-aLI"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUp-Wj-RAG">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUp-Wj-RAG" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="140" width="375" height="100"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="uiP-nC-sSr"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwv-Ac-ueU">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwv-Ac-ueU" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="240" width="375" height="59.5"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" red="0.92122286558151245" green="0.9883379340171814" blue="0.024338085204362869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="59.5" id="Tzl-RK-Sux"/>
+                                                            </constraints>
                                                         </view>
                                                     </subviews>
                                                 </stackView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sao-QP-UIc">
-                                                    <rect key="frame" x="0.0" y="269.5" width="375" height="30"/>
-                                                    <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3e-op-PLR">
-                                                            <rect key="frame" x="275" y="0.0" width="100" height="30"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="tyW-2W-DHh"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8J-JC-fOI">
-                                                            <rect key="frame" x="14" y="0.0" width="245" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <string key="text" base64-UTF8="YES">
-44Gu44Gb44KL44KC44Gu77yaDeOCv+OCpOODiOODqw3mg4XloLHjg6rjg7Pjgq/vvIjli5XnlLsv5LqI
-5ZGK77yJ44CB44OG44Kt44K544OIEeKAqOiHquWIhuOBrueKtuaFi+OAgeipleS+oeOAgeS7luiAheOB
-ruipleS+oQ
-</string>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="6"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstItem="W3e-op-PLR" firstAttribute="top" secondItem="Sao-QP-UIc" secondAttribute="top" id="0Iq-HV-b2I"/>
-                                                        <constraint firstAttribute="bottom" secondItem="W3e-op-PLR" secondAttribute="bottom" id="MEo-mc-x1K"/>
-                                                        <constraint firstAttribute="trailing" secondItem="W3e-op-PLR" secondAttribute="trailing" id="bMJ-4c-yZL"/>
-                                                        <constraint firstAttribute="height" constant="30" id="fHB-Rj-tOU"/>
-                                                    </constraints>
-                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Zsw-DP-Gal" secondAttribute="trailing" id="LbV-xJ-FxG"/>
                                                 <constraint firstItem="Zsw-DP-Gal" firstAttribute="leading" secondItem="sGq-SI-wbD" secondAttribute="leading" id="cPi-NA-zyc"/>
-                                                <constraint firstAttribute="trailing" secondItem="Sao-QP-UIc" secondAttribute="trailing" id="jBs-Po-ybU"/>
                                                 <constraint firstItem="Zsw-DP-Gal" firstAttribute="top" secondItem="sGq-SI-wbD" secondAttribute="top" id="jTn-lf-iz9"/>
-                                                <constraint firstAttribute="bottom" secondItem="Zsw-DP-Gal" secondAttribute="bottom" id="jwD-45-XaK"/>
-                                                <constraint firstItem="Sao-QP-UIc" firstAttribute="leading" secondItem="sGq-SI-wbD" secondAttribute="leading" id="qdZ-je-8Cs"/>
-                                                <constraint firstAttribute="bottom" secondItem="Sao-QP-UIc" secondAttribute="bottom" id="xSO-hL-T3J"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -176,6 +144,9 @@ ruipleS+oQ
                         <viewLayoutGuide key="safeArea" id="YcS-Y1-Z4v"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vzs-Sd-cyL"/>
+                    <connections>
+                        <outlet property="tableView" destination="yte-qK-HOg" id="Wr9-MI-gFx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Gh-56-RoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

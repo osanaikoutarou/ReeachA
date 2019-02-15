@@ -88,6 +88,7 @@
 		1EB1514C21FA1C18001B6110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1514A21FA1C18001B6110 /* LaunchScreen.storyboard */; };
 		1EC50DD42200CA040026DEF0 /* ChannelDetailItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC50DD32200CA040026DEF0 /* ChannelDetailItems.storyboard */; };
 		1EC50DD62200CA290026DEF0 /* ChannelDetailItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC50DD52200CA290026DEF0 /* ChannelDetailItemsViewController.swift */; };
+		1ED20DD82216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED20DD72216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift */; };
 		1EE4CD7B22056B4D00E85537 /* ChannelDetailEpisode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE4CD7A22056B4D00E85537 /* ChannelDetailEpisode.storyboard */; };
 		1EE4CD7D22056B6300E85537 /* ChannelDetailEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4CD7C22056B6300E85537 /* ChannelDetailEpisodeViewController.swift */; };
 		1EE4CD802205709700E85537 /* ChannelDetailPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE4CD7F2205709700E85537 /* ChannelDetailPost.storyboard */; };
@@ -212,6 +213,7 @@
 		1EB1514D21FA1C18001B6110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EC50DD32200CA040026DEF0 /* ChannelDetailItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailItems.storyboard; sourceTree = "<group>"; };
 		1EC50DD52200CA290026DEF0 /* ChannelDetailItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailItemsViewController.swift; sourceTree = "<group>"; };
+		1ED20DD72216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailEpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		1EE4CD7A22056B4D00E85537 /* ChannelDetailEpisode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailEpisode.storyboard; sourceTree = "<group>"; };
 		1EE4CD7C22056B6300E85537 /* ChannelDetailEpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailEpisodeViewController.swift; sourceTree = "<group>"; };
 		1EE4CD7F2205709700E85537 /* ChannelDetailPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailPost.storyboard; sourceTree = "<group>"; };
@@ -638,6 +640,7 @@
 			children = (
 				1EE4CD7A22056B4D00E85537 /* ChannelDetailEpisode.storyboard */,
 				1EE4CD7C22056B6300E85537 /* ChannelDetailEpisodeViewController.swift */,
+				1ED20DD72216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift */,
 			);
 			path = ChannelDetailEpisode;
 			sourceTree = "<group>";
@@ -953,6 +956,7 @@
 				1EFE8FF521FC44C7006E8473 /* ChannelDetailViewController.swift in Sources */,
 				1E57E0A621FB84DE003AD898 /* CGSize+Utility.swift in Sources */,
 				1EFE8FFF21FCA379006E8473 /* UITextView+Utility.swift in Sources */,
+				1ED20DD82216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift in Sources */,
 				1EFF4BDA2205D645006BFDC9 /* PixcelHorizontalView.swift in Sources */,
 				1EFE900E21FCD869006E8473 /* NavTabScrollController.swift in Sources */,
 				1E57E08621FB84DD003AD898 /* UIScreen+Utility.swift in Sources */,
