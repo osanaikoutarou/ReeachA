@@ -45,12 +45,13 @@ extension ChannelDetailEpisodeViewController: UITableViewDelegate,UITableViewDat
             return 280.0
         }
         else {
-            return 140.0
+            return 150.0
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelDetailEpisodeTableViewCell", for: indexPath) as! ChannelDetailEpisodeTableViewCell
+        cell.selectionStyle = .none
         return cell
     }
     
