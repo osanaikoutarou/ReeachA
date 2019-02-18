@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zsw-DP-Gal" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="229.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="259.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdN-7w-ctE" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
@@ -52,9 +52,9 @@
                                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいから私にまかせなさい！いいから私にまかせなさい！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ7-mh-Xdv">
-                                                                    <rect key="frame" x="10" y="42" width="355" height="36"/>
-                                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいから私にまかせなさい！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ7-mh-Xdv">
+                                                                    <rect key="frame" x="10" y="42" width="355" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -108,31 +108,40 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUp-Wj-RAG" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="120" width="375" height="50"/>
+                                                            <rect key="frame" x="0.0" y="120" width="375" height="40"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJQ-u5-mYp" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公式サイト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxw-Ib-mTj">
-                                                                            <rect key="frame" x="10" y="15" width="330" height="20.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <rect key="frame" x="40" y="14" width="300" height="12"/>
+                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
                                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_ccc" translatesAutoresizingMaskIntoConstraints="NO" id="08x-rY-Ebs">
-                                                                            <rect key="frame" x="345" y="15" width="20" height="20"/>
+                                                                            <rect key="frame" x="345" y="10" width="20" height="20"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="20" id="8lz-cl-fDc"/>
                                                                                 <constraint firstAttribute="height" constant="20" id="M6R-6H-6eU"/>
                                                                             </constraints>
                                                                         </imageView>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_webmark" translatesAutoresizingMaskIntoConstraints="NO" id="n9B-y0-iMn">
+                                                                            <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="20" id="Neg-9F-bNO"/>
+                                                                                <constraint firstAttribute="width" constant="20" id="fDH-dU-78C"/>
+                                                                            </constraints>
+                                                                        </imageView>
                                                                     </subviews>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
+                                                                        <constraint firstItem="zxw-Ib-mTj" firstAttribute="leading" secondItem="n9B-y0-iMn" secondAttribute="trailing" constant="10" id="FgA-65-xeW"/>
                                                                         <constraint firstItem="08x-rY-Ebs" firstAttribute="centerY" secondItem="jJQ-u5-mYp" secondAttribute="centerY" id="OIW-az-E4x"/>
                                                                         <constraint firstAttribute="trailing" secondItem="08x-rY-Ebs" secondAttribute="trailing" constant="10" id="P4m-fv-Ine"/>
-                                                                        <constraint firstItem="zxw-Ib-mTj" firstAttribute="leading" secondItem="jJQ-u5-mYp" secondAttribute="leading" constant="10" id="hbK-72-I0l"/>
+                                                                        <constraint firstItem="n9B-y0-iMn" firstAttribute="leading" secondItem="jJQ-u5-mYp" secondAttribute="leading" constant="10" id="SvQ-w7-LNR"/>
                                                                         <constraint firstItem="08x-rY-Ebs" firstAttribute="leading" secondItem="zxw-Ib-mTj" secondAttribute="trailing" constant="5" id="htu-xA-XhN"/>
+                                                                        <constraint firstItem="n9B-y0-iMn" firstAttribute="centerY" secondItem="jJQ-u5-mYp" secondAttribute="centerY" id="ktD-Wt-Mao"/>
                                                                         <constraint firstItem="zxw-Ib-mTj" firstAttribute="centerY" secondItem="jJQ-u5-mYp" secondAttribute="centerY" id="tQX-yS-h3c"/>
                                                                     </constraints>
                                                                     <connections>
@@ -145,12 +154,63 @@
                                                                 <constraint firstAttribute="trailing" secondItem="jJQ-u5-mYp" secondAttribute="trailing" id="4OO-iJ-9Au"/>
                                                                 <constraint firstItem="jJQ-u5-mYp" firstAttribute="leading" secondItem="oUp-Wj-RAG" secondAttribute="leading" id="NUd-Ex-atj"/>
                                                                 <constraint firstItem="jJQ-u5-mYp" firstAttribute="top" secondItem="oUp-Wj-RAG" secondAttribute="top" id="XSy-Nv-lp5"/>
-                                                                <constraint firstAttribute="height" constant="50" id="uiP-nC-sSr"/>
+                                                                <constraint firstAttribute="height" constant="40" id="uiP-nC-sSr"/>
                                                                 <constraint firstAttribute="bottom" secondItem="jJQ-u5-mYp" secondAttribute="bottom" id="zJb-cM-rph"/>
                                                             </constraints>
                                                         </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhQ-3g-ZMo" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="160" width="375" height="40"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e24-2n-Qvb" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コメントと評価" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8po-wv-XQr">
+                                                                            <rect key="frame" x="40" y="14" width="300" height="12"/>
+                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_ccc" translatesAutoresizingMaskIntoConstraints="NO" id="05P-O9-Y85">
+                                                                            <rect key="frame" x="345" y="10" width="20" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="20" id="Vyl-EH-JRk"/>
+                                                                                <constraint firstAttribute="width" constant="20" id="edh-cu-SWw"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_communication" translatesAutoresizingMaskIntoConstraints="NO" id="tTN-rX-1Sy">
+                                                                            <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="20" id="H4v-eh-sno"/>
+                                                                                <constraint firstAttribute="height" constant="20" id="lIG-rf-7Or"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="tTN-rX-1Sy" firstAttribute="centerY" secondItem="e24-2n-Qvb" secondAttribute="centerY" id="Fh7-fK-26c"/>
+                                                                        <constraint firstItem="05P-O9-Y85" firstAttribute="leading" secondItem="8po-wv-XQr" secondAttribute="trailing" constant="5" id="GdZ-Ot-XB2"/>
+                                                                        <constraint firstItem="tTN-rX-1Sy" firstAttribute="leading" secondItem="e24-2n-Qvb" secondAttribute="leading" constant="10" id="Gmy-eG-5xT"/>
+                                                                        <constraint firstItem="8po-wv-XQr" firstAttribute="centerY" secondItem="e24-2n-Qvb" secondAttribute="centerY" id="Tbw-An-VcH"/>
+                                                                        <constraint firstItem="05P-O9-Y85" firstAttribute="centerY" secondItem="e24-2n-Qvb" secondAttribute="centerY" id="iDN-tj-mLB"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="05P-O9-Y85" secondAttribute="trailing" constant="10" id="vdj-dd-cZK"/>
+                                                                        <constraint firstItem="8po-wv-XQr" firstAttribute="leading" secondItem="tTN-rX-1Sy" secondAttribute="trailing" constant="10" id="veb-Is-YvS"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <action selector="tappedOfficialWebsite:" destination="80V-Hw-CGc" eventType="touchUpInside" id="LWR-yg-atK"/>
+                                                                    </connections>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="e24-2n-Qvb" secondAttribute="bottom" id="7tB-S2-8sc"/>
+                                                                <constraint firstItem="e24-2n-Qvb" firstAttribute="top" secondItem="DhQ-3g-ZMo" secondAttribute="top" id="AN1-mD-Wzp"/>
+                                                                <constraint firstAttribute="trailing" secondItem="e24-2n-Qvb" secondAttribute="trailing" id="Yxl-yv-TlF"/>
+                                                                <constraint firstAttribute="height" constant="40" id="gus-yU-gMS"/>
+                                                                <constraint firstItem="e24-2n-Qvb" firstAttribute="leading" secondItem="DhQ-3g-ZMo" secondAttribute="leading" id="ybv-Uo-Znu"/>
+                                                            </constraints>
+                                                        </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwv-Ac-ueU" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="170" width="375" height="59.5"/>
+                                                            <rect key="frame" x="0.0" y="200" width="375" height="59.5"/>
                                                             <color key="backgroundColor" red="0.92122286558151245" green="0.9883379340171814" blue="0.024338085204362869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="59.5" id="Tzl-RK-Sux"/>
@@ -228,5 +288,7 @@
     </scenes>
     <resources>
         <image name="icon_arrow_ccc" width="33" height="33"/>
+        <image name="icon_communication" width="33" height="33"/>
+        <image name="icon_webmark" width="33" height="33"/>
     </resources>
 </document>
