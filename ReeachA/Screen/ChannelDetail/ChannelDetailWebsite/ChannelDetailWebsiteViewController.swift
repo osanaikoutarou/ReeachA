@@ -13,6 +13,7 @@ class ChannelDetailWebsiteViewController: UIViewController {
 
     @IBOutlet weak var wkWebView: WKWebView!
     let navTabScrollController = NavTabScrollController()
+    var wkwebViewController: WKWebViewController!
     
     var webLink:WebLink?
     
@@ -39,6 +40,33 @@ class ChannelDetailWebsiteViewController: UIViewController {
         }, action2: {
             print("bookmark")
         })
+        
+//        if let url = wkWebView?.url {
+//            wkwebViewController = WKWebViewController(wkWebView: self.wkWebView, url: url)
+//            wkwebViewController.setup(didStartProvisionalNavigation: { (wkNavigation: WKNavigation) in
+//
+//            }, didCommitNavigation: { (wkNavigation: WKNavigation) in
+//
+//            }, didFinishNavigation: { (wkNavigation: WKNavigation) in
+//
+//            }, didFailProvisionalNavigation: { (wkNavigation: WKNavigation) in
+//
+//            }, didReceiveServerRedirectForProvisionalNavigation: { (wkNavigation: WKNavigation) in
+//
+//            }, changedEstimatedProgress: { (progress:Double) in
+//
+//            }, changedTitle: { (title:String) in
+//
+//            }, changedLoading: { (loading:Bool) in
+//
+//            }, changedCanGoBack: { (canGoBack:Bool) in
+//
+//            }, changedCanGoForward: { (canGoForword:Bool) in
+//
+//            })
+//        }
+        
+        self.navigationController?.navigationBar.delegate = self
     }
     
 
@@ -53,5 +81,27 @@ extension ChannelDetailWebsiteViewController: UIScrollViewDelegate {
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         navTabScrollController.endScrolling()
+    }
+}
+
+extension ChannelDetailWebsiteViewController: UINavigationBarDelegate {
+    
+    func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {
+        return true
+    }
+    func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
+
+        if wkWebView.canGoBack {
+            wkWebView.goBack()
+            return false
+        }
+        else {
+            self.navigationController?.popViewController(animated: true)
+            return true
+        }
+    }
+    func navigationBar(_ navigationBar: UINavigationBar, didPop item: UINavigationItem) {
+    }
+    func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINavigationItem) {
     }
 }

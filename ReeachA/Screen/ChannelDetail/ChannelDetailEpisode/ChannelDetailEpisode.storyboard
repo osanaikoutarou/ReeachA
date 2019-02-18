@@ -35,10 +35,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zsw-DP-Gal" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="229.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdN-7w-ctE" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1u-CS-bu4">
                                                                     <rect key="frame" x="10" y="10" width="61.5" height="17"/>
@@ -52,9 +52,9 @@
                                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいから私にまかせなさい！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ7-mh-Xdv">
-                                                                    <rect key="frame" x="10" y="47" width="355" height="20"/>
-                                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいから私にまかせなさい！いいから私にまかせなさい！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ7-mh-Xdv">
+                                                                    <rect key="frame" x="10" y="42" width="355" height="36"/>
+                                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -62,24 +62,24 @@
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="hgf-ba-ElW" secondAttribute="trailing" constant="10" id="6zY-cH-Ryy"/>
-                                                                <constraint firstItem="eJ7-mh-Xdv" firstAttribute="top" secondItem="X1u-CS-bu4" secondAttribute="bottom" constant="20" id="738-wl-vdW"/>
+                                                                <constraint firstItem="eJ7-mh-Xdv" firstAttribute="top" secondItem="X1u-CS-bu4" secondAttribute="bottom" constant="15" id="738-wl-vdW"/>
                                                                 <constraint firstItem="hgf-ba-ElW" firstAttribute="top" secondItem="gdN-7w-ctE" secondAttribute="top" constant="10" id="TFS-UT-cy1"/>
                                                                 <constraint firstItem="X1u-CS-bu4" firstAttribute="top" secondItem="gdN-7w-ctE" secondAttribute="top" constant="10" id="eKA-Su-QGx"/>
-                                                                <constraint firstAttribute="height" constant="100" id="i0f-Ek-4Ms"/>
+                                                                <constraint firstAttribute="height" constant="90" id="i0f-Ek-4Ms"/>
                                                                 <constraint firstItem="X1u-CS-bu4" firstAttribute="leading" secondItem="gdN-7w-ctE" secondAttribute="leading" constant="10" id="ozq-CK-8wO"/>
                                                                 <constraint firstItem="eJ7-mh-Xdv" firstAttribute="leading" secondItem="gdN-7w-ctE" secondAttribute="leading" constant="10" id="pt3-tT-noh"/>
                                                                 <constraint firstAttribute="trailing" secondItem="eJ7-mh-Xdv" secondAttribute="trailing" constant="10" id="y5e-jz-CJp"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A21-A1-aoy" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="100" width="375" height="40"/>
+                                                            <rect key="frame" x="0.0" y="90" width="375" height="30"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-GB-epp" customClass="CornerRaoundButtonView" customModule="ReeachA" customModuleProvider="target">
-                                                                    <rect key="frame" x="309" y="10" width="56" height="22"/>
+                                                                    <rect key="frame" x="305.5" y="0.0" width="59.5" height="23"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未視聴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRz-Qz-1yw">
-                                                                            <rect key="frame" x="10" y="5" width="36" height="12"/>
-                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                                            <rect key="frame" x="10" y="5" width="39.5" height="13"/>
+                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
                                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -103,19 +103,54 @@
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="SLW-GB-epp" secondAttribute="trailing" constant="10" id="8v1-Wh-C16"/>
-                                                                <constraint firstAttribute="height" constant="40" id="CKP-dL-AuF"/>
-                                                                <constraint firstItem="SLW-GB-epp" firstAttribute="top" secondItem="A21-A1-aoy" secondAttribute="top" constant="10" id="gLO-jr-aLI"/>
+                                                                <constraint firstAttribute="height" constant="30" id="CKP-dL-AuF"/>
+                                                                <constraint firstItem="SLW-GB-epp" firstAttribute="top" secondItem="A21-A1-aoy" secondAttribute="top" id="gLO-jr-aLI"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUp-Wj-RAG" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="140" width="375" height="100"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <rect key="frame" x="0.0" y="120" width="375" height="50"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJQ-u5-mYp" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公式サイト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxw-Ib-mTj">
+                                                                            <rect key="frame" x="10" y="15" width="330" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_ccc" translatesAutoresizingMaskIntoConstraints="NO" id="08x-rY-Ebs">
+                                                                            <rect key="frame" x="345" y="15" width="20" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="20" id="8lz-cl-fDc"/>
+                                                                                <constraint firstAttribute="height" constant="20" id="M6R-6H-6eU"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="08x-rY-Ebs" firstAttribute="centerY" secondItem="jJQ-u5-mYp" secondAttribute="centerY" id="OIW-az-E4x"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="08x-rY-Ebs" secondAttribute="trailing" constant="10" id="P4m-fv-Ine"/>
+                                                                        <constraint firstItem="zxw-Ib-mTj" firstAttribute="leading" secondItem="jJQ-u5-mYp" secondAttribute="leading" constant="10" id="hbK-72-I0l"/>
+                                                                        <constraint firstItem="08x-rY-Ebs" firstAttribute="leading" secondItem="zxw-Ib-mTj" secondAttribute="trailing" constant="5" id="htu-xA-XhN"/>
+                                                                        <constraint firstItem="zxw-Ib-mTj" firstAttribute="centerY" secondItem="jJQ-u5-mYp" secondAttribute="centerY" id="tQX-yS-h3c"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <action selector="tappedOfficialWebsite:" destination="80V-Hw-CGc" eventType="touchUpInside" id="kOj-Tp-cxM"/>
+                                                                    </connections>
+                                                                </view>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="100" id="uiP-nC-sSr"/>
+                                                                <constraint firstAttribute="trailing" secondItem="jJQ-u5-mYp" secondAttribute="trailing" id="4OO-iJ-9Au"/>
+                                                                <constraint firstItem="jJQ-u5-mYp" firstAttribute="leading" secondItem="oUp-Wj-RAG" secondAttribute="leading" id="NUd-Ex-atj"/>
+                                                                <constraint firstItem="jJQ-u5-mYp" firstAttribute="top" secondItem="oUp-Wj-RAG" secondAttribute="top" id="XSy-Nv-lp5"/>
+                                                                <constraint firstAttribute="height" constant="50" id="uiP-nC-sSr"/>
+                                                                <constraint firstAttribute="bottom" secondItem="jJQ-u5-mYp" secondAttribute="bottom" id="zJb-cM-rph"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwv-Ac-ueU" customClass="DynamicVerticalStackViewCell" customModule="ReeachA" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="240" width="375" height="59.5"/>
+                                                            <rect key="frame" x="0.0" y="170" width="375" height="59.5"/>
                                                             <color key="backgroundColor" red="0.92122286558151245" green="0.9883379340171814" blue="0.024338085204362869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="59.5" id="Tzl-RK-Sux"/>
@@ -146,11 +181,29 @@
                     <navigationItem key="navigationItem" id="Vzs-Sd-cyL"/>
                     <connections>
                         <outlet property="tableView" destination="yte-qK-HOg" id="Wr9-MI-gFx"/>
+                        <segue destination="y1B-ER-46l" kind="show" id="6cn-mQ-SMq"/>
+                        <segue destination="tzA-pL-mgL" kind="show" identifier="ChannelDetailWebsite" id="vWj-uF-2o3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Gh-56-RoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1520.8" y="-216.34182908545728"/>
+        </scene>
+        <!--ChannelDetailWebsiteViewController-->
+        <scene sceneID="dTl-hO-9qd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChannelDetailWebsite" referencedIdentifier="ChannelDetailWebsiteViewController" id="tzA-pL-mgL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYe-8V-rAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="-282"/>
+        </scene>
+        <!--ChannelDetailEpisodeDetail-->
+        <scene sceneID="BZ7-RS-bTI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChannelDetailEpisodeDetail" id="y1B-ER-46l" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gey-rD-KPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2331" y="-217"/>
         </scene>
         <!--エピソード-->
         <scene sceneID="l7a-bv-V2R">
@@ -173,4 +226,7 @@
             <point key="canvasLocation" x="581.60000000000002" y="-216.34182908545728"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_arrow_ccc" width="33" height="33"/>
+    </resources>
 </document>

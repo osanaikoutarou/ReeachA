@@ -45,13 +45,18 @@ extension ChannelDetailEpisodeViewController: UITableViewDelegate,UITableViewDat
             return 280.0
         }
         else {
-            return 150.0
+            return 120.0
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelDetailEpisodeTableViewCell", for: indexPath) as! ChannelDetailEpisodeTableViewCell
         cell.selectionStyle = .none
+        
+        cell.setup(tappedOfficialWebsiteAction: {
+            self.performSegue(withIdentifier: "ChannelDetailWebsite", sender: nil)
+        })
+        
         return cell
     }
     
@@ -63,4 +68,14 @@ extension ChannelDetailEpisodeViewController: UITableViewDelegate,UITableViewDat
     }
     
     
+}
+
+extension ChannelDetailEpisodeViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ChannelDetailWebsite" {
+            let vc = segue.destination as! ChannelDetailWebsiteViewController
+            let webLink = WebLink(urlStr: "http://watatentv.com/story05.html", title: "第5話「いいから私にまかせなさい！」", icon: nil)
+            vc.webLink = webLink
+        }
+    }
 }
