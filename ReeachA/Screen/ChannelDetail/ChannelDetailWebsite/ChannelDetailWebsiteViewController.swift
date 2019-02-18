@@ -17,6 +17,8 @@ class ChannelDetailWebsiteViewController: UIViewController {
     
     var webLink:WebLink?
     
+    @IBOutlet weak var back: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -66,10 +68,23 @@ class ChannelDetailWebsiteViewController: UIViewController {
 //            })
 //        }
         
-        self.navigationController?.navigationBar.delegate = self
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back20"), style: .plain, target: self, action: #selector(tappedBackButton(sender:)))
     }
     
+    
 
+}
+
+extension ChannelDetailWebsiteViewController {
+    @objc
+    func tappedBackButton(sender:AnyObject) {
+        if wkWebView.canGoBack {
+            wkWebView.goBack()
+        }
+        else {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
 }
 
 extension ChannelDetailWebsiteViewController: UIScrollViewDelegate {
@@ -84,24 +99,3 @@ extension ChannelDetailWebsiteViewController: UIScrollViewDelegate {
     }
 }
 
-extension ChannelDetailWebsiteViewController: UINavigationBarDelegate {
-    
-    func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {
-        return true
-    }
-    func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
-
-        if wkWebView.canGoBack {
-            wkWebView.goBack()
-            return false
-        }
-        else {
-            self.navigationController?.popViewController(animated: true)
-            return true
-        }
-    }
-    func navigationBar(_ navigationBar: UINavigationBar, didPop item: UINavigationItem) {
-    }
-    func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINavigationItem) {
-    }
-}
