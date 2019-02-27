@@ -117,6 +117,8 @@
 		DA0953412208138F00CD9329 /* InfoAtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0953402208138F00CD9329 /* InfoAtom.swift */; };
 		DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095342220829E100CD9329 /* ChannelCategory.swift */; };
 		DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */; };
+		DA883A20222639D200D8F08B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA883A1E222639D200D8F08B /* PostTableViewCell.swift */; };
+		DA883A21222639D200D8F08B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA883A1F222639D200D8F08B /* PostTableViewCell.xib */; };
 		DA8AEB2B21FEC3A4000A717E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */; };
 		DA8AEB2C21FEC3A4000A717E /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB2721FEC3A4000A717E /* ShadowView.swift */; };
 		DA8AEB2D21FEC3A4000A717E /* CornerRaoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB2821FEC3A4000A717E /* CornerRaoundView.swift */; };
@@ -246,6 +248,8 @@
 		DA0953402208138F00CD9329 /* InfoAtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtom.swift; sourceTree = "<group>"; };
 		DA095342220829E100CD9329 /* ChannelCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCategory.swift; sourceTree = "<group>"; };
 		DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTabBarController.swift; sourceTree = "<group>"; };
+		DA883A1E222639D200D8F08B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		DA883A1F222639D200D8F08B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		DA8AEB2721FEC3A4000A717E /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		DA8AEB2821FEC3A4000A717E /* CornerRaoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRaoundView.swift; sourceTree = "<group>"; };
@@ -665,6 +669,8 @@
 			isa = PBXGroup;
 			children = (
 				1EE4CD7F2205709700E85537 /* ChannelDetailPost.storyboard */,
+				DA883A1E222639D200D8F08B /* PostTableViewCell.swift */,
+				DA883A1F222639D200D8F08B /* PostTableViewCell.xib */,
 			);
 			path = ChannelDetailPost;
 			sourceTree = "<group>";
@@ -901,6 +907,7 @@
 				1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */,
 				1EFE8FF821FC6DB3006E8473 /* ChannelDetailTop.storyboard in Resources */,
 				1E1DE0062211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib in Resources */,
+				DA883A21222639D200D8F08B /* PostTableViewCell.xib in Resources */,
 				1EFE900221FCA4D8006E8473 /* ChannelDetailWebsite.storyboard in Resources */,
 				1E6D77432211E726002038ED /* LinkVerticalDynamicStackViewCell.xib in Resources */,
 				1E4A543022060FF000E4EEEF /* SectionHeaderBasicalTableCell.xib in Resources */,
@@ -990,6 +997,7 @@
 				DAB1412B220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift in Sources */,
 				DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */,
 				1E29BAF72209521100D219D4 /* PairLabelDynamicStackViewCell.swift in Sources */,
+				DA883A20222639D200D8F08B /* PostTableViewCell.swift in Sources */,
 				DA8AEB3521FEEA06000A717E /* NoPaddingTextView.swift in Sources */,
 				1E57E08521FB84DD003AD898 /* UIScrollView+Utility.swift in Sources */,
 				1E57E09D21FB84DE003AD898 /* UIView+Border.swift in Sources */,
