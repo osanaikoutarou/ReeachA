@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="975.20000000000005" y="108.39580209895054"/>
         </scene>
-        <!--Channel Detail Website View Controller-->
+        <!--Title-->
         <scene sceneID="vvX-UH-h0Q">
             <objects>
                 <viewController storyboardIdentifier="ChannelDetailWebsiteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QaW-gZ-ojK" customClass="ChannelDetailWebsiteViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eOu-3t-4wg"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="XEv-9C-WEH">
+                        <barButtonItem key="leftBarButtonItem" image="back20" id="KmG-aA-shN"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="back" destination="KmG-aA-shN" id="NYK-K9-trV"/>
                         <outlet property="wkWebView" destination="aBk-47-8pb" id="4f3-s0-v3N"/>
                     </connections>
                 </viewController>
@@ -100,6 +104,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back20" width="20" height="20"/>
         <image name="icon_menu" width="33" height="33"/>
     </resources>
 </document>
