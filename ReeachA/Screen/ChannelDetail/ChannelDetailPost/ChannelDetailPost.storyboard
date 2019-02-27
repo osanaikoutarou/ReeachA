@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Channel Detail Post View Controller-->
         <scene sceneID="SgO-lG-PPQ">
             <objects>
-                <viewController id="P8w-b5-E2Y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChannelDetailPostViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="P8w-b5-E2Y" customClass="ChannelDetailPostViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Oh-eR-Bgj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,11 +25,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w35-QY-eHj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="On5-uU-nfP" firstAttribute="trailing" secondItem="w35-QY-eHj" secondAttribute="trailing" id="MlW-mn-rTY"/>
+                            <constraint firstItem="w35-QY-eHj" firstAttribute="leading" secondItem="On5-uU-nfP" secondAttribute="leading" id="OkS-d2-qIJ"/>
+                            <constraint firstItem="On5-uU-nfP" firstAttribute="bottom" secondItem="w35-QY-eHj" secondAttribute="bottom" id="pk2-yd-WBJ"/>
+                            <constraint firstItem="w35-QY-eHj" firstAttribute="top" secondItem="On5-uU-nfP" secondAttribute="top" id="v3s-4f-pUU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="On5-uU-nfP"/>
                     </view>
                     <navigationItem key="navigationItem" id="slq-Wu-363"/>
+                    <connections>
+                        <outlet property="tableView" destination="w35-QY-eHj" id="ZA9-9p-xtm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mke-J8-fA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

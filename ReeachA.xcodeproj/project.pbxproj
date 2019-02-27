@@ -131,6 +131,8 @@
 		DAB14107220D10F100E0C144 /* DynamicStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB14105220D10F100E0C144 /* DynamicStackView.swift */; };
 		DAB1412B220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */; };
 		DAB1412D220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */; };
+		DAB37B742226811400A70D7B /* LikeLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB37B732226811300A70D7B /* LikeLabelTextView.swift */; };
+		DAB37B7622268FA600A70D7B /* ChannelDetailPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -262,6 +264,8 @@
 		DAB14105220D10F100E0C144 /* DynamicStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackView.swift; sourceTree = "<group>"; };
 		DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopSummaryTableViewCell.swift; sourceTree = "<group>"; };
 		DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopTitleTableViewCell.swift; sourceTree = "<group>"; };
+		DAB37B732226811300A70D7B /* LikeLabelTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeLabelTextView.swift; path = ReeachA/Screen/LikeLabelTextView.swift; sourceTree = SOURCE_ROOT; };
+		DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailPostViewController.swift; sourceTree = "<group>"; };
 		F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReeachA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -280,6 +284,7 @@
 		1E29BAF5220951E800D219D4 /* CommonCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				DAB37B732226811300A70D7B /* LikeLabelTextView.swift */,
 				DAB1410B220D209900E0C144 /* DynamicStackViewCell */,
 			);
 			path = CommonCustomView;
@@ -671,6 +676,7 @@
 				1EE4CD7F2205709700E85537 /* ChannelDetailPost.storyboard */,
 				DA883A1E222639D200D8F08B /* PostTableViewCell.swift */,
 				DA883A1F222639D200D8F08B /* PostTableViewCell.xib */,
+				DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */,
 			);
 			path = ChannelDetailPost;
 			sourceTree = "<group>";
@@ -981,6 +987,7 @@
 				1EFE8FF521FC44C7006E8473 /* ChannelDetailViewController.swift in Sources */,
 				1E57E0A621FB84DE003AD898 /* CGSize+Utility.swift in Sources */,
 				1EFE8FFF21FCA379006E8473 /* UITextView+Utility.swift in Sources */,
+				DAB37B7622268FA600A70D7B /* ChannelDetailPostViewController.swift in Sources */,
 				1ED20DD82216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift in Sources */,
 				1EFF4BDA2205D645006BFDC9 /* PixcelHorizontalView.swift in Sources */,
 				1EFE900E21FCD869006E8473 /* NavTabScrollController.swift in Sources */,
@@ -1022,6 +1029,7 @@
 				DA09533F220805BA00CD9329 /* InfoPair.swift in Sources */,
 				1ED20DDD2218AAEC0043EE0D /* WKWebViewController.swift in Sources */,
 				1E57E09F21FB84DE003AD898 /* UIView+Gesture.swift in Sources */,
+				DAB37B742226811400A70D7B /* LikeLabelTextView.swift in Sources */,
 				DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */,
 				1E57E0A821FB84DE003AD898 /* UICollectionView+Highlight.swift in Sources */,
 				1EFE8FFA21FC6DCA006E8473 /* ChannelDetailTopViewController.swift in Sources */,
