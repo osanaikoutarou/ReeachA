@@ -10,21 +10,30 @@ import UIKit
 
 class ChannelDetailGoodsViewController: UIViewController {
 
+    @IBOutlet weak var tableView0: UITableView!
+    @IBOutlet weak var tableViewsWidth: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        tableView0.delegate = self
+        tableView0.dataSource = self
+        tableViewsWidth.constant = self.view.frame.width
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ChannelDetailGoodsViewController: UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView0.dequeueReusableCell(withIdentifier: "ChannelDetailItemsSquareTableViewCell", for: indexPath) as! ChannelDetailItemsSquareTableViewCell
+        cell.setup()
+        return cell
+    }
+    
+    
 }

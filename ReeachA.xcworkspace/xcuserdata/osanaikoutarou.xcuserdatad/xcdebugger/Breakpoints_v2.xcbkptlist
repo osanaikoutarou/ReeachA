@@ -52,7 +52,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailWebsite/ChannelDetailWebsiteViewController.swift"
-            timestampString = "572209886.095989"
+            timestampString = "573228358.230558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -68,7 +68,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailWebsite/ChannelDetailWebsiteViewController.swift"
-            timestampString = "572209886.096843"
+            timestampString = "573228358.232015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -116,7 +116,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailTop/ChannelDetailTopViewController.swift"
-            timestampString = "572209886.09749"
+            timestampString = "573244963.901094"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
@@ -132,7 +132,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailTop/ChannelDetailTopViewController.swift"
-            timestampString = "572209886.097994"
+            timestampString = "573244963.901485"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
@@ -148,7 +148,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailTop/ChannelDetailTopViewController.swift"
-            timestampString = "572209886.098561"
+            timestampString = "573244963.901752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "163"
@@ -164,12 +164,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailWebsite/ChannelDetailWebsiteViewController.swift"
-            timestampString = "572209886.098985"
+            timestampString = "573228358.233285"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "tappedBackButton(sender:)"
+            landmarkName = "scrollViewWillBeginDragging(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -180,12 +180,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailWebsite/ChannelDetailWebsiteViewController.swift"
-            timestampString = "572209886.099525"
+            timestampString = "573228358.233544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
-            landmarkName = "tappedBackButton(sender:)"
+            landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -196,12 +196,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailWebsite/ChannelDetailWebsiteViewController.swift"
-            timestampString = "572209886.099974"
+            timestampString = "573228358.233902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
             endingLineNumber = "95"
-            landmarkName = "tappedBackButton(sender:)"
+            landmarkName = "scrollViewWillBeginDragging(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -212,12 +212,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailWebsite/ChannelDetailWebsiteViewController.swift"
-            timestampString = "572209886.100531"
+            timestampString = "573228358.2342089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
             endingLineNumber = "98"
-            landmarkName = "tappedBackButton(sender:)"
+            landmarkName = "scrollViewDidEndDecelerating(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

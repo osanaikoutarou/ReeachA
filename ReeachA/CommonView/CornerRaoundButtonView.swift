@@ -12,7 +12,7 @@ import UIKit
 class CornerRaoundButtonView: ButtonView {
     
     @IBInspectable var borderWidth:CGFloat = 1.f
-    @IBInspectable var borderColor:UIColor = .black
+    @IBInspectable var borderColor:UIColor = UIColor(white: 51.0/255.0, alpha: 1)
 
 //    override func draw(_ rect: CGRect) {
 //        update()
