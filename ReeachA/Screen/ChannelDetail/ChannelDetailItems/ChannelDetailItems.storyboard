@@ -191,14 +191,24 @@
                                     <constraint firstItem="Sqb-Iv-6Ym" firstAttribute="height" secondItem="yaf-RY-xcP" secondAttribute="height" id="gDX-LX-sWS"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ynl-BY-gW0" userLabel="CoverView">
+                                <rect key="frame" x="710" y="114" width="40" height="837"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4ik-0W-dYn"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yaf-RY-xcP" firstAttribute="top" secondItem="pbj-qp-7bX" secondAttribute="bottom" id="9U1-xh-mZt"/>
                             <constraint firstItem="pbj-qp-7bX" firstAttribute="top" secondItem="v6J-vC-jY3" secondAttribute="top" id="E0Y-Sr-6fX"/>
                             <constraint firstItem="yaf-RY-xcP" firstAttribute="leading" secondItem="v6J-vC-jY3" secondAttribute="leading" id="MgS-Na-zgO"/>
+                            <constraint firstItem="v6J-vC-jY3" firstAttribute="trailing" secondItem="Ynl-BY-gW0" secondAttribute="trailing" id="Um0-uB-kx0"/>
                             <constraint firstItem="yaf-RY-xcP" firstAttribute="bottom" secondItem="v6J-vC-jY3" secondAttribute="bottom" id="Xvb-iL-W8K"/>
                             <constraint firstItem="v6J-vC-jY3" firstAttribute="trailing" secondItem="yaf-RY-xcP" secondAttribute="trailing" id="YY6-wL-wL1"/>
+                            <constraint firstItem="v6J-vC-jY3" firstAttribute="bottom" secondItem="Ynl-BY-gW0" secondAttribute="bottom" id="dvf-6q-Cc9"/>
+                            <constraint firstItem="Ynl-BY-gW0" firstAttribute="top" secondItem="pbj-qp-7bX" secondAttribute="bottom" id="eb9-wX-aLW"/>
                             <constraint firstItem="pbj-qp-7bX" firstAttribute="leading" secondItem="v6J-vC-jY3" secondAttribute="leading" id="kgn-zi-444"/>
                             <constraint firstItem="v6J-vC-jY3" firstAttribute="trailing" secondItem="pbj-qp-7bX" secondAttribute="trailing" id="miT-4w-PrX"/>
                         </constraints>

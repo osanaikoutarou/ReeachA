@@ -17,7 +17,7 @@ target 'ReeachA' do
 	#pod 'R.swift'
 	#pod 'ObjectMapper'
 	#pod 'SwiftyJSON'
-	#pod 'SlideMenuControllerSwift'
+	pod 'SlideMenuControllerSwift'
 	#pod 'Firebase/Core'
 	#pod 'Alamofire'
 	#pod 'Kanna', '~> 4.0.0'
