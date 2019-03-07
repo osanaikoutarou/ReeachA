@@ -43,6 +43,10 @@ class YoutubeView: UIView {
         activityIndicator.startAnimating()
 
         loadingImageView.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
+            self.loadingImageView.isHidden = true
+        })
+
         loadingImageView.kf.setImage(with: YoutubeUtility.thumbnail(id: id, type: YoutubeUtility.ThumbnailType.mq))
         
         let url = URL(string: "https://www.youtube.com/embed/" + id)!
@@ -53,11 +57,12 @@ class YoutubeView: UIView {
             
         }, didFinishNavigation: { (wknav) in
             self.activityIndicator.stopAnimating()
-            UIView.animate(withDuration: 0.3, animations: {
-                self.loadingImageView.alpha = 0
-            }, completion: { finished in
-                self.loadingImageView.isHidden = true
-            })
+//            UIView.animate(withDuration: 1.3, animations: {
+//                self.loadingImageView.alpha = 0
+//            }, completion: { finished in
+//                self.loadingImageView.isHidden = true
+//            })
+            // これが来てから表示されるまで時間がかかる(´・ω・｀)
         }, didFailProvisionalNavigation: { (wknav) in
             
         }, didReceiveServerRedirectForProvisionalNavigation: { (wknav) in
