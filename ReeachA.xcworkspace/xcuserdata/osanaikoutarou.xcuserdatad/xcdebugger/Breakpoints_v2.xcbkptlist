@@ -116,7 +116,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailTop/ChannelDetailTopViewController.swift"
-            timestampString = "573575213.033282"
+            timestampString = "573632019.968209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
@@ -132,7 +132,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailTop/ChannelDetailTopViewController.swift"
-            timestampString = "573575213.0339839"
+            timestampString = "573632019.968922"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
@@ -148,7 +148,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Screen/ChannelDetail/ChannelDetailTop/ChannelDetailTopViewController.swift"
-            timestampString = "573575213.034372"
+            timestampString = "573632019.969249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "163"
@@ -228,7 +228,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/CommonView/Youtube/YoutubeView.swift"
-            timestampString = "573575213.034734"
+            timestampString = "573632019.969663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -244,27 +244,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/CommonView/Youtube/YoutubeView.swift"
-            timestampString = "573575213.035138"
+            timestampString = "573632019.970293"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "load(id:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ReeachA/CommonView/Youtube/YoutubeView.swift"
-            timestampString = "573575213.035423"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "load(id:)"
             landmarkType = "7">
             <Locations>
@@ -276,7 +260,7 @@
                   moduleName = "ReeachA"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/osanaikoutarou/ios/ReeachA/ReeachA/CommonView/Youtube/YoutubeView.swift"
-                  timestampString = "573574877.51845"
+                  timestampString = "573631423.7327811"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "56"
@@ -291,7 +275,7 @@
                   moduleName = "ReeachA"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/osanaikoutarou/ios/ReeachA/ReeachA/CommonView/Youtube/YoutubeView.swift"
-                  timestampString = "573574877.52083"
+                  timestampString = "573631423.735847"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "57"
@@ -304,11 +288,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Utilities/WKWebViewController.swift"
-            timestampString = "573575213.035718"
+            timestampString = "573632019.970644"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "160"
@@ -320,16 +304,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReeachA/Utilities/WKWebViewController.swift"
-            timestampString = "573575213.036045"
+            timestampString = "573632019.9709131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "166"
             endingLineNumber = "166"
             landmarkName = "webView(_:didFailProvisionalNavigation:withError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReeachA/Utilities/WKWebViewController.swift"
+            timestampString = "573632019.970981"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "webView(_:decidePolicyFor:decisionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

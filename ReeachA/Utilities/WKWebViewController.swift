@@ -185,7 +185,14 @@ class WKWebViewController:NSObject, WKNavigationDelegate {
         //        //decisionHandler(WKNavigationActionPolicyCancel);
         //        //読み込み続行
         //        decisionHandler(WKNavigationActionPolicyAllow);
+        
+        if (navigationAction.navigationType == .linkActivated){
+            decisionHandler(.cancel)
+        } else {
+            decisionHandler(.allow)
+        }
     }
+    
 }
 
 extension WKWebViewController {

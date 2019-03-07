@@ -54,6 +54,8 @@ class YoutubeView: UIView {
         }, didFinishNavigation: { (wknav) in
             self.activityIndicator.stopAnimating()
             UIView.animate(withDuration: 0.3, animations: {
+                self.loadingImageView.alpha = 0
+            }, completion: { finished in
                 self.loadingImageView.isHidden = true
             })
         }, didFailProvisionalNavigation: { (wknav) in
