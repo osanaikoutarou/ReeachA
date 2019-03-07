@@ -32,6 +32,7 @@ class WKWebViewController:NSObject, WKNavigationDelegate {
         self.wkWebView = wkWebView
         super.init()
         self.wkWebView.load(NSURLRequest(url: url) as URLRequest)
+        setupWKWebViewDefault()
         setupObserver()
     }
     deinit {

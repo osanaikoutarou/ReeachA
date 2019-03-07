@@ -14,11 +14,13 @@ class YoutubeView: UIView {
     var contentView: UIView!
     @IBOutlet weak var wkwebview: WKWebView!
     @IBOutlet weak var loadingImageView: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    var wkwebviewController: WKWebViewController!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         print("awakefromnib")
+        commonInit()
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,11 +35,41 @@ class YoutubeView: UIView {
         addSubview(contentView)
         contentView.frame = self.frame
         contentView.bindFrameToSuperviewBounds()
+        
+        wkwebview.scrollView.isScrollEnabled = false
     }
     
     func load(id: String) {
+        activityIndicator.startAnimating()
+
+        loadingImageView.isHidden = false
+        loadingImageView.kf.setImage(with: YoutubeUtility.thumbnail(id: id, type: YoutubeUtility.ThumbnailType.mq))
+        
         let url = URL(string: "https://www.youtube.com/embed/" + id)!
-        wkwebview.load(URLRequest(url: url))
-        wkwebview.setup
+        wkwebviewController = WKWebViewController(wkWebView: wkwebview, url: url)
+        wkwebviewController.setup(didStartProvisionalNavigation: { (wknav) in
+            
+        }, didCommitNavigation: { (wknav) in
+            
+        }, didFinishNavigation: { (wknav) in
+            self.activityIndicator.stopAnimating()
+            UIView.animate(withDuration: 0.3, animations: {
+                self.loadingImageView.isHidden = true
+            })
+        }, didFailProvisionalNavigation: { (wknav) in
+            
+        }, didReceiveServerRedirectForProvisionalNavigation: { (wknav) in
+            
+        }, changedEstimatedProgress: { (progress) in
+            
+        }, changedTitle: { (title) in
+            
+        }, changedLoading: { (loading) in
+            
+        }, changedCanGoBack: { (canGoBack) in
+            
+        }, changedCanGoForward: { (canGoForward) in
+            
+        })
     }
 }

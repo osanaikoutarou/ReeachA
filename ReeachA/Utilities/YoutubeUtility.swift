@@ -25,23 +25,23 @@ class YoutubeUtility: NSObject {
     static func thumbnail(id: String, type: ThumbnailType) -> URL {
         switch type {
         case .normal:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/default.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/default.jpg")!
         case .type1:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/1.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/1.jpg")!
         case .type2:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/2.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/2.jpg")!
         case .type3:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/3.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/3.jpg")!
         case .mq:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/mqdefault.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/mqdefault.jpg")!
         case .hq:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/hqdefault.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/hqdefault.jpg")!
         case .hq0:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/0.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/0.jpg")!
         case .sd:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/sddefault.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/sddefault.jpg")!
         case .maxres:
-            return URL(string: "http://i.ytimg.com/vi/\(id)/maxresdefault.jpg")!
+            return URL(string: "https://i.ytimg.com/vi/\(id)/maxresdefault.jpg")!
         }
     }
 }

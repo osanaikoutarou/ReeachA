@@ -95,7 +95,6 @@
 		1EC50DD62200CA290026DEF0 /* ChannelDetailItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC50DD52200CA290026DEF0 /* ChannelDetailItemsViewController.swift */; };
 		1ED20DD82216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED20DD72216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift */; };
 		1ED20DDB221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED20DDA221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard */; };
-		1ED20DDD2218AAEC0043EE0D /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED20DDC2218AAEC0043EE0D /* WKWebViewController.swift */; };
 		1ED20DDF2218AF020043EE0D /* Debug2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED20DDE2218AF020043EE0D /* Debug2ViewController.swift */; };
 		1EE4CD7B22056B4D00E85537 /* ChannelDetailEpisode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE4CD7A22056B4D00E85537 /* ChannelDetailEpisode.storyboard */; };
 		1EE4CD7D22056B6300E85537 /* ChannelDetailEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4CD7C22056B6300E85537 /* ChannelDetailEpisodeViewController.swift */; };
@@ -239,7 +238,6 @@
 		1EC50DD52200CA290026DEF0 /* ChannelDetailItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailItemsViewController.swift; sourceTree = "<group>"; };
 		1ED20DD72216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailEpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		1ED20DDA221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailEpisodeDetail.storyboard; sourceTree = "<group>"; };
-		1ED20DDC2218AAEC0043EE0D /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		1ED20DDE2218AF020043EE0D /* Debug2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug2ViewController.swift; sourceTree = "<group>"; };
 		1EE4CD7A22056B4D00E85537 /* ChannelDetailEpisode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailEpisode.storyboard; sourceTree = "<group>"; };
 		1EE4CD7C22056B6300E85537 /* ChannelDetailEpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailEpisodeViewController.swift; sourceTree = "<group>"; };
@@ -644,7 +642,6 @@
 		1EB1514021FA1C16001B6110 /* ReeachA */ = {
 			isa = PBXGroup;
 			children = (
-				1EFE900C21FCD82B006E8473 /* CommonUtility */,
 				1E57E0BF21FC02AB003AD898 /* Model */,
 				1E57E0BC21FC01EE003AD898 /* Screen */,
 				1E57E0B921FB8C05003AD898 /* Definition */,
@@ -802,15 +799,6 @@
 			path = WebLink;
 			sourceTree = "<group>";
 		};
-		1EFE900C21FCD82B006E8473 /* CommonUtility */ = {
-			isa = PBXGroup;
-			children = (
-				1EFE900D21FCD869006E8473 /* NavTabScrollController.swift */,
-				1ED20DDC2218AAEC0043EE0D /* WKWebViewController.swift */,
-			);
-			path = CommonUtility;
-			sourceTree = "<group>";
-		};
 		1EFF4BCB2205BE57006BFDC9 /* ChannelDetailNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -912,6 +900,7 @@
 		DADA57F1222E62C400FC95A8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1EFE900D21FCD869006E8473 /* NavTabScrollController.swift */,
 				DADA57F2222E62DC00FC95A8 /* YoutubeUtility.swift */,
 				DA55B092222F797B001AD0C9 /* WKWebViewController.swift */,
 			);
@@ -1109,7 +1098,6 @@
 				1E57E08A21FB84DD003AD898 /* Array+.swift in Sources */,
 				1EFE8FEF21FC3FA9006E8473 /* CGFloat+Utility.swift in Sources */,
 				DA09533F220805BA00CD9329 /* InfoPair.swift in Sources */,
-				1ED20DDD2218AAEC0043EE0D /* WKWebViewController.swift in Sources */,
 				1E57E09F21FB84DE003AD898 /* UIView+Gesture.swift in Sources */,
 				DAB37B742226811400A70D7B /* LikeLabelTextView.swift in Sources */,
 				DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */,

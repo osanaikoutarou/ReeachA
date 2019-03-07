@@ -25,30 +25,27 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="YoutubeTableViewCell" rowHeight="336" id="ZcU-xV-Qj5" customClass="YoutubeTableViewCell" customModule="ReeachA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="336"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZcU-xV-Qj5" id="wFn-ch-0RB">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZcU-xV-Qj5" id="wFn-ch-0RB">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="335.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcR-9a-JRD">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5RZ-bC-9vm" customClass="YoutubeView" customModule="ReeachA" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="10" width="355" height="199.5"/>
-                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="lcR-9a-JRD" secondAttribute="height" multiplier="16:9" id="ZbR-Gh-pXZ"/>
+                                                        <constraint firstAttribute="width" secondItem="5RZ-bC-9vm" secondAttribute="height" multiplier="16:9" id="2hk-JY-5iA"/>
                                                     </constraints>
-                                                    <wkWebViewConfiguration key="configuration">
-                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                                        <wkPreferences key="preferences"/>
-                                                    </wkWebViewConfiguration>
-                                                </wkWebView>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lcR-9a-JRD" firstAttribute="top" secondItem="wFn-ch-0RB" secondAttribute="top" constant="10" id="ZAZ-S5-hZn"/>
-                                                <constraint firstItem="lcR-9a-JRD" firstAttribute="leading" secondItem="wFn-ch-0RB" secondAttribute="leading" constant="10" id="ihU-Xv-tJu"/>
-                                                <constraint firstAttribute="trailing" secondItem="lcR-9a-JRD" secondAttribute="trailing" constant="10" id="nyH-UM-0nI"/>
+                                                <constraint firstItem="5RZ-bC-9vm" firstAttribute="top" secondItem="wFn-ch-0RB" secondAttribute="top" constant="10" id="VKT-KP-3al"/>
+                                                <constraint firstAttribute="trailing" secondItem="5RZ-bC-9vm" secondAttribute="trailing" constant="10" id="dhV-1K-exh"/>
+                                                <constraint firstAttribute="bottom" secondItem="5RZ-bC-9vm" secondAttribute="bottom" constant="126" id="myj-qf-amQ"/>
+                                                <constraint firstItem="5RZ-bC-9vm" firstAttribute="leading" secondItem="wFn-ch-0RB" secondAttribute="leading" constant="10" id="rzj-A5-s0Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="wkwebview" destination="lcR-9a-JRD" id="axh-PM-YXM"/>
+                                            <outlet property="youtubeView" destination="5RZ-bC-9vm" id="lMK-N3-fzO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
