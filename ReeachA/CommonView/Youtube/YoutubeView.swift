@@ -43,9 +43,7 @@ class YoutubeView: UIView {
         activityIndicator.startAnimating()
 
         loadingImageView.isHidden = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5, execute: {
-            self.loadingImageView.isHidden = true
-        })
+        loadingImageView.alpha = 1.0
 
         loadingImageView.kf.setImage(with: YoutubeUtility.thumbnail(id: id, type: YoutubeUtility.ThumbnailType.mq))
         
@@ -57,12 +55,11 @@ class YoutubeView: UIView {
             
         }, didFinishNavigation: { (wknav) in
             self.activityIndicator.stopAnimating()
-//            UIView.animate(withDuration: 1.3, animations: {
-//                self.loadingImageView.alpha = 0
-//            }, completion: { finished in
-//                self.loadingImageView.isHidden = true
-//            })
-            // これが来てから表示されるまで時間がかかる(´・ω・｀)
+            UIView.animate(withDuration: 0.5, delay: 0.5, options: [], animations: {
+                self.loadingImageView.alpha = 0
+            }, completion: { (finished) in
+                self.loadingImageView.isHidden = true
+            })
         }, didFailProvisionalNavigation: { (wknav) in
             
         }, didReceiveServerRedirectForProvisionalNavigation: { (wknav) in
