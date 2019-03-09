@@ -144,31 +144,31 @@ class WKWebViewController:NSObject, WKNavigationDelegate {
     //MARK: Nav methods
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        print("webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!)")
+//        print("webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!)")
         // ページの読み込み準備開始
         if let didStartProvisionalNavigation = didStartProvisionalNavigation {
             didStartProvisionalNavigation(navigation)
         }
     }
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        print("webView(_ webView: WKWebView, didCommit navigation: WKNavigation!)")
+//        print("webView(_ webView: WKWebView, didCommit navigation: WKNavigation!)")
         // ページが見つかり、読み込み開始
         if let didCommitNavigation = didCommitNavigation {
             didCommitNavigation(navigation)
         }
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)")
+//        print("webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)")
         // ページ読み込み完了
         if let didFinishNavigation = didFinishNavigation {
             didFinishNavigation(navigation)
         }
     }
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        print("webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error)")
+//        print("webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error)")
     }
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-        print("webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error)")
+//        print("webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error)")
         // ページ読み込み失敗
         if let didFailProvisionalNavigation = didFailProvisionalNavigation {
             didFailProvisionalNavigation(navigation)
@@ -179,7 +179,7 @@ class WKWebViewController:NSObject, WKNavigationDelegate {
 //        print("webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)")
 //    }
     func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
-        print("webViewWebContentProcessDidTerminate")
+//        print("webViewWebContentProcessDidTerminate")
     }
     func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
         // 表示中にリダイレクト
@@ -188,11 +188,11 @@ class WKWebViewController:NSObject, WKNavigationDelegate {
         }
     }
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-        print("webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy)")
+//        print("webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy)")
         decisionHandler(.allow)
     }
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        print("webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void)")
+//        print("webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void)")
         
         let url = webView.url
         let req = navigationAction.request
