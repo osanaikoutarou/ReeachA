@@ -62,4 +62,5 @@ fastlane/test_output
 
 *.DS_Store*
 *DS_Store
-EventWorks/Common/.DS_Store
+
+*xcbkptlist
