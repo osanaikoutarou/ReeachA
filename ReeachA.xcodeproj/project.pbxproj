@@ -144,6 +144,7 @@
 		DADA57EE222E4ACF00FC95A8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */; };
 		DADA57F0222E4DC200FC95A8 /* YoutubeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57EF222E4DC200FC95A8 /* YoutubeTableViewCell.swift */; };
 		DADA57F3222E62DC00FC95A8 /* YoutubeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57F2222E62DC00FC95A8 /* YoutubeUtility.swift */; };
+		DADD662C22A4AEB600F11710 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD662B22A4AEB500F11710 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -288,6 +289,7 @@
 		DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		DADA57EF222E4DC200FC95A8 /* YoutubeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTableViewCell.swift; sourceTree = "<group>"; };
 		DADA57F2222E62DC00FC95A8 /* YoutubeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeUtility.swift; sourceTree = "<group>"; };
+		DADD662B22A4AEB500F11710 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReeachA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -296,6 +298,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADD662C22A4AEB600F11710 /* WebKit.framework in Frameworks */,
 				230CD8FCC5D42F274DDFB366 /* Pods_ReeachA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -825,6 +828,7 @@
 		8EB5C916A33FAB832F0B7013 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DADD662B22A4AEB500F11710 /* WebKit.framework */,
 				F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */,
 			);
 			name = Frameworks;
@@ -1021,7 +1025,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ReeachA/Pods-ReeachA-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ReeachA/Pods-ReeachA-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -1040,7 +1044,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReeachA/Pods-ReeachA-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReeachA/Pods-ReeachA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
