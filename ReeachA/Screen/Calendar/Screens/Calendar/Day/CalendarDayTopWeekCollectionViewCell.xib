@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CalendarDayTopWeekCollectionViewCell" customModule="WeekCalendarExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scS-30-SyT" userLabel="Selecting">
+                        <rect key="frame" x="7" y="60" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="CzE-SS-wzV"/>
+                            <constraint firstAttribute="width" constant="40" id="NQe-Fw-I5f"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCK-gh-fxx" userLabel="toDay">
+                        <rect key="frame" x="7" y="60" width="40" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="0iS-m8-kCv"/>
+                            <constraint firstAttribute="width" constant="40" id="RLz-xU-Lq4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bgd-ra-isN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kuK-Zi-7oI">
+                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oW4-ty-RyX" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEv-SJ-Jtk">
+                                                <rect key="frame" x="13" y="2.5" width="28" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.62946900110000004" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jEv-SJ-Jtk" firstAttribute="centerX" secondItem="oW4-ty-RyX" secondAttribute="centerX" id="MQP-Fi-RbL"/>
+                                            <constraint firstAttribute="height" constant="25" id="Sqb-Xz-HxO"/>
+                                            <constraint firstItem="jEv-SJ-Jtk" firstAttribute="centerY" secondItem="oW4-ty-RyX" secondAttribute="centerY" id="bwp-vQ-hOO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmi-Hb-G85">
+                                        <rect key="frame" x="0.0" y="25" width="53.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRN-Fo-XZ6">
+                                                <rect key="frame" x="18.5" y="5.5" width="16.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="PRN-Fo-XZ6" firstAttribute="centerY" secondItem="qmi-Hb-G85" secondAttribute="centerY" id="WEs-vg-vpx"/>
+                                            <constraint firstAttribute="height" constant="30" id="o28-ty-bjh"/>
+                                            <constraint firstItem="PRN-Fo-XZ6" firstAttribute="centerX" secondItem="qmi-Hb-G85" secondAttribute="centerX" id="zyb-oW-fbQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXF-ye-zQY" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="53.5" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-np-DtQ">
+                                                <rect key="frame" x="18" y="15" width="17.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xZc-np-DtQ" firstAttribute="centerY" secondItem="DXF-ye-zQY" secondAttribute="centerY" id="Qun-eg-uHl"/>
+                                            <constraint firstAttribute="height" constant="50" id="c4J-fO-brZ"/>
+                                            <constraint firstItem="xZc-np-DtQ" firstAttribute="centerX" secondItem="DXF-ye-zQY" secondAttribute="centerX" id="nDV-Dq-Ld6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedDay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dnw-Dr-TZB"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-iC-zQI">
+                                <rect key="frame" x="53.5" y="0.0" width="53.5" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yG9-zE-oGW" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUT-T0-WyP">
+                                                <rect key="frame" x="13" y="2.5" width="28" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.62946900110000004" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="IUT-T0-WyP" firstAttribute="centerX" secondItem="yG9-zE-oGW" secondAttribute="centerX" id="24m-LV-Big"/>
+                                            <constraint firstAttribute="height" constant="25" id="9qX-vx-t5h"/>
+                                            <constraint firstItem="IUT-T0-WyP" firstAttribute="centerY" secondItem="yG9-zE-oGW" secondAttribute="centerY" id="WZt-3D-t0I"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2a1-Gq-Jh7">
+                                        <rect key="frame" x="0.0" y="25" width="53.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWI-ug-ONc">
+                                                <rect key="frame" x="18.5" y="5.5" width="16.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="XWI-ug-ONc" firstAttribute="centerX" secondItem="2a1-Gq-Jh7" secondAttribute="centerX" id="Qem-1a-3my"/>
+                                            <constraint firstAttribute="height" constant="30" id="YzO-Y8-lZG"/>
+                                            <constraint firstItem="XWI-ug-ONc" firstAttribute="centerY" secondItem="2a1-Gq-Jh7" secondAttribute="centerY" id="f8l-90-DXv"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obj-Rt-WhJ" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="53.5" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPo-EN-j5k">
+                                                <rect key="frame" x="18" y="15" width="17.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="EPo-EN-j5k" firstAttribute="centerY" secondItem="obj-Rt-WhJ" secondAttribute="centerY" id="8kU-xq-Gmc"/>
+                                            <constraint firstAttribute="height" constant="50" id="iji-OK-yen"/>
+                                            <constraint firstItem="EPo-EN-j5k" firstAttribute="centerX" secondItem="obj-Rt-WhJ" secondAttribute="centerX" id="qXL-qM-mvk"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedDay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="VGb-wS-GxT"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zAJ-pY-Gaq">
+                                <rect key="frame" x="107" y="0.0" width="53.5" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="De5-dK-2FK" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLp-tT-4Zv">
+                                                <rect key="frame" x="13" y="2.5" width="28" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.62946900110000004" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="rLp-tT-4Zv" firstAttribute="centerY" secondItem="De5-dK-2FK" secondAttribute="centerY" id="8KE-zb-DYn"/>
+                                            <constraint firstAttribute="height" constant="25" id="Obb-To-8o0"/>
+                                            <constraint firstItem="rLp-tT-4Zv" firstAttribute="centerX" secondItem="De5-dK-2FK" secondAttribute="centerX" id="bMB-Xx-cGE"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQ5-CJ-88E">
+                                        <rect key="frame" x="0.0" y="25" width="53.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-sY-GJ5">
+                                                <rect key="frame" x="18.5" y="5.5" width="16.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="E5x-LW-Tb2"/>
+                                            <constraint firstItem="OoC-sY-GJ5" firstAttribute="centerX" secondItem="cQ5-CJ-88E" secondAttribute="centerX" id="Xy1-or-Fdq"/>
+                                            <constraint firstItem="OoC-sY-GJ5" firstAttribute="centerY" secondItem="cQ5-CJ-88E" secondAttribute="centerY" id="lmc-oT-hh6"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xd-2X-9Cu" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="53.5" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOz-QP-kjf">
+                                                <rect key="frame" x="18" y="15" width="17.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="MOz-QP-kjf" firstAttribute="centerX" secondItem="8xd-2X-9Cu" secondAttribute="centerX" id="Gpf-rG-QYW"/>
+                                            <constraint firstAttribute="height" constant="50" id="Iav-y1-vBt"/>
+                                            <constraint firstItem="MOz-QP-kjf" firstAttribute="centerY" secondItem="8xd-2X-9Cu" secondAttribute="centerY" id="gQK-XL-xx2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedDay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hnY-ko-6hA"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ToK-Kf-44a">
+                                <rect key="frame" x="160.5" y="0.0" width="54" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6q9-8G-A8E" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7h-u3-KKI">
+                                                <rect key="frame" x="13" y="2.5" width="28" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.62946900110000004" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="t7h-u3-KKI" firstAttribute="centerY" secondItem="6q9-8G-A8E" secondAttribute="centerY" id="6vX-gJ-kdX"/>
+                                            <constraint firstItem="t7h-u3-KKI" firstAttribute="centerX" secondItem="6q9-8G-A8E" secondAttribute="centerX" id="Bkp-w9-wAu"/>
+                                            <constraint firstAttribute="height" constant="25" id="NoF-nK-N9A"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP1-7D-N47">
+                                        <rect key="frame" x="0.0" y="25" width="54" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFz-Ve-3ni">
+                                                <rect key="frame" x="19" y="5.5" width="16.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="MFz-Ve-3ni" firstAttribute="centerY" secondItem="dP1-7D-N47" secondAttribute="centerY" id="42F-Tn-3Bk"/>
+                                            <constraint firstItem="MFz-Ve-3ni" firstAttribute="centerX" secondItem="dP1-7D-N47" secondAttribute="centerX" id="id4-0S-fMg"/>
+                                            <constraint firstAttribute="height" constant="30" id="uoP-Pj-UtP"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXf-FR-sOj" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="54" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGr-qR-LpX">
+                                                <rect key="frame" x="18.5" y="15" width="17.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="JGr-qR-LpX" firstAttribute="centerY" secondItem="hXf-FR-sOj" secondAttribute="centerY" id="2OV-2x-LZ5"/>
+                                            <constraint firstAttribute="height" constant="50" id="9EG-RX-V3j"/>
+                                            <constraint firstItem="JGr-qR-LpX" firstAttribute="centerX" secondItem="hXf-FR-sOj" secondAttribute="centerX" id="XyA-2U-84l"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedDay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="20x-M0-96x"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J7f-rt-fnA">
+                                <rect key="frame" x="214.5" y="0.0" width="53.5" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2A-Vt-An1" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osk-hq-lMG">
+                                                <rect key="frame" x="12.5" y="2.5" width="28" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.62946900110000004" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="OdM-ZY-30g"/>
+                                            <constraint firstItem="osk-hq-lMG" firstAttribute="centerX" secondItem="M2A-Vt-An1" secondAttribute="centerX" id="oLa-gJ-Hzv"/>
+                                            <constraint firstItem="osk-hq-lMG" firstAttribute="centerY" secondItem="M2A-Vt-An1" secondAttribute="centerY" id="ynL-Qu-ZSn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0Q-m4-M3W">
+                                        <rect key="frame" x="0.0" y="25" width="53.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="木" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyS-y1-tOn">
+                                                <rect key="frame" x="18.5" y="5.5" width="16.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xyS-y1-tOn" firstAttribute="centerY" secondItem="F0Q-m4-M3W" secondAttribute="centerY" id="8rX-qA-D7S"/>
+                                            <constraint firstItem="xyS-y1-tOn" firstAttribute="centerX" secondItem="F0Q-m4-M3W" secondAttribute="centerX" id="MWy-Pz-Ikb"/>
+                                            <constraint firstAttribute="height" constant="30" id="g59-oV-tCv"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQw-qP-l2G" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="53.5" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESz-bx-SHZ">
+                                                <rect key="frame" x="18" y="15" width="17.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ESz-bx-SHZ" firstAttribute="centerX" secondItem="IQw-qP-l2G" secondAttribute="centerX" id="Jb3-dD-Vc4"/>
+                                            <constraint firstItem="ESz-bx-SHZ" firstAttribute="centerY" secondItem="IQw-qP-l2G" secondAttribute="centerY" id="YxG-y9-1S3"/>
+                                            <constraint firstAttribute="height" constant="50" id="kEQ-wF-209"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedDay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wM1-Zg-Z7u"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CuE-e4-Rtv">
+                                <rect key="frame" x="268" y="0.0" width="53.5" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-lF-w27" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2i-5b-Ixu">
+                                                <rect key="frame" x="12.5" y="2.5" width="28" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.62946900110000004" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="G2i-5b-Ixu" firstAttribute="centerY" secondItem="Zv8-lF-w27" secondAttribute="centerY" id="03K-Z6-e8u"/>
+                                            <constraint firstAttribute="height" constant="25" id="aVu-rV-4ng"/>
+                                            <constraint firstItem="G2i-5b-Ixu" firstAttribute="centerX" secondItem="Zv8-lF-w27" secondAttribute="centerX" id="wqU-fz-UbQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rf9-vy-6dv">
+                                        <rect key="frame" x="0.0" y="25" width="53.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-BB-38l">
+                                                <rect key="frame" x="18.5" y="5.5" width="16.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Le2-v4-cWJ"/>
+                                            <constraint firstItem="Xhf-BB-38l" firstAttribute="centerY" secondItem="rf9-vy-6dv" secondAttribute="centerY" id="cH5-i6-Hqj"/>
+                                            <constraint firstItem="Xhf-BB-38l" firstAttribute="centerX" secondItem="rf9-vy-6dv" secondAttribute="centerX" id="ghF-ry-Wum"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ME-lj-ASp" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="53.5" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh5-sG-UUt">
+                                                <rect key="frame" x="18" y="15" width="17.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2Vf-9b-JbD"/>
+                                            <constraint firstItem="qh5-sG-UUt" firstAttribute="centerX" secondItem="4ME-lj-ASp" secondAttribute="centerX" id="EKR-D1-VMt"/>
+                                            <constraint firstItem="qh5-sG-UUt" firstAttribute="centerY" secondItem="4ME-lj-ASp" secondAttribute="centerY" id="VLI-EH-6C1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedDay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="FWo-MZ-NhP"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Iln-Dk-SeW">
+                                <rect key="frame" x="321.5" y="0.0" width="53.5" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EF3-6F-pWS" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePG-Tj-fas">
+                                                <rect key="frame" x="12.5" y="2.5" width="28" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.62946900110000004" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ePG-Tj-fas" firstAttribute="centerY" secondItem="EF3-6F-pWS" secondAttribute="centerY" id="bTb-Nk-htm"/>
+                                            <constraint firstItem="ePG-Tj-fas" firstAttribute="centerX" secondItem="EF3-6F-pWS" secondAttribute="centerX" id="mcv-ey-wjR"/>
+                                            <constraint firstAttribute="height" constant="25" id="nMX-4W-6gQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNB-1h-lvV">
+                                        <rect key="frame" x="0.0" y="25" width="53.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="土" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJX-Ah-ao0">
+                                                <rect key="frame" x="18.5" y="5.5" width="16.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5uH-mk-con"/>
+                                            <constraint firstItem="DJX-Ah-ao0" firstAttribute="centerY" secondItem="vNB-1h-lvV" secondAttribute="centerY" id="CZB-cK-OIM"/>
+                                            <constraint firstItem="DJX-Ah-ao0" firstAttribute="centerX" secondItem="vNB-1h-lvV" secondAttribute="centerX" id="gQO-Px-Cn3"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBe-TO-8aH" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="53.5" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igd-in-uGP">
+                                                <rect key="frame" x="18" y="15" width="17.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Igd-in-uGP" firstAttribute="centerY" secondItem="OBe-TO-8aH" secondAttribute="centerY" id="Lm3-ft-jUR"/>
+                                            <constraint firstItem="Igd-in-uGP" firstAttribute="centerX" secondItem="OBe-TO-8aH" secondAttribute="centerX" id="XJ2-BM-bWr"/>
+                                            <constraint firstAttribute="height" constant="50" id="clL-zH-IAE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedDay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2tf-UR-x0h"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y53-cZ-O4M">
+                        <rect key="frame" x="10" y="0.0" width="365" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="GZQ-79-rNh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="y53-cZ-O4M" secondAttribute="trailing" id="1dZ-Lu-E9e"/>
+                <constraint firstItem="Bgd-ra-isN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9zF-Hn-YL2"/>
+                <constraint firstItem="scS-30-SyT" firstAttribute="centerY" secondItem="xZc-np-DtQ" secondAttribute="centerY" id="EVq-Go-RMy"/>
+                <constraint firstItem="lCK-gh-fxx" firstAttribute="centerX" secondItem="xZc-np-DtQ" secondAttribute="centerX" id="LGg-5H-I3u"/>
+                <constraint firstAttribute="bottom" secondItem="Bgd-ra-isN" secondAttribute="bottom" id="Pbd-Zh-6wd"/>
+                <constraint firstItem="scS-30-SyT" firstAttribute="centerX" secondItem="xZc-np-DtQ" secondAttribute="centerX" id="QxN-d6-reY"/>
+                <constraint firstItem="y53-cZ-O4M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Sxp-2D-Cmo"/>
+                <constraint firstItem="Bgd-ra-isN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WDM-ly-1aA"/>
+                <constraint firstItem="lCK-gh-fxx" firstAttribute="centerY" secondItem="xZc-np-DtQ" secondAttribute="centerY" id="nf6-QM-utb"/>
+                <constraint firstAttribute="trailing" secondItem="Bgd-ra-isN" secondAttribute="trailing" id="rHs-Gr-zeq"/>
+                <constraint firstItem="y53-cZ-O4M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="w9f-gf-mq1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="397" height="50"/>
+            <connections>
+                <outlet property="leftMarginConstraint" destination="Sxp-2D-Cmo" id="AUA-kB-lST"/>
+                <outlet property="selectingView" destination="scS-30-SyT" id="e5r-0a-BdX"/>
+                <outlet property="toDayView" destination="lCK-gh-fxx" id="HhJ-nD-Cxc"/>
+                <outlet property="yearMonthLabel" destination="y53-cZ-O4M" id="WQt-ct-wa0"/>
+                <outletCollection property="dayLabels" destination="xZc-np-DtQ" collectionClass="NSMutableArray" id="gs3-N8-D33"/>
+                <outletCollection property="dayLabels" destination="EPo-EN-j5k" collectionClass="NSMutableArray" id="XZs-DQ-ZaV"/>
+                <outletCollection property="dayLabels" destination="MOz-QP-kjf" collectionClass="NSMutableArray" id="T6w-5j-AFT"/>
+                <outletCollection property="dayLabels" destination="JGr-qR-LpX" collectionClass="NSMutableArray" id="E8L-Rm-56F"/>
+                <outletCollection property="dayLabels" destination="ESz-bx-SHZ" collectionClass="NSMutableArray" id="Ppa-In-ELW"/>
+                <outletCollection property="dayLabels" destination="qh5-sG-UUt" collectionClass="NSMutableArray" id="UzZ-Jr-Zl6"/>
+                <outletCollection property="dayLabels" destination="Igd-in-uGP" collectionClass="NSMutableArray" id="Oob-gA-xX0"/>
+                <outletCollection property="monthLabels" destination="jEv-SJ-Jtk" collectionClass="NSMutableArray" id="qkD-CJ-T8x"/>
+                <outletCollection property="monthLabels" destination="IUT-T0-WyP" collectionClass="NSMutableArray" id="zpC-uz-jlg"/>
+                <outletCollection property="monthLabels" destination="rLp-tT-4Zv" collectionClass="NSMutableArray" id="rcW-H8-ruG"/>
+                <outletCollection property="monthLabels" destination="t7h-u3-KKI" collectionClass="NSMutableArray" id="1ha-x6-8ef"/>
+                <outletCollection property="monthLabels" destination="osk-hq-lMG" collectionClass="NSMutableArray" id="fdZ-WP-shd"/>
+                <outletCollection property="monthLabels" destination="G2i-5b-Ixu" collectionClass="NSMutableArray" id="EMT-Jj-BK5"/>
+                <outletCollection property="monthLabels" destination="ePG-Tj-fas" collectionClass="NSMutableArray" id="eyS-nO-0Jd"/>
+            </connections>
+            <point key="canvasLocation" x="-101" y="36"/>
+        </collectionViewCell>
+    </objects>
+</document>

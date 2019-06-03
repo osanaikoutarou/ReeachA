@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CommonCalendarDayCollectionViewCell" reuseIdentifier="CommonCalendarDayCollectionViewCell" id="gTV-IL-0wX" customClass="CommonCalendarDayCollectionViewCell" customModule="WeekCalendarExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edi-Y9-4Ub" customClass="ButtonView" customModule="WeekCalendarExample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2i-hx-3ol">
+                                <rect key="frame" x="14.5" y="13" width="21" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L2i-hx-3ol" firstAttribute="centerX" secondItem="edi-Y9-4Ub" secondAttribute="centerX" id="gmp-EN-v0e"/>
+                            <constraint firstItem="L2i-hx-3ol" firstAttribute="centerY" secondItem="edi-Y9-4Ub" secondAttribute="centerY" id="v9O-oT-Ns7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="edi-Y9-4Ub" secondAttribute="bottom" id="3u9-hD-bml"/>
+                <constraint firstItem="edi-Y9-4Ub" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FMD-J8-fdU"/>
+                <constraint firstAttribute="trailing" secondItem="edi-Y9-4Ub" secondAttribute="trailing" id="QFl-eu-uww"/>
+                <constraint firstItem="edi-Y9-4Ub" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fwJ-x2-dvi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="label" destination="L2i-hx-3ol" id="Jsc-3m-k4y"/>
+            </connections>
+            <point key="canvasLocation" x="-86" y="103"/>
+        </collectionViewCell>
+    </objects>
+</document>

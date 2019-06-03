@@ -10,11 +10,11 @@ import UIKit
 
 class ShadowView: UIView {
 
-    var cornerRadius:CGFloat = 0
+    var cornerRadiusSave: CGFloat = 0
     
     override var bounds: CGRect {
         didSet {
-            layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
+            layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: layer.cornerRadius).cgPath
         }
     }
     
@@ -34,6 +34,6 @@ class ShadowView: UIView {
         layer.shouldRasterize = true
         layer.rasterizationScale = UIScreen.main.scale
         
-        self.cornerRadius = cornerRadius
+        self.cornerRadiusSave = cornerRadius
     }
 }

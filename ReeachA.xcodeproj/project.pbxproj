@@ -145,6 +145,29 @@
 		DADA57F0222E4DC200FC95A8 /* YoutubeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57EF222E4DC200FC95A8 /* YoutubeTableViewCell.swift */; };
 		DADA57F3222E62DC00FC95A8 /* YoutubeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57F2222E62DC00FC95A8 /* YoutubeUtility.swift */; };
 		DADD662C22A4AEB600F11710 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADD662B22A4AEB500F11710 /* WebKit.framework */; };
+		DADD662F22A4AFD600F11710 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADD662E22A4AFD600F11710 /* Calendar.storyboard */; };
+		DADD664822A4B05800F11710 /* CalendarMonth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADD663322A4B05800F11710 /* CalendarMonth.storyboard */; };
+		DADD664922A4B05800F11710 /* CalendarMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD663422A4B05800F11710 /* CalendarMonthViewController.swift */; };
+		DADD664A22A4B05800F11710 /* CalendarWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD663622A4B05800F11710 /* CalendarWeekViewController.swift */; };
+		DADD664B22A4B05800F11710 /* CalendarWeek.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADD663722A4B05800F11710 /* CalendarWeek.storyboard */; };
+		DADD664C22A4B05800F11710 /* CalendarMore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADD663922A4B05800F11710 /* CalendarMore.storyboard */; };
+		DADD664D22A4B05800F11710 /* CalendarMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD663A22A4B05800F11710 /* CalendarMoreViewController.swift */; };
+		DADD664E22A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD663C22A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.swift */; };
+		DADD664F22A4B05800F11710 /* CalendarDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADD663D22A4B05800F11710 /* CalendarDay.storyboard */; };
+		DADD665022A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADD663E22A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib */; };
+		DADD665122A4B05800F11710 /* CalendarDayScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD663F22A4B05800F11710 /* CalendarDayScheduleCollectionViewCell.swift */; };
+		DADD665222A4B05800F11710 /* CalendarDayTopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD664022A4B05800F11710 /* CalendarDayTopCollectionViewCell.swift */; };
+		DADD665322A4B05800F11710 /* CalendarDayTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD664122A4B05800F11710 /* CalendarDayTopViewController.swift */; };
+		DADD665422A4B05800F11710 /* CalendarDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD664222A4B05800F11710 /* CalendarDayViewController.swift */; };
+		DADD665522A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADD664322A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.xib */; };
+		DADD665622A4B05800F11710 /* CommonCalendarDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD664522A4B05800F11710 /* CommonCalendarDayCollectionViewCell.swift */; };
+		DADD665722A4B05800F11710 /* CommonCalendarDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADD664622A4B05800F11710 /* CommonCalendarDayCollectionViewCell.xib */; };
+		DADD665822A4B05800F11710 /* CommonCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD664722A4B05800F11710 /* CommonCalendarView.swift */; };
+		DADD665A22A4B06700F11710 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD665922A4B06700F11710 /* CalendarViewController.swift */; };
+		DADD665E22A4B6C500F11710 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD665C22A4B6C500F11710 /* DayModel.swift */; };
+		DADD665F22A4B6C500F11710 /* WeekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD665D22A4B6C500F11710 /* WeekModel.swift */; };
+		DADD666122A4B7EE00F11710 /* UIVIew+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD666022A4B7EE00F11710 /* UIVIew+IBInspectable.swift */; };
+		DADD666422A4BBA300F11710 /* UICollectionViewFlowLayout+Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD666322A4BBA300F11710 /* UICollectionViewFlowLayout+Paging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -290,6 +313,29 @@
 		DADA57EF222E4DC200FC95A8 /* YoutubeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTableViewCell.swift; sourceTree = "<group>"; };
 		DADA57F2222E62DC00FC95A8 /* YoutubeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeUtility.swift; sourceTree = "<group>"; };
 		DADD662B22A4AEB500F11710 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DADD662E22A4AFD600F11710 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		DADD663322A4B05800F11710 /* CalendarMonth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarMonth.storyboard; sourceTree = "<group>"; };
+		DADD663422A4B05800F11710 /* CalendarMonthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarMonthViewController.swift; sourceTree = "<group>"; };
+		DADD663622A4B05800F11710 /* CalendarWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarWeekViewController.swift; sourceTree = "<group>"; };
+		DADD663722A4B05800F11710 /* CalendarWeek.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarWeek.storyboard; sourceTree = "<group>"; };
+		DADD663922A4B05800F11710 /* CalendarMore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarMore.storyboard; sourceTree = "<group>"; };
+		DADD663A22A4B05800F11710 /* CalendarMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarMoreViewController.swift; sourceTree = "<group>"; };
+		DADD663C22A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayTopWeekCollectionViewCell.swift; sourceTree = "<group>"; };
+		DADD663D22A4B05800F11710 /* CalendarDay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalendarDay.storyboard; sourceTree = "<group>"; };
+		DADD663E22A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarDayTopCollectionViewCell.xib; sourceTree = "<group>"; };
+		DADD663F22A4B05800F11710 /* CalendarDayScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
+		DADD664022A4B05800F11710 /* CalendarDayTopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayTopCollectionViewCell.swift; sourceTree = "<group>"; };
+		DADD664122A4B05800F11710 /* CalendarDayTopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayTopViewController.swift; sourceTree = "<group>"; };
+		DADD664222A4B05800F11710 /* CalendarDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayViewController.swift; sourceTree = "<group>"; };
+		DADD664322A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarDayTopWeekCollectionViewCell.xib; sourceTree = "<group>"; };
+		DADD664522A4B05800F11710 /* CommonCalendarDayCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCalendarDayCollectionViewCell.swift; sourceTree = "<group>"; };
+		DADD664622A4B05800F11710 /* CommonCalendarDayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCalendarDayCollectionViewCell.xib; sourceTree = "<group>"; };
+		DADD664722A4B05800F11710 /* CommonCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCalendarView.swift; sourceTree = "<group>"; };
+		DADD665922A4B06700F11710 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		DADD665C22A4B6C500F11710 /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		DADD665D22A4B6C500F11710 /* WeekModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekModel.swift; sourceTree = "<group>"; };
+		DADD666022A4B7EE00F11710 /* UIVIew+IBInspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+IBInspectable.swift"; sourceTree = "<group>"; };
+		DADD666322A4BBA300F11710 /* UICollectionViewFlowLayout+Paging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Paging.swift"; sourceTree = "<group>"; };
 		F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReeachA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -416,6 +462,7 @@
 		1E57E05421FB84DD003AD898 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				DADD666022A4B7EE00F11710 /* UIVIew+IBInspectable.swift */,
 				1E57E05521FB84DD003AD898 /* UIView+Autolayout.swift */,
 				1E57E05621FB84DD003AD898 /* UIVIew+Frame.swift */,
 				1E57E05721FB84DD003AD898 /* UIView+Corner.swift */,
@@ -471,6 +518,7 @@
 		1E57E06821FB84DD003AD898 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				DADD666322A4BBA300F11710 /* UICollectionViewFlowLayout+Paging.swift */,
 				1E57E06921FB84DD003AD898 /* UICollectionView+Highlight.swift */,
 			);
 			path = UICollectionView;
@@ -579,6 +627,7 @@
 				1E29BAF5220951E800D219D4 /* CommonCustomView */,
 				1EFF4BD02205D497006BFDC9 /* CommonCell */,
 				1EFE8FF121FC4478006E8473 /* ChannelDetail */,
+				DADD662D22A4AFB800F11710 /* Calendar */,
 				1EFE8FF021FC4441006E8473 /* MyChannel */,
 			);
 			path = Screen;
@@ -587,6 +636,7 @@
 		1E57E0BF21FC02AB003AD898 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DADD665B22A4B69100F11710 /* Calendar */,
 				DAB14108220D1DA500E0C144 /* Common */,
 				DA09533D2208058500CD9329 /* Info */,
 				1EFE900921FCD022006E8473 /* WebLink */,
@@ -911,6 +961,97 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		DADD662D22A4AFB800F11710 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DADD663022A4B05800F11710 /* Screens */,
+				DADD662E22A4AFD600F11710 /* Calendar.storyboard */,
+				DADD665922A4B06700F11710 /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DADD663022A4B05800F11710 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DADD663122A4B05800F11710 /* Calendar */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DADD663122A4B05800F11710 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DADD663222A4B05800F11710 /* Month */,
+				DADD663522A4B05800F11710 /* Week */,
+				DADD663822A4B05800F11710 /* More */,
+				DADD663B22A4B05800F11710 /* Day */,
+				DADD664422A4B05800F11710 /* CommonCalendar */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DADD663222A4B05800F11710 /* Month */ = {
+			isa = PBXGroup;
+			children = (
+				DADD663322A4B05800F11710 /* CalendarMonth.storyboard */,
+				DADD663422A4B05800F11710 /* CalendarMonthViewController.swift */,
+			);
+			path = Month;
+			sourceTree = "<group>";
+		};
+		DADD663522A4B05800F11710 /* Week */ = {
+			isa = PBXGroup;
+			children = (
+				DADD663622A4B05800F11710 /* CalendarWeekViewController.swift */,
+				DADD663722A4B05800F11710 /* CalendarWeek.storyboard */,
+			);
+			path = Week;
+			sourceTree = "<group>";
+		};
+		DADD663822A4B05800F11710 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				DADD663922A4B05800F11710 /* CalendarMore.storyboard */,
+				DADD663A22A4B05800F11710 /* CalendarMoreViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		DADD663B22A4B05800F11710 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				DADD663C22A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.swift */,
+				DADD663D22A4B05800F11710 /* CalendarDay.storyboard */,
+				DADD663E22A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib */,
+				DADD663F22A4B05800F11710 /* CalendarDayScheduleCollectionViewCell.swift */,
+				DADD664022A4B05800F11710 /* CalendarDayTopCollectionViewCell.swift */,
+				DADD664122A4B05800F11710 /* CalendarDayTopViewController.swift */,
+				DADD664222A4B05800F11710 /* CalendarDayViewController.swift */,
+				DADD664322A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.xib */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		DADD664422A4B05800F11710 /* CommonCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				DADD664522A4B05800F11710 /* CommonCalendarDayCollectionViewCell.swift */,
+				DADD664622A4B05800F11710 /* CommonCalendarDayCollectionViewCell.xib */,
+				DADD664722A4B05800F11710 /* CommonCalendarView.swift */,
+			);
+			path = CommonCalendar;
+			sourceTree = "<group>";
+		};
+		DADD665B22A4B69100F11710 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DADD665C22A4B6C500F11710 /* DayModel.swift */,
+				DADD665D22A4B6C500F11710 /* WeekModel.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -971,18 +1112,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADD665722A4B05800F11710 /* CommonCalendarDayCollectionViewCell.xib in Resources */,
 				1EB1514C21FA1C18001B6110 /* LaunchScreen.storyboard in Resources */,
+				DADD664B22A4B05800F11710 /* CalendarWeek.storyboard in Resources */,
 				1EC50DD42200CA040026DEF0 /* ChannelDetailItems.storyboard in Resources */,
 				1EFF4BCD2205BE7D006BFDC9 /* ChannelDetailNotification.storyboard in Resources */,
 				1ED20DDB221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard in Resources */,
+				DADD665522A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.xib in Resources */,
 				1E7AF7F4222B0A9600F845C2 /* MyPage.storyboard in Resources */,
 				1E4A54352206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.xib in Resources */,
 				1E57E03721FB7BF7003AD898 /* AnimeChannelCollectionViewCell.xib in Resources */,
+				DADD664822A4B05800F11710 /* CalendarMonth.storyboard in Resources */,
 				1E29BAF92209521B00D219D4 /* PairLabelDynamicStackViewCell.xib in Resources */,
+				DADD662F22A4AFD600F11710 /* Calendar.storyboard in Resources */,
 				1E57E0C621FC0920003AD898 /* MyChannel.storyboard in Resources */,
 				1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */,
 				1EFE8FF821FC6DB3006E8473 /* ChannelDetailTop.storyboard in Resources */,
 				1E1DE0062211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib in Resources */,
+				DADD664C22A4B05800F11710 /* CalendarMore.storyboard in Resources */,
 				DA883A21222639D200D8F08B /* PostTableViewCell.xib in Resources */,
 				DA55B091222F6F49001AD0C9 /* YoutubeView.xib in Resources */,
 				1EFE900221FCA4D8006E8473 /* ChannelDetailWebsite.storyboard in Resources */,
@@ -994,7 +1141,9 @@
 				1EB1514721FA1C17001B6110 /* Main.storyboard in Resources */,
 				1EE4CD802205709700E85537 /* ChannelDetailPost.storyboard in Resources */,
 				1EFF4BD42205D4BE006BFDC9 /* ChannelDetailWebsiteListTableViewCell.xib in Resources */,
+				DADD664F22A4B05800F11710 /* CalendarDay.storyboard in Resources */,
 				DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */,
+				DADD665022A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1031,6 +1180,7 @@
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1040,6 +1190,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1057,13 +1208,17 @@
 				1E57E0BB21FB8C26003AD898 /* ClosureTypealias.swift in Sources */,
 				1EFE900421FCCBA4006E8473 /* ChannelDetailWebsiteViewController.swift in Sources */,
 				1E57E0AE21FB84DE003AD898 /* UIViewController+Alert.swift in Sources */,
+				DADD664E22A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.swift in Sources */,
 				1E7AF7F1222B052100F845C2 /* LineSpacingLabel.swift in Sources */,
+				DADD666422A4BBA300F11710 /* UICollectionViewFlowLayout+Paging.swift in Sources */,
 				1EFE8FF521FC44C7006E8473 /* ChannelDetailViewController.swift in Sources */,
 				1E57E0A621FB84DE003AD898 /* CGSize+Utility.swift in Sources */,
 				1EFE8FFF21FCA379006E8473 /* UITextView+Utility.swift in Sources */,
 				DAB37B7622268FA600A70D7B /* ChannelDetailPostViewController.swift in Sources */,
 				1ED20DD82216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift in Sources */,
 				1EFF4BDA2205D645006BFDC9 /* PixcelHorizontalView.swift in Sources */,
+				DADD664A22A4B05800F11710 /* CalendarWeekViewController.swift in Sources */,
+				DADD665122A4B05800F11710 /* CalendarDayScheduleCollectionViewCell.swift in Sources */,
 				1EFE900E21FCD869006E8473 /* NavTabScrollController.swift in Sources */,
 				1E57E08621FB84DD003AD898 /* UIScreen+Utility.swift in Sources */,
 				1E57E09821FB84DE003AD898 /* Operator+.swift in Sources */,
@@ -1076,6 +1231,7 @@
 				1E29BB0122095A6000D219D4 /* DebugViewController.swift in Sources */,
 				1E57E0C121FC034F003AD898 /* Channel.swift in Sources */,
 				DAB1412B220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift in Sources */,
+				DADD665822A4B05800F11710 /* CommonCalendarView.swift in Sources */,
 				DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */,
 				1E29BAF72209521100D219D4 /* PairLabelDynamicStackViewCell.swift in Sources */,
 				DA883A20222639D200D8F08B /* PostTableViewCell.swift in Sources */,
@@ -1083,6 +1239,7 @@
 				1E57E08521FB84DD003AD898 /* UIScrollView+Utility.swift in Sources */,
 				1E57E09D21FB84DE003AD898 /* UIView+Border.swift in Sources */,
 				1E57E09E21FB84DE003AD898 /* UIView+Fade.swift in Sources */,
+				DADD665A22A4B06700F11710 /* CalendarViewController.swift in Sources */,
 				1E7AF7EF222AF35E00F845C2 /* ChannelDetailItemsSquareTableViewCell.swift in Sources */,
 				1EFF4BD32205D4BE006BFDC9 /* ChannelDetailWebsiteListTableViewCell.swift in Sources */,
 				1E57E0A521FB84DE003AD898 /* CastExtension.swift in Sources */,
@@ -1096,11 +1253,14 @@
 				1EC50DD62200CA290026DEF0 /* ChannelDetailItemsViewController.swift in Sources */,
 				1E57E0B321FB84DE003AD898 /* UITableView+Utility.swift in Sources */,
 				1E57E09A21FB84DE003AD898 /* UIView+Autolayout.swift in Sources */,
+				DADD665222A4B05800F11710 /* CalendarDayTopCollectionViewCell.swift in Sources */,
 				1EFE900621FCCE92006E8473 /* ChannelDetailWebsiteListViewController.swift in Sources */,
 				1E57E09621FB84DD003AD898 /* NibInstantiatable.swift in Sources */,
 				1E57E0C421FC0456003AD898 /* Anime.swift in Sources */,
+				DADD665422A4B05800F11710 /* CalendarDayViewController.swift in Sources */,
 				1E57E08A21FB84DD003AD898 /* Array+.swift in Sources */,
 				1EFE8FEF21FC3FA9006E8473 /* CGFloat+Utility.swift in Sources */,
+				DADD665622A4B05800F11710 /* CommonCalendarDayCollectionViewCell.swift in Sources */,
 				DA09533F220805BA00CD9329 /* InfoPair.swift in Sources */,
 				1E57E09F21FB84DE003AD898 /* UIView+Gesture.swift in Sources */,
 				DAB37B742226811400A70D7B /* LikeLabelTextView.swift in Sources */,
@@ -1112,6 +1272,7 @@
 				DA55B08F222F6F41001AD0C9 /* YoutubeView.swift in Sources */,
 				1E57E0B621FB84DE003AD898 /* String+Utility.swift in Sources */,
 				1E57E0B821FB84DE003AD898 /* UIStoryboardSegue+Utility.swift in Sources */,
+				DADD665322A4B05800F11710 /* CalendarDayTopViewController.swift in Sources */,
 				1E57E09721FB84DD003AD898 /* UIApplication+.swift in Sources */,
 				1EFE901021FCDE36006E8473 /* UIViewController+NavigationBar.swift in Sources */,
 				1E4A542F22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift in Sources */,
@@ -1129,10 +1290,13 @@
 				1EFF4BCF2205BE87006BFDC9 /* ChannelDetailNotificationViewController.swift in Sources */,
 				DAB1412D220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift in Sources */,
 				1E57E0B521FB84DE003AD898 /* Dictionary+Utility.swift in Sources */,
+				DADD664D22A4B05800F11710 /* CalendarMoreViewController.swift in Sources */,
 				1E1DE00422116D6C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.swift in Sources */,
 				1E29BAFE2209598D00D219D4 /* CGRect+Utility.swift in Sources */,
+				DADD664922A4B05800F11710 /* CalendarMonthViewController.swift in Sources */,
 				1E57E09221FB84DD003AD898 /* UICollectionView+.swift in Sources */,
 				1E57E09321FB84DD003AD898 /* Safe.swift in Sources */,
+				DADD665F22A4B6C500F11710 /* WeekModel.swift in Sources */,
 				DADA57F3222E62DC00FC95A8 /* YoutubeUtility.swift in Sources */,
 				1E57E0BE21FC0232003AD898 /* MyChannelViewController.swift in Sources */,
 				1E57E08921FB84DD003AD898 /* NSObject+.swift in Sources */,
@@ -1152,6 +1316,7 @@
 				1E57E0B021FB84DE003AD898 /* UIViewController+Utility.swift in Sources */,
 				1E57E09021FB84DD003AD898 /* Dictionary+.swift in Sources */,
 				DAB14107220D10F100E0C144 /* DynamicStackView.swift in Sources */,
+				DADD666122A4B7EE00F11710 /* UIVIew+IBInspectable.swift in Sources */,
 				1E1DE008221173C100A00FA1 /* LabelPair.swift in Sources */,
 				DA8AEB2F21FEC3A4000A717E /* ButtonView.swift in Sources */,
 				1E57E08D21FB84DD003AD898 /* StoryboardInstantiatable.swift in Sources */,
@@ -1159,6 +1324,7 @@
 				DADA57EE222E4ACF00FC95A8 /* VideosViewController.swift in Sources */,
 				1E6D77442211E726002038ED /* LinkVerticalDynamicStackViewCell.swift in Sources */,
 				1E1DE00A22117C1200A00FA1 /* ChannelDetailTopBasicInfoTableViewCell.swift in Sources */,
+				DADD665E22A4B6C500F11710 /* DayModel.swift in Sources */,
 				1EB1514221FA1C17001B6110 /* AppDelegate.swift in Sources */,
 				1E57E03621FB7BF7003AD898 /* AnimeChannelCollectionViewCell.swift in Sources */,
 				DA8AEB2E21FEC3A4000A717E /* ViewCreator.swift in Sources */,

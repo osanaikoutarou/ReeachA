@@ -7,7 +7,11 @@ target 'ReeachA' do
 	pod 'SlideMenuControllerSwift', :git => 'https://github.com/grizzly/SlideMenuControllerSwift.git'
 	pod 'SwiftyJSON', '~> 4.0'
 	pod 'SVProgressHUD'
+
+	#消す方向で
 	pod 'SnapKit', '~> 4.0.0'
+
+	pod 'SwiftDate'
 
 	#pod 'TwitterKit'
 	#pod 'Swifter', :git => 'https://github.com/mattdonnelly/Swifter.git'	

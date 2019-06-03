@@ -4,6 +4,7 @@ PODS:
   - SlideMenuControllerSwift (4.0.0)
   - SnapKit (4.0.1)
   - SVProgressHUD (2.2.5)
+  - SwiftDate (5.1.0)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - SlideMenuControllerSwift (from `https://github.com/grizzly/SlideMenuControllerSwift.git`)
   - SnapKit (~> 4.0.0)
   - SVProgressHUD
+  - SwiftDate
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -20,6 +22,7 @@ SPEC REPOS:
     - Kingfisher
     - SnapKit
     - SVProgressHUD
+    - SwiftDate
     - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -37,8 +40,9 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: f9ec1ad1a95d211324d25b15dcdbc94881596716
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 802b0304c79a8b470b46c5aff54c5f93a2d1e4f6
+PODFILE CHECKSUM: 15a933bb749067419a40fbc3df5f976ebe7d56c4
 
 COCOAPODS: 1.6.0.beta.2
