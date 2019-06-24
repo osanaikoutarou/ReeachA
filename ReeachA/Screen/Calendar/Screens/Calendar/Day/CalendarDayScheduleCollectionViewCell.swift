@@ -44,6 +44,9 @@ class CalendarDayScheduleCollectionViewCell: UICollectionViewCell {
         self.insertSubview(shadowView!, at: 0)
     }
 
-
+    func setup(dayModel: DayModel) {
+        let hoge = Date.dateToString(dayModel.date)
+        dateLabel.text = hoge
+    }
     
 }

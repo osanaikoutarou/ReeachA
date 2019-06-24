@@ -13,21 +13,37 @@ class CalendarDayViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var dayModels:[DayModel] = []
+    let cellNumUnit: Int = 2000
+    var startDate: Date = Date()
+    var startIndex: Int = 1000
 
-    let cellNumUnit: Int = 200
+    func configure(startDate: Date) {
+        self.startDate = startDate
+
+        // clear
+        dayModels = []
+        // 前と後に配置
+        for i in 0..<cellNumUnit {
+            let j = i - cellNumUnit/2
+            let day = startDate + j.days
+            dayModels.append(DayModel(date: day))
+        }
+
+        collectionView.performBatchUpdates({
+            self.collectionView.reloadData()
+        }) { (finished) in
+            self.collectionView.scrollToItem(at: IndexPath(item: self.startIndex, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: false)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // 前と後に配置
-        for i in -cellNumUnit..<cellNumUnit {
-            let day = Date() + i.days
-            dayModels[i] = DayModel(date: day)
+        if dayModels.count == 0 {
+            configure(startDate: Date())
         }
 
         self.view.layoutIfNeeded()
-
-
 
 //        let layout = collectionView.collectionViewLayout as! CalendarDayViewControllerLayout
 //        layout.itemSize = collectionView.frame.size
@@ -43,11 +59,16 @@ class CalendarDayViewController: UIViewController {
 
 extension CalendarDayViewController: UICollectionViewDelegateFlowLayout ,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return dayModels.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        let dayModel = dayModels[indexPath.item]
+
         let cell = collectionView.dequeueReusableCell(with: CalendarDayScheduleCollectionViewCell.self, for: indexPath)
+
+        cell.setup(dayModel: dayModel)
         
         return cell
     }
