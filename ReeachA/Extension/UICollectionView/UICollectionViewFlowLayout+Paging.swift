@@ -139,14 +139,16 @@ extension UICollectionViewFlowLayout {
 
             // 「スクロール先のページ番号」と「ページ幅」を掛けて contentOffset.x を計算する
             // contentOffset.y は proposedContentOffset.y をそのまま設定
-            return CGPoint(x: nextPage * pageWidth, y: proposedContentOffset.y)
+            return CGPoint(x: max(0, nextPage * pageWidth - (collectionView.frame.width - pageWidth)/2.0),
+                           y: proposedContentOffset.y)
         }
         else {
             // velocity.x が閾値以下の場合 (アイテムをドラッグした後に指を離した場合)
 
             // currentPage を四捨五入して「スクロール先のページ番号」とする
             // contentOffset は「velocity.x が閾値より大きい場合」と同様に計算
-            return CGPoint(x: round(currentPage) * pageWidth, y: proposedContentOffset.y)
+            return CGPoint(x: max(0, round(currentPage) * pageWidth - (collectionView.frame.width - pageWidth/2.0)),
+                           y: proposedContentOffset.y)
         }
 
 

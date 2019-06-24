@@ -7,15 +7,27 @@
 //
 
 import UIKit
+import SwiftDate
 
 class CalendarDayViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var dayModels:[DayModel] = []
+
+    let cellNumUnit: Int = 200
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // 前と後に配置
+        for i in -cellNumUnit..<cellNumUnit {
+            let day = Date() + i.days
+            dayModels[i] = DayModel(date: day)
+        }
+
         self.view.layoutIfNeeded()
+
+
 
 //        let layout = collectionView.collectionViewLayout as! CalendarDayViewControllerLayout
 //        layout.itemSize = collectionView.frame.size
@@ -41,7 +53,8 @@ extension CalendarDayViewController: UICollectionViewDelegateFlowLayout ,UIColle
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 350.0, height: collectionView.frame.height)
+        
+        return CGSize(width: UIScreen.appWidth * 0.9, height: collectionView.frame.height)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
@@ -56,7 +69,7 @@ extension CalendarDayViewController: UICollectionViewDelegateFlowLayout ,UIColle
 
 class CalendarDayViewControllerLayout: UICollectionViewFlowLayout {
 
-    static var size: CGSize = CGSize(width: 350.0, height: 1)
+    static var size: CGSize = CGSize(width: UIScreen.appWidth * 0.9, height: 1)
 
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         return cellHorizontalCenterTargetContentOffset(proposedContentOffset: proposedContentOffset, velocity: velocity)
@@ -65,7 +78,7 @@ class CalendarDayViewControllerLayout: UICollectionViewFlowLayout {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        itemSize = CGSize(width: 350.0, height: 1)
+        itemSize = CGSize(width: UIScreen.appWidth * 0.9, height: 1)
         sectionInset = .zero
         minimumLineSpacing = 0
         minimumInteritemSpacing = 0

@@ -42,4 +42,8 @@ extension UIScreen {
         // 縦/横が1.7以上　iPhoneX系
         return main.bounds.height/main.bounds.width >= 2.0
     }
+
+    static var appWidth: CGFloat {
+        return main.bounds.width
+    }
 }

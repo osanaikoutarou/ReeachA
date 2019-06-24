@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B6507AD90D2AADCF6B2C0FE394C0C67D"
+               BlueprintIdentifier = "4DE19A87EFECE6D6BA99BDC0691B693F"
+               BuildableName = "SlideMenuControllerSwift.framework"
                BlueprintName = "SlideMenuControllerSwift"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SlideMenuControllerSwift.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

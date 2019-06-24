@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6449E3AEEA34C1A8A0DB78D082062656"
+               BlueprintIdentifier = "5AAF021D4197CB8E907ACF3625E1784F"
                BuildableName = "Pods_ReeachA.framework"
                BlueprintName = "Pods-ReeachA"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6449E3AEEA34C1A8A0DB78D082062656"
+            BlueprintIdentifier = "5AAF021D4197CB8E907ACF3625E1784F"
             BuildableName = "Pods_ReeachA.framework"
             BlueprintName = "Pods-ReeachA"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -116,9 +116,3 @@ private extension UICollectionView {
         contentOffset = c
     }
 }
-
-class SelectingDay: NSObject {
-    static let shared = SelectingDay()
-
-    var dayModel: DayModel? = nil
-}
