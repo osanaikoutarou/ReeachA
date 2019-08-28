@@ -89,7 +89,7 @@
                 <viewControllerPlaceholder storyboardName="CalendarWeek" id="a9T-6N-Czi" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LN7-1s-fX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="24"/>
+            <point key="canvasLocation" x="394" y="19"/>
         </scene>
         <!--CalendarDay-->
         <scene sceneID="keg-lT-kpj">
@@ -97,7 +97,7 @@
                 <viewControllerPlaceholder storyboardName="CalendarDay" id="Gw4-xd-eee" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFF-kb-cvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="83"/>
+            <point key="canvasLocation" x="387" y="53"/>
         </scene>
         <!--CalendarMore-->
         <scene sceneID="Qw5-Gk-Yw1">

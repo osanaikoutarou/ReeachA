@@ -42,4 +42,21 @@ extension UIView {
         }
     }
 
+    @IBInspectable
+    var ellipse_: Bool {
+        set {
+            if newValue {
+                layer.cornerRadius = (bounds.width > bounds.height) ? bounds.height/2.0 : bounds.width/2.0
+                clipsToBounds = true
+            }
+            else {
+                // 想定していない
+            }
+        }
+        get {
+            // 想定していない
+            return false
+        }
+    }
+
 }

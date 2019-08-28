@@ -14,6 +14,13 @@ class CalendarDayScheduleCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var dateLabel: UILabel!
 
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.delegate = self
+            tableView.dataSource = self
+        }
+    }
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,8 +44,8 @@ class CalendarDayScheduleCollectionViewCell: UICollectionViewCell {
 
         shadowView!.addShadow(shadowColor: .black,
                              shadowOffset: CGSize(width: 0, height: 2),
-                             shadowOpacity: 0.15,
-                             shadowRadius: 8,
+                             shadowOpacity: 0.1,
+                             shadowRadius: 10,
                              cornerRadius: dayView.layer.cornerRadius)
 
         self.insertSubview(shadowView!, at: 0)
@@ -49,4 +56,20 @@ class CalendarDayScheduleCollectionViewCell: UICollectionViewCell {
         dateLabel.text = hoge
     }
     
+}
+
+extension CalendarDayScheduleCollectionViewCell: UITableViewDelegate,UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(with: CalendarDayEventTableViewCell.self, for: indexPath)
+        return cell
+    }
 }

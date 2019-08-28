@@ -12,10 +12,17 @@ import SwiftDate
 class CalendarDayViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var stackViewBottomConstraint: NSLayoutConstraint!
+
     var dayModels:[DayModel] = []
     let cellNumUnit: Int = 2000
     var startDate: Date = Date()
     var startIndex: Int = 1000
+
+    override func loadView() {
+        super.loadView()
+        self.view.translatesAutoresizingMaskIntoConstraints = false
+    }
 
     func configure(startDate: Date) {
         self.startDate = startDate
@@ -52,8 +59,19 @@ class CalendarDayViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
 
-//        CalendarDayViewControllerLayout.size = CGSize(width: 350.0, height: collectionView.frame.height)
+        stackViewBottomConstraint.constant = self.tabBarController?.tabBar.frame.height ?? 0
 
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        stackViewBottomConstraint.constant = self.tabBarController?.tabBar.frame.height ?? 0
+        view.layoutIfNeeded()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 }
 
