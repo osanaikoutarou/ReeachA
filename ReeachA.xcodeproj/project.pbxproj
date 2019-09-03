@@ -127,6 +127,7 @@
 		DA55B08F222F6F41001AD0C9 /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B08E222F6F41001AD0C9 /* YoutubeView.swift */; };
 		DA55B091222F6F49001AD0C9 /* YoutubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55B090222F6F49001AD0C9 /* YoutubeView.xib */; };
 		DA55B093222F797B001AD0C9 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B092222F797B001AD0C9 /* WKWebViewController.swift */; };
+		DA6CF89E231E358F006D108F /* UITableViewCell+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF89D231E358F006D108F /* UITableViewCell+Separator.swift */; };
 		DA883A20222639D200D8F08B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA883A1E222639D200D8F08B /* PostTableViewCell.swift */; };
 		DA883A21222639D200D8F08B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA883A1F222639D200D8F08B /* PostTableViewCell.xib */; };
 		DA8AEB2B21FEC3A4000A717E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */; };
@@ -298,6 +299,7 @@
 		DA55B08E222F6F41001AD0C9 /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		DA55B090222F6F49001AD0C9 /* YoutubeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeView.xib; sourceTree = "<group>"; };
 		DA55B092222F797B001AD0C9 /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		DA6CF89D231E358F006D108F /* UITableViewCell+Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Separator.swift"; sourceTree = "<group>"; };
 		DA883A1E222639D200D8F08B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		DA883A1F222639D200D8F08B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 				1E57E07021FB84DD003AD898 /* UIViewController */,
 				1E57E07621FB84DD003AD898 /* UINavigationController */,
 				1E57E07921FB84DD003AD898 /* UITableView */,
+				DA6CF89C231E355A006D108F /* UITableViewCell */,
 				1E57E07B21FB84DD003AD898 /* UIControl */,
 				1E57E07D21FB84DD003AD898 /* Dictionary */,
 				1E57E07F21FB84DD003AD898 /* String */,
@@ -917,6 +920,14 @@
 			path = Youtube;
 			sourceTree = "<group>";
 		};
+		DA6CF89C231E355A006D108F /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CF89D231E358F006D108F /* UITableViewCell+Separator.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
 		DAB14103220D10F100E0C144 /* DynamicStackView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1291,6 +1302,7 @@
 				1E1E5F0922069F5B005627F9 /* Human.swift in Sources */,
 				1EB1514421FA1C17001B6110 /* ViewController.swift in Sources */,
 				DADA57F0222E4DC200FC95A8 /* YoutubeTableViewCell.swift in Sources */,
+				DA6CF89E231E358F006D108F /* UITableViewCell+Separator.swift in Sources */,
 				1E57E0A021FB84DE003AD898 /* UIView+Form.swift in Sources */,
 				DA55B093222F797B001AD0C9 /* WKWebViewController.swift in Sources */,
 				DAB14106220D10F100E0C144 /* DynamicStackViewCell.swift in Sources */,

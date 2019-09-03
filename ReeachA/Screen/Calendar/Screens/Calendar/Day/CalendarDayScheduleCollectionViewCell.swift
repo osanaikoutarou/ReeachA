@@ -12,7 +12,7 @@ class CalendarDayScheduleCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dayView: UIView!
     var shadowView: ShadowView?
 
-    @IBOutlet weak var dateLabel: UILabel!
+//    @IBOutlet weak var dateLabel: UILabel!
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -20,7 +20,6 @@ class CalendarDayScheduleCollectionViewCell: UICollectionViewCell {
             tableView.dataSource = self
         }
     }
-
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -53,7 +52,7 @@ class CalendarDayScheduleCollectionViewCell: UICollectionViewCell {
 
     func setup(dayModel: DayModel) {
         let hoge = Date.dateToString(dayModel.date)
-        dateLabel.text = hoge
+//        dateLabel.text = hoge
     }
     
 }
@@ -65,11 +64,15 @@ extension CalendarDayScheduleCollectionViewCell: UITableViewDelegate,UITableView
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 8
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: CalendarDayEventTableViewCell.self, for: indexPath)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
