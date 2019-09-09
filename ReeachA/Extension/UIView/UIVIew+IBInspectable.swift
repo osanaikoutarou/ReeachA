@@ -15,6 +15,7 @@ extension UIView {
     var cornerRadius_: CGFloat {
         set {
             self.layer.cornerRadius = newValue
+            self.clipsToBounds = (newValue > 0)
         }
         get {
             return self.layer.cornerRadius

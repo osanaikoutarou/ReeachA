@@ -101,6 +101,9 @@
 		1EE4CD802205709700E85537 /* ChannelDetailPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE4CD7F2205709700E85537 /* ChannelDetailPost.storyboard */; };
 		1EEF6AED22BFB179004C91F8 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEF6AEC22BFB179004C91F8 /* Schedule.swift */; };
 		1EEF6AF022BFB9B2004C91F8 /* SelectingDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEF6AEF22BFB9B2004C91F8 /* SelectingDay.swift */; };
+		1EF8DC17232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8DC16232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift */; };
+		1EF8DC1923255C55004DDA63 /* UIView+ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8DC1823255C55004DDA63 /* UIView+ContainerView.swift */; };
+		1EF8DC1B23257D6F004DDA63 /* ChannelDetailTopOfficialLnkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8DC1A23257D6F004DDA63 /* ChannelDetailTopOfficialLnkViewController.swift */; };
 		1EFE8FEF21FC3FA9006E8473 /* CGFloat+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE8FEE21FC3FA9006E8473 /* CGFloat+Utility.swift */; };
 		1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */; };
 		1EFE8FF521FC44C7006E8473 /* ChannelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */; };
@@ -272,6 +275,9 @@
 		1EE4CD7F2205709700E85537 /* ChannelDetailPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailPost.storyboard; sourceTree = "<group>"; };
 		1EEF6AEC22BFB179004C91F8 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		1EEF6AEF22BFB9B2004C91F8 /* SelectingDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingDay.swift; sourceTree = "<group>"; };
+		1EF8DC16232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopBaseInfoViewController.swift; sourceTree = "<group>"; };
+		1EF8DC1823255C55004DDA63 /* UIView+ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ContainerView.swift"; sourceTree = "<group>"; };
+		1EF8DC1A23257D6F004DDA63 /* ChannelDetailTopOfficialLnkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopOfficialLnkViewController.swift; sourceTree = "<group>"; };
 		1EFE8FEE21FC3FA9006E8473 /* CGFloat+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Utility.swift"; sourceTree = "<group>"; };
 		1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetail.storyboard; sourceTree = "<group>"; };
 		1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailViewController.swift; sourceTree = "<group>"; };
@@ -479,6 +485,7 @@
 				1E57E05921FB84DD003AD898 /* UIView+Fade.swift */,
 				1E57E05A21FB84DD003AD898 /* UIView+Gesture.swift */,
 				1E57E05B21FB84DD003AD898 /* UIView+Form.swift */,
+				1EF8DC1823255C55004DDA63 /* UIView+ContainerView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -788,6 +795,15 @@
 			path = ChannelDetailPost;
 			sourceTree = "<group>";
 		};
+		1EF8DC15232544AF004DDA63 /* Childs */ = {
+			isa = PBXGroup;
+			children = (
+				1EF8DC16232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift */,
+				1EF8DC1A23257D6F004DDA63 /* ChannelDetailTopOfficialLnkViewController.swift */,
+			);
+			path = Childs;
+			sourceTree = "<group>";
+		};
 		1EFE8FED21FC3F9B006E8473 /* CGFloat */ = {
 			isa = PBXGroup;
 			children = (
@@ -824,6 +840,7 @@
 		1EFE8FF621FC6D9B006E8473 /* ChannelDetailTop */ = {
 			isa = PBXGroup;
 			children = (
+				1EF8DC15232544AF004DDA63 /* Childs */,
 				1EFE8FF721FC6DB3006E8473 /* ChannelDetailTop.storyboard */,
 				1EFE8FF921FC6DCA006E8473 /* ChannelDetailTopViewController.swift */,
 				DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */,
@@ -1238,6 +1255,7 @@
 				1ED20DD82216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift in Sources */,
 				1EFF4BDA2205D645006BFDC9 /* PixcelHorizontalView.swift in Sources */,
 				DADD664A22A4B05800F11710 /* CalendarWeekViewController.swift in Sources */,
+				1EF8DC1923255C55004DDA63 /* UIView+ContainerView.swift in Sources */,
 				DADD665122A4B05800F11710 /* CalendarDayScheduleCollectionViewCell.swift in Sources */,
 				1EFE900E21FCD869006E8473 /* NavTabScrollController.swift in Sources */,
 				1E57E08621FB84DD003AD898 /* UIScreen+Utility.swift in Sources */,
@@ -1297,8 +1315,10 @@
 				DADD665322A4B05800F11710 /* CalendarDayTopViewController.swift in Sources */,
 				1E57E09721FB84DD003AD898 /* UIApplication+.swift in Sources */,
 				1EFE901021FCDE36006E8473 /* UIViewController+NavigationBar.swift in Sources */,
+				1EF8DC17232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift in Sources */,
 				1E4A542F22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift in Sources */,
 				1E57E0B121FB84DE003AD898 /* UINavigationController+Utils.swift in Sources */,
+				1EF8DC1B23257D6F004DDA63 /* ChannelDetailTopOfficialLnkViewController.swift in Sources */,
 				1E1E5F0922069F5B005627F9 /* Human.swift in Sources */,
 				1EB1514421FA1C17001B6110 /* ViewController.swift in Sources */,
 				DADA57F0222E4DC200FC95A8 /* YoutubeTableViewCell.swift in Sources */,

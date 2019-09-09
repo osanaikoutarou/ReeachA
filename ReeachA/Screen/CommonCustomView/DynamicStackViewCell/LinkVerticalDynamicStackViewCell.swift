@@ -14,7 +14,8 @@ class LinkVerticalDynamicStackViewCell: DynamicVerticalStackViewCell {
     
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    
+    @IBOutlet weak var arrowIcon: UIImageView!
+
     convenience init(webLink: WebLink) {
         self.init(frame: CGRect(x:0, y:0, width:1, height:1))
         
@@ -23,6 +24,19 @@ class LinkVerticalDynamicStackViewCell: DynamicVerticalStackViewCell {
         
         heightConstraint.constant = UIScreen.px()
         
+    }
+
+    var isIconHidden: Bool = false {
+        didSet {
+            iconImageView.superview!.isHidden = isIconHidden
+        }
+    }
+
+    var arrowIconColor: UIColor = .darkGray {
+        didSet {
+            arrowIcon.image = UIImage(named: "icon_forward100")?.withRenderingMode(.alwaysTemplate)
+            arrowIcon.tintColor = arrowIconColor
+        }
     }
 
 }

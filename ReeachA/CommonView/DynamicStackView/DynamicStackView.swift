@@ -135,8 +135,6 @@ class DynamicStackView: UIStackView {
             self.layoutIfNeeded()
         }
     }
-
-    
 }
 
 extension DynamicStackView {

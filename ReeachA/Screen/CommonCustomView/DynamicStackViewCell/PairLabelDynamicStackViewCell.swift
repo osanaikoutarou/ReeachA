@@ -50,11 +50,22 @@ class PairLabelDynamicStackViewCell: DynamicVerticalStackViewCell {
     func setFont(font:UIFont) {
         titleLabel.font = font
         valueLabels.forEach{ $0.font = font }
+        separatorLabel.font = font
     }
     func setFontSize(size:CGFloat) {
         titleLabel.font = UIFont(name: titleLabel.font.familyName, size: size)
         valueLabels.forEach{ $0.font = UIFont(name: valueLabels.first!.font.familyName, size: size) }
         separatorLabel.font = UIFont(name: separatorLabel.font.familyName, size: size)
+    }
+    func setTextColor(color: UIColor) {
+        titleLabel.textColor = color
+        valueLabels.forEach{ $0.textColor = color }
+        separatorLabel.textColor = color
+    }
+    var isSeparatorHidden: Bool = false {
+        didSet {
+            separatorLabel.isHidden = isSeparatorHidden
+        }
     }
     
     func setTitleWidth(width:CGFloat) {

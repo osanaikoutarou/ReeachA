@@ -9,9 +9,17 @@
 import UIKit
 
 class ChannelDetailTopViewController: UIViewController {
-    
+
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var headerStackView: UIStackView!
+
+    var baseInfoViewController: ChannelDetailTopBaseInfoViewController? {
+        return (headerStackView.arrangedSubviews[0].containerViewController as? ChannelDetailTopBaseInfoViewController)
+    }
+    var officialLnkViewController: ChannelDetailTopOfficialLnkViewController? {
+        return (headerStackView.arrangedSubviews[1].containerViewController as? ChannelDetailTopOfficialLnkViewController)
+    }
+
     var channel:Channel {
         get {
             return (self.tabBarController as! ChannelDetailTabBarController).channel
@@ -26,12 +34,19 @@ class ChannelDetailTopViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         channel = Anime()
         (channel as! Anime).createSample()
+
+        baseInfoViewController?.channel = channel
+        officialLnkViewController?.channel = channel
+
+        tableView.tableHeaderView?.layoutIfNeeded()
+        tableView.layoutIfNeeded()
+
         
-        tableView.contentInsetAdjustmentBehavior = .never
-        
+//        tableView.contentInsetAdjustmentBehavior = .never
+
 //        self.tabBarController?.navigationController?.setNavigationBarHidden(true, animated: false)
         
 //        self.navigationController?.isNavigationBarHidden = true
@@ -41,8 +56,30 @@ class ChannelDetailTopViewController: UIViewController {
 //
 //        })
         
-        setupTableView()
+//        setupTableView()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+
+
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+
+
+    }
+
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        print(segue)
+//        print(sender)
+//    }
+}
+/*
+
     
     func setupTableView() {
         tableView.register(cellType: SectionHeaderBasicalTableCell.self)
@@ -164,3 +201,4 @@ extension ChannelDetailTopViewController: UITableViewDelegate,UITableViewDataSou
         }
     }
 }
+*/

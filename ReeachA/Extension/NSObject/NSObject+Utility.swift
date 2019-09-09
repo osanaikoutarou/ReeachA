@@ -9,7 +9,7 @@
 import Foundation
 
 extension NSObject {
-    func printEx(_ s:String) {
-        print("[print] " + s)
-    }
+//    func printEx(_ s:String) {
+//        print("[print] " + s)
+//    }
 }
