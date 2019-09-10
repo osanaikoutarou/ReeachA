@@ -127,6 +127,7 @@
 		DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095342220829E100CD9329 /* ChannelCategory.swift */; };
 		DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */; };
 		DA2B73C42316642D00D6DFFE /* CalendarDayEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B73C32316642D00D6DFFE /* CalendarDayEventTableViewCell.swift */; };
+		DA45FBBD2327A5EE00123EA9 /* ChannelDetailTopLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA45FBBC2327A5EE00123EA9 /* ChannelDetailTopLinkViewController.swift */; };
 		DA55B08F222F6F41001AD0C9 /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B08E222F6F41001AD0C9 /* YoutubeView.swift */; };
 		DA55B091222F6F49001AD0C9 /* YoutubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55B090222F6F49001AD0C9 /* YoutubeView.xib */; };
 		DA55B093222F797B001AD0C9 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B092222F797B001AD0C9 /* WKWebViewController.swift */; };
@@ -302,6 +303,7 @@
 		DA095342220829E100CD9329 /* ChannelCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCategory.swift; sourceTree = "<group>"; };
 		DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTabBarController.swift; sourceTree = "<group>"; };
 		DA2B73C32316642D00D6DFFE /* CalendarDayEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayEventTableViewCell.swift; sourceTree = "<group>"; };
+		DA45FBBC2327A5EE00123EA9 /* ChannelDetailTopLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopLinkViewController.swift; sourceTree = "<group>"; };
 		DA55B08E222F6F41001AD0C9 /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		DA55B090222F6F49001AD0C9 /* YoutubeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeView.xib; sourceTree = "<group>"; };
 		DA55B092222F797B001AD0C9 /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
@@ -800,6 +802,7 @@
 			children = (
 				1EF8DC16232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift */,
 				1EF8DC1A23257D6F004DDA63 /* ChannelDetailTopOfficialLnkViewController.swift */,
+				DA45FBBC2327A5EE00123EA9 /* ChannelDetailTopLinkViewController.swift */,
 			);
 			path = Childs;
 			sourceTree = "<group>";
@@ -1338,6 +1341,7 @@
 				1E29BAFE2209598D00D219D4 /* CGRect+Utility.swift in Sources */,
 				DADD664922A4B05800F11710 /* CalendarMonthViewController.swift in Sources */,
 				1E57E09221FB84DD003AD898 /* UICollectionView+.swift in Sources */,
+				DA45FBBD2327A5EE00123EA9 /* ChannelDetailTopLinkViewController.swift in Sources */,
 				1E57E09321FB84DD003AD898 /* Safe.swift in Sources */,
 				DADD665F22A4B6C500F11710 /* WeekModel.swift in Sources */,
 				DADA57F3222E62DC00FC95A8 /* YoutubeUtility.swift in Sources */,

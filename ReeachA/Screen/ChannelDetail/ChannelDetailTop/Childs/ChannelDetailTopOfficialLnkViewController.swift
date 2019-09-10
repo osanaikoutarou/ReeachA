@@ -30,8 +30,9 @@ class ChannelDetailTopOfficialLnkViewController: UIViewController {
     }
     
     func setup() {
-        
-        (channel as? Anime)?.officialWebLinks.forEach { link in
+
+        // 最初の3つのみ
+        (channel as? Anime)?.officialWebLinks.prefix(3).forEach { link in
             let cell = LinkVerticalDynamicStackViewCell(webLink: link)
             cell.automaticDimension = false
             cell.height = 44
