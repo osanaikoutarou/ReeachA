@@ -10,21 +10,38 @@ import UIKit
 
 class ChannelDetailTopLinkViewController: UIViewController {
 
+    @IBOutlet weak var linkDynamicStackView: DynamicStackView!
+
+    var channel: Channel? {
+        didSet {
+            setup()
+        }
+    }
+
+    override func loadView() {
+        super.loadView()
+        self.view.translatesAutoresizingMaskIntoConstraints = false
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
+    func setup() {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // 最初の3つのみ
+        (channel as? Anime)?.webLinks.forEach { link in
+            let cell = LinkVerticalDynamicStackViewCell(webLink: link)
+            cell.automaticDimension = false
+            cell.height = 44
+            cell.isIconHidden = true
+            linkDynamicStackView.addCell(cell: cell)
+        }
+
     }
-    */
+
 
 }

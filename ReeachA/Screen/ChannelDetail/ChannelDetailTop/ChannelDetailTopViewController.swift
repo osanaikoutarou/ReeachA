@@ -19,6 +19,9 @@ class ChannelDetailTopViewController: UIViewController {
     var officialLnkViewController: ChannelDetailTopOfficialLnkViewController? {
         return (headerStackView.arrangedSubviews[1].containerViewController as? ChannelDetailTopOfficialLnkViewController)
     }
+    var linkViewController: ChannelDetailTopLinkViewController? {
+        return (headerStackView.arrangedSubviews[2].containerViewController as? ChannelDetailTopLinkViewController)
+    }
 
     var channel:Channel {
         get {
@@ -40,6 +43,7 @@ class ChannelDetailTopViewController: UIViewController {
 
         baseInfoViewController?.channel = channel
         officialLnkViewController?.channel = channel
+        linkViewController?.channel = channel
 
         tableView.tableHeaderView?.layoutIfNeeded()
         tableView.layoutIfNeeded()
