@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ChannelDetailLinkViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:ReeachA.xcodeproj">
    </FileRef>
    <FileRef

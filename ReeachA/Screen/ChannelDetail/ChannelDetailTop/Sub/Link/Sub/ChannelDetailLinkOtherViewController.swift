@@ -1,14 +1,14 @@
 //
-//  ChannelDetailTopLinkViewController.swift
+//  ChannelDetailLinkOtherViewController.swift
 //  ReeachA
 //
-//  Created by osanai on 2019/09/10.
+//  Created by 長内幸太郎 on 2019/09/12.
 //  Copyright © 2019 長内幸太郎. All rights reserved.
 //
 
 import UIKit
 
-class ChannelDetailTopLinkViewController: UIViewController {
+class ChannelDetailLinkOtherViewController: UIViewController {
 
     @IBOutlet weak var linkDynamicStackView: DynamicStackView!
 
