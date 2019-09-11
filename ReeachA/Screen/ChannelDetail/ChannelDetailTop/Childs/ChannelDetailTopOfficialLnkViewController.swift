@@ -37,6 +37,7 @@ class ChannelDetailTopOfficialLnkViewController: UIViewController {
             cell.automaticDimension = false
             cell.height = 44
             cell.isIconHidden = true
+            cell.padding = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 10)
             officialLinkDynamicStackView.addCell(cell: cell)
         }
 

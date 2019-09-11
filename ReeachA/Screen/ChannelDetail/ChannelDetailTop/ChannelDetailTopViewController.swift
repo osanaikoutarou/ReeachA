@@ -10,7 +10,7 @@ import UIKit
 
 class ChannelDetailTopViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+//    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var headerStackView: UIStackView!
 
     var baseInfoViewController: ChannelDetailTopBaseInfoViewController? {
@@ -45,8 +45,6 @@ class ChannelDetailTopViewController: UIViewController {
         officialLnkViewController?.channel = channel
         linkViewController?.channel = channel
 
-        tableView.tableHeaderView?.layoutIfNeeded()
-        tableView.layoutIfNeeded()
 
         
 //        tableView.contentInsetAdjustmentBehavior = .never

@@ -131,6 +131,9 @@
 		DA55B08F222F6F41001AD0C9 /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B08E222F6F41001AD0C9 /* YoutubeView.swift */; };
 		DA55B091222F6F49001AD0C9 /* YoutubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55B090222F6F49001AD0C9 /* YoutubeView.xib */; };
 		DA55B093222F797B001AD0C9 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B092222F797B001AD0C9 /* WKWebViewController.swift */; };
+		DA6CF0C92328C8EF00F0C2B0 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF0C82328C8EF00F0C2B0 /* CustomScrollView.swift */; };
+		DA6CF0CB2328C90600F0C2B0 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF0CA2328C90600F0C2B0 /* CustomTableView.swift */; };
+		DA6CF0D02328CBA200F0C2B0 /* DocumentCambas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6CF0CF2328CBA200F0C2B0 /* DocumentCambas.storyboard */; };
 		DA6CF89E231E358F006D108F /* UITableViewCell+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF89D231E358F006D108F /* UITableViewCell+Separator.swift */; };
 		DA883A20222639D200D8F08B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA883A1E222639D200D8F08B /* PostTableViewCell.swift */; };
 		DA883A21222639D200D8F08B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA883A1F222639D200D8F08B /* PostTableViewCell.xib */; };
@@ -307,6 +310,9 @@
 		DA55B08E222F6F41001AD0C9 /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		DA55B090222F6F49001AD0C9 /* YoutubeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeView.xib; sourceTree = "<group>"; };
 		DA55B092222F797B001AD0C9 /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		DA6CF0C82328C8EF00F0C2B0 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		DA6CF0CA2328C90600F0C2B0 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		DA6CF0CF2328CBA200F0C2B0 /* DocumentCambas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DocumentCambas.storyboard; sourceTree = "<group>"; };
 		DA6CF89D231E358F006D108F /* UITableViewCell+Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Separator.swift"; sourceTree = "<group>"; };
 		DA883A1E222639D200D8F08B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		DA883A1F222639D200D8F08B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -725,6 +731,7 @@
 				1EB1514821FA1C18001B6110 /* Assets.xcassets */,
 				1EB1514A21FA1C18001B6110 /* LaunchScreen.storyboard */,
 				1EB1514D21FA1C18001B6110 /* Info.plist */,
+				DA6CF0CE2328CB7700F0C2B0 /* Debug */,
 			);
 			path = ReeachA;
 			sourceTree = "<group>";
@@ -744,6 +751,8 @@
 				DA8AEB3021FEC4A2000A717E /* CornerRaoundButtonView.swift */,
 				DA8AEB3421FEEA05000A717E /* NoPaddingTextView.swift */,
 				1EFF4BD92205D645006BFDC9 /* PixcelHorizontalView.swift */,
+				DA6CF0C82328C8EF00F0C2B0 /* CustomScrollView.swift */,
+				DA6CF0CA2328C90600F0C2B0 /* CustomTableView.swift */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -938,6 +947,14 @@
 				DA55B090222F6F49001AD0C9 /* YoutubeView.xib */,
 			);
 			path = Youtube;
+			sourceTree = "<group>";
+		};
+		DA6CF0CE2328CB7700F0C2B0 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CF0CF2328CBA200F0C2B0 /* DocumentCambas.storyboard */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		DA6CF89C231E355A006D108F /* UITableViewCell */ = {
@@ -1183,6 +1200,7 @@
 				1EFF4BD42205D4BE006BFDC9 /* ChannelDetailWebsiteListTableViewCell.xib in Resources */,
 				DADD664F22A4B05800F11710 /* CalendarDay.storyboard in Resources */,
 				DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */,
+				DA6CF0D02328CBA200F0C2B0 /* DocumentCambas.storyboard in Resources */,
 				DADD665022A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1323,6 +1341,7 @@
 				1E57E0B121FB84DE003AD898 /* UINavigationController+Utils.swift in Sources */,
 				1EF8DC1B23257D6F004DDA63 /* ChannelDetailTopOfficialLnkViewController.swift in Sources */,
 				1E1E5F0922069F5B005627F9 /* Human.swift in Sources */,
+				DA6CF0C92328C8EF00F0C2B0 /* CustomScrollView.swift in Sources */,
 				1EB1514421FA1C17001B6110 /* ViewController.swift in Sources */,
 				DADA57F0222E4DC200FC95A8 /* YoutubeTableViewCell.swift in Sources */,
 				DA6CF89E231E358F006D108F /* UITableViewCell+Separator.swift in Sources */,
@@ -1352,6 +1371,7 @@
 				1E57E08F21FB84DD003AD898 /* URL+.swift in Sources */,
 				1E7AF7F9222B0ADF00F845C2 /* RightMenuViewController.swift in Sources */,
 				DA2B73C42316642D00D6DFFE /* CalendarDayEventTableViewCell.swift in Sources */,
+				DA6CF0CB2328C90600F0C2B0 /* CustomTableView.swift in Sources */,
 				1E57E09521FB84DD003AD898 /* UITableView+.swift in Sources */,
 				1E57E09C21FB84DE003AD898 /* UIView+Corner.swift in Sources */,
 				DA8AEB2B21FEC3A4000A717E /* PaddingLabel.swift in Sources */,
@@ -1526,6 +1546,7 @@
 			baseConfigurationReference = 88B59514424F66B560248F03 /* Pods-ReeachA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7MW83A3B2;
 				INFOPLIST_FILE = ReeachA/Info.plist;
@@ -1535,6 +1556,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.osanai..ReeachA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1545,6 +1567,7 @@
 			baseConfigurationReference = CFF42C61CB3355EA7AC15B1C /* Pods-ReeachA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7MW83A3B2;
 				INFOPLIST_FILE = ReeachA/Info.plist;
@@ -1554,6 +1577,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.osanai..ReeachA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

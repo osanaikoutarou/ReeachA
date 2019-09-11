@@ -58,8 +58,8 @@ class ChannelDetailTopBaseInfoViewController: UIViewController {
             cell.isSeparatorHidden = false
             summaryInfoStackView.addCell(cell: cell)
         })
-        summaryInfoStackView.spacing = 8.0.f
-//        summaryInfoStackView.layoutIfNeeded()
+        summaryInfoStackView.spacing = 5.f
+        view.layoutIfNeeded()
     }
 
 }

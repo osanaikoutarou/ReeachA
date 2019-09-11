@@ -32,12 +32,12 @@ class ChannelDetailTopLinkViewController: UIViewController {
 
     func setup() {
 
-        // 最初の3つのみ
         (channel as? Anime)?.webLinks.forEach { link in
             let cell = LinkVerticalDynamicStackViewCell(webLink: link)
             cell.automaticDimension = false
             cell.height = 44
             cell.isIconHidden = true
+            cell.padding = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 10)
             linkDynamicStackView.addCell(cell: cell)
         }
 

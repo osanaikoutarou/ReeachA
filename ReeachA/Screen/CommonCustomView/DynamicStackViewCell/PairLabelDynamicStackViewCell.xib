@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,14 +27,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="167" height="65"/>
+            <rect key="frame" x="0.0" y="0.0" width="167" height="57"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.80000000000000004" contentMode="scaleToFill" verticalCompressionResistancePriority="770" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-Aj-Xzp" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="167" height="65"/>
+                    <rect key="frame" x="0.0" y="0.0" width="167" height="57"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKp-o5-9aQ" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="26.5" height="65"/>
+                            <rect key="frame" x="0.0" y="0.0" width="26.5" height="57"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="770" text="title" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="o3c-uJ-2PX">
                                     <rect key="frame" x="2" y="2" width="22.5" height="12"/>
@@ -54,14 +54,11 @@
                                 <constraint firstItem="o3c-uJ-2PX" firstAttribute="leading" secondItem="lKp-o5-9aQ" secondAttribute="leading" constant="2" id="IQh-JT-rak"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" verticalCompressionResistancePriority="770" translatesAutoresizingMaskIntoConstraints="NO" id="OeZ-o1-SaM">
-                            <rect key="frame" x="34.5" y="0.0" width="132.5" height="65"/>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="OeZ-o1-SaM">
+                            <rect key="frame" x="34.5" y="0.0" width="132.5" height="57"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bja-BT-APj">
+                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bja-BT-APj">
                                     <rect key="frame" x="2" y="2" width="128.5" height="61"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" priority="1" constant="61" id="Dhj-yg-jHw"/>
-                                    </constraints>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,7 +102,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-15.199999999999999" y="145.27736131934034"/>
+            <point key="canvasLocation" x="-15.199999999999999" y="141.67916041979012"/>
         </view>
     </objects>
 </document>
