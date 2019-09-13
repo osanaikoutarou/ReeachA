@@ -96,6 +96,7 @@
 		1EB1514C21FA1C18001B6110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1514A21FA1C18001B6110 /* LaunchScreen.storyboard */; };
 		1EC50DD42200CA040026DEF0 /* ChannelDetailItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC50DD32200CA040026DEF0 /* ChannelDetailItems.storyboard */; };
 		1EC50DD62200CA290026DEF0 /* ChannelDetailItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC50DD52200CA290026DEF0 /* ChannelDetailItemsViewController.swift */; };
+		1ECB6815232A8D97001CB174 /* GestureTransparentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB6814232A8D97001CB174 /* GestureTransparentView.swift */; };
 		1ED20DD82216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED20DD72216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift */; };
 		1ED20DDB221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED20DDA221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard */; };
 		1ED20DDF2218AF020043EE0D /* Debug2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED20DDE2218AF020043EE0D /* Debug2ViewController.swift */; };
@@ -275,6 +276,7 @@
 		1EB1514D21FA1C18001B6110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EC50DD32200CA040026DEF0 /* ChannelDetailItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailItems.storyboard; sourceTree = "<group>"; };
 		1EC50DD52200CA290026DEF0 /* ChannelDetailItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailItemsViewController.swift; sourceTree = "<group>"; };
+		1ECB6814232A8D97001CB174 /* GestureTransparentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTransparentView.swift; sourceTree = "<group>"; };
 		1ED20DD72216866A0043EE0D /* ChannelDetailEpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailEpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		1ED20DDA221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailEpisodeDetail.storyboard; sourceTree = "<group>"; };
 		1ED20DDE2218AF020043EE0D /* Debug2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug2ViewController.swift; sourceTree = "<group>"; };
@@ -773,6 +775,7 @@
 				1EFF4BD92205D645006BFDC9 /* PixcelHorizontalView.swift */,
 				DA6CF0C82328C8EF00F0C2B0 /* CustomScrollView.swift */,
 				DA6CF0CA2328C90600F0C2B0 /* CustomTableView.swift */,
+				1ECB6814232A8D97001CB174 /* GestureTransparentView.swift */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -1403,6 +1406,7 @@
 				1E57E09521FB84DD003AD898 /* UITableView+.swift in Sources */,
 				1E57E09C21FB84DE003AD898 /* UIView+Corner.swift in Sources */,
 				DA8AEB2B21FEC3A4000A717E /* PaddingLabel.swift in Sources */,
+				1ECB6815232A8D97001CB174 /* GestureTransparentView.swift in Sources */,
 				1E4A54342206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift in Sources */,
 				1E57E0B421FB84DE003AD898 /* UIControl+Action.swift in Sources */,
 				1E1DE00222106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift in Sources */,
