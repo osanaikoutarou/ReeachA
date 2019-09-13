@@ -153,6 +153,7 @@
 		DAB1412D220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */; };
 		DAB37B742226811400A70D7B /* LikeLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB37B732226811300A70D7B /* LikeLabelTextView.swift */; };
 		DAB37B7622268FA600A70D7B /* ChannelDetailPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */; };
+		DAC04D8F232B95FC006634F6 /* EventControlableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC04D8E232B95FC006634F6 /* EventControlableView.swift */; };
 		DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADA57EB222E4A6300FC95A8 /* Videos.storyboard */; };
 		DADA57EE222E4ACF00FC95A8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */; };
 		DADA57F0222E4DC200FC95A8 /* YoutubeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57EF222E4DC200FC95A8 /* YoutubeTableViewCell.swift */; };
@@ -334,6 +335,7 @@
 		DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopTitleTableViewCell.swift; sourceTree = "<group>"; };
 		DAB37B732226811300A70D7B /* LikeLabelTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeLabelTextView.swift; path = ReeachA/Screen/LikeLabelTextView.swift; sourceTree = SOURCE_ROOT; };
 		DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailPostViewController.swift; sourceTree = "<group>"; };
+		DAC04D8E232B95FC006634F6 /* EventControlableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventControlableView.swift; sourceTree = "<group>"; };
 		DADA57EB222E4A6300FC95A8 /* Videos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Videos.storyboard; sourceTree = "<group>"; };
 		DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		DADA57EF222E4DC200FC95A8 /* YoutubeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTableViewCell.swift; sourceTree = "<group>"; };
@@ -776,6 +778,7 @@
 				DA6CF0C82328C8EF00F0C2B0 /* CustomScrollView.swift */,
 				DA6CF0CA2328C90600F0C2B0 /* CustomTableView.swift */,
 				1ECB6814232A8D97001CB174 /* GestureTransparentView.swift */,
+				DAC04D8E232B95FC006634F6 /* EventControlableView.swift */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -1380,6 +1383,7 @@
 				DA55B093222F797B001AD0C9 /* WKWebViewController.swift in Sources */,
 				DAB14106220D10F100E0C144 /* DynamicStackViewCell.swift in Sources */,
 				1E57E0A421FB84DE003AD898 /* UIStoryboard+Utility.swift in Sources */,
+				DAC04D8F232B95FC006634F6 /* EventControlableView.swift in Sources */,
 				1E57E08C21FB84DD003AD898 /* String+.swift in Sources */,
 				1E1E5F0C2206A7E4005627F9 /* Organization.swift in Sources */,
 				DA8AEB3121FEC4A2000A717E /* CornerRaoundButtonView.swift in Sources */,
