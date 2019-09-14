@@ -13,6 +13,7 @@ import UIKit
 /// その場合は基本的に子viewはUIView1つであるとする
 class EventControlableView: UIView {
 
+    @IBInspectable
     var targetLvel: Int = 0
 
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {

@@ -18,6 +18,15 @@ class ChannelDetailLinkViewController: UIViewController {
     var otherController: ChannelDetailLinkOtherViewController? {
         return nextViewControllers[ChannelDetailLinkOtherViewController.className] as? ChannelDetailLinkOtherViewController
     }
+    var parentChannelDetailTopViewController: ChannelDetailTopViewController? {
+        return view.superview?.viewController as? ChannelDetailTopViewController
+    }
+
+    @IBOutlet weak var scrollView: UIScrollView! {
+        didSet {
+            scrollView.delegate = self
+        }
+    }
 
     var channel: Channel? {
         didSet {
@@ -52,4 +61,10 @@ class ChannelDetailLinkViewController: UIViewController {
         }
     }
 
+}
+
+extension ChannelDetailLinkViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        parentChannelDetailTopViewController?.scrollViewDidScroll(viewController: self, scrollView: scrollView)
+    }
 }

@@ -691,11 +691,16 @@
                                     <constraint firstItem="vQL-fK-Fp4" firstAttribute="top" secondItem="gaf-rM-RvB" secondAttribute="top" id="wB7-k5-zwN"/>
                                 </constraints>
                             </scrollView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-fW-5Fn">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-fW-5Fn" customClass="EventControlableView" customModule="ReeachA" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="1875" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="5r9-EQ-glN"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="targetLvel">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="nYc-n8-hPp" kind="embed" identifier="ChannelDetailTopBaseInfoViewController" id="iJg-fB-BeX"/>
                                 </connections>
@@ -779,6 +784,7 @@
                     </view>
                     <size key="freeformSize" width="1875" height="1000"/>
                     <connections>
+                        <outlet property="headerTop" destination="GeI-Wx-LCo" id="WSW-rV-5oX"/>
                         <outlet property="screenWidthConstraint" destination="IqG-YG-JGR" id="1ur-hi-rbY"/>
                     </connections>
                 </viewController>
@@ -1707,6 +1713,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RNh-UN-Pue"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="jPl-T9-NrH" id="mri-vi-1bS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfq-Zi-JDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

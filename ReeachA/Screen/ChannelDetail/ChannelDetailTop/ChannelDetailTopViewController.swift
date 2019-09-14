@@ -15,6 +15,7 @@ class ChannelDetailTopViewController: UIViewController {
     @IBOutlet weak var headerContainerView: UIView!
     @IBOutlet weak var newsContainerView: UIView!
     @IBOutlet weak var screenWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var headerTop: NSLayoutConstraint!
 
 //    weak var linkContainerView: UIView?
 
@@ -87,6 +88,13 @@ class ChannelDetailTopViewController: UIViewController {
     }
 
 }
+
+extension ChannelDetailTopViewController {
+    func scrollViewDidScroll(viewController: UIViewController, scrollView: UIScrollView) {
+        headerTop.constant = -scrollView.contentOffset.y
+    }
+}
+
 /*
 
     
@@ -211,3 +219,4 @@ extension ChannelDetailTopViewController: UITableViewDelegate,UITableViewDataSou
     }
 }
 */
+
