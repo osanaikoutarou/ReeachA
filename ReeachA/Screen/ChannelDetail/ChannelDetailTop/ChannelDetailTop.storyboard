@@ -605,7 +605,7 @@
                                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUa-Ln-XOm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
                                                                 <connections>
-                                                                    <segue destination="CcI-LA-4nN" kind="embed" id="3vh-7s-EIc"/>
+                                                                    <segue destination="ZFX-aP-gNL" kind="embed" id="iz3-q2-BZ9"/>
                                                                 </connections>
                                                             </containerView>
                                                         </subviews>
@@ -1432,11 +1432,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-qV-NFR" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
-                                        <rect key="frame" x="155" y="229" width="205" height="40"/>
+                                        <rect key="frame" x="156" y="233" width="203" height="36"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未視聴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVH-iG-CwF">
-                                                <rect key="frame" x="76.5" y="10" width="52" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="77" y="8.5" width="49" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1445,7 +1445,7 @@
                                         <constraints>
                                             <constraint firstItem="JVH-iG-CwF" firstAttribute="centerY" secondItem="2YF-qV-NFR" secondAttribute="centerY" id="5pj-Vt-FKW"/>
                                             <constraint firstItem="JVH-iG-CwF" firstAttribute="centerX" secondItem="2YF-qV-NFR" secondAttribute="centerX" id="6Qg-tQ-EGt"/>
-                                            <constraint firstAttribute="height" constant="40" id="vTB-EJ-NFo"/>
+                                            <constraint firstAttribute="height" constant="36" id="vTB-EJ-NFo"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-Zw-C31" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
@@ -1463,7 +1463,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="2YF-qV-NFR" firstAttribute="leading" secondItem="oMY-lm-yQz" secondAttribute="trailing" constant="15" id="4DL-Tf-AiV"/>
+                                    <constraint firstItem="2YF-qV-NFR" firstAttribute="leading" secondItem="oMY-lm-yQz" secondAttribute="trailing" constant="16" id="4DL-Tf-AiV"/>
                                     <constraint firstItem="koR-Pi-HyU" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" id="4vG-rl-laF"/>
                                     <constraint firstItem="oMY-lm-yQz" firstAttribute="top" secondItem="xrP-Ti-ysF" secondAttribute="bottom" constant="15" id="5b8-pL-v52"/>
                                     <constraint firstItem="xrP-Ti-ysF" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" constant="15" id="AMV-ll-l60"/>
@@ -1473,7 +1473,7 @@
                                     <constraint firstItem="xrP-Ti-ysF" firstAttribute="top" secondItem="koR-Pi-HyU" secondAttribute="bottom" constant="15" id="Ufj-8F-ayc"/>
                                     <constraint firstAttribute="trailing" secondItem="koR-Pi-HyU" secondAttribute="trailing" id="WTw-hi-pKV"/>
                                     <constraint firstItem="mdd-Zw-C31" firstAttribute="top" secondItem="oMY-lm-yQz" secondAttribute="top" id="Xan-NO-rop"/>
-                                    <constraint firstAttribute="trailing" secondItem="2YF-qV-NFR" secondAttribute="trailing" constant="15" id="e3r-bn-P53"/>
+                                    <constraint firstAttribute="trailing" secondItem="2YF-qV-NFR" secondAttribute="trailing" constant="16" id="e3r-bn-P53"/>
                                     <constraint firstItem="2pd-Rj-kd4" firstAttribute="top" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="15" id="hlF-ft-mvP"/>
                                     <constraint firstAttribute="trailing" secondItem="2pd-Rj-kd4" secondAttribute="trailing" constant="15" id="iNZ-hM-nh8"/>
                                     <constraint firstAttribute="bottom" secondItem="2pd-Rj-kd4" secondAttribute="bottom" constant="15" id="jWu-jM-JIq"/>
@@ -1669,20 +1669,13 @@
             </objects>
             <point key="canvasLocation" x="2929" y="1859"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="3n0-tL-6js">
+        <!--ChannelDetailEpisode-->
+        <scene sceneID="Duv-Wo-t3G">
             <objects>
-                <viewController id="CcI-LA-4nN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Km9-cn-rbb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Vgo-O5-BQm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yAF-Ag-Vac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ChannelDetailEpisode" id="ZFX-aP-gNL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spC-za-4fl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2929" y="2959"/>
+            <point key="canvasLocation" x="2833" y="2523"/>
         </scene>
         <!--Channel Detail Link View Controller-->
         <scene sceneID="BXZ-6q-7B0">
