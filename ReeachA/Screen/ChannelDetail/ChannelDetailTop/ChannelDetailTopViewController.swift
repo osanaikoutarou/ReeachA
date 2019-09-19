@@ -14,8 +14,12 @@ class ChannelDetailTopViewController: UIViewController {
     @IBOutlet weak var headerStackView: UIStackView!
     @IBOutlet weak var headerContainerView: UIView!
     @IBOutlet weak var newsContainerView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var screenWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerTop: NSLayoutConstraint!
+    @IBOutlet weak var barLeft: NSLayoutConstraint!
+    @IBOutlet weak var screenStackView: UIStackView!
+
 
 //    weak var linkContainerView: UIView?
 
@@ -37,6 +41,10 @@ class ChannelDetailTopViewController: UIViewController {
     }
     var anime:Anime {
         return channel as! Anime
+    }
+
+    var screenCount: Int {
+        return screenStackView.arrangedSubviews.count
     }
     
     override func viewDidLoad() {
@@ -90,8 +98,15 @@ class ChannelDetailTopViewController: UIViewController {
 }
 
 extension ChannelDetailTopViewController {
+    /// これは子ViewControllerを対象にしている
     func scrollViewDidScroll(viewController: UIViewController, scrollView: UIScrollView) {
         headerTop.constant = -scrollView.contentOffset.y
+    }
+}
+
+extension ChannelDetailTopViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        barLeft.constant = scrollView.contentOffset.x / screenCount.f
     }
 }
 

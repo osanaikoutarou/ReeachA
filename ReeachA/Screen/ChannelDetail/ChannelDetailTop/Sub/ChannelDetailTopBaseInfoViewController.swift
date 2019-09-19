@@ -38,7 +38,7 @@ class ChannelDetailTopBaseInfoViewController: UIViewController {
             let cell = PairLabelDynamicStackViewCell(pair: labelPair)
 
             cell.automaticDimension = true
-            cell.setFont(font: UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.regular))
+            cell.setFont(font: UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.regular))
             cell.setTitleWidth(width: 50.f)
             cell.height = 30.f
             cell.setTextColor(color: .black)
