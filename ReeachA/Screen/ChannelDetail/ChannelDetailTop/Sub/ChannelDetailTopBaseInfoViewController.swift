@@ -11,7 +11,6 @@ import UIKit
 class ChannelDetailTopBaseInfoViewController: UIViewController {
 
     @IBOutlet weak var baseInfoStackView: DynamicStackView!
-    @IBOutlet weak var summaryInfoStackView: DynamicStackView!
 
     @IBOutlet weak var stateButtonView: ButtonView!
 
@@ -46,19 +45,6 @@ class ChannelDetailTopBaseInfoViewController: UIViewController {
             baseInfoStackView.addCell(cell: cell)
         })
 //        baseInfoStackView.layoutIfNeeded()
-
-        (channel as? Anime)?.topInfos.forEach({ (infoPair) in
-            let labelPair = LabelPair(id: nil, infoPair: infoPair)
-            let cell = PairLabelDynamicStackViewCell(pair: labelPair)
-
-            cell.automaticDimension = true
-            cell.setFont(font: UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.regular))
-            cell.setTitleWidth(width: 150.f)
-            cell.setTextColor(color: .black)
-            cell.isSeparatorHidden = false
-            summaryInfoStackView.addCell(cell: cell)
-        })
-        summaryInfoStackView.spacing = 5.f
         view.layoutIfNeeded()
     }
 

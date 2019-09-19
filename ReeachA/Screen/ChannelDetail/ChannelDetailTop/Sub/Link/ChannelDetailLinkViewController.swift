@@ -11,13 +11,15 @@ class ChannelDetailLinkViewController: UIViewController {
 
     @IBOutlet weak var stackView: UIStackView!
 
-    var nextViewControllers: [String: UIViewController] = [:]
+    // embed parts(child)
+    var embedViewControllers: [String: UIViewController] = [:]
     var officialViewController: ChannelDetailLinkOfficialViewController? {
-        return nextViewControllers[ChannelDetailLinkOfficialViewController.className] as? ChannelDetailLinkOfficialViewController
+        return embedViewControllers[ChannelDetailLinkOfficialViewController.className] as? ChannelDetailLinkOfficialViewController
     }
     var otherController: ChannelDetailLinkOtherViewController? {
-        return nextViewControllers[ChannelDetailLinkOtherViewController.className] as? ChannelDetailLinkOtherViewController
+        return embedViewControllers[ChannelDetailLinkOtherViewController.className] as? ChannelDetailLinkOtherViewController
     }
+    // embed(parent)
     var parentChannelDetailTopViewController: ChannelDetailTopViewController? {
         return view.superview?.viewController as? ChannelDetailTopViewController
     }
@@ -57,7 +59,7 @@ class ChannelDetailLinkViewController: UIViewController {
 
         print("🤔ChannelDetailLinkViewController prepare \(segue.identifier!)")
         if let identifier = segue.identifier {
-            nextViewControllers[identifier] = segue.destination
+            embedViewControllers[identifier] = segue.destination
         }
     }
 
@@ -66,5 +68,55 @@ class ChannelDetailLinkViewController: UIViewController {
 extension ChannelDetailLinkViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         parentChannelDetailTopViewController?.scrollViewDidScroll(viewController: self, scrollView: scrollView)
+    }
+}
+
+
+
+//めも
+
+
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        children.forEach { (viewController) in
+            print(viewController.getIdentifier())
+        }
+    }
+
+    @IBAction func tapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
+}
+
+protocol Identifier {
+    var identifier: String { get }
+}
+
+extension NSObject {
+    func getIdentifier() -> String {
+        return (self as? Identifier)?.identifier ?? "_"
+    }
+}
+
+extension ViewController: Identifier {
+    var identifier: String {
+        return "😀"
+    }
+}
+
+extension UIViewController {
+    func castToSelf(obj: Any) -> Self? {
+        if obj is Self {
+            return obj as! Self
+        }
     }
 }

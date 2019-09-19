@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="klQ-xc-N3l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="klQ-xc-N3l">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1391,11 +1391,11 @@
             <objects>
                 <viewController storyboardIdentifier="ChannelDetailTopBaseInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nYc-n8-hPp" customClass="ChannelDetailTopBaseInfoViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cVV-cF-6tZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiY-PI-wia">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koR-Pi-HyU">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
@@ -1416,7 +1416,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yakusokuno" translatesAutoresizingMaskIntoConstraints="NO" id="oMY-lm-yQz">
-                                        <rect key="frame" x="15" y="93" width="125" height="176"/>
+                                        <rect key="frame" x="15" y="114" width="125" height="176"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="oMY-lm-yQz" secondAttribute="height" multiplier="120:169" id="Vde-b3-Cp2"/>
                                         </constraints>
@@ -1427,12 +1427,12 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrP-Ti-ysF">
-                                        <rect key="frame" x="15" y="30" width="345" height="48"/>
+                                        <rect key="frame" x="15" y="30" width="345" height="69"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-qV-NFR" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
-                                        <rect key="frame" x="156" y="233" width="203" height="36"/>
+                                        <rect key="frame" x="156" y="254" width="203" height="36"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未視聴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVH-iG-CwF">
                                                 <rect key="frame" x="77" y="8.5" width="49" height="19.5"/>
@@ -1449,20 +1449,15 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-Zw-C31" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
-                                        <rect key="frame" x="155" y="93" width="210" height="50"/>
+                                        <rect key="frame" x="155" y="114" width="210" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="1" constant="50" id="hNV-y1-WGy"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-Rj-kd4" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="284" width="345" height="101"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" priority="1" constant="74.5" placeholder="YES" id="TnU-RF-yG5"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="10" id="303-2p-vzV"/>
                                     <constraint firstItem="2YF-qV-NFR" firstAttribute="leading" secondItem="oMY-lm-yQz" secondAttribute="trailing" constant="16" id="4DL-Tf-AiV"/>
                                     <constraint firstItem="koR-Pi-HyU" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" id="4vG-rl-laF"/>
                                     <constraint firstItem="oMY-lm-yQz" firstAttribute="top" secondItem="xrP-Ti-ysF" secondAttribute="bottom" constant="15" id="5b8-pL-v52"/>
@@ -1474,12 +1469,8 @@
                                     <constraint firstAttribute="trailing" secondItem="koR-Pi-HyU" secondAttribute="trailing" id="WTw-hi-pKV"/>
                                     <constraint firstItem="mdd-Zw-C31" firstAttribute="top" secondItem="oMY-lm-yQz" secondAttribute="top" id="Xan-NO-rop"/>
                                     <constraint firstAttribute="trailing" secondItem="2YF-qV-NFR" secondAttribute="trailing" constant="16" id="e3r-bn-P53"/>
-                                    <constraint firstItem="2pd-Rj-kd4" firstAttribute="top" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="15" id="hlF-ft-mvP"/>
-                                    <constraint firstAttribute="trailing" secondItem="2pd-Rj-kd4" secondAttribute="trailing" constant="15" id="iNZ-hM-nh8"/>
-                                    <constraint firstAttribute="bottom" secondItem="2pd-Rj-kd4" secondAttribute="bottom" constant="15" id="jWu-jM-JIq"/>
                                     <constraint firstItem="koR-Pi-HyU" firstAttribute="top" secondItem="IiY-PI-wia" secondAttribute="top" id="pt6-DO-pyd"/>
                                     <constraint firstAttribute="trailing" secondItem="mdd-Zw-C31" secondAttribute="trailing" constant="10" id="rBa-eg-Tua"/>
-                                    <constraint firstItem="2pd-Rj-kd4" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" constant="15" id="ukz-MG-IdQ"/>
                                     <constraint firstItem="oMY-lm-yQz" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" constant="15" id="wB6-lp-CHU"/>
                                     <constraint firstItem="oMY-lm-yQz" firstAttribute="width" secondItem="IiY-PI-wia" secondAttribute="width" multiplier="1:3" id="ze9-Xm-bK8"/>
                                 </constraints>
@@ -1494,11 +1485,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Roc-1h-UL5"/>
                     </view>
-                    <size key="freeformSize" width="375" height="400"/>
+                    <size key="freeformSize" width="375" height="300"/>
                     <connections>
                         <outlet property="baseInfoStackView" destination="mdd-Zw-C31" id="Dvi-3z-ZRp"/>
                         <outlet property="stateButtonView" destination="2YF-qV-NFR" id="2oQ-Yx-EBG"/>
-                        <outlet property="summaryInfoStackView" destination="2pd-Rj-kd4" id="hh7-Ug-LpW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtg-xm-JHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1789,8 +1779,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_checkciecle" width="33.333332061767578" height="33.333332061767578"/>
-        <image name="icon_star" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icon_checkciecle" width="75" height="75"/>
+        <image name="icon_star" width="75" height="75"/>
         <image name="yakusokuno" width="852" height="1199"/>
     </resources>
 </document>

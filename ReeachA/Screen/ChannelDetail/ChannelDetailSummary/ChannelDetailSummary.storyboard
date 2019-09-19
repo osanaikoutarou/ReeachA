@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GRO-Pj-31Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Channel Detail Summary View Controller-->
+        <scene sceneID="QRG-RO-VeP">
+            <objects>
+                <viewController storyboardIdentifier="ChannelDetailSummaryViewController" id="GRO-Pj-31Y" customClass="ChannelDetailSummaryViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RIe-Mf-iGb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-h4-1sK" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
+                                <rect key="frame" x="15" y="10" width="345" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="74.5" placeholder="YES" id="Eqs-6t-cAM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w4L-h4-1sK" firstAttribute="leading" secondItem="RIe-Mf-iGb" secondAttribute="leading" constant="15" id="E9Q-Lp-sLp"/>
+                            <constraint firstItem="w4L-h4-1sK" firstAttribute="top" secondItem="0fj-cB-9rl" secondAttribute="top" constant="10" id="etJ-cE-4gr"/>
+                            <constraint firstItem="0fj-cB-9rl" firstAttribute="bottom" secondItem="w4L-h4-1sK" secondAttribute="bottom" constant="10" id="sqZ-rQ-3Tl"/>
+                            <constraint firstItem="0fj-cB-9rl" firstAttribute="trailing" secondItem="w4L-h4-1sK" secondAttribute="trailing" constant="15" id="ugU-dG-KWm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0fj-cB-9rl"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="300"/>
+                    <connections>
+                        <outlet property="summaryInfoStackView" destination="w4L-h4-1sK" id="zh7-25-6YK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qce-f4-rIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="-236"/>
+        </scene>
+    </scenes>
+</document>

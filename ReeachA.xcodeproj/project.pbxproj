@@ -137,6 +137,10 @@
 		DA6CF0CB2328C90600F0C2B0 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF0CA2328C90600F0C2B0 /* CustomTableView.swift */; };
 		DA6CF0D02328CBA200F0C2B0 /* DocumentCambas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6CF0CF2328CBA200F0C2B0 /* DocumentCambas.storyboard */; };
 		DA6CF89E231E358F006D108F /* UITableViewCell+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF89D231E358F006D108F /* UITableViewCell+Separator.swift */; };
+		DA75C60323337B200078A5F5 /* ChannelDetailTimeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA75C60223337B200078A5F5 /* ChannelDetailTimeline.storyboard */; };
+		DA75C60523337B490078A5F5 /* ChannelDetailTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75C60423337B490078A5F5 /* ChannelDetailTimelineViewController.swift */; };
+		DA75C60823337BEC0078A5F5 /* ChannelDetailSummary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA75C60723337BEC0078A5F5 /* ChannelDetailSummary.storyboard */; };
+		DA75C60A23337BF60078A5F5 /* ChannelDetailSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75C60923337BF60078A5F5 /* ChannelDetailSummaryViewController.swift */; };
 		DA883A20222639D200D8F08B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA883A1E222639D200D8F08B /* PostTableViewCell.swift */; };
 		DA883A21222639D200D8F08B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA883A1F222639D200D8F08B /* PostTableViewCell.xib */; };
 		DA8AEB2B21FEC3A4000A717E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */; };
@@ -319,6 +323,10 @@
 		DA6CF0CA2328C90600F0C2B0 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		DA6CF0CF2328CBA200F0C2B0 /* DocumentCambas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DocumentCambas.storyboard; sourceTree = "<group>"; };
 		DA6CF89D231E358F006D108F /* UITableViewCell+Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Separator.swift"; sourceTree = "<group>"; };
+		DA75C60223337B200078A5F5 /* ChannelDetailTimeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailTimeline.storyboard; sourceTree = "<group>"; };
+		DA75C60423337B490078A5F5 /* ChannelDetailTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTimelineViewController.swift; sourceTree = "<group>"; };
+		DA75C60723337BEC0078A5F5 /* ChannelDetailSummary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailSummary.storyboard; sourceTree = "<group>"; };
+		DA75C60923337BF60078A5F5 /* ChannelDetailSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailSummaryViewController.swift; sourceTree = "<group>"; };
 		DA883A1E222639D200D8F08B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		DA883A1F222639D200D8F08B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		DA8AEB2621FEC3A4000A717E /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
@@ -869,6 +877,9 @@
 		1EFE8FF121FC4478006E8473 /* ChannelDetail */ = {
 			isa = PBXGroup;
 			children = (
+				DA75C60623337BA90078A5F5 /* ChannelDetailSummary */,
+				DA75C60123337AE70078A5F5 /* ChannelDetailTimeline */,
+				DA75C5FE23337AC10078A5F5 /* ChannelDetailLink */,
 				1EFF4BCB2205BE57006BFDC9 /* ChannelDetailNotification */,
 				1EE4CD7E2205707600E85537 /* ChannelDetailPost */,
 				1EE4CD7922056AE900E85537 /* ChannelDetailEpisode */,
@@ -996,6 +1007,31 @@
 				DA6CF89D231E358F006D108F /* UITableViewCell+Separator.swift */,
 			);
 			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		DA75C5FE23337AC10078A5F5 /* ChannelDetailLink */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChannelDetailLink;
+			sourceTree = "<group>";
+		};
+		DA75C60123337AE70078A5F5 /* ChannelDetailTimeline */ = {
+			isa = PBXGroup;
+			children = (
+				DA75C60223337B200078A5F5 /* ChannelDetailTimeline.storyboard */,
+				DA75C60423337B490078A5F5 /* ChannelDetailTimelineViewController.swift */,
+			);
+			path = ChannelDetailTimeline;
+			sourceTree = "<group>";
+		};
+		DA75C60623337BA90078A5F5 /* ChannelDetailSummary */ = {
+			isa = PBXGroup;
+			children = (
+				DA75C60723337BEC0078A5F5 /* ChannelDetailSummary.storyboard */,
+				DA75C60923337BF60078A5F5 /* ChannelDetailSummaryViewController.swift */,
+			);
+			path = ChannelDetailSummary;
 			sourceTree = "<group>";
 		};
 		DAB14103220D10F100E0C144 /* DynamicStackView */ = {
@@ -1209,6 +1245,7 @@
 				1EFF4BCD2205BE7D006BFDC9 /* ChannelDetailNotification.storyboard in Resources */,
 				1ED20DDB221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard in Resources */,
 				DADD665522A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.xib in Resources */,
+				DA75C60823337BEC0078A5F5 /* ChannelDetailSummary.storyboard in Resources */,
 				1E7AF7F4222B0A9600F845C2 /* MyPage.storyboard in Resources */,
 				1E4A54352206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.xib in Resources */,
 				1E57E03721FB7BF7003AD898 /* AnimeChannelCollectionViewCell.xib in Resources */,
@@ -1234,6 +1271,7 @@
 				DADD664F22A4B05800F11710 /* CalendarDay.storyboard in Resources */,
 				DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */,
 				DA6CF0D02328CBA200F0C2B0 /* DocumentCambas.storyboard in Resources */,
+				DA75C60323337B200078A5F5 /* ChannelDetailTimeline.storyboard in Resources */,
 				DADD665022A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1333,6 +1371,7 @@
 				1E57E09D21FB84DE003AD898 /* UIView+Border.swift in Sources */,
 				1E57E09E21FB84DE003AD898 /* UIView+Fade.swift in Sources */,
 				DADD665A22A4B06700F11710 /* CalendarViewController.swift in Sources */,
+				DA75C60A23337BF60078A5F5 /* ChannelDetailSummaryViewController.swift in Sources */,
 				1E7AF7EF222AF35E00F845C2 /* ChannelDetailItemsSquareTableViewCell.swift in Sources */,
 				1EFF4BD32205D4BE006BFDC9 /* ChannelDetailWebsiteListTableViewCell.swift in Sources */,
 				1E57E0A521FB84DE003AD898 /* CastExtension.swift in Sources */,
@@ -1349,6 +1388,7 @@
 				1E57E09A21FB84DE003AD898 /* UIView+Autolayout.swift in Sources */,
 				DADD665222A4B05800F11710 /* CalendarDayTopCollectionViewCell.swift in Sources */,
 				1EFE900621FCCE92006E8473 /* ChannelDetailWebsiteListViewController.swift in Sources */,
+				DA75C60523337B490078A5F5 /* ChannelDetailTimelineViewController.swift in Sources */,
 				1E57E09621FB84DD003AD898 /* NibInstantiatable.swift in Sources */,
 				1E57E0C421FC0456003AD898 /* Anime.swift in Sources */,
 				DADD665422A4B05800F11710 /* CalendarDayViewController.swift in Sources */,
