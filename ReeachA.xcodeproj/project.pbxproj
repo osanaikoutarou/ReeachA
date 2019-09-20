@@ -153,6 +153,7 @@
 		DA8AEB3121FEC4A2000A717E /* CornerRaoundButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB3021FEC4A2000A717E /* CornerRaoundButtonView.swift */; };
 		DA8AEB3321FECDA8000A717E /* UIViewController+ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB3221FECDA8000A717E /* UIViewController+ActionSheet.swift */; };
 		DA8AEB3521FEEA06000A717E /* NoPaddingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AEB3421FEEA05000A717E /* NoPaddingTextView.swift */; };
+		DA8C7DE02334BC1F007D0892 /* IdeaNote.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA8C7DDF2334BC1F007D0892 /* IdeaNote.rtf */; };
 		DAB14106220D10F100E0C144 /* DynamicStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB14104220D10F100E0C144 /* DynamicStackViewCell.swift */; };
 		DAB14107220D10F100E0C144 /* DynamicStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB14105220D10F100E0C144 /* DynamicStackView.swift */; };
 		DAB1412B220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */; };
@@ -341,6 +342,7 @@
 		DA8AEB3021FEC4A2000A717E /* CornerRaoundButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRaoundButtonView.swift; sourceTree = "<group>"; };
 		DA8AEB3221FECDA8000A717E /* UIViewController+ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActionSheet.swift"; sourceTree = "<group>"; };
 		DA8AEB3421FEEA05000A717E /* NoPaddingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPaddingTextView.swift; sourceTree = "<group>"; };
+		DA8C7DDF2334BC1F007D0892 /* IdeaNote.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = IdeaNote.rtf; sourceTree = "<group>"; };
 		DAB14104220D10F100E0C144 /* DynamicStackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackViewCell.swift; sourceTree = "<group>"; };
 		DAB14105220D10F100E0C144 /* DynamicStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackView.swift; sourceTree = "<group>"; };
 		DAB1412A220D580700E0C144 /* ChannelDetailTopSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopSummaryTableViewCell.swift; sourceTree = "<group>"; };
@@ -1011,6 +1013,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6CF0CF2328CBA200F0C2B0 /* DocumentCambas.storyboard */,
+				DA8C7DDF2334BC1F007D0892 /* IdeaNote.rtf */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -1259,6 +1262,7 @@
 				1EFF4BCD2205BE7D006BFDC9 /* ChannelDetailNotification.storyboard in Resources */,
 				1ED20DDB221850A70043EE0D /* ChannelDetailEpisodeDetail.storyboard in Resources */,
 				DADD665522A4B05800F11710 /* CalendarDayTopWeekCollectionViewCell.xib in Resources */,
+				DA8C7DE02334BC1F007D0892 /* IdeaNote.rtf in Resources */,
 				DA75C60823337BEC0078A5F5 /* ChannelDetailSummary.storyboard in Resources */,
 				1E7AF7F4222B0A9600F845C2 /* MyPage.storyboard in Resources */,
 				1E4A54352206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.xib in Resources */,
