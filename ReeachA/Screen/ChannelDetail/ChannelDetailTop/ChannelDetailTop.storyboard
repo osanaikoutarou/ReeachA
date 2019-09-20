@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="klQ-xc-N3l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="klQ-xc-N3l">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -583,10 +583,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NC9-Lf-X7e">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
                                                         <subviews>
-                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3k-Mx-qbk">
+                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3k-Mx-qbk" customClass="ChannelDetail">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
                                                                 <connections>
-                                                                    <segue destination="ldE-XU-n5y" kind="embed" id="Nyi-yU-wte"/>
+                                                                    <segue destination="Jiq-KN-Vri" kind="embed" id="X8P-p9-viU"/>
                                                                 </connections>
                                                             </containerView>
                                                         </subviews>
@@ -697,7 +697,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-fW-5Fn" userLabel="Container View(EventControlableView)" customClass="EventControlableView" customModule="ReeachA" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="1875" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="5r9-EQ-glN"/>
+                                    <constraint firstAttribute="height" constant="400" placeholder="YES" id="5r9-EQ-glN"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="targetLvel">
@@ -1416,7 +1416,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yakusokuno" translatesAutoresizingMaskIntoConstraints="NO" id="oMY-lm-yQz">
-                                        <rect key="frame" x="15" y="114" width="125" height="176"/>
+                                        <rect key="frame" x="15" y="109" width="125" height="176"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="oMY-lm-yQz" secondAttribute="height" multiplier="120:169" id="Vde-b3-Cp2"/>
                                         </constraints>
@@ -1427,12 +1427,12 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrP-Ti-ysF">
-                                        <rect key="frame" x="15" y="30" width="345" height="69"/>
+                                        <rect key="frame" x="15" y="30" width="345" height="64"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-qV-NFR" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
-                                        <rect key="frame" x="156" y="254" width="203" height="36"/>
+                                        <rect key="frame" x="156" y="249" width="203" height="36"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未視聴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVH-iG-CwF">
                                                 <rect key="frame" x="77" y="8.5" width="49" height="19.5"/>
@@ -1449,7 +1449,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-Zw-C31" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
-                                        <rect key="frame" x="155" y="114" width="210" height="50"/>
+                                        <rect key="frame" x="155" y="109" width="210" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="1" constant="50" id="hNV-y1-WGy"/>
                                         </constraints>
@@ -1457,7 +1457,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="10" id="303-2p-vzV"/>
+                                    <constraint firstAttribute="bottom" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="15" id="303-2p-vzV"/>
                                     <constraint firstItem="2YF-qV-NFR" firstAttribute="leading" secondItem="oMY-lm-yQz" secondAttribute="trailing" constant="16" id="4DL-Tf-AiV"/>
                                     <constraint firstItem="koR-Pi-HyU" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" id="4vG-rl-laF"/>
                                     <constraint firstItem="oMY-lm-yQz" firstAttribute="top" secondItem="xrP-Ti-ysF" secondAttribute="bottom" constant="15" id="5b8-pL-v52"/>
@@ -1644,20 +1644,13 @@
             </objects>
             <point key="canvasLocation" x="3897" y="3907"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="X0R-48-WSZ">
+        <!--ChannelDetailTimeline-->
+        <scene sceneID="MPy-OY-dzB">
             <objects>
-                <viewController id="ldE-XU-n5y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pyL-xt-nBG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="8jP-li-U1b"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y2z-Ng-scC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ChannelDetailTimeline" id="Jiq-KN-Vri" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3g-ci-b8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2929" y="1859"/>
+            <point key="canvasLocation" x="2830" y="1927"/>
         </scene>
         <!--ChannelDetailEpisode-->
         <scene sceneID="Duv-Wo-t3G">
@@ -1779,8 +1772,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_checkciecle" width="75" height="75"/>
-        <image name="icon_star" width="75" height="75"/>
+        <image name="icon_checkciecle" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="icon_star" width="33.333332061767578" height="33.333332061767578"/>
         <image name="yakusokuno" width="852" height="1199"/>
     </resources>
 </document>

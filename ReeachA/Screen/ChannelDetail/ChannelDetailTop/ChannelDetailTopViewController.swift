@@ -20,15 +20,15 @@ class ChannelDetailTopViewController: UIViewController {
     @IBOutlet weak var barLeft: NSLayoutConstraint!
     @IBOutlet weak var screenStackView: UIStackView!
 
-
-//    weak var linkContainerView: UIView?
-
-    var nextViewControllers: [String: UIViewController] = [:]
+    //ChannelDetailTimelineViewController
     var baseInfoViewController: ChannelDetailTopBaseInfoViewController? {
-        return nextViewControllers[ChannelDetailTopBaseInfoViewController.className] as? ChannelDetailTopBaseInfoViewController
+        return children.first(where: { $0 is ChannelDetailTopBaseInfoViewController} ) as? ChannelDetailTopBaseInfoViewController
     }
     var linkViewController: ChannelDetailLinkViewController? {
-        return nextViewControllers[ChannelDetailLinkViewController.className] as? ChannelDetailLinkViewController
+        return children.first(where: { $0 is ChannelDetailLinkViewController} ) as? ChannelDetailLinkViewController
+    }
+    var timelineViewController: ChannelDetailTimelineViewController? {
+        return children.first(where: { $0 is ChannelDetailTimelineViewController} ) as? ChannelDetailTimelineViewController
     }
 
     var channel:Channel {
@@ -36,7 +36,9 @@ class ChannelDetailTopViewController: UIViewController {
             return (self.tabBarController as! ChannelDetailTabBarController).channel
         }
         set {
+            // これSingletonで一元管理の方がよくない？
             (self.tabBarController as! ChannelDetailTabBarController).channel = newValue
+
         }
     }
     var anime:Anime {
@@ -58,7 +60,7 @@ class ChannelDetailTopViewController: UIViewController {
         print("🤔ChannelDetailTopViewController viewDidLoad")
         baseInfoViewController?.channel = channel
         linkViewController?.channel = channel
-
+        timelineViewController?.channel = channel
         
 //        tableView.contentInsetAdjustmentBehavior = .never
 
@@ -85,14 +87,6 @@ class ChannelDetailTopViewController: UIViewController {
         super.viewDidAppear(animated)
         print("viewDidAppear")
 
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-
-        if let identifier = segue.identifier {
-            nextViewControllers[identifier] = segue.destination
-        }
     }
 
 }

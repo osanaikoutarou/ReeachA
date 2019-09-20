@@ -19,6 +19,8 @@
 		1E29BAF92209521B00D219D4 /* PairLabelDynamicStackViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E29BAF82209521B00D219D4 /* PairLabelDynamicStackViewCell.xib */; };
 		1E29BAFE2209598D00D219D4 /* CGRect+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BAFD2209598D00D219D4 /* CGRect+Utility.swift */; };
 		1E29BB0122095A6000D219D4 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29BB0022095A6000D219D4 /* DebugViewController.swift */; };
+		1E40ADF12333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40ADEF2333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.swift */; };
+		1E40ADF22333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E40ADF02333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.xib */; };
 		1E4A542F22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A542D22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift */; };
 		1E4A543022060FF000E4EEEF /* SectionHeaderBasicalTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A542E22060FF000E4EEEF /* SectionHeaderBasicalTableCell.xib */; };
 		1E4A54342206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A54322206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift */; };
@@ -201,6 +203,8 @@
 		1E29BAF82209521B00D219D4 /* PairLabelDynamicStackViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairLabelDynamicStackViewCell.xib; sourceTree = "<group>"; };
 		1E29BAFD2209598D00D219D4 /* CGRect+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Utility.swift"; sourceTree = "<group>"; };
 		1E29BB0022095A6000D219D4 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		1E40ADEF2333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		1E40ADF02333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelDetailSummaryTableViewCell.xib; sourceTree = "<group>"; };
 		1E4A542D22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderBasicalTableCell.swift; sourceTree = "<group>"; };
 		1E4A542E22060FF000E4EEEF /* SectionHeaderBasicalTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderBasicalTableCell.xib; sourceTree = "<group>"; };
 		1E4A54322206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailSNSLinkTableViewCell.swift; sourceTree = "<group>"; };
@@ -412,6 +416,15 @@
 				1ED20DDE2218AF020043EE0D /* Debug2ViewController.swift */,
 			);
 			path = Debug;
+			sourceTree = "<group>";
+		};
+		1E40ADEE2333EE120079D3CB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1E40ADEF2333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.swift */,
+				1E40ADF02333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1E57E03821FB84DD003AD898 /* Extension */ = {
@@ -877,6 +890,7 @@
 		1EFE8FF121FC4478006E8473 /* ChannelDetail */ = {
 			isa = PBXGroup;
 			children = (
+				1E40ADEE2333EE120079D3CB /* Cell */,
 				DA75C60623337BA90078A5F5 /* ChannelDetailSummary */,
 				DA75C60123337AE70078A5F5 /* ChannelDetailTimeline */,
 				DA75C5FE23337AC10078A5F5 /* ChannelDetailLink */,
@@ -1257,6 +1271,7 @@
 				1EFE8FF821FC6DB3006E8473 /* ChannelDetailTop.storyboard in Resources */,
 				1E1DE0062211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib in Resources */,
 				DADD664C22A4B05800F11710 /* CalendarMore.storyboard in Resources */,
+				1E40ADF22333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.xib in Resources */,
 				DA883A21222639D200D8F08B /* PostTableViewCell.xib in Resources */,
 				DA55B091222F6F49001AD0C9 /* YoutubeView.xib in Resources */,
 				1EFE900221FCA4D8006E8473 /* ChannelDetailWebsite.storyboard in Resources */,
@@ -1431,6 +1446,7 @@
 				DAB1412D220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift in Sources */,
 				1E57E0B521FB84DE003AD898 /* Dictionary+Utility.swift in Sources */,
 				DADD664D22A4B05800F11710 /* CalendarMoreViewController.swift in Sources */,
+				1E40ADF12333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.swift in Sources */,
 				1E1DE00422116D6C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.swift in Sources */,
 				1E29BAFE2209598D00D219D4 /* CGRect+Utility.swift in Sources */,
 				DADD664922A4B05800F11710 /* CalendarMonthViewController.swift in Sources */,
