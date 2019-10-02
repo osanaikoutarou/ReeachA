@@ -109,6 +109,13 @@
 		1EEF6AF022BFB9B2004C91F8 /* SelectingDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEF6AEF22BFB9B2004C91F8 /* SelectingDay.swift */; };
 		1EF8DC17232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8DC16232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift */; };
 		1EF8DC1923255C55004DDA63 /* UIView+ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8DC1823255C55004DDA63 /* UIView+ContainerView.swift */; };
+		1EFE552123446A6600905A25 /* ChannelDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE552023446A6600905A25 /* ChannelDetailInfoViewController.swift */; };
+		1EFE552323446A9800905A25 /* ChannelDetailRelationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE552223446A9800905A25 /* ChannelDetailRelationViewController.swift */; };
+		1EFE552523446AA600905A25 /* ChannelDetailMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE552423446AA600905A25 /* ChannelDetailMediaViewController.swift */; };
+		1EFE552723446AB200905A25 /* ChannelDetailMedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE552623446AB200905A25 /* ChannelDetailMedia.storyboard */; };
+		1EFE552923446ABD00905A25 /* ChannelDetailRelation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE552823446ABD00905A25 /* ChannelDetailRelation.storyboard */; };
+		1EFE552B23446AC800905A25 /* ChannelDetailInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE552A23446AC800905A25 /* ChannelDetailInfo.storyboard */; };
+		1EFE552D23446C4000905A25 /* ChannelDetailLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE552C23446C4000905A25 /* ChannelDetailLink.storyboard */; };
 		1EFE8FEF21FC3FA9006E8473 /* CGFloat+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE8FEE21FC3FA9006E8473 /* CGFloat+Utility.swift */; };
 		1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */; };
 		1EFE8FF521FC44C7006E8473 /* ChannelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */; };
@@ -297,6 +304,13 @@
 		1EEF6AEF22BFB9B2004C91F8 /* SelectingDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingDay.swift; sourceTree = "<group>"; };
 		1EF8DC16232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopBaseInfoViewController.swift; sourceTree = "<group>"; };
 		1EF8DC1823255C55004DDA63 /* UIView+ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ContainerView.swift"; sourceTree = "<group>"; };
+		1EFE552023446A6600905A25 /* ChannelDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailInfoViewController.swift; sourceTree = "<group>"; };
+		1EFE552223446A9800905A25 /* ChannelDetailRelationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailRelationViewController.swift; sourceTree = "<group>"; };
+		1EFE552423446AA600905A25 /* ChannelDetailMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailMediaViewController.swift; sourceTree = "<group>"; };
+		1EFE552623446AB200905A25 /* ChannelDetailMedia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailMedia.storyboard; sourceTree = "<group>"; };
+		1EFE552823446ABD00905A25 /* ChannelDetailRelation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailRelation.storyboard; sourceTree = "<group>"; };
+		1EFE552A23446AC800905A25 /* ChannelDetailInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailInfo.storyboard; sourceTree = "<group>"; };
+		1EFE552C23446C4000905A25 /* ChannelDetailLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailLink.storyboard; sourceTree = "<group>"; };
 		1EFE8FEE21FC3FA9006E8473 /* CGFloat+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Utility.swift"; sourceTree = "<group>"; };
 		1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetail.storyboard; sourceTree = "<group>"; };
 		1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailViewController.swift; sourceTree = "<group>"; };
@@ -732,6 +746,7 @@
 			children = (
 				1E9F0C6C232975AC00CFAA30 /* Sub */,
 				1E9F0C6A2329759600CFAA30 /* ChannelDetailLinkViewController.swift */,
+				1EFE552C23446C4000905A25 /* ChannelDetailLink.storyboard */,
 			);
 			path = Link;
 			sourceTree = "<group>";
@@ -858,6 +873,9 @@
 		1EF8DC15232544AF004DDA63 /* Sub */ = {
 			isa = PBXGroup;
 			children = (
+				1EFE551F23446A4F00905A25 /* Media */,
+				1EFE551E23446A4600905A25 /* Relation */,
+				1EFE551D23446A3F00905A25 /* Info */,
 				1E9F0C692329752F00CFAA30 /* Link */,
 				1EF8DC1C232974D6004DDA63 /* News */,
 				1EF8DC16232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift */,
@@ -870,6 +888,33 @@
 			children = (
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		1EFE551D23446A3F00905A25 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE552023446A6600905A25 /* ChannelDetailInfoViewController.swift */,
+				1EFE552A23446AC800905A25 /* ChannelDetailInfo.storyboard */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		1EFE551E23446A4600905A25 /* Relation */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE552223446A9800905A25 /* ChannelDetailRelationViewController.swift */,
+				1EFE552823446ABD00905A25 /* ChannelDetailRelation.storyboard */,
+			);
+			path = Relation;
+			sourceTree = "<group>";
+		};
+		1EFE551F23446A4F00905A25 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				1EFE552423446AA600905A25 /* ChannelDetailMediaViewController.swift */,
+				1EFE552623446AB200905A25 /* ChannelDetailMedia.storyboard */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 		1EFE8FED21FC3F9B006E8473 /* CGFloat */ = {
@@ -1256,6 +1301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADD665722A4B05800F11710 /* CommonCalendarDayCollectionViewCell.xib in Resources */,
+				1EFE552923446ABD00905A25 /* ChannelDetailRelation.storyboard in Resources */,
 				1EB1514C21FA1C18001B6110 /* LaunchScreen.storyboard in Resources */,
 				DADD664B22A4B05800F11710 /* CalendarWeek.storyboard in Resources */,
 				1EC50DD42200CA040026DEF0 /* ChannelDetailItems.storyboard in Resources */,
@@ -1273,6 +1319,8 @@
 				1E57E0C621FC0920003AD898 /* MyChannel.storyboard in Resources */,
 				1EFE8FF321FC4497006E8473 /* ChannelDetail.storyboard in Resources */,
 				1EFE8FF821FC6DB3006E8473 /* ChannelDetailTop.storyboard in Resources */,
+				1EFE552B23446AC800905A25 /* ChannelDetailInfo.storyboard in Resources */,
+				1EFE552723446AB200905A25 /* ChannelDetailMedia.storyboard in Resources */,
 				1E1DE0062211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib in Resources */,
 				DADD664C22A4B05800F11710 /* CalendarMore.storyboard in Resources */,
 				1E40ADF22333EECD0079D3CB /* ChannelDetailSummaryTableViewCell.xib in Resources */,
@@ -1280,6 +1328,7 @@
 				DA55B091222F6F49001AD0C9 /* YoutubeView.xib in Resources */,
 				1EFE900221FCA4D8006E8473 /* ChannelDetailWebsite.storyboard in Resources */,
 				1E6D77432211E726002038ED /* LinkVerticalDynamicStackViewCell.xib in Resources */,
+				1EFE552D23446C4000905A25 /* ChannelDetailLink.storyboard in Resources */,
 				1E4A543022060FF000E4EEEF /* SectionHeaderBasicalTableCell.xib in Resources */,
 				1E7AF7F7222B0AB400F845C2 /* RightMenu.storyboard in Resources */,
 				1EE4CD7B22056B4D00E85537 /* ChannelDetailEpisode.storyboard in Resources */,
@@ -1401,6 +1450,7 @@
 				1E9F0C702329761600CFAA30 /* ChannelDetailLinkOtherViewController.swift in Sources */,
 				1E57E08721FB84DD003AD898 /* UIColor+Utility.swift in Sources */,
 				1E57E0A721FB84DE003AD898 /* Date+Utility.swift in Sources */,
+				1EFE552523446AA600905A25 /* ChannelDetailMediaViewController.swift in Sources */,
 				1E57E08B21FB84DD003AD898 /* UIView+.swift in Sources */,
 				1EC50DD62200CA290026DEF0 /* ChannelDetailItemsViewController.swift in Sources */,
 				1E57E0B321FB84DE003AD898 /* UITableView+Utility.swift in Sources */,
@@ -1440,6 +1490,7 @@
 				DA6CF89E231E358F006D108F /* UITableViewCell+Separator.swift in Sources */,
 				1E57E0A021FB84DE003AD898 /* UIView+Form.swift in Sources */,
 				DA55B093222F797B001AD0C9 /* WKWebViewController.swift in Sources */,
+				1EFE552123446A6600905A25 /* ChannelDetailInfoViewController.swift in Sources */,
 				DAB14106220D10F100E0C144 /* DynamicStackViewCell.swift in Sources */,
 				1E57E0A421FB84DE003AD898 /* UIStoryboard+Utility.swift in Sources */,
 				DAC04D8F232B95FC006634F6 /* EventControlableView.swift in Sources */,
@@ -1491,6 +1542,7 @@
 				DADD665E22A4B6C500F11710 /* DayModel.swift in Sources */,
 				1EB1514221FA1C17001B6110 /* AppDelegate.swift in Sources */,
 				1E57E03621FB7BF7003AD898 /* AnimeChannelCollectionViewCell.swift in Sources */,
+				1EFE552323446A9800905A25 /* ChannelDetailRelationViewController.swift in Sources */,
 				DA8AEB2E21FEC3A4000A717E /* ViewCreator.swift in Sources */,
 				1E6D77402211E6CA002038ED /* ChannelDetailTopLinkTableViewCell.swift in Sources */,
 				1E57E0AA21FB84DE003AD898 /* Optional+Utility.swift in Sources */,
