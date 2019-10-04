@@ -8,7 +8,6 @@
 import UIKit
 
 class ChannelDetailLinkViewController: UIViewController, HaveChannel, ChannelDetailTopChild {
-    var viewDidAppeared: Bool = false
     
     @IBOutlet weak var stackView: UIStackView!
 
@@ -43,12 +42,6 @@ class ChannelDetailLinkViewController: UIViewController, HaveChannel, ChannelDet
         print("🤔ChannelDetailLinkViewController viewDidLoad")
         // Do any additional setup after loading the view.
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        viewDidAppeared = true
-    }
-
 
     func setup() {
         print("🤔ChannelDetailLinkViewController setup")

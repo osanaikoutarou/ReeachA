@@ -167,6 +167,8 @@
 		DAB1412D220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */; };
 		DAB37B742226811400A70D7B /* LikeLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB37B732226811300A70D7B /* LikeLabelTextView.swift */; };
 		DAB37B7622268FA600A70D7B /* ChannelDetailPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */; };
+		DABF9B8C2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF9B8A2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift */; };
+		DABF9B8D2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABF9B8B2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib */; };
 		DAC04D8F232B95FC006634F6 /* EventControlableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC04D8E232B95FC006634F6 /* EventControlableView.swift */; };
 		DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADA57EB222E4A6300FC95A8 /* Videos.storyboard */; };
 		DADA57EE222E4ACF00FC95A8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */; };
@@ -363,6 +365,8 @@
 		DAB1412C220D583400E0C144 /* ChannelDetailTopTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTopTitleTableViewCell.swift; sourceTree = "<group>"; };
 		DAB37B732226811300A70D7B /* LikeLabelTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeLabelTextView.swift; path = ReeachA/Screen/LikeLabelTextView.swift; sourceTree = SOURCE_ROOT; };
 		DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailPostViewController.swift; sourceTree = "<group>"; };
+		DABF9B8A2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTimelineTableViewCell.swift; sourceTree = "<group>"; };
+		DABF9B8B2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelDetailTimelineTableViewCell.xib; sourceTree = "<group>"; };
 		DAC04D8E232B95FC006634F6 /* EventControlableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventControlableView.swift; sourceTree = "<group>"; };
 		DADA57EB222E4A6300FC95A8 /* Videos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Videos.storyboard; sourceTree = "<group>"; };
 		DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
@@ -1083,6 +1087,8 @@
 			children = (
 				DA75C60223337B200078A5F5 /* ChannelDetailTimeline.storyboard */,
 				DA75C60423337B490078A5F5 /* ChannelDetailTimelineViewController.swift */,
+				DABF9B8A2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift */,
+				DABF9B8B2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib */,
 			);
 			path = ChannelDetailTimeline;
 			sourceTree = "<group>";
@@ -1339,6 +1345,7 @@
 				DADD664F22A4B05800F11710 /* CalendarDay.storyboard in Resources */,
 				DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */,
 				DA6CF0D02328CBA200F0C2B0 /* DocumentCambas.storyboard in Resources */,
+				DABF9B8D2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib in Resources */,
 				DA75C60323337B200078A5F5 /* ChannelDetailTimeline.storyboard in Resources */,
 				DADD665022A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib in Resources */,
 			);
@@ -1445,6 +1452,7 @@
 				1E57E0A521FB84DE003AD898 /* CastExtension.swift in Sources */,
 				1E57E0B221FB84DE003AD898 /* UINavigationController+Color.swift in Sources */,
 				1E57E09121FB84DD003AD898 /* StringTo.swift in Sources */,
+				DABF9B8C2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift in Sources */,
 				1E57E0AD21FB84DE003AD898 /* UIViewController+Shadow.swift in Sources */,
 				1EFE900B21FCD0F3006E8473 /* WebLink.swift in Sources */,
 				1E9F0C702329761600CFAA30 /* ChannelDetailLinkOtherViewController.swift in Sources */,

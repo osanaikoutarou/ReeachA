@@ -9,7 +9,7 @@
 import UIKit
 
 class ChannelDetailRelationViewController: UIViewController, HaveChannel, ChannelDetailTopChild {
-    var viewDidAppeared: Bool = false
+
     var channel: Channel?
 
     override func viewDidLoad() {

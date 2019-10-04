@@ -9,7 +9,6 @@
 import UIKit
 
 class ChannelDetailInfoViewController: UIViewController, HaveChannel, ChannelDetailTopChild {
-    var viewDidAppeared: Bool = false
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -36,11 +35,6 @@ class ChannelDetailInfoViewController: UIViewController, HaveChannel, ChannelDet
         super.viewDidLoad()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        viewDidAppeared = true
-    }
-    
 }
 
 extension ChannelDetailInfoViewController: UITableViewDelegate, UITableViewDataSource {
