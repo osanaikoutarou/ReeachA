@@ -16,7 +16,6 @@ protocol HaveChannel: class {
 /// 子ViweConrollerに適用
 protocol ChannelDetailTopChild: UIViewController {
     var parentChannelDetailTopViewController: ChannelDetailTopViewController? { get }
-    var viewDidAppeared: Bool { get set }
 }
 extension ChannelDetailTopChild {
     var parentChannelDetailTopViewController: ChannelDetailTopViewController? {

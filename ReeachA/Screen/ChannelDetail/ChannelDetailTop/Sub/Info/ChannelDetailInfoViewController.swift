@@ -9,7 +9,6 @@
 import UIKit
 
 class ChannelDetailInfoViewController: UIViewController, HaveChannel, ChannelDetailTopChild {
-    var viewDidAppeared: Bool = false
 
     @IBOutlet weak var scrollView: UIScrollView!
 
