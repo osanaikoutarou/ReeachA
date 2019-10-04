@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ChannelDetailTopBaseInfoViewController: UIViewController {
-
+class ChannelDetailTopBaseInfoViewController: UIViewController, HaveChannel {
+ 
     @IBOutlet weak var baseInfoStackView: DynamicStackView!
 
     @IBOutlet weak var stateButtonView: ButtonView!

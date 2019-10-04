@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ChannelDetailMediaViewController: UIViewController {
+class ChannelDetailMediaViewController: UIViewController, HaveChannel, ChannelDetailTopChild {
+    var channel: Channel?
+    var viewDidAppeared: Bool = false
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,6 +8,27 @@
 
 import UIKit
 
+/// Channelを持っている（どこかに移動したい）
+protocol HaveChannel: class {
+    var channel: Channel? { get set }
+}
+
+/// 子ViweConrollerに適用
+protocol ChannelDetailTopChild: UIViewController {
+    var parentChannelDetailTopViewController: ChannelDetailTopViewController? { get }
+    var viewDidAppeared: Bool { get set }
+}
+extension ChannelDetailTopChild {
+    var parentChannelDetailTopViewController: ChannelDetailTopViewController? {
+        if viewDidAppeared {
+            return view.superview?.viewController as? ChannelDetailTopViewController
+        }
+        else {
+            return nil
+        }
+    }
+}
+
 class ChannelDetailTopViewController: UIViewController {
 
 //    @IBOutlet weak var tableView: UITableView!
@@ -20,25 +41,44 @@ class ChannelDetailTopViewController: UIViewController {
     @IBOutlet weak var barLeft: NSLayoutConstraint!
     @IBOutlet weak var screenStackView: UIStackView!
 
-    //ChannelDetailTimelineViewController
-    var baseInfoViewController: ChannelDetailTopBaseInfoViewController? {
+    //MARK:- ChannelDetailTimelineViewController
+
+    // header
+    var baseInfoVC: ChannelDetailTopBaseInfoViewController? {
         return children.first(where: { $0 is ChannelDetailTopBaseInfoViewController} ) as? ChannelDetailTopBaseInfoViewController
     }
-    var linkViewController: ChannelDetailLinkViewController? {
+    // スライド
+    var linkVC: ChannelDetailLinkViewController? {
         return children.first(where: { $0 is ChannelDetailLinkViewController} ) as? ChannelDetailLinkViewController
     }
-    var timelineViewController: ChannelDetailTimelineViewController? {
+    var timelineVC: ChannelDetailTimelineViewController? {
         return children.first(where: { $0 is ChannelDetailTimelineViewController} ) as? ChannelDetailTimelineViewController
     }
+    var mediaVC: ChannelDetailMediaViewController? {
+        return children.first(where: { $0 is ChannelDetailMediaViewController} ) as? ChannelDetailMediaViewController
+    }
+    var infoVC: ChannelDetailInfoViewController? {
+        return children.first(where: { $0 is ChannelDetailInfoViewController} ) as? ChannelDetailInfoViewController
+    }
+    var relationVC: ChannelDetailRelationViewController? {
+        return children.first(where: { $0 is ChannelDetailRelationViewController} ) as? ChannelDetailRelationViewController
+    }
+
+    var allChildren: [HaveChannel?] {
+        return [baseInfoVC, linkVC, timelineVC, mediaVC, relationVC, infoVC]
+    }
+    var slideScreens: [HaveChannel?] {
+        return [linkVC, timelineVC, mediaVC, relationVC, infoVC]
+    }
+
 
     var channel:Channel {
         get {
             return (self.tabBarController as! ChannelDetailTabBarController).channel
         }
         set {
-            // これSingletonで一元管理の方がよくない？
+            //TODO: Notification使う？
             (self.tabBarController as! ChannelDetailTabBarController).channel = newValue
-
         }
     }
     var anime:Anime {
@@ -58,10 +98,16 @@ class ChannelDetailTopViewController: UIViewController {
         (channel as! Anime).createSample()
 
         print("🤔ChannelDetailTopViewController viewDidLoad")
-        baseInfoViewController?.channel = channel
-        linkViewController?.channel = channel
-        timelineViewController?.channel = channel
-        
+//        baseInfoVC?.channel = channel
+//        linkVC?.channel = channel
+//        timelineVC?.channel = channel
+        allChildren.forEach { (haveChannel: HaveChannel?) in
+            if let haveChannel = haveChannel {
+                haveChannel.channel = self.channel
+            }
+        }
+
+
 //        tableView.contentInsetAdjustmentBehavior = .never
 
 //        self.tabBarController?.navigationController?.setNavigationBarHidden(true, animated: false)

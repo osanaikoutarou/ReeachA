@@ -776,8 +776,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-12-U8b">
                                         <rect key="frame" x="1500" y="0.0" width="375" height="44"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メディアー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqt-2k-8aC">
-                                                <rect key="frame" x="157" y="15" width="61.5" height="14.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メディア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqt-2k-8aC">
+                                                <rect key="frame" x="163" y="15" width="49.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1521,7 +1521,7 @@
                 <viewControllerPlaceholder storyboardName="ChannelDetailTimeline" id="Jiq-KN-Vri" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W3g-ci-b8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="1907"/>
+            <point key="canvasLocation" x="2634" y="1630"/>
         </scene>
         <!--ChannelDetailLink-->
         <scene sceneID="hCR-8w-DiV">
@@ -1529,7 +1529,7 @@
                 <viewControllerPlaceholder storyboardName="ChannelDetailLink" id="6KM-ls-Mgt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qq-eY-qNg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="1951"/>
+            <point key="canvasLocation" x="2634" y="1674"/>
         </scene>
         <!--ChannelDetailEpisode-->
         <scene sceneID="Duv-Wo-t3G">
@@ -1537,7 +1537,7 @@
                 <viewControllerPlaceholder storyboardName="ChannelDetailEpisode" id="ZFX-aP-gNL" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spC-za-4fl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2383" y="2144"/>
+            <point key="canvasLocation" x="2642" y="1867"/>
         </scene>
         <!--ChannelDetailMedia-->
         <scene sceneID="lz7-E6-Rcz">
@@ -1545,7 +1545,7 @@
                 <viewControllerPlaceholder storyboardName="ChannelDetailMedia" id="5Nn-l8-e6S" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcf-CU-0iK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="1997"/>
+            <point key="canvasLocation" x="2632" y="1810"/>
         </scene>
         <!--ChannelDetailInfo-->
         <scene sceneID="Vhd-8Q-kdn">
@@ -1553,7 +1553,7 @@
                 <viewControllerPlaceholder storyboardName="ChannelDetailInfo" id="4Q4-8U-jDE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17F-hI-0WP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="2046"/>
+            <point key="canvasLocation" x="2636" y="1717"/>
         </scene>
         <!--ChannelDetailRelation-->
         <scene sceneID="CFG-78-Wul">
@@ -1561,7 +1561,7 @@
                 <viewControllerPlaceholder storyboardName="ChannelDetailRelation" id="H5e-hG-6u9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8in-HF-0Us" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2371" y="2088"/>
+            <point key="canvasLocation" x="2632" y="1760"/>
         </scene>
     </scenes>
     <resources>

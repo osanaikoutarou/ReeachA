@@ -7,8 +7,9 @@
 
 import UIKit
 
-class ChannelDetailLinkViewController: UIViewController {
-
+class ChannelDetailLinkViewController: UIViewController, HaveChannel, ChannelDetailTopChild {
+    var viewDidAppeared: Bool = false
+    
     @IBOutlet weak var stackView: UIStackView!
 
     // embed parts(child)
@@ -17,10 +18,6 @@ class ChannelDetailLinkViewController: UIViewController {
     }
     var otherController: ChannelDetailLinkOtherViewController? {
         return children.first(where: { $0 is ChannelDetailLinkOtherViewController }) as? ChannelDetailLinkOtherViewController
-    }
-    // embed(parent)
-    var parentChannelDetailTopViewController: ChannelDetailTopViewController? {
-        return view.superview?.viewController as? ChannelDetailTopViewController
     }
 
     @IBOutlet weak var scrollView: UIScrollView! {
@@ -46,6 +43,12 @@ class ChannelDetailLinkViewController: UIViewController {
         print("🤔ChannelDetailLinkViewController viewDidLoad")
         // Do any additional setup after loading the view.
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewDidAppeared = true
+    }
+
 
     func setup() {
         print("🤔ChannelDetailLinkViewController setup")

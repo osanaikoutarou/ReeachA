@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ChannelDetailTimelineViewController: UIViewController {
-
+class ChannelDetailTimelineViewController: UIViewController, HaveChannel, ChannelDetailTopChild {
+    var viewDidAppeared: Bool = false
+    
     var channel: Channel? {
         didSet {
             tableView.reloadData()
