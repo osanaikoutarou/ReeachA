@@ -20,7 +20,7 @@ protocol ChannelDetailTopChild: UIViewController {
 }
 extension ChannelDetailTopChild {
     var parentChannelDetailTopViewController: ChannelDetailTopViewController? {
-        if viewDidAppeared {
+        if isViewLoaded {
             return view.superview?.viewController as? ChannelDetailTopViewController
         }
         else {
@@ -140,7 +140,11 @@ class ChannelDetailTopViewController: UIViewController {
 extension ChannelDetailTopViewController {
     /// これは子ViewControllerを対象にしている
     func scrollViewDidScroll(viewController: UIViewController, scrollView: UIScrollView) {
-        headerTop.constant = -scrollView.contentOffset.y
+        let scrollWithContentInset = scrollView.contentOffset.y + scrollView.contentInset.top
+//        print(scrollWithContentInset)
+
+        let headerheight: CGFloat = baseInfoVC?.view?.bounds.height ?? 0
+        headerTop.constant = min(0, max(-headerheight, -scrollWithContentInset))
     }
 }
 

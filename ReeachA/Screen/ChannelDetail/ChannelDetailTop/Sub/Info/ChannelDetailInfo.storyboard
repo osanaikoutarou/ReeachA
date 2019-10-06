@@ -16,31 +16,113 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EH2-Ee-G9s">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPA-Kf-2eD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5d-TX-zIL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fAA-WQ-t3W">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spu-q4-Ovj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
+                                                        <color key="backgroundColor" red="0.50196078430000002" green="0.50196078430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="450" id="Rxs-Qx-5Kc"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUj-dT-TWq">
+                                                        <rect key="frame" x="0.0" y="450" width="414" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" placeholder="YES" id="y9l-BV-BYL"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="VYY-wS-NEE" kind="embed" id="ogO-qZ-jKE"/>
+                                                        </connections>
+                                                    </containerView>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unU-5b-Oqi">
+                                                        <rect key="frame" x="0.0" y="500" width="414" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" placeholder="YES" id="lUh-Nc-LRu"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="9E8-uF-3b4" kind="embed" id="ofp-rd-pIj"/>
+                                                        </connections>
+                                                    </containerView>
+                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-d6-hac">
+                                                        <rect key="frame" x="0.0" y="550" width="414" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" placeholder="YES" id="UVC-Bg-BTp"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="ImZ-Yy-I68" kind="embed" id="MBJ-FG-Jsa"/>
+                                                        </connections>
+                                                    </containerView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="fAA-WQ-t3W" secondAttribute="bottom" id="KXD-RN-gEo"/>
+                                            <constraint firstItem="fAA-WQ-t3W" firstAttribute="top" secondItem="D5d-TX-zIL" secondAttribute="top" id="Mcr-ET-Tf6"/>
+                                            <constraint firstAttribute="trailing" secondItem="fAA-WQ-t3W" secondAttribute="trailing" id="X8f-ka-DSC"/>
+                                            <constraint firstItem="fAA-WQ-t3W" firstAttribute="leading" secondItem="D5d-TX-zIL" secondAttribute="leading" id="gJH-XZ-oD5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="D5d-TX-zIL" firstAttribute="leading" secondItem="RPA-Kf-2eD" secondAttribute="leading" id="JcU-Il-G9z"/>
+                                    <constraint firstAttribute="trailing" secondItem="D5d-TX-zIL" secondAttribute="trailing" id="P84-hl-dRL"/>
+                                    <constraint firstItem="D5d-TX-zIL" firstAttribute="width" secondItem="RPA-Kf-2eD" secondAttribute="width" id="Y83-so-usk"/>
+                                    <constraint firstAttribute="bottom" secondItem="D5d-TX-zIL" secondAttribute="bottom" id="ihR-WF-9EY"/>
+                                    <constraint firstItem="D5d-TX-zIL" firstAttribute="top" secondItem="RPA-Kf-2eD" secondAttribute="top" id="lYF-g2-W6U"/>
+                                </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="oVe-xE-38u" id="5cq-j4-khr"/>
-                                    <outlet property="delegate" destination="oVe-xE-38u" id="fqp-nY-STE"/>
+                                    <outlet property="delegate" destination="oVe-xE-38u" id="hTb-dN-i79"/>
                                 </connections>
-                            </tableView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="EH2-Ee-G9s" firstAttribute="leading" secondItem="IFX-Or-Gt1" secondAttribute="leading" id="a2o-Mz-GF1"/>
-                            <constraint firstItem="EH2-Ee-G9s" firstAttribute="top" secondItem="IFX-Or-Gt1" secondAttribute="top" id="cmM-DX-eXX"/>
-                            <constraint firstItem="IFX-Or-Gt1" firstAttribute="bottom" secondItem="EH2-Ee-G9s" secondAttribute="bottom" id="dwS-zl-htK"/>
-                            <constraint firstItem="IFX-Or-Gt1" firstAttribute="trailing" secondItem="EH2-Ee-G9s" secondAttribute="trailing" id="l10-bw-kpW"/>
+                            <constraint firstItem="RPA-Kf-2eD" firstAttribute="leading" secondItem="QVK-HX-X7p" secondAttribute="leading" id="B23-Z5-1yb"/>
+                            <constraint firstItem="RPA-Kf-2eD" firstAttribute="top" secondItem="QVK-HX-X7p" secondAttribute="top" id="Cbu-Mb-eMC"/>
+                            <constraint firstAttribute="bottom" secondItem="RPA-Kf-2eD" secondAttribute="bottom" id="Vzx-IJ-Lou"/>
+                            <constraint firstAttribute="trailing" secondItem="RPA-Kf-2eD" secondAttribute="trailing" id="dTy-3z-SBu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IFX-Or-Gt1"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="EH2-Ee-G9s" id="Yza-9w-iyp"/>
+                        <outlet property="scrollView" destination="RPA-Kf-2eD" id="wia-Re-w9g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZK-8b-tDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="171" y="-275"/>
+        </scene>
+        <!--ChannelDetailInfoSummary-->
+        <scene sceneID="2kj-WL-V0A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChannelDetailInfoSummary" id="VYY-wS-NEE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3du-jv-U10" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="-314"/>
+        </scene>
+        <!--ChannelDetailInfoStaff-->
+        <scene sceneID="7gd-Sc-0Cd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChannelDetailInfoStaff" id="9E8-uF-3b4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRN-fL-0LJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="-266"/>
+        </scene>
+        <!--ChannelDetailInfoCast-->
+        <scene sceneID="OTh-33-iRf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChannelDetailInfoCast" id="ImZ-Yy-I68" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yOj-N7-nyB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="-234"/>
         </scene>
     </scenes>
 </document>

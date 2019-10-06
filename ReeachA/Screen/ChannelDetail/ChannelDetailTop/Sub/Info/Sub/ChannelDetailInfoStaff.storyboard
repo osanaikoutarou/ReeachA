@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lph-sN-HFI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Channel Detail Info Staff View Controller-->
+        <scene sceneID="dfK-jY-JeA">
+            <objects>
+                <viewController id="Lph-sN-HFI" customClass="ChannelDetailInfoStaffViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l7h-hP-jAl"/>
+                        <viewControllerLayoutGuide type="bottom" id="WAn-Ak-yuP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LqU-1J-FxB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GH3-0z-47A" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
+                                <rect key="frame" x="15" y="44.5" width="384" height="190.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="74.5" placeholder="YES" id="VTb-zj-FJy"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スタッフ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFv-Uj-UmS">
+                                <rect key="frame" x="20" y="15" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZD-dH-jrU" customClass="PixcelHorizontalView" customModule="ReeachA" customModuleProvider="target">
+                                <rect key="frame" x="20" y="249" width="374" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="YKs-8B-aub"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WAn-Ak-yuP" firstAttribute="top" secondItem="dZD-dH-jrU" secondAttribute="bottom" id="45b-lz-Rvw"/>
+                            <constraint firstItem="QFv-Uj-UmS" firstAttribute="leading" secondItem="LqU-1J-FxB" secondAttribute="leading" constant="20" id="4yd-YN-EBB"/>
+                            <constraint firstItem="QFv-Uj-UmS" firstAttribute="top" secondItem="LqU-1J-FxB" secondAttribute="top" constant="15" id="7rC-QY-O6k"/>
+                            <constraint firstAttribute="trailing" secondItem="GH3-0z-47A" secondAttribute="trailing" constant="15" id="EIZ-ED-fpO"/>
+                            <constraint firstItem="GH3-0z-47A" firstAttribute="leading" secondItem="LqU-1J-FxB" secondAttribute="leading" constant="15" id="H9V-tS-MSv"/>
+                            <constraint firstAttribute="bottom" secondItem="GH3-0z-47A" secondAttribute="bottom" constant="15" id="VDi-jy-Rpg"/>
+                            <constraint firstItem="GH3-0z-47A" firstAttribute="top" secondItem="QFv-Uj-UmS" secondAttribute="bottom" constant="10" id="YBO-yg-pRg"/>
+                            <constraint firstAttribute="trailing" secondItem="dZD-dH-jrU" secondAttribute="trailing" constant="20" id="p1F-Rc-BTJ"/>
+                            <constraint firstItem="dZD-dH-jrU" firstAttribute="leading" secondItem="LqU-1J-FxB" secondAttribute="leading" constant="20" id="tPi-Gv-IbJ"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="250"/>
+                    <connections>
+                        <outlet property="stackView" destination="GH3-0z-47A" id="OrA-Rb-5Tb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hx-YH-gOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="-222"/>
+        </scene>
+    </scenes>
+</document>

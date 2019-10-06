@@ -1,16 +1,14 @@
 //
-//  ChannelDetailSummaryTableViewCell.swift
+//  ChannelDetailStaffTableViewCell.swift
 //  ReeachA
 //
-//  Created by 長内幸太郎 on 2019/09/20.
+//  Created by 長内幸太郎 on 2019/10/06.
 //  Copyright © 2019 長内幸太郎. All rights reserved.
 //
 
-//FIXME:削除
-
 import UIKit
 
-class ChannelDetailSummaryTableViewCell: UITableViewCell, HaveChannel {
+class ChannelDetailStaffTableViewCell: UITableViewCell, HaveChannel {
 
     @IBOutlet weak var stackView: DynamicStackView!
 
@@ -25,7 +23,7 @@ class ChannelDetailSummaryTableViewCell: UITableViewCell, HaveChannel {
     }
 
     func setup() {
-        (channel as? Anime)?.topInfos.forEach({ (infoPair) in
+        (channel as? Anime)?.staffs.forEach({ (infoPair) in
             let labelPair = LabelPair(id: nil, infoPair: infoPair)
             let cell = PairLabelDynamicStackViewCell(pair: labelPair)
 
@@ -38,5 +36,4 @@ class ChannelDetailSummaryTableViewCell: UITableViewCell, HaveChannel {
         })
         stackView.spacing = 5.f
     }
-
 }

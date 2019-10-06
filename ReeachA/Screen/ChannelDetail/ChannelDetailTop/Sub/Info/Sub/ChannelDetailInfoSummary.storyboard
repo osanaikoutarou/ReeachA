@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9wh-QV-GGR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Channel Detail Info Summary View Controller-->
+        <scene sceneID="3If-o3-RDy">
+            <objects>
+                <viewController id="9wh-QV-GGR" customClass="ChannelDetailInfoSummaryViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tNX-zW-21C"/>
+                        <viewControllerLayoutGuide type="bottom" id="phi-Pm-kYg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dvE-wc-2Bq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8A7-IG-Av4" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
+                                <rect key="frame" x="15" y="44.5" width="384" height="190.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="74.5" placeholder="YES" id="1vz-EL-XD7"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基本情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vn2-Nx-Ogv">
+                                <rect key="frame" x="20" y="15" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4K-nf-Wyb" customClass="PixcelHorizontalView" customModule="ReeachA" customModuleProvider="target">
+                                <rect key="frame" x="20" y="249" width="374" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="XYe-0q-hEH"/>
+                                    <constraint firstAttribute="height" constant="1" id="z4Y-sv-4gQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vn2-Nx-Ogv" firstAttribute="leading" secondItem="dvE-wc-2Bq" secondAttribute="leading" constant="20" id="0n0-k4-CYd"/>
+                            <constraint firstAttribute="trailing" secondItem="8A7-IG-Av4" secondAttribute="trailing" constant="15" id="2eC-ot-EY2"/>
+                            <constraint firstAttribute="trailing" secondItem="R4K-nf-Wyb" secondAttribute="trailing" constant="20" id="6ld-4q-Xvd"/>
+                            <constraint firstAttribute="bottom" secondItem="8A7-IG-Av4" secondAttribute="bottom" constant="15" id="Fah-Do-ui2"/>
+                            <constraint firstItem="8A7-IG-Av4" firstAttribute="leading" secondItem="dvE-wc-2Bq" secondAttribute="leading" constant="15" id="R2F-PJ-KTr"/>
+                            <constraint firstItem="Vn2-Nx-Ogv" firstAttribute="top" secondItem="dvE-wc-2Bq" secondAttribute="top" constant="15" id="Rdn-gi-PoI"/>
+                            <constraint firstItem="R4K-nf-Wyb" firstAttribute="leading" secondItem="dvE-wc-2Bq" secondAttribute="leading" constant="20" id="Y90-8S-AzK"/>
+                            <constraint firstAttribute="bottom" secondItem="R4K-nf-Wyb" secondAttribute="bottom" id="n0k-qd-Kid"/>
+                            <constraint firstItem="8A7-IG-Av4" firstAttribute="top" secondItem="Vn2-Nx-Ogv" secondAttribute="bottom" constant="10" id="nuV-2D-zPe"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="250"/>
+                    <connections>
+                        <outlet property="stackView" destination="8A7-IG-Av4" id="KI9-yq-V7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Xc-li-fTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="394" y="-211"/>
+        </scene>
+    </scenes>
+</document>

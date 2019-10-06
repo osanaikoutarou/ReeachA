@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d3O-7g-2RD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Channel Detail Info Cast View Controller-->
+        <scene sceneID="IqS-Dn-9FB">
+            <objects>
+                <viewController id="d3O-7g-2RD" customClass="ChannelDetailInfoCastViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H9u-65-C1R"/>
+                        <viewControllerLayoutGuide type="bottom" id="6zX-Lo-3n4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tOQ-aR-adN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jtJ-3i-xr1" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
+                                <rect key="frame" x="15" y="44.5" width="384" height="190.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="74.5" placeholder="YES" id="zny-FD-2ab"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キャスト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLn-il-EF2">
+                                <rect key="frame" x="20" y="15" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFK-9c-9Xb" customClass="PixcelHorizontalView" customModule="ReeachA" customModuleProvider="target">
+                                <rect key="frame" x="20" y="249" width="374" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cQ5-8t-ytz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jtJ-3i-xr1" firstAttribute="leading" secondItem="tOQ-aR-adN" secondAttribute="leading" constant="15" id="4rx-7o-hPB"/>
+                            <constraint firstItem="jtJ-3i-xr1" firstAttribute="top" secondItem="hLn-il-EF2" secondAttribute="bottom" constant="10" id="Azf-Zn-6kz"/>
+                            <constraint firstAttribute="bottom" secondItem="VFK-9c-9Xb" secondAttribute="bottom" id="J1I-NP-qtX"/>
+                            <constraint firstItem="hLn-il-EF2" firstAttribute="top" secondItem="tOQ-aR-adN" secondAttribute="top" constant="15" id="Njb-jH-V0M"/>
+                            <constraint firstAttribute="trailing" secondItem="jtJ-3i-xr1" secondAttribute="trailing" constant="15" id="ZmB-60-t1G"/>
+                            <constraint firstAttribute="bottom" secondItem="jtJ-3i-xr1" secondAttribute="bottom" constant="15" id="aal-EB-Kdp"/>
+                            <constraint firstItem="VFK-9c-9Xb" firstAttribute="leading" secondItem="tOQ-aR-adN" secondAttribute="leading" constant="20" id="fsy-y9-8il"/>
+                            <constraint firstItem="hLn-il-EF2" firstAttribute="leading" secondItem="tOQ-aR-adN" secondAttribute="leading" constant="20" id="gto-qR-tuf"/>
+                            <constraint firstAttribute="trailing" secondItem="VFK-9c-9Xb" secondAttribute="trailing" constant="20" id="noM-Xg-vIL"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="250"/>
+                    <connections>
+                        <outlet property="stackView" destination="jtJ-3i-xr1" id="pUa-5P-ebX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljz-t4-WcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="-209"/>
+        </scene>
+    </scenes>
+</document>
