@@ -581,7 +581,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NC9-Lf-X7e">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                                         <subviews>
-                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3k-Mx-qbk" customClass="ChannelDetail">
+                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3k-Mx-qbk">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                                                 <connections>
                                                                     <segue destination="Jiq-KN-Vri" kind="embed" id="1Qk-kj-G3A"/>

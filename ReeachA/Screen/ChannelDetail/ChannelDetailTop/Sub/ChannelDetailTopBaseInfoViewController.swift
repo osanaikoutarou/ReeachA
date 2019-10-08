@@ -22,12 +22,15 @@ class ChannelDetailTopBaseInfoViewController: UIViewController, HaveChannel {
 
     override func loadView() {
         super.loadView()
+        resolveAutoLayoutConflict()
         self.view.translatesAutoresizingMaskIntoConstraints = false
+        print("😃A")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("😃B")
         stateButtonView.ellipse(borderColor: UIColor.lightGray, borderWidth: 1)
     }
 

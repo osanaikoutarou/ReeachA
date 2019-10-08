@@ -45,6 +45,7 @@ class CalendarDayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        resolveAutoLayoutConflict()
 
         if dayModels.count == 0 {
             configure(startDate: Date())

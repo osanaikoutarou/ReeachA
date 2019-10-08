@@ -24,6 +24,8 @@ class CalendarDayTopWeekCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+
+        
     }
 
     func setup(weekModel: WeekModel) {

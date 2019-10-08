@@ -30,6 +30,7 @@ class CalendarDayTopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        resolveAutoLayoutConflict()
 
         weekModels = WeekModel.create100year()
 

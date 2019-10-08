@@ -70,7 +70,6 @@ class ChannelDetailTopViewController: UIViewController {
         return [linkVC, timelineVC, mediaVC, relationVC, infoVC]
     }
 
-
     var channel:Channel {
         get {
             return (self.tabBarController as! ChannelDetailTabBarController).channel
@@ -91,11 +90,14 @@ class ChannelDetailTopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        resolveAutoLayoutConflict()
+
         screenWidthConstraint.constant = view.frame.width
 
         channel = Anime()
         (channel as! Anime).createSample()
 
+        print("😃1")
         print("🤔ChannelDetailTopViewController viewDidLoad")
 //        baseInfoVC?.channel = channel
 //        linkVC?.channel = channel

@@ -1,5 +1,5 @@
 //
-//  UIVIew+IBInspectable.swift
+//  UIView+IBInspectable.swift
 //  WeekCalendarExample
 //
 //  Created by osanai on 2019/05/29.

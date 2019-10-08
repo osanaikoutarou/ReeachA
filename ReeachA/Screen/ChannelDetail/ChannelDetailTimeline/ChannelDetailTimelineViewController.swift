@@ -47,3 +47,9 @@ extension ChannelDetailTimelineViewController: UITableViewDelegate, UITableViewD
         return cell
     }
 }
+
+extension ChannelDetailTimelineViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        parentChannelDetailTopViewController?.scrollViewDidScroll(viewController: self, scrollView: scrollView)
+    }
+}

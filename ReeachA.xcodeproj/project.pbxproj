@@ -49,7 +49,7 @@
 		1E57E09821FB84DE003AD898 /* Operator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E05221FB84DD003AD898 /* Operator+.swift */; };
 		1E57E09921FB84DE003AD898 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E05321FB84DD003AD898 /* UIColor+.swift */; };
 		1E57E09A21FB84DE003AD898 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E05521FB84DD003AD898 /* UIView+Autolayout.swift */; };
-		1E57E09B21FB84DE003AD898 /* UIVIew+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E05621FB84DD003AD898 /* UIVIew+Frame.swift */; };
+		1E57E09B21FB84DE003AD898 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E05621FB84DD003AD898 /* UIView+Frame.swift */; };
 		1E57E09C21FB84DE003AD898 /* UIView+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E05721FB84DD003AD898 /* UIView+Corner.swift */; };
 		1E57E09D21FB84DE003AD898 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E05821FB84DD003AD898 /* UIView+Border.swift */; };
 		1E57E09E21FB84DE003AD898 /* UIView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E05921FB84DD003AD898 /* UIView+Fade.swift */; };
@@ -179,6 +179,8 @@
 		DAB37B7622268FA600A70D7B /* ChannelDetailPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */; };
 		DABF9B8C2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF9B8A2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift */; };
 		DABF9B8D2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABF9B8B2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib */; };
+		DABF9BBD234C433A00655A42 /* UIView+ResolveConflict.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF9BBC234C433900655A42 /* UIView+ResolveConflict.swift */; };
+		DABF9BC5234C4A3700655A42 /* DummyClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF9BC4234C4A3700655A42 /* DummyClasses.swift */; };
 		DAC04D8F232B95FC006634F6 /* EventControlableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC04D8E232B95FC006634F6 /* EventControlableView.swift */; };
 		DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADA57EB222E4A6300FC95A8 /* Videos.storyboard */; };
 		DADA57EE222E4ACF00FC95A8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */; };
@@ -206,7 +208,7 @@
 		DADD665A22A4B06700F11710 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD665922A4B06700F11710 /* CalendarViewController.swift */; };
 		DADD665E22A4B6C500F11710 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD665C22A4B6C500F11710 /* DayModel.swift */; };
 		DADD665F22A4B6C500F11710 /* WeekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD665D22A4B6C500F11710 /* WeekModel.swift */; };
-		DADD666122A4B7EE00F11710 /* UIVIew+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD666022A4B7EE00F11710 /* UIVIew+IBInspectable.swift */; };
+		DADD666122A4B7EE00F11710 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD666022A4B7EE00F11710 /* UIView+IBInspectable.swift */; };
 		DADD666422A4BBA300F11710 /* UICollectionViewFlowLayout+Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD666322A4BBA300F11710 /* UICollectionViewFlowLayout+Paging.swift */; };
 /* End PBXBuildFile section */
 
@@ -254,7 +256,7 @@
 		1E57E05221FB84DD003AD898 /* Operator+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Operator+.swift"; sourceTree = "<group>"; };
 		1E57E05321FB84DD003AD898 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		1E57E05521FB84DD003AD898 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
-		1E57E05621FB84DD003AD898 /* UIVIew+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Frame.swift"; sourceTree = "<group>"; };
+		1E57E05621FB84DD003AD898 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		1E57E05721FB84DD003AD898 /* UIView+Corner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Corner.swift"; sourceTree = "<group>"; };
 		1E57E05821FB84DD003AD898 /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		1E57E05921FB84DD003AD898 /* UIView+Fade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Fade.swift"; sourceTree = "<group>"; };
@@ -387,6 +389,8 @@
 		DAB37B7522268FA600A70D7B /* ChannelDetailPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailPostViewController.swift; sourceTree = "<group>"; };
 		DABF9B8A2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTimelineTableViewCell.swift; sourceTree = "<group>"; };
 		DABF9B8B2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelDetailTimelineTableViewCell.xib; sourceTree = "<group>"; };
+		DABF9BBC234C433900655A42 /* UIView+ResolveConflict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ResolveConflict.swift"; sourceTree = "<group>"; };
+		DABF9BC4234C4A3700655A42 /* DummyClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyClasses.swift; sourceTree = "<group>"; };
 		DAC04D8E232B95FC006634F6 /* EventControlableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventControlableView.swift; sourceTree = "<group>"; };
 		DADA57EB222E4A6300FC95A8 /* Videos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Videos.storyboard; sourceTree = "<group>"; };
 		DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
@@ -414,7 +418,7 @@
 		DADD665922A4B06700F11710 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DADD665C22A4B6C500F11710 /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
 		DADD665D22A4B6C500F11710 /* WeekModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekModel.swift; sourceTree = "<group>"; };
-		DADD666022A4B7EE00F11710 /* UIVIew+IBInspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+IBInspectable.swift"; sourceTree = "<group>"; };
+		DADD666022A4B7EE00F11710 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		DADD666322A4BBA300F11710 /* UICollectionViewFlowLayout+Paging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Paging.swift"; sourceTree = "<group>"; };
 		F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReeachA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -556,15 +560,16 @@
 		1E57E05421FB84DD003AD898 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				DADD666022A4B7EE00F11710 /* UIVIew+IBInspectable.swift */,
+				DADD666022A4B7EE00F11710 /* UIView+IBInspectable.swift */,
 				1E57E05521FB84DD003AD898 /* UIView+Autolayout.swift */,
-				1E57E05621FB84DD003AD898 /* UIVIew+Frame.swift */,
+				1E57E05621FB84DD003AD898 /* UIView+Frame.swift */,
 				1E57E05721FB84DD003AD898 /* UIView+Corner.swift */,
 				1E57E05821FB84DD003AD898 /* UIView+Border.swift */,
 				1E57E05921FB84DD003AD898 /* UIView+Fade.swift */,
 				1E57E05A21FB84DD003AD898 /* UIView+Gesture.swift */,
 				1E57E05B21FB84DD003AD898 /* UIView+Form.swift */,
 				1EF8DC1823255C55004DDA63 /* UIView+ContainerView.swift */,
+				DABF9BBC234C433900655A42 /* UIView+ResolveConflict.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1101,6 +1106,7 @@
 			children = (
 				DA6CF0CF2328CBA200F0C2B0 /* DocumentCambas.storyboard */,
 				DA8C7DDF2334BC1F007D0892 /* IdeaNote.rtf */,
+				DABF9BC4234C4A3700655A42 /* DummyClasses.swift */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -1524,7 +1530,7 @@
 				DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */,
 				1E57E0A821FB84DE003AD898 /* UICollectionView+Highlight.swift in Sources */,
 				1EFE8FFA21FC6DCA006E8473 /* ChannelDetailTopViewController.swift in Sources */,
-				1E57E09B21FB84DE003AD898 /* UIVIew+Frame.swift in Sources */,
+				1E57E09B21FB84DE003AD898 /* UIView+Frame.swift in Sources */,
 				1E57E0A321FB84DE003AD898 /* Array+Safe.swift in Sources */,
 				DA55B08F222F6F41001AD0C9 /* YoutubeView.swift in Sources */,
 				1EEF6AF022BFB9B2004C91F8 /* SelectingDay.swift in Sources */,
@@ -1579,6 +1585,7 @@
 				1ECB6815232A8D97001CB174 /* GestureTransparentView.swift in Sources */,
 				1E4A54342206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift in Sources */,
 				1E57E0B421FB84DE003AD898 /* UIControl+Action.swift in Sources */,
+				DABF9BC5234C4A3700655A42 /* DummyClasses.swift in Sources */,
 				1E1DE00222106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift in Sources */,
 				1E57E09921FB84DE003AD898 /* UIColor+.swift in Sources */,
 				1EE4CD7D22056B6300E85537 /* ChannelDetailEpisodeViewController.swift in Sources */,
@@ -1587,7 +1594,7 @@
 				1E57E09021FB84DD003AD898 /* Dictionary+.swift in Sources */,
 				1E875782234A2F48007BE530 /* ChannelDetailCastTableViewCell.swift in Sources */,
 				DAB14107220D10F100E0C144 /* DynamicStackView.swift in Sources */,
-				DADD666122A4B7EE00F11710 /* UIVIew+IBInspectable.swift in Sources */,
+				DADD666122A4B7EE00F11710 /* UIView+IBInspectable.swift in Sources */,
 				1E1DE008221173C100A00FA1 /* LabelPair.swift in Sources */,
 				DA8AEB2F21FEC3A4000A717E /* ButtonView.swift in Sources */,
 				1E57E08D21FB84DD003AD898 /* StoryboardInstantiatable.swift in Sources */,
@@ -1598,6 +1605,7 @@
 				DADD665E22A4B6C500F11710 /* DayModel.swift in Sources */,
 				1EB1514221FA1C17001B6110 /* AppDelegate.swift in Sources */,
 				1E57E03621FB7BF7003AD898 /* AnimeChannelCollectionViewCell.swift in Sources */,
+				DABF9BBD234C433A00655A42 /* UIView+ResolveConflict.swift in Sources */,
 				1EFE552323446A9800905A25 /* ChannelDetailRelationViewController.swift in Sources */,
 				DA8AEB2E21FEC3A4000A717E /* ViewCreator.swift in Sources */,
 				1E6D77402211E6CA002038ED /* ChannelDetailTopLinkTableViewCell.swift in Sources */,
