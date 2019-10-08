@@ -44,7 +44,7 @@ class PairLabelDynamicStackViewCell: DynamicVerticalStackViewCell {
             valueViews.append(buttonView)
             valueStackView.addArrangedSubview(buttonView)
         }
-        self.layoutIfNeeded()
+//        self.layoutIfNeeded()
     }
     func setFont(font:UIFont) {
         titleLabel.font = font

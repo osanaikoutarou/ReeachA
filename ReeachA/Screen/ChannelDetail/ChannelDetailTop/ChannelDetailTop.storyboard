@@ -706,7 +706,7 @@
                                     <segue destination="nYc-n8-hPp" kind="embed" identifier="ChannelDetailTopBaseInfoViewController" id="iJg-fB-BeX"/>
                                 </connections>
                             </containerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YP2-go-zwA">
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="StackView😀B" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YP2-go-zwA">
                                 <rect key="frame" x="0.0" y="400" width="1875" height="44"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1G-9H-pAh">
@@ -1415,6 +1415,7 @@
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yakusokuno" translatesAutoresizingMaskIntoConstraints="NO" id="oMY-lm-yQz">
                                         <rect key="frame" x="15" y="109" width="125" height="176"/>
+                                        <accessibility key="accessibilityConfiguration" label="DetailTop&gt;BaseImage"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="oMY-lm-yQz" secondAttribute="height" multiplier="120:169" id="Vde-b3-Cp2"/>
                                         </constraints>
@@ -1426,10 +1427,11 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrP-Ti-ysF">
                                         <rect key="frame" x="15" y="30" width="345" height="64"/>
+                                        <accessibility key="accessibilityConfiguration" label="DetailTop&gt;BaseTitle"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tq5-vm-Qll">
+                                    <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="StackView😀A" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tq5-vm-Qll">
                                         <rect key="frame" x="155" y="205" width="205" height="80"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-qV-NFR" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
@@ -1476,6 +1478,7 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" label="DetailTop&gt;BaseBase"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="15" id="303-2p-vzV"/>
                                     <constraint firstItem="koR-Pi-HyU" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" id="4vG-rl-laF"/>
