@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="klQ-xc-N3l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="klQ-xc-N3l">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -823,10 +823,12 @@
                     <size key="freeformSize" width="1875" height="1000"/>
                     <connections>
                         <outlet property="barLeft" destination="VvF-Bq-7Iz" id="mHq-Fb-Cle"/>
+                        <outlet property="baseInfoContainerView" destination="xOy-fW-5Fn" id="bsV-4m-X66"/>
                         <outlet property="headerTop" destination="GeI-Wx-LCo" id="WSW-rV-5oX"/>
                         <outlet property="screenStackView" destination="6n3-Ch-TCS" id="tCh-um-3x9"/>
                         <outlet property="screenWidthConstraint" destination="IqG-YG-JGR" id="1ur-hi-rbY"/>
                         <outlet property="scrollView" destination="gaf-rM-RvB" id="4q6-XH-VYS"/>
+                        <outlet property="tabButtonStackView" destination="YP2-go-zwA" id="cPE-G9-pFK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYN-1c-XKV" userLabel="First Responder" sceneMemberID="firstResponder"/>

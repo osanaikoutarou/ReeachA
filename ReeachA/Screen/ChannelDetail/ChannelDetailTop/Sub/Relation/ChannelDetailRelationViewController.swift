@@ -12,6 +12,11 @@ class ChannelDetailRelationViewController: UIViewController, HaveChannel, Channe
 
     var channel: Channel?
 
+    var headerHeight: CGFloat = 0 {
+        didSet {
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

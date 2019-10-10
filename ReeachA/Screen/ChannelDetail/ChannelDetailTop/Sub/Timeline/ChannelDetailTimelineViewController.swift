@@ -24,6 +24,12 @@ class ChannelDetailTimelineViewController: UIViewController, HaveChannel, Channe
         }
     }
 
+    var headerHeight: CGFloat = 0 {
+        didSet {
+            tableView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 0, right: 0)
+        }
+    }
+
     enum CellType {
         case summary
     }
@@ -38,12 +44,18 @@ class ChannelDetailTimelineViewController: UIViewController, HaveChannel, Channe
 
 extension ChannelDetailTimelineViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 20
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: ChannelDetailTimelineTableViewCell.self, for: indexPath)
 //        cell.channel = channel
         return cell
+    }
+}
+
+extension ChannelDetailTimelineViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        parentChannelDetailTopViewController?.scrollViewDidScroll(viewController: self, scrollView: scrollView)
     }
 }

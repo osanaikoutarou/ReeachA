@@ -25,6 +25,12 @@ class ChannelDetailLinkViewController: UIViewController, HaveChannel, ChannelDet
         }
     }
 
+    var headerHeight: CGFloat = 0 {
+        didSet {
+            scrollView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 0, right: 0)
+        }
+    }
+
     var channel: Channel? {
         didSet {
             setup()

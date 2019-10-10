@@ -16,6 +16,7 @@ protocol HaveChannel: class {
 /// 子ViweConrollerに適用
 protocol ChannelDetailTopChild: UIViewController {
     var parentChannelDetailTopViewController: ChannelDetailTopViewController? { get }
+    var headerHeight: CGFloat { get set }
 }
 extension ChannelDetailTopChild {
     var parentChannelDetailTopViewController: ChannelDetailTopViewController? {
@@ -32,13 +33,14 @@ class ChannelDetailTopViewController: UIViewController {
 
 //    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var headerStackView: UIStackView!
-    @IBOutlet weak var headerContainerView: UIView!
-    @IBOutlet weak var newsContainerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var screenWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerTop: NSLayoutConstraint!
     @IBOutlet weak var barLeft: NSLayoutConstraint!
     @IBOutlet weak var screenStackView: UIStackView!
+    @IBOutlet weak var baseInfoContainerView: UIView!
+    @IBOutlet weak var tabButtonStackView: UIStackView!
+
 
     //MARK:- ChannelDetailTimelineViewController
 
@@ -63,10 +65,10 @@ class ChannelDetailTopViewController: UIViewController {
         return children.first(where: { $0 is ChannelDetailRelationViewController} ) as? ChannelDetailRelationViewController
     }
 
-    var allChildren: [HaveChannel?] {
+    var allChildren: [UIViewController?] {
         return [baseInfoVC, linkVC, timelineVC, mediaVC, relationVC, infoVC]
     }
-    var slideScreens: [HaveChannel?] {
+    var slideScreens: [UIViewController?] {
         return [linkVC, timelineVC, mediaVC, relationVC, infoVC]
     }
 
@@ -100,8 +102,8 @@ class ChannelDetailTopViewController: UIViewController {
 //        baseInfoVC?.channel = channel
 //        linkVC?.channel = channel
 //        timelineVC?.channel = channel
-        allChildren.forEach { (haveChannel: HaveChannel?) in
-            if let haveChannel = haveChannel {
+        allChildren.forEach { (haveChannel: UIViewController?) in
+            if let haveChannel = haveChannel as? HaveChannel {
                 haveChannel.channel = self.channel
             }
         }
@@ -124,8 +126,16 @@ class ChannelDetailTopViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("viewWillAppear")
+    }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
 
+        slideScreens.forEach { (viewController: UIViewController?) in
+            if let vc = viewController as? ChannelDetailTopChild {
+                vc.headerHeight = self.baseInfoContainerView.bounds.height + tabButtonStackView.bounds.height
+            }
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {

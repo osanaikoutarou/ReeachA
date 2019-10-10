@@ -11,7 +11,6 @@ import UIKit
 class ChannelDetailInfoViewController: UIViewController, HaveChannel, ChannelDetailTopChild {
 
     @IBOutlet weak var scrollView: UIScrollView!
-
     // スライド
     var summaryVC: ChannelDetailInfoSummaryViewController? {
         return children.first(where: { $0 is ChannelDetailInfoSummaryViewController} ) as? ChannelDetailInfoSummaryViewController
@@ -30,6 +29,12 @@ class ChannelDetailInfoViewController: UIViewController, HaveChannel, ChannelDet
     var channel: Channel? {
         didSet {
             setup()
+        }
+    }
+
+    var headerHeight: CGFloat = 0 {
+        didSet {
+            scrollView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 0, right: 0)
         }
     }
 

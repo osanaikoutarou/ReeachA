@@ -881,6 +881,13 @@
 			path = ChannelDetailItems;
 			sourceTree = "<group>";
 		};
+		1ECC36C8234F0807000A0526 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		1ED20DD9221850870043EE0D /* ChannelDetailEpisodeDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -914,6 +921,7 @@
 		1EF8DC15232544AF004DDA63 /* Sub */ = {
 			isa = PBXGroup;
 			children = (
+				DA75C60123337AE70078A5F5 /* Timeline */,
 				1EFE551F23446A4F00905A25 /* Media */,
 				1EFE551E23446A4600905A25 /* Relation */,
 				1EFE551D23446A3F00905A25 /* Info */,
@@ -981,7 +989,6 @@
 			children = (
 				1E40ADEE2333EE120079D3CB /* Cell */,
 				DA75C60623337BA90078A5F5 /* ChannelDetailSummary */,
-				DA75C60123337AE70078A5F5 /* ChannelDetailTimeline */,
 				DA75C5FE23337AC10078A5F5 /* ChannelDetailLink */,
 				1EFF4BCB2205BE57006BFDC9 /* ChannelDetailNotification */,
 				1EE4CD7E2205707600E85537 /* ChannelDetailPost */,
@@ -1120,7 +1127,7 @@
 			path = ChannelDetailLink;
 			sourceTree = "<group>";
 		};
-		DA75C60123337AE70078A5F5 /* ChannelDetailTimeline */ = {
+		DA75C60123337AE70078A5F5 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
 				DA75C60223337B200078A5F5 /* ChannelDetailTimeline.storyboard */,
@@ -1128,7 +1135,7 @@
 				DABF9B8A2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift */,
 				DABF9B8B2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib */,
 			);
-			path = ChannelDetailTimeline;
+			path = Timeline;
 			sourceTree = "<group>";
 		};
 		DA75C60623337BA90078A5F5 /* ChannelDetailSummary */ = {
@@ -1183,6 +1190,7 @@
 		DADA57F1222E62C400FC95A8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1ECC36C8234F0807000A0526 /* Protocol */,
 				1EFE900D21FCD869006E8473 /* NavTabScrollController.swift */,
 				DADA57F2222E62DC00FC95A8 /* YoutubeUtility.swift */,
 				DA55B092222F797B001AD0C9 /* WKWebViewController.swift */,
