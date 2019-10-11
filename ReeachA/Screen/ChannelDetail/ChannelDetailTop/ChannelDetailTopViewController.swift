@@ -131,6 +131,8 @@ class ChannelDetailTopViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
+        print("viewDidLayoutSubviews")
+
         slideScreens.forEach { (viewController: UIViewController?) in
             if let vc = viewController as? ChannelDetailTopChild {
                 vc.headerHeight = self.baseInfoContainerView.bounds.height + tabButtonStackView.bounds.height
@@ -138,10 +140,10 @@ class ChannelDetailTopViewController: UIViewController {
         }
     }
 
+    var isViewDidAppear: Bool = false
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("viewDidAppear")
-
+        isViewDidAppear = true
     }
 
 }
@@ -149,11 +151,17 @@ class ChannelDetailTopViewController: UIViewController {
 extension ChannelDetailTopViewController {
     /// これは子ViewControllerを対象にしている
     func scrollViewDidScroll(viewController: UIViewController, scrollView: UIScrollView) {
+        guard isViewDidAppear else {
+            return
+        }
+        
         let scrollWithContentInset = scrollView.contentOffset.y + scrollView.contentInset.top
 //        print(scrollWithContentInset)
 
         let headerheight: CGFloat = baseInfoVC?.view?.bounds.height ?? 0
         headerTop.constant = min(0, max(-headerheight, -scrollWithContentInset))
+
+        print("😀  \(isViewLoaded) \(min(0, max(-headerheight, -scrollWithContentInset)))")
     }
 }
 
