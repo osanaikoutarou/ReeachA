@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  DebugReeachA
+//  ReachA-Labo
 //
 //  Created by osanai on 2019/10/11.
 //  Copyright © 2019 長内幸太郎. All rights reserved.
