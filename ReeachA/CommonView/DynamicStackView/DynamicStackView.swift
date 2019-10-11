@@ -80,12 +80,6 @@ class DynamicStackView: UIStackView {
             removeCell(index: i)
         }
     }
-    func removeAll() {
-        self.arrangedSubviews.forEach {
-            self.removeArrangedSubview($0)
-            $0.removeFromSuperview()
-        }
-    }
     // Index
     func indexes(of cell:DynamicStackViewCell) -> [Int] {
         let equalCells = cells.filter { $0 == cell }
