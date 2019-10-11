@@ -148,6 +148,13 @@
 		DA0953412208138F00CD9329 /* InfoAtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0953402208138F00CD9329 /* InfoAtom.swift */; };
 		DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095342220829E100CD9329 /* ChannelCategory.swift */; };
 		DA095345220832D600CD9329 /* ChannelDetailTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */; };
+		DA1C974C23505CE30068BD6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C974B23505CE30068BD6C /* AppDelegate.swift */; };
+		DA1C974E23505CE30068BD6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C974D23505CE30068BD6C /* SceneDelegate.swift */; };
+		DA1C975023505CE30068BD6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1C974F23505CE30068BD6C /* ViewController.swift */; };
+		DA1C975323505CE30068BD6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1C975123505CE30068BD6C /* Main.storyboard */; };
+		DA1C975523505CE40068BD6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1C975423505CE40068BD6C /* Assets.xcassets */; };
+		DA1C975823505CE40068BD6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1C975623505CE40068BD6C /* LaunchScreen.storyboard */; };
+		DA1C975D23505D3E0068BD6C /* UIStackView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBC00B234F1E64004C48A1 /* UIStackView+Utility.swift */; };
 		DA2B73C42316642D00D6DFFE /* CalendarDayEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B73C32316642D00D6DFFE /* CalendarDayEventTableViewCell.swift */; };
 		DA55B08F222F6F41001AD0C9 /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B08E222F6F41001AD0C9 /* YoutubeView.swift */; };
 		DA55B091222F6F49001AD0C9 /* YoutubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55B090222F6F49001AD0C9 /* YoutubeView.xib */; };
@@ -372,6 +379,14 @@
 		DA0953402208138F00CD9329 /* InfoAtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtom.swift; sourceTree = "<group>"; };
 		DA095342220829E100CD9329 /* ChannelCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCategory.swift; sourceTree = "<group>"; };
 		DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTabBarController.swift; sourceTree = "<group>"; };
+		DA1C974923505CE30068BD6C /* DebugReeachA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugReeachA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1C974B23505CE30068BD6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA1C974D23505CE30068BD6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DA1C974F23505CE30068BD6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA1C975223505CE30068BD6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA1C975423505CE40068BD6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA1C975723505CE40068BD6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA1C975923505CE40068BD6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA2B73C32316642D00D6DFFE /* CalendarDayEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayEventTableViewCell.swift; sourceTree = "<group>"; };
 		DA55B08E222F6F41001AD0C9 /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		DA55B090222F6F49001AD0C9 /* YoutubeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeView.xib; sourceTree = "<group>"; };
@@ -445,6 +460,13 @@
 			files = (
 				DADD662C22A4AEB600F11710 /* WebKit.framework in Frameworks */,
 				230CD8FCC5D42F274DDFB366 /* Pods_ReeachA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA1C974623505CE30068BD6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,6 +834,7 @@
 			isa = PBXGroup;
 			children = (
 				1EB1514021FA1C16001B6110 /* ReeachA */,
+				DA1C974A23505CE30068BD6C /* DebugReeachA */,
 				1EB1513F21FA1C16001B6110 /* Products */,
 				9C66DFB30DF1D9FEDC76B8AA /* Pods */,
 				8EB5C916A33FAB832F0B7013 /* Frameworks */,
@@ -822,6 +845,7 @@
 			isa = PBXGroup;
 			children = (
 				1EB1513E21FA1C16001B6110 /* ReeachA.app */,
+				DA1C974923505CE30068BD6C /* DebugReeachA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1116,6 +1140,20 @@
 			path = Info;
 			sourceTree = "<group>";
 		};
+		DA1C974A23505CE30068BD6C /* DebugReeachA */ = {
+			isa = PBXGroup;
+			children = (
+				DA1C974B23505CE30068BD6C /* AppDelegate.swift */,
+				DA1C974D23505CE30068BD6C /* SceneDelegate.swift */,
+				DA1C974F23505CE30068BD6C /* ViewController.swift */,
+				DA1C975123505CE30068BD6C /* Main.storyboard */,
+				DA1C975423505CE40068BD6C /* Assets.xcassets */,
+				DA1C975623505CE40068BD6C /* LaunchScreen.storyboard */,
+				DA1C975923505CE40068BD6C /* Info.plist */,
+			);
+			path = DebugReeachA;
+			sourceTree = "<group>";
+		};
 		DA55B08D222F6F21001AD0C9 /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
@@ -1345,6 +1383,23 @@
 			productReference = 1EB1513E21FA1C16001B6110 /* ReeachA.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DA1C974823505CE30068BD6C /* DebugReeachA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1C975A23505CE40068BD6C /* Build configuration list for PBXNativeTarget "DebugReeachA" */;
+			buildPhases = (
+				DA1C974523505CE30068BD6C /* Sources */,
+				DA1C974623505CE30068BD6C /* Frameworks */,
+				DA1C974723505CE30068BD6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DebugReeachA;
+			productName = DebugReeachA;
+			productReference = DA1C974923505CE30068BD6C /* DebugReeachA.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1357,6 +1412,9 @@
 				TargetAttributes = {
 					1EB1513D21FA1C16001B6110 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					DA1C974823505CE30068BD6C = {
+						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
@@ -1374,6 +1432,7 @@
 			projectRoot = "";
 			targets = (
 				1EB1513D21FA1C16001B6110 /* ReeachA */,
+				DA1C974823505CE30068BD6C /* DebugReeachA */,
 			);
 		};
 /* End PBXProject section */
@@ -1431,6 +1490,16 @@
 				DABF9B8D2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib in Resources */,
 				DA75C60323337B200078A5F5 /* ChannelDetailTimeline.storyboard in Resources */,
 				DADD665022A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA1C974723505CE30068BD6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1C975823505CE40068BD6C /* LaunchScreen.storyboard in Resources */,
+				DA1C975523505CE40068BD6C /* Assets.xcassets in Resources */,
+				DA1C975323505CE30068BD6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1649,6 +1718,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA1C974523505CE30068BD6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1C975023505CE30068BD6C /* ViewController.swift in Sources */,
+				DA1C974C23505CE30068BD6C /* AppDelegate.swift in Sources */,
+				DA1C975D23505D3E0068BD6C /* UIStackView+Utility.swift in Sources */,
+				DA1C974E23505CE30068BD6C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -1664,6 +1744,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				1EB1514B21FA1C18001B6110 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA1C975123505CE30068BD6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1C975223505CE30068BD6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA1C975623505CE40068BD6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1C975723505CE40068BD6C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1829,6 +1925,44 @@
 			};
 			name = Release;
 		};
+		DA1C975B23505CE40068BD6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8B9JQC2M34;
+				INFOPLIST_FILE = DebugReeachA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = osanai.DebugReeachA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA1C975C23505CE40068BD6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8B9JQC2M34;
+				INFOPLIST_FILE = DebugReeachA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = osanai.DebugReeachA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1846,6 +1980,15 @@
 			buildConfigurations = (
 				1EB1515121FA1C18001B6110 /* Debug */,
 				1EB1515221FA1C18001B6110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA1C975A23505CE40068BD6C /* Build configuration list for PBXNativeTarget "DebugReeachA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1C975B23505CE40068BD6C /* Debug */,
+				DA1C975C23505CE40068BD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
