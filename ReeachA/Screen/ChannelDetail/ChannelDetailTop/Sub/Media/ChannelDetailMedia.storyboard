@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1MC-8a-lLW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1MC-8a-lLW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,13 +15,60 @@
                     <view key="view" contentMode="scaleToFill" id="9vG-8H-ok6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YdZ-fl-iT6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="YoutubeTableViewCell" rowHeight="336" id="Gws-m8-h2C" customClass="YoutubeTableViewCell" customModule="ReeachA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="336"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gws-m8-h2C" id="6vN-50-vwA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="336"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rco-0T-xoo" customClass="YoutubeView" customModule="ReeachA" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="10" width="394" height="200"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Rco-0T-xoo" secondAttribute="height" multiplier="16:9" id="Cip-fn-hxg"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rco-0T-xoo" firstAttribute="top" secondItem="6vN-50-vwA" secondAttribute="top" constant="10" id="KZ7-a5-MIS"/>
+                                                <constraint firstItem="Rco-0T-xoo" firstAttribute="leading" secondItem="6vN-50-vwA" secondAttribute="leading" constant="10" id="bQl-yU-PDS"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rco-0T-xoo" secondAttribute="trailing" constant="10" id="de2-eQ-q1q"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rco-0T-xoo" secondAttribute="bottom" constant="126" id="jXJ-0N-e5s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="youtubeView" destination="Rco-0T-xoo" id="YJ2-8l-ggR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1MC-8a-lLW" id="7Dd-6y-fIA"/>
+                                    <outlet property="delegate" destination="1MC-8a-lLW" id="heq-2l-iJB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YdZ-fl-iT6" firstAttribute="top" secondItem="Oxq-mp-AGZ" secondAttribute="top" id="8PA-mB-fRa"/>
+                            <constraint firstItem="YdZ-fl-iT6" firstAttribute="trailing" secondItem="Oxq-mp-AGZ" secondAttribute="trailing" id="Odq-gu-2C3"/>
+                            <constraint firstItem="YdZ-fl-iT6" firstAttribute="leading" secondItem="Oxq-mp-AGZ" secondAttribute="leading" id="Poz-3V-aR7"/>
+                            <constraint firstItem="Oxq-mp-AGZ" firstAttribute="bottom" secondItem="YdZ-fl-iT6" secondAttribute="bottom" id="rdx-O7-OD8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Oxq-mp-AGZ"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="YdZ-fl-iT6" id="JrN-zy-sb6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEi-m2-vKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="-236"/>
+            <point key="canvasLocation" x="134.78260869565219" y="-236.38392857142856"/>
         </scene>
     </scenes>
 </document>

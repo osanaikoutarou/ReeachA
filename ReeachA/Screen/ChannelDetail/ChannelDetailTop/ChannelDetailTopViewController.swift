@@ -40,6 +40,9 @@ class ChannelDetailTopViewController: UIViewController {
     @IBOutlet weak var screenStackView: UIStackView!
     @IBOutlet weak var baseInfoContainerView: UIView!
     @IBOutlet weak var tabButtonStackView: UIStackView!
+    @IBOutlet weak var barView: UIView!
+    @IBOutlet var barBaseView: [UIView]!
+    @IBOutlet var barLabels: [UILabel]!
 
 
     //MARK:- ChannelDetailTimelineViewController
@@ -108,19 +111,8 @@ class ChannelDetailTopViewController: UIViewController {
             }
         }
 
-
-//        tableView.contentInsetAdjustmentBehavior = .never
-
-//        self.tabBarController?.navigationController?.setNavigationBarHidden(true, animated: false)
-        
-//        self.navigationController?.isNavigationBarHidden = true
-//        addHogeButton()
-        
-//        self.tabBarController?.addAnyButtonToRight(title: nil, image: UIImage(named: "icon_menu"), action: {
-//
-//        })
-        
-//        setupTableView()
+        barBaseView.forEach{ $0.backgroundColor = channel.style.backColor }
+        barView.backgroundColor = channel.style.keyColor
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -168,6 +160,12 @@ extension ChannelDetailTopViewController {
 extension ChannelDetailTopViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         barLeft.constant = scrollView.contentOffset.x / screenCount.f
+
+        let page = Int((scrollView.contentOffset.x + scrollView.bounds.width/2.0)/scrollView.bounds.width)
+        if page < slideScreens.count {
+            barLabels.forEach{ $0.textColor =  channel.style.unSelectColor }
+            barLabels[page].textColor = channel.style.keyColor
+        }
     }
 }
 

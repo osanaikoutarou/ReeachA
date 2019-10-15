@@ -14,6 +14,7 @@ class ChannelDetailRelationViewController: UIViewController, HaveChannel, Channe
 
     var headerHeight: CGFloat = 0 {
         didSet {
+            
         }
     }
 

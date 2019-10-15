@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +39,9 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh5-l9-cdZ">
                                         <rect key="frame" x="285" y="46" width="129" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">設定二次創作（ファン）</string>
+                                        <string key="text">設定
+二次創作（ファン）
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -94,15 +94,13 @@
                                 <rect key="frame" x="20" y="371" width="374" height="407"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Top　ー　ニュース
-　　　ー　エピソード
-　　　ー　リンク
-　　　ー　商品
-　　　ー　関連
-コメント・評価
-あなた
-カレンダー
-ファン</string>
+                                <string key="text" base64-UTF8="YES">
+VG9w44CA44O844CA44K/44Kk44Og44Op44Kk44OzCuOAgOOAgOOAgOODvOOAgOODquODs+OCrwrjgIDj
+gIDjgIDjg7zjgIDmg4XloLEK44CA44CA44CA44O844CA44Oh44OH44Kj44KiCuOAgOOAgOOAgOODvOOA
+gOmWoumAo+ODhOODquODvBER4oCoCuOCs+ODoeODs+ODiOODu+ipleS+oQrllYblk4Hjg7vjgqTjg5nj
+g7Pjg4gK44Kr44Os44Oz44OA44O8DeOBguOBquOBnw0N44Oh44OL44Ol44O84oCo44CA5LqM5qyh5Ym1
+5L2cDQrjgIDjg5XjgqHjg7M
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

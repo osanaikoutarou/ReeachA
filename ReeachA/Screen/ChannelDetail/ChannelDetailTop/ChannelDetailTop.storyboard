@@ -166,12 +166,12 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイムライン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEN-SN-x6t">
                                                 <rect key="frame" x="150.5" y="15" width="74" height="14.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="JEN-SN-x6t" firstAttribute="centerX" secondItem="a1G-9H-pAh" secondAttribute="centerX" id="CsT-Bq-WZL"/>
                                             <constraint firstItem="JEN-SN-x6t" firstAttribute="centerY" secondItem="a1G-9H-pAh" secondAttribute="centerY" id="XG4-2l-rGu"/>
@@ -182,12 +182,12 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンク" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsk-B4-Sn0">
                                                 <rect key="frame" x="169" y="15" width="37" height="14.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Jsk-B4-Sn0" firstAttribute="centerY" secondItem="BHO-bk-G7Q" secondAttribute="centerY" id="Ear-Jo-Yfr"/>
                                             <constraint firstItem="Jsk-B4-Sn0" firstAttribute="centerX" secondItem="BHO-bk-G7Q" secondAttribute="centerX" id="kp8-nt-hgo"/>
@@ -198,12 +198,12 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj6-A2-0KA">
                                                 <rect key="frame" x="175" y="15" width="25" height="14.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="zj6-A2-0KA" firstAttribute="centerX" secondItem="NVf-bN-XPe" secondAttribute="centerX" id="65i-WP-mbz"/>
                                             <constraint firstItem="zj6-A2-0KA" firstAttribute="centerY" secondItem="NVf-bN-XPe" secondAttribute="centerY" id="JpK-xj-auT"/>
@@ -214,12 +214,12 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="関連ツリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wd-TX-noN">
                                                 <rect key="frame" x="157" y="15" width="61.5" height="14.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="8Wd-TX-noN" firstAttribute="centerX" secondItem="3bj-PP-fVx" secondAttribute="centerX" id="Gpu-sb-IzV"/>
                                             <constraint firstItem="8Wd-TX-noN" firstAttribute="centerY" secondItem="3bj-PP-fVx" secondAttribute="centerY" id="W7b-DH-PQe"/>
@@ -230,12 +230,12 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メディア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqt-2k-8aC">
                                                 <rect key="frame" x="163" y="15" width="49.5" height="14.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Qqt-2k-8aC" firstAttribute="centerY" secondItem="nP0-12-U8b" secondAttribute="centerY" id="liK-mS-uuj"/>
                                             <constraint firstItem="Qqt-2k-8aC" firstAttribute="centerX" secondItem="nP0-12-U8b" secondAttribute="centerX" id="mIs-7e-nQK"/>
@@ -275,12 +275,23 @@
                     <size key="freeformSize" width="1875" height="1000"/>
                     <connections>
                         <outlet property="barLeft" destination="VvF-Bq-7Iz" id="mHq-Fb-Cle"/>
+                        <outlet property="barView" destination="Sx0-rr-q77" id="s5a-yc-PwW"/>
                         <outlet property="baseInfoContainerView" destination="xOy-fW-5Fn" id="bsV-4m-X66"/>
                         <outlet property="headerTop" destination="GeI-Wx-LCo" id="WSW-rV-5oX"/>
                         <outlet property="screenStackView" destination="6n3-Ch-TCS" id="tCh-um-3x9"/>
                         <outlet property="screenWidthConstraint" destination="IqG-YG-JGR" id="1ur-hi-rbY"/>
                         <outlet property="scrollView" destination="gaf-rM-RvB" id="4q6-XH-VYS"/>
                         <outlet property="tabButtonStackView" destination="YP2-go-zwA" id="cPE-G9-pFK"/>
+                        <outletCollection property="barBaseView" destination="nP0-12-U8b" collectionClass="NSMutableArray" id="yOf-Eu-hNF"/>
+                        <outletCollection property="barBaseView" destination="a1G-9H-pAh" collectionClass="NSMutableArray" id="TqH-Zf-j4O"/>
+                        <outletCollection property="barBaseView" destination="BHO-bk-G7Q" collectionClass="NSMutableArray" id="7vG-5J-grL"/>
+                        <outletCollection property="barBaseView" destination="NVf-bN-XPe" collectionClass="NSMutableArray" id="2Eo-Xc-s1q"/>
+                        <outletCollection property="barBaseView" destination="3bj-PP-fVx" collectionClass="NSMutableArray" id="6YL-VL-8wh"/>
+                        <outletCollection property="barLabels" destination="JEN-SN-x6t" collectionClass="NSMutableArray" id="WZA-Nj-F2s"/>
+                        <outletCollection property="barLabels" destination="Jsk-B4-Sn0" collectionClass="NSMutableArray" id="UEE-03-NCi"/>
+                        <outletCollection property="barLabels" destination="zj6-A2-0KA" collectionClass="NSMutableArray" id="dNK-zT-q5w"/>
+                        <outletCollection property="barLabels" destination="8Wd-TX-noN" collectionClass="NSMutableArray" id="a27-XB-Yqo"/>
+                        <outletCollection property="barLabels" destination="Qqt-2k-8aC" collectionClass="NSMutableArray" id="Bzl-Hv-g4z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYN-1c-XKV" userLabel="First Responder" sceneMemberID="firstResponder"/>

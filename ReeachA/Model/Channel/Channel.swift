@@ -47,4 +47,7 @@ class Channel: InfoAtom {
     
 //    var sigInfos:[String] = []
 //    var relatedChannels:[Channel] = []
+
+    // デザイン
+    var style: Style = Style()
 }
