@@ -85,26 +85,8 @@
                                                             <constraint firstItem="hF6-hM-l0S" firstAttribute="top" secondItem="Bj7-ka-Sol" secondAttribute="top" id="MvT-17-sXE"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgT-oi-IvK">
-                                                        <rect key="frame" x="1125" y="0.0" width="375" height="1000"/>
-                                                        <subviews>
-                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el0-Xq-Nrx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
-                                                                <connections>
-                                                                    <segue destination="H5e-hG-6u9" kind="embed" id="cVD-kI-cYy"/>
-                                                                </connections>
-                                                            </containerView>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="el0-Xq-Nrx" firstAttribute="leading" secondItem="mgT-oi-IvK" secondAttribute="leading" id="6ct-Ib-sV7"/>
-                                                            <constraint firstAttribute="bottom" secondItem="el0-Xq-Nrx" secondAttribute="bottom" id="94T-cU-BVq"/>
-                                                            <constraint firstItem="el0-Xq-Nrx" firstAttribute="top" secondItem="mgT-oi-IvK" secondAttribute="top" id="9cv-Yu-awB"/>
-                                                            <constraint firstAttribute="trailing" secondItem="el0-Xq-Nrx" secondAttribute="trailing" id="LNk-rC-rfq"/>
-                                                        </constraints>
-                                                    </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCs-KL-R0K">
-                                                        <rect key="frame" x="1500" y="0.0" width="375" height="1000"/>
+                                                        <rect key="frame" x="1125" y="0.0" width="375" height="1000"/>
                                                         <subviews>
                                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9W-hh-iDH">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
@@ -119,6 +101,24 @@
                                                             <constraint firstAttribute="trailing" secondItem="E9W-hh-iDH" secondAttribute="trailing" id="aDp-bF-Pgh"/>
                                                             <constraint firstAttribute="bottom" secondItem="E9W-hh-iDH" secondAttribute="bottom" id="dkR-vA-HoX"/>
                                                             <constraint firstItem="E9W-hh-iDH" firstAttribute="top" secondItem="TCs-KL-R0K" secondAttribute="top" id="pvl-vF-S9u"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgT-oi-IvK">
+                                                        <rect key="frame" x="1500" y="0.0" width="375" height="1000"/>
+                                                        <subviews>
+                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el0-Xq-Nrx">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                                                <connections>
+                                                                    <segue destination="H5e-hG-6u9" kind="embed" id="cVD-kI-cYy"/>
+                                                                </connections>
+                                                            </containerView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="el0-Xq-Nrx" firstAttribute="leading" secondItem="mgT-oi-IvK" secondAttribute="leading" id="6ct-Ib-sV7"/>
+                                                            <constraint firstAttribute="bottom" secondItem="el0-Xq-Nrx" secondAttribute="bottom" id="94T-cU-BVq"/>
+                                                            <constraint firstItem="el0-Xq-Nrx" firstAttribute="top" secondItem="mgT-oi-IvK" secondAttribute="top" id="9cv-Yu-awB"/>
+                                                            <constraint firstAttribute="trailing" secondItem="el0-Xq-Nrx" secondAttribute="trailing" id="LNk-rC-rfq"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -212,8 +212,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bj-PP-fVx">
                                         <rect key="frame" x="1125" y="0.0" width="375" height="44"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="関連ツリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wd-TX-noN">
-                                                <rect key="frame" x="157" y="15" width="61.5" height="14.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メディア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wd-TX-noN">
+                                                <rect key="frame" x="163" y="15" width="49.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -228,8 +228,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-12-U8b">
                                         <rect key="frame" x="1500" y="0.0" width="375" height="44"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メディア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqt-2k-8aC">
-                                                <rect key="frame" x="163" y="15" width="49.5" height="14.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="関連ツリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqt-2k-8aC">
+                                                <rect key="frame" x="157" y="15" width="61.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
