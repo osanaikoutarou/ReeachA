@@ -58,10 +58,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="l0M-rk-66w" kind="relationship" relationship="viewControllers" id="9kI-4g-MhT"/>
-                        <segue destination="ZpT-61-cDC" kind="showDetail" id="RZx-md-kNv"/>
-                        <segue destination="iOW-qM-pAJ" kind="relationship" relationship="viewControllers" id="rLQ-46-433"/>
-                        <segue destination="nae-vI-GQ5" kind="relationship" relationship="viewControllers" id="SXb-yx-iSm"/>
-                        <segue destination="FWw-RI-Lcy" kind="relationship" relationship="viewControllers" id="54F-1R-Pmr"/>
+                        <segue destination="ZpT-61-cDC" kind="relationship" relationship="viewControllers" id="plw-Lg-4s4"/>
+                        <segue destination="iOW-qM-pAJ" kind="relationship" relationship="viewControllers" id="DhM-0s-3q8"/>
+                        <segue destination="nae-vI-GQ5" kind="relationship" relationship="viewControllers" id="cCD-uq-ITk"/>
+                        <segue destination="FWw-RI-Lcy" kind="relationship" relationship="viewControllers" id="cv1-I7-mqB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cbp-yc-B0a" userLabel="First Responder" sceneMemberID="firstResponder"/>

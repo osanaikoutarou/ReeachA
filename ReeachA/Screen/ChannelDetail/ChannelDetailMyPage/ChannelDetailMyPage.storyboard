@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Channel Detail My Page View Controller-->
+        <!--マイページ-->
         <scene sceneID="aUf-21-s5O">
             <objects>
                 <viewController id="3C8-Pd-rfm" customClass="ChannelDetailMyPageViewController" customModule="ReeachA" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,10 +18,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ADO-WQ-IVU"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="マイページ" id="vpr-6U-GXH"/>
+                    <navigationItem key="navigationItem" id="1gW-rV-MO9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQR-cc-ePD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80" y="129"/>
+            <point key="canvasLocation" x="828.98550724637687" y="128.57142857142856"/>
         </scene>
     </scenes>
 </document>
