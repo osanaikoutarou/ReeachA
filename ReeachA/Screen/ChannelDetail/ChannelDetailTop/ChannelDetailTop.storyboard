@@ -462,7 +462,7 @@
                 <viewControllerPlaceholder storyboardName="ChannelDetailMedia" id="5Nn-l8-e6S" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcf-CU-0iK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2632" y="1810"/>
+            <point key="canvasLocation" x="2640" y="1760"/>
         </scene>
         <!--ChannelDetailInfo-->
         <scene sceneID="Vhd-8Q-kdn">
@@ -478,7 +478,7 @@
                 <viewControllerPlaceholder storyboardName="ChannelDetailRelation" id="H5e-hG-6u9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8in-HF-0Us" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2632" y="1760"/>
+            <point key="canvasLocation" x="2642" y="1798"/>
         </scene>
     </scenes>
     <resources>

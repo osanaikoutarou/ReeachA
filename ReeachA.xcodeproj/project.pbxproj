@@ -93,6 +93,10 @@
 		1E875782234A2F48007BE530 /* ChannelDetailCastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E875780234A2F48007BE530 /* ChannelDetailCastTableViewCell.swift */; };
 		1E875783234A2F48007BE530 /* ChannelDetailCastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E875781234A2F48007BE530 /* ChannelDetailCastTableViewCell.xib */; };
 		1E90237C2356037400B06822 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90237B2356037400B06822 /* Style.swift */; };
+		1E9023802356275F00B06822 /* ChannelDetailCalendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E90237F2356275F00B06822 /* ChannelDetailCalendar.storyboard */; };
+		1E9023822356948E00B06822 /* ChannelDetailMyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9023812356948E00B06822 /* ChannelDetailMyPage.storyboard */; };
+		1E902384235694A100B06822 /* ChannelDetailCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E902383235694A100B06822 /* ChannelDetailCalendarViewController.swift */; };
+		1E902386235694B300B06822 /* ChannelDetailMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E902385235694B300B06822 /* ChannelDetailMyPageViewController.swift */; };
 		1E9F0C6B2329759600CFAA30 /* ChannelDetailLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F0C6A2329759600CFAA30 /* ChannelDetailLinkViewController.swift */; };
 		1E9F0C6E232975F300CFAA30 /* ChannelDetailLinkOfficialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F0C6D232975F300CFAA30 /* ChannelDetailLinkOfficialViewController.swift */; };
 		1E9F0C702329761600CFAA30 /* ChannelDetailLinkOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F0C6F2329761600CFAA30 /* ChannelDetailLinkOtherViewController.swift */; };
@@ -321,6 +325,10 @@
 		1E875780234A2F48007BE530 /* ChannelDetailCastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailCastTableViewCell.swift; sourceTree = "<group>"; };
 		1E875781234A2F48007BE530 /* ChannelDetailCastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelDetailCastTableViewCell.xib; sourceTree = "<group>"; };
 		1E90237B2356037400B06822 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		1E90237F2356275F00B06822 /* ChannelDetailCalendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailCalendar.storyboard; sourceTree = "<group>"; };
+		1E9023812356948E00B06822 /* ChannelDetailMyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelDetailMyPage.storyboard; sourceTree = "<group>"; };
+		1E902383235694A100B06822 /* ChannelDetailCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailCalendarViewController.swift; sourceTree = "<group>"; };
+		1E902385235694B300B06822 /* ChannelDetailMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailMyPageViewController.swift; sourceTree = "<group>"; };
 		1E9F0C6A2329759600CFAA30 /* ChannelDetailLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelDetailLinkViewController.swift; sourceTree = "<group>"; };
 		1E9F0C6D232975F300CFAA30 /* ChannelDetailLinkOfficialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailLinkOfficialViewController.swift; sourceTree = "<group>"; };
 		1E9F0C6F2329761600CFAA30 /* ChannelDetailLinkOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailLinkOtherViewController.swift; sourceTree = "<group>"; };
@@ -820,6 +828,24 @@
 			path = Style;
 			sourceTree = "<group>";
 		};
+		1E90237D2356273D00B06822 /* ChannelDetailMyPage */ = {
+			isa = PBXGroup;
+			children = (
+				1E9023812356948E00B06822 /* ChannelDetailMyPage.storyboard */,
+				1E902385235694B300B06822 /* ChannelDetailMyPageViewController.swift */,
+			);
+			path = ChannelDetailMyPage;
+			sourceTree = "<group>";
+		};
+		1E90237E2356274900B06822 /* ChannelDetailCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				1E90237F2356275F00B06822 /* ChannelDetailCalendar.storyboard */,
+				1E902383235694A100B06822 /* ChannelDetailCalendarViewController.swift */,
+			);
+			path = ChannelDetailCalendar;
+			sourceTree = "<group>";
+		};
 		1E9F0C692329752F00CFAA30 /* Link */ = {
 			isa = PBXGroup;
 			children = (
@@ -1044,6 +1070,8 @@
 				1E40ADEE2333EE120079D3CB /* Cell */,
 				DA75C60623337BA90078A5F5 /* ChannelDetailSummary */,
 				DA75C5FE23337AC10078A5F5 /* ChannelDetailLink */,
+				1E90237E2356274900B06822 /* ChannelDetailCalendar */,
+				1E90237D2356273D00B06822 /* ChannelDetailMyPage */,
 				1EFF4BCB2205BE57006BFDC9 /* ChannelDetailNotification */,
 				1EE4CD7E2205707600E85537 /* ChannelDetailPost */,
 				1EE4CD7922056AE900E85537 /* ChannelDetailEpisode */,
@@ -1474,6 +1502,7 @@
 				1EFE8FF821FC6DB3006E8473 /* ChannelDetailTop.storyboard in Resources */,
 				1EFE552B23446AC800905A25 /* ChannelDetailInfo.storyboard in Resources */,
 				1EBDA996234A338A00C369C9 /* ChannelDetailInfoSummary.storyboard in Resources */,
+				1E9023822356948E00B06822 /* ChannelDetailMyPage.storyboard in Resources */,
 				1EFE552723446AB200905A25 /* ChannelDetailMedia.storyboard in Resources */,
 				1E1DE0062211718C00A00FA1 /* PairLabelForHorizontalDynamicStackViewCell.xib in Resources */,
 				DADD664C22A4B05800F11710 /* CalendarMore.storyboard in Resources */,
@@ -1485,6 +1514,7 @@
 				1E6D77432211E726002038ED /* LinkVerticalDynamicStackViewCell.xib in Resources */,
 				1EFE552D23446C4000905A25 /* ChannelDetailLink.storyboard in Resources */,
 				1E4A543022060FF000E4EEEF /* SectionHeaderBasicalTableCell.xib in Resources */,
+				1E9023802356275F00B06822 /* ChannelDetailCalendar.storyboard in Resources */,
 				1E7AF7F7222B0AB400F845C2 /* RightMenu.storyboard in Resources */,
 				1E87577F234A2ECE007BE530 /* ChannelDetailStaffTableViewCell.xib in Resources */,
 				1EE4CD7B22056B4D00E85537 /* ChannelDetailEpisode.storyboard in Resources */,
@@ -1644,6 +1674,7 @@
 				DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */,
 				1E57E0A821FB84DE003AD898 /* UICollectionView+Highlight.swift in Sources */,
 				1EFE8FFA21FC6DCA006E8473 /* ChannelDetailTopViewController.swift in Sources */,
+				1E902384235694A100B06822 /* ChannelDetailCalendarViewController.swift in Sources */,
 				1E57E09B21FB84DE003AD898 /* UIVIew+Frame.swift in Sources */,
 				1E57E0A321FB84DE003AD898 /* Array+Safe.swift in Sources */,
 				DA55B08F222F6F41001AD0C9 /* YoutubeView.swift in Sources */,
@@ -1721,6 +1752,7 @@
 				1EB1514221FA1C17001B6110 /* AppDelegate.swift in Sources */,
 				1E57E03621FB7BF7003AD898 /* AnimeChannelCollectionViewCell.swift in Sources */,
 				1EFE552323446A9800905A25 /* ChannelDetailRelationViewController.swift in Sources */,
+				1E902386235694B300B06822 /* ChannelDetailMyPageViewController.swift in Sources */,
 				DA8AEB2E21FEC3A4000A717E /* ViewCreator.swift in Sources */,
 				1E6D77402211E6CA002038ED /* ChannelDetailTopLinkTableViewCell.swift in Sources */,
 				1E57E0AA21FB84DE003AD898 /* Optional+Utility.swift in Sources */,
