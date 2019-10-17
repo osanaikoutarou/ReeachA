@@ -149,6 +149,9 @@
 		1EFF4BD42205D4BE006BFDC9 /* ChannelDetailWebsiteListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EFF4BD22205D4BE006BFDC9 /* ChannelDetailWebsiteListTableViewCell.xib */; };
 		1EFF4BDA2205D645006BFDC9 /* PixcelHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF4BD92205D645006BFDC9 /* PixcelHorizontalView.swift */; };
 		230CD8FCC5D42F274DDFB366 /* Pods_ReeachA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3091D30AB60E2FA06593877 /* Pods_ReeachA.framework */; };
+		DA08A51323581AB0003B7284 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08A51223581AB0003B7284 /* HomeViewController.swift */; };
+		DA08A51523581AD4003B7284 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08A51423581AD4003B7284 /* TimelineViewController.swift */; };
+		DA08A51723582018003B7284 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08A51623582018003B7284 /* MyPageViewController.swift */; };
 		DA09533F220805BA00CD9329 /* InfoPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09533E220805BA00CD9329 /* InfoPair.swift */; };
 		DA0953412208138F00CD9329 /* InfoAtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0953402208138F00CD9329 /* InfoAtom.swift */; };
 		DA095343220829E100CD9329 /* ChannelCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA095342220829E100CD9329 /* ChannelCategory.swift */; };
@@ -193,7 +196,7 @@
 		DABF9B8C2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABF9B8A2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift */; };
 		DABF9B8D2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABF9B8B2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib */; };
 		DAC04D8F232B95FC006634F6 /* EventControlableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC04D8E232B95FC006634F6 /* EventControlableView.swift */; };
-		DAC1C227235816EC0074611D /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC1C226235816EC0074611D /* Top.storyboard */; };
+		DAC1C227235816EC0074611D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC1C226235816EC0074611D /* Home.storyboard */; };
 		DAC1C229235816FE0074611D /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC1C228235816FE0074611D /* Timeline.storyboard */; };
 		DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADA57EB222E4A6300FC95A8 /* Videos.storyboard */; };
 		DADA57EE222E4ACF00FC95A8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */; };
@@ -385,6 +388,9 @@
 		1EFF4BD92205D645006BFDC9 /* PixcelHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixcelHorizontalView.swift; sourceTree = "<group>"; };
 		88B59514424F66B560248F03 /* Pods-ReeachA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReeachA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReeachA/Pods-ReeachA.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF42C61CB3355EA7AC15B1C /* Pods-ReeachA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReeachA.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReeachA/Pods-ReeachA.release.xcconfig"; sourceTree = "<group>"; };
+		DA08A51223581AB0003B7284 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DA08A51423581AD4003B7284 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		DA08A51623582018003B7284 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		DA09533E220805BA00CD9329 /* InfoPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPair.swift; sourceTree = "<group>"; };
 		DA0953402208138F00CD9329 /* InfoAtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAtom.swift; sourceTree = "<group>"; };
 		DA095342220829E100CD9329 /* ChannelCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCategory.swift; sourceTree = "<group>"; };
@@ -431,7 +437,7 @@
 		DABF9B8A2347192C00655A42 /* ChannelDetailTimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailTimelineTableViewCell.swift; sourceTree = "<group>"; };
 		DABF9B8B2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelDetailTimelineTableViewCell.xib; sourceTree = "<group>"; };
 		DAC04D8E232B95FC006634F6 /* EventControlableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventControlableView.swift; sourceTree = "<group>"; };
-		DAC1C226235816EC0074611D /* Top.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		DAC1C226235816EC0074611D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DAC1C228235816FE0074611D /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 		DADA57EB222E4A6300FC95A8 /* Videos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Videos.storyboard; sourceTree = "<group>"; };
 		DADA57ED222E4ACF00FC95A8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
@@ -767,7 +773,7 @@
 		1E57E0BC21FC01EE003AD898 /* ScreenMain */ = {
 			isa = PBXGroup;
 			children = (
-				DAC1C222235812DE0074611D /* Top */,
+				DAC1C222235812DE0074611D /* Home */,
 				1EFE8FF021FC4441006E8473 /* MyChannel */,
 				DAC1C223235812EA0074611D /* Timeline */,
 				DADD662D22A4AFB800F11710 /* Calendar */,
@@ -804,6 +810,7 @@
 			isa = PBXGroup;
 			children = (
 				1E7AF7F3222B0A9600F845C2 /* MyPage.storyboard */,
+				DA08A51623582018003B7284 /* MyPageViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -1285,18 +1292,20 @@
 			path = ScreenChannelDetail;
 			sourceTree = "<group>";
 		};
-		DAC1C222235812DE0074611D /* Top */ = {
+		DAC1C222235812DE0074611D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DAC1C226235816EC0074611D /* Top.storyboard */,
+				DAC1C226235816EC0074611D /* Home.storyboard */,
+				DA08A51223581AB0003B7284 /* HomeViewController.swift */,
 			);
-			path = Top;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		DAC1C223235812EA0074611D /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
 				DAC1C228235816FE0074611D /* Timeline.storyboard */,
+				DA08A51423581AD4003B7284 /* TimelineViewController.swift */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -1556,7 +1565,7 @@
 				DABBC009234F11F0004C48A1 /* PairLabelTableViewCell.xib in Resources */,
 				DADA57EC222E4A6300FC95A8 /* Videos.storyboard in Resources */,
 				DA6CF0D02328CBA200F0C2B0 /* DocumentCambas.storyboard in Resources */,
-				DAC1C227235816EC0074611D /* Top.storyboard in Resources */,
+				DAC1C227235816EC0074611D /* Home.storyboard in Resources */,
 				DABF9B8D2347192C00655A42 /* ChannelDetailTimelineTableViewCell.xib in Resources */,
 				DA75C60323337B200078A5F5 /* ChannelDetailTimeline.storyboard in Resources */,
 				DADD665022A4B05800F11710 /* CalendarDayTopCollectionViewCell.xib in Resources */,
@@ -1646,6 +1655,7 @@
 				DADD664A22A4B05800F11710 /* CalendarWeekViewController.swift in Sources */,
 				1EF8DC1923255C55004DDA63 /* UIView+ContainerView.swift in Sources */,
 				DADD665122A4B05800F11710 /* CalendarDayScheduleCollectionViewCell.swift in Sources */,
+				DA08A51523581AD4003B7284 /* TimelineViewController.swift in Sources */,
 				1EFE900E21FCD869006E8473 /* NavTabScrollController.swift in Sources */,
 				1E57E08621FB84DD003AD898 /* UIScreen+Utility.swift in Sources */,
 				1E57E09821FB84DE003AD898 /* Operator+.swift in Sources */,
@@ -1716,6 +1726,7 @@
 				1EF8DC17232544E0004DDA63 /* ChannelDetailTopBaseInfoViewController.swift in Sources */,
 				1E4A542F22060FF000E4EEEF /* SectionHeaderBasicalTableCell.swift in Sources */,
 				1E57E0B121FB84DE003AD898 /* UINavigationController+Utils.swift in Sources */,
+				DA08A51323581AB0003B7284 /* HomeViewController.swift in Sources */,
 				1E1E5F0922069F5B005627F9 /* Human.swift in Sources */,
 				DA6CF0C92328C8EF00F0C2B0 /* CustomScrollView.swift in Sources */,
 				1EB1514421FA1C17001B6110 /* ViewController.swift in Sources */,
@@ -1747,6 +1758,7 @@
 				1E57E0BE21FC0232003AD898 /* MyChannelViewController.swift in Sources */,
 				1E57E08921FB84DD003AD898 /* NSObject+.swift in Sources */,
 				1E9F0C6B2329759600CFAA30 /* ChannelDetailLinkViewController.swift in Sources */,
+				DA08A51723582018003B7284 /* MyPageViewController.swift in Sources */,
 				1E57E0B721FB84DE003AD898 /* NSObject+Utility.swift in Sources */,
 				DA8AEB2C21FEC3A4000A717E /* ShadowView.swift in Sources */,
 				DABBC00C234F1E64004C48A1 /* UIStackView+Utility.swift in Sources */,
