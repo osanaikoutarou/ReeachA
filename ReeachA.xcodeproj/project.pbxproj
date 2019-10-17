@@ -763,7 +763,7 @@
 			path = Definition;
 			sourceTree = "<group>";
 		};
-		1E57E0BC21FC01EE003AD898 /* Screen */ = {
+		1E57E0BC21FC01EE003AD898 /* ScreenMain */ = {
 			isa = PBXGroup;
 			children = (
 				1E7AF7F5222B0AA900F845C2 /* RightMenu */,
@@ -772,11 +772,10 @@
 				1E29BAFF22095A5200D219D4 /* Debug */,
 				1E29BAF5220951E800D219D4 /* CommonCustomView */,
 				1EFF4BD02205D497006BFDC9 /* CommonCell */,
-				1EFE8FF121FC4478006E8473 /* ChannelDetail */,
 				DADD662D22A4AFB800F11710 /* Calendar */,
 				1EFE8FF021FC4441006E8473 /* MyChannel */,
 			);
-			path = Screen;
+			path = ScreenMain;
 			sourceTree = "<group>";
 		};
 		1E57E0BF21FC02AB003AD898 /* Model */ = {
@@ -890,7 +889,8 @@
 			children = (
 				1E90237A235601D500B06822 /* Style */,
 				1E57E0BF21FC02AB003AD898 /* Model */,
-				1E57E0BC21FC01EE003AD898 /* Screen */,
+				1E57E0BC21FC01EE003AD898 /* ScreenMain */,
+				DAC1C2212358115F0074611D /* ScreenChannelDetail */,
 				1E57E0B921FB8C05003AD898 /* Definition */,
 				DADA57F1222E62C400FC95A8 /* Utilities */,
 				1E57E03821FB84DD003AD898 /* Extension */,
@@ -1064,27 +1064,6 @@
 			path = MyChannel;
 			sourceTree = "<group>";
 		};
-		1EFE8FF121FC4478006E8473 /* ChannelDetail */ = {
-			isa = PBXGroup;
-			children = (
-				1E40ADEE2333EE120079D3CB /* Cell */,
-				DA75C60623337BA90078A5F5 /* ChannelDetailSummary */,
-				DA75C5FE23337AC10078A5F5 /* ChannelDetailLink */,
-				1E90237E2356274900B06822 /* ChannelDetailCalendar */,
-				1E90237D2356273D00B06822 /* ChannelDetailMyPage */,
-				1EFF4BCB2205BE57006BFDC9 /* ChannelDetailNotification */,
-				1EE4CD7E2205707600E85537 /* ChannelDetailPost */,
-				1EE4CD7922056AE900E85537 /* ChannelDetailEpisode */,
-				1EC50DD22200C9010026DEF0 /* ChannelDetailItems */,
-				1EFE900021FCA4AE006E8473 /* ChannelDetailWebsite */,
-				1EFE8FF621FC6D9B006E8473 /* ChannelDetailTop */,
-				1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */,
-				1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */,
-				DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */,
-			);
-			path = ChannelDetail;
-			sourceTree = "<group>";
-		};
 		1EFE8FF621FC6D9B006E8473 /* ChannelDetailTop */ = {
 			isa = PBXGroup;
 			children = (
@@ -1222,7 +1201,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = ChannelDetailLink;
+			name = ChannelDetailLink;
+			path = ../ScreenTop/ChannelDetail/ChannelDetailLink;
 			sourceTree = "<group>";
 		};
 		DA75C60123337AE70078A5F5 /* Timeline */ = {
@@ -1281,6 +1261,27 @@
 				DABBC00B234F1E64004C48A1 /* UIStackView+Utility.swift */,
 			);
 			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		DAC1C2212358115F0074611D /* ScreenChannelDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1E40ADEE2333EE120079D3CB /* Cell */,
+				DA75C60623337BA90078A5F5 /* ChannelDetailSummary */,
+				DA75C5FE23337AC10078A5F5 /* ChannelDetailLink */,
+				1E90237E2356274900B06822 /* ChannelDetailCalendar */,
+				1E90237D2356273D00B06822 /* ChannelDetailMyPage */,
+				1EFF4BCB2205BE57006BFDC9 /* ChannelDetailNotification */,
+				1EE4CD7E2205707600E85537 /* ChannelDetailPost */,
+				1EE4CD7922056AE900E85537 /* ChannelDetailEpisode */,
+				1EC50DD22200C9010026DEF0 /* ChannelDetailItems */,
+				1EFE900021FCA4AE006E8473 /* ChannelDetailWebsite */,
+				1EFE8FF621FC6D9B006E8473 /* ChannelDetailTop */,
+				1EFE8FF221FC4497006E8473 /* ChannelDetail.storyboard */,
+				1EFE8FF421FC44C7006E8473 /* ChannelDetailViewController.swift */,
+				DA095344220832D500CD9329 /* ChannelDetailTabBarController.swift */,
+			);
+			path = ScreenChannelDetail;
 			sourceTree = "<group>";
 		};
 		DADA57EA222E4A3A00FC95A8 /* Videos */ = {
