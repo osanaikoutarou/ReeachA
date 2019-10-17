@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4xg-mW-K0G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4xg-mW-K0G">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -267,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="11" y="-381"/>
         </scene>
-        <!--Top-->
+        <!--Home-->
         <scene sceneID="Y2O-vW-sNZ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Top" id="gdj-Lk-tUx" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="gdj-Lk-tUx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Z9I-M8-VlA"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNi-9T-iQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
