@@ -113,6 +113,8 @@ class ChannelDetailTopViewController: UIViewController {
 
         barBaseView.forEach{ $0.backgroundColor = channel.style.backColor }
         barView.backgroundColor = channel.style.keyColor
+        
+        self.navigationController?.title = "かぐや様は告らせたい"
     }
 
     override func viewWillAppear(_ animated: Bool) {
