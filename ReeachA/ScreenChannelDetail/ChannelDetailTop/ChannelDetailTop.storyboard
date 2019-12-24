@@ -310,25 +310,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koR-Pi-HyU">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                                        <rect key="frame" x="15" y="259" width="125" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-AZ-3f4">
-                                                <rect key="frame" x="0.0" y="2.5" width="375" height="10"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="c かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜製作委員会" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-AZ-3f4">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Sga-AZ-3f4" secondAttribute="trailing" id="3WF-R7-6h5"/>
-                                            <constraint firstItem="Sga-AZ-3f4" firstAttribute="leading" secondItem="koR-Pi-HyU" secondAttribute="leading" id="C20-zU-6sk"/>
-                                            <constraint firstItem="Sga-AZ-3f4" firstAttribute="centerY" secondItem="koR-Pi-HyU" secondAttribute="centerY" id="gec-mV-nCq"/>
-                                            <constraint firstAttribute="height" constant="15" id="zYl-2u-Q5P"/>
+                                            <constraint firstItem="Sga-AZ-3f4" firstAttribute="leading" secondItem="koR-Pi-HyU" secondAttribute="leading" id="Avq-rD-1OP"/>
+                                            <constraint firstItem="Sga-AZ-3f4" firstAttribute="top" secondItem="koR-Pi-HyU" secondAttribute="top" id="Rw0-IE-PbV"/>
+                                            <constraint firstAttribute="bottom" secondItem="Sga-AZ-3f4" secondAttribute="bottom" id="iBs-bQ-j23"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sga-AZ-3f4" secondAttribute="trailing" id="oX1-Lm-6KG"/>
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yakusokuno" translatesAutoresizingMaskIntoConstraints="NO" id="oMY-lm-yQz">
-                                        <rect key="frame" x="15" y="109" width="125" height="176"/>
+                                        <rect key="frame" x="15" y="78" width="125" height="176"/>
                                         <accessibility key="accessibilityConfiguration" label="DetailTop&gt;BaseImage"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="oMY-lm-yQz" secondAttribute="height" multiplier="120:169" id="Vde-b3-Cp2"/>
@@ -340,13 +340,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrP-Ti-ysF">
-                                        <rect key="frame" x="15" y="30" width="345" height="64"/>
+                                        <rect key="frame" x="15" y="15" width="345" height="48"/>
                                         <accessibility key="accessibilityConfiguration" label="DetailTop&gt;BaseTitle"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="StackView😀A" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tq5-vm-Qll">
-                                        <rect key="frame" x="155" y="205" width="205" height="80"/>
+                                        <rect key="frame" x="155" y="174" width="205" height="80"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-qV-NFR" customClass="ButtonView" customModule="ReeachA" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="205" height="36"/>
@@ -385,7 +385,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-Zw-C31" customClass="DynamicStackView" customModule="ReeachA" customModuleProvider="target">
-                                        <rect key="frame" x="155" y="109" width="210" height="50"/>
+                                        <rect key="frame" x="155" y="78" width="210" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="1" constant="50" id="hNV-y1-WGy"/>
                                         </constraints>
@@ -394,17 +394,17 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" label="DetailTop&gt;BaseBase"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="15" id="303-2p-vzV"/>
-                                    <constraint firstItem="koR-Pi-HyU" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" id="4vG-rl-laF"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="15" id="303-2p-vzV"/>
+                                    <constraint firstItem="koR-Pi-HyU" firstAttribute="top" secondItem="oMY-lm-yQz" secondAttribute="bottom" constant="5" id="43p-nB-zwE"/>
                                     <constraint firstItem="oMY-lm-yQz" firstAttribute="top" secondItem="xrP-Ti-ysF" secondAttribute="bottom" constant="15" id="5b8-pL-v52"/>
                                     <constraint firstItem="tq5-vm-Qll" firstAttribute="bottom" secondItem="oMY-lm-yQz" secondAttribute="bottom" id="73b-8F-cKu"/>
+                                    <constraint firstItem="koR-Pi-HyU" firstAttribute="width" secondItem="oMY-lm-yQz" secondAttribute="width" id="7ZX-D7-4D6"/>
                                     <constraint firstItem="xrP-Ti-ysF" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" constant="15" id="AMV-ll-l60"/>
+                                    <constraint firstItem="xrP-Ti-ysF" firstAttribute="top" secondItem="IiY-PI-wia" secondAttribute="top" constant="15" id="GZh-4M-o4F"/>
                                     <constraint firstAttribute="trailing" secondItem="xrP-Ti-ysF" secondAttribute="trailing" constant="15" id="Hhr-aM-eXJ"/>
                                     <constraint firstItem="mdd-Zw-C31" firstAttribute="leading" secondItem="oMY-lm-yQz" secondAttribute="trailing" constant="15" id="QVH-8w-NX8"/>
-                                    <constraint firstItem="xrP-Ti-ysF" firstAttribute="top" secondItem="koR-Pi-HyU" secondAttribute="bottom" constant="15" id="Ufj-8F-ayc"/>
-                                    <constraint firstAttribute="trailing" secondItem="koR-Pi-HyU" secondAttribute="trailing" id="WTw-hi-pKV"/>
                                     <constraint firstItem="mdd-Zw-C31" firstAttribute="top" secondItem="oMY-lm-yQz" secondAttribute="top" id="Xan-NO-rop"/>
-                                    <constraint firstItem="koR-Pi-HyU" firstAttribute="top" secondItem="IiY-PI-wia" secondAttribute="top" id="pt6-DO-pyd"/>
+                                    <constraint firstItem="koR-Pi-HyU" firstAttribute="leading" secondItem="oMY-lm-yQz" secondAttribute="leading" id="jAa-8f-Muu"/>
                                     <constraint firstAttribute="trailing" secondItem="mdd-Zw-C31" secondAttribute="trailing" constant="10" id="rBa-eg-Tua"/>
                                     <constraint firstAttribute="trailing" secondItem="tq5-vm-Qll" secondAttribute="trailing" constant="15" id="rZA-zu-aFA"/>
                                     <constraint firstItem="oMY-lm-yQz" firstAttribute="leading" secondItem="IiY-PI-wia" secondAttribute="leading" constant="15" id="wB6-lp-CHU"/>
