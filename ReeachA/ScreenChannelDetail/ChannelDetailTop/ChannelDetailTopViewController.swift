@@ -9,14 +9,17 @@
 import UIKit
 
 /// Channelを持っている（どこかに移動したい）
-protocol HaveChannel: class {
+protocol HaveChannel: AnyObject {
     var channel: Channel? { get set }
 }
 
-/// 子ViweConrollerに適用
-protocol ChannelDetailTopChild: UIViewController {
-    var parentChannelDetailTopViewController: ChannelDetailTopViewController? { get }
+protocol HaveHeaderHeight: AnyObject {
     var headerHeight: CGFloat { get set }
+}
+
+/// 子ViweConrollerに適用
+protocol ChannelDetailTopChild: UIViewController, HaveHeaderHeight, HaveChannel {
+    var parentChannelDetailTopViewController: ChannelDetailTopViewController? { get }
 }
 extension ChannelDetailTopChild {
     var parentChannelDetailTopViewController: ChannelDetailTopViewController? {
@@ -44,37 +47,34 @@ class ChannelDetailTopViewController: UIViewController {
     @IBOutlet var barBaseView: [UIView]!
     @IBOutlet var barLabels: [UILabel]!
 
-
     //MARK:- ChannelDetailTimelineViewController
 
-    // header
+    // header custom view
     var baseInfoVC: ChannelDetailTopBaseInfoViewController? {
-        return children.first(where: { $0 is ChannelDetailTopBaseInfoViewController} ) as? ChannelDetailTopBaseInfoViewController
+        return children.first(type: ChannelDetailTopBaseInfoViewController.self)
     }
-    // スライド
+    // スライドする画面
     var linkVC: ChannelDetailLinkViewController? {
-        return children.first(where: { $0 is ChannelDetailLinkViewController} ) as? ChannelDetailLinkViewController
+        return children.first(type: ChannelDetailLinkViewController.self)
     }
     var timelineVC: ChannelDetailTimelineViewController? {
-        return children.first(where: { $0 is ChannelDetailTimelineViewController} ) as? ChannelDetailTimelineViewController
+        return children.first(type: ChannelDetailTimelineViewController.self)
     }
     var mediaVC: ChannelDetailMediaViewController? {
-        return children.first(where: { $0 is ChannelDetailMediaViewController} ) as? ChannelDetailMediaViewController
+        return children.first(type: ChannelDetailMediaViewController.self)
     }
     var infoVC: ChannelDetailInfoViewController? {
-        return children.first(where: { $0 is ChannelDetailInfoViewController} ) as? ChannelDetailInfoViewController
+        return children.first(type: ChannelDetailInfoViewController.self)
     }
     var relationVC: ChannelDetailRelationViewController? {
-        return children.first(where: { $0 is ChannelDetailRelationViewController} ) as? ChannelDetailRelationViewController
+        return children.first(type: ChannelDetailRelationViewController.self)
     }
-
     var allChildren: [UIViewController?] {
         return [baseInfoVC, linkVC, timelineVC, mediaVC, relationVC, infoVC]
     }
     var slideScreens: [UIViewController?] {
         return [linkVC, timelineVC, mediaVC, relationVC, infoVC]
     }
-
 
     var channel:Channel {
         get {
@@ -93,10 +93,16 @@ class ChannelDetailTopViewController: UIViewController {
         return screenStackView.arrangedSubviews.count
     }
     
+    //MARK: -
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         screenWidthConstraint.constant = view.frame.width
+        
+        infoVC?.view.layoutIfNeeded()
+        
+        
 
         channel = Anime()
         (channel as! Anime).createSample()
@@ -155,7 +161,7 @@ extension ChannelDetailTopViewController {
         let headerheight: CGFloat = baseInfoVC?.view?.bounds.height ?? 0
         headerTop.constant = min(0, max(-headerheight, -scrollWithContentInset))
 
-        print("😀  \(isViewLoaded) \(min(0, max(-headerheight, -scrollWithContentInset)))")
+//        print("😀  \(isViewLoaded) \(min(0, max(-headerheight, -scrollWithContentInset)))")
     }
 }
 

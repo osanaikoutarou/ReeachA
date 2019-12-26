@@ -20,3 +20,10 @@ extension Array where Element: Equatable {
         self = result
     }
 }
+
+extension Array where Element: Equatable {
+    /// 配列の中で最初に型がTのもの
+    func first<T>(type: T.Type) -> T? {
+        return self.first(where: { $0 is T }) as? T
+    }
+}
