@@ -12,9 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var i = 10
+        var j = 20
+        String(format: "あいうえお%d %d", i, j)
+        String(format: "あいうえお10 20")
+        
+        let d = Date() + 24*60*60
+        
+        "(date >= \(Date()) AND (date <= \(Date())"
     }
-
-
 }
 

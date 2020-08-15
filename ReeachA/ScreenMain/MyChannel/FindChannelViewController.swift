@@ -1,5 +1,5 @@
 //
-//  MyChannelViewController.swift
+//  FindChannelViewController.swift
 //  ReeachA
 //
 //  Created by 長内幸太郎 on 2019/01/26.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyChannelViewController: UIViewController {
+class FindChannelViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -26,7 +26,7 @@ class MyChannelViewController: UIViewController {
     }
 }
 
-extension MyChannelViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+extension FindChannelViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     func margin() -> (horizontal:CGFloat, vertical:CGFloat) {
         return (10,10)
     }
@@ -70,7 +70,7 @@ extension MyChannelViewController: UICollectionViewDelegateFlowLayout, UICollect
     
 }
 
-extension MyChannelViewController {
+extension FindChannelViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ChannelDetail" {
             let vc = segue.destination

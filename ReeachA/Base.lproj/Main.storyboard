@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4xg-mW-K0G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4xg-mW-K0G">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -257,10 +257,10 @@
             </objects>
             <point key="canvasLocation" x="-623" y="-170"/>
         </scene>
-        <!--MyChannel-->
+        <!--FindChannel-->
         <scene sceneID="zWX-3V-aTq">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyChannel" id="cRx-gk-YmC" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="FindChannel" id="cRx-gk-YmC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="95E-7a-PF5"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pI-UK-iOX" userLabel="First Responder" sceneMemberID="firstResponder"/>

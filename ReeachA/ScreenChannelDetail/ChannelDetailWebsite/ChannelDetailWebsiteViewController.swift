@@ -88,6 +88,7 @@ extension ChannelDetailWebsiteViewController {
 }
 
 extension ChannelDetailWebsiteViewController: UIScrollViewDelegate {
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         navTabScrollController.scrollViewdidScroll(scrollView: scrollView)
     }
@@ -97,5 +98,6 @@ extension ChannelDetailWebsiteViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         navTabScrollController.endScrolling()
     }
+    
 }
 
