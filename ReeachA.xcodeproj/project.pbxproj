@@ -26,6 +26,9 @@
 		1E4A54342206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4A54322206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift */; };
 		1E4A54352206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E4A54332206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.xib */; };
 		1E52534A24E85BC200A82FAF /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52534924E85BC200A82FAF /* HomeTableViewCell.swift */; };
+		1E52534C24E8C97300A82FAF /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52534B24E8C97300A82FAF /* CalendarCollectionViewCell.swift */; };
+		1E52534E24E92CD200A82FAF /* CalendarMonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52534D24E92CD200A82FAF /* CalendarMonthCollectionViewCell.swift */; };
+		1E52535024E92CEA00A82FAF /* CalendarDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52534F24E92CEA00A82FAF /* CalendarDayCollectionViewCell.swift */; };
 		1E57E03621FB7BF7003AD898 /* AnimeChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E03421FB7BF7003AD898 /* AnimeChannelCollectionViewCell.swift */; };
 		1E57E03721FB7BF7003AD898 /* AnimeChannelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E57E03521FB7BF7003AD898 /* AnimeChannelCollectionViewCell.xib */; };
 		1E57E08521FB84DD003AD898 /* UIScrollView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57E03A21FB84DD003AD898 /* UIScrollView+Utility.swift */; };
@@ -262,6 +265,9 @@
 		1E4A54322206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailSNSLinkTableViewCell.swift; sourceTree = "<group>"; };
 		1E4A54332206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelDetailSNSLinkTableViewCell.xib; sourceTree = "<group>"; };
 		1E52534924E85BC200A82FAF /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		1E52534B24E8C97300A82FAF /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E52534D24E92CD200A82FAF /* CalendarMonthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonthCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E52534F24E92CEA00A82FAF /* CalendarDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E57E03421FB7BF7003AD898 /* AnimeChannelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeChannelCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E57E03521FB7BF7003AD898 /* AnimeChannelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimeChannelCollectionViewCell.xib; sourceTree = "<group>"; };
 		1E57E03A21FB84DD003AD898 /* UIScrollView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Utility.swift"; sourceTree = "<group>"; };
@@ -1350,6 +1356,9 @@
 				DADD663022A4B05800F11710 /* Screens */,
 				DADD662E22A4AFD600F11710 /* Calendar.storyboard */,
 				DADD665922A4B06700F11710 /* CalendarViewController.swift */,
+				1E52534B24E8C97300A82FAF /* CalendarCollectionViewCell.swift */,
+				1E52534D24E92CD200A82FAF /* CalendarMonthCollectionViewCell.swift */,
+				1E52534F24E92CEA00A82FAF /* CalendarDayCollectionViewCell.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -1653,6 +1662,7 @@
 				DA0953412208138F00CD9329 /* InfoAtom.swift in Sources */,
 				1E57E08821FB84DD003AD898 /* ScopeMethod.swift in Sources */,
 				DA8AEB2D21FEC3A4000A717E /* CornerRaoundView.swift in Sources */,
+				1E52534E24E92CD200A82FAF /* CalendarMonthCollectionViewCell.swift in Sources */,
 				1E57E0AB21FB84DE003AD898 /* Int+Utility.swift in Sources */,
 				1EEF6AED22BFB179004C91F8 /* Schedule.swift in Sources */,
 				DA8AEB3321FECDA8000A717E /* UIViewController+ActionSheet.swift in Sources */,
@@ -1690,6 +1700,7 @@
 				DADD665222A4B05800F11710 /* CalendarDayTopCollectionViewCell.swift in Sources */,
 				1EFE900621FCCE92006E8473 /* ChannelDetailWebsiteListViewController.swift in Sources */,
 				1EBDA99C234A33B400C369C9 /* ChannelDetailInfoSummaryViewController.swift in Sources */,
+				1E52535024E92CEA00A82FAF /* CalendarDayCollectionViewCell.swift in Sources */,
 				DA75C60523337B490078A5F5 /* ChannelDetailTimelineViewController.swift in Sources */,
 				1E57E09621FB84DD003AD898 /* NibInstantiatable.swift in Sources */,
 				1E57E0C421FC0456003AD898 /* Anime.swift in Sources */,
@@ -1764,6 +1775,7 @@
 				1E4A54342206133600E4EEEF /* ChannelDetailSNSLinkTableViewCell.swift in Sources */,
 				1E57E0B421FB84DE003AD898 /* UIControl+Action.swift in Sources */,
 				1E1DE00222106F6800A00FA1 /* ChannelDetailTopCopyrightTableViewCell.swift in Sources */,
+				1E52534C24E8C97300A82FAF /* CalendarCollectionViewCell.swift in Sources */,
 				1E57E09921FB84DE003AD898 /* UIColor+.swift in Sources */,
 				1EE4CD7D22056B6300E85537 /* ChannelDetailEpisodeViewController.swift in Sources */,
 				1E57E08E21FB84DD003AD898 /* TargetedExtension.swift in Sources */,
