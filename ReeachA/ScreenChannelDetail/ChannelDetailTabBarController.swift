@@ -10,10 +10,11 @@ import UIKit
 
 class ChannelDetailTabBarController: UITabBarController {
     
-    var channel:Channel!
+    var channel: Channel! = Channel.sample
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = channel.title
     }
 
 }

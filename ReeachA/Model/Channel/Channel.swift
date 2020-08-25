@@ -51,3 +51,11 @@ class Channel: InfoAtom {
     // デザイン
     var style: Style = Style()
 }
+
+extension Channel {
+    static var sample: Channel {
+        var c = Channel()
+        c.title = "かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜"
+        return c
+    }
+}
